@@ -1,0 +1,135 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-bx0w1k');
+	src:url('fonts/icomoon.eot?#iefix-bx0w1k') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-bx0w1k') format('woff'),
+		url('fonts/icomoon.ttf?-bx0w1k') format('truetype'),
+		url('fonts/icomoon.svg?-bx0w1k#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon"], [class*=" icon"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Enable Ligatures ================ */
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-favorite:before {
+	content: "\e621";
+}
+.icon-rubl:before {
+	content: "\e620";
+}
+.icon-fb:before {
+	content: "\e61d";
+}
+.icon-twitter:before {
+	content: "\e61e";
+}
+.icon-vk:before {
+	content: "\e61f";
+}
+.icon-child:before {
+	content: "\e606";
+}
+.icon-assorti_seti:before {
+	content: "\e600";
+}
+.icon-cake:before {
+	content: "\e601";
+}
+.icon-car:before {
+	content: "\e602";
+}
+.icon-cart:before {
+	content: "\e603";
+}
+.icon-checkbox:before {
+	content: "\e604";
+}
+.icon-checkbox_active:before {
+	content: "\e605";
+}
+.icon-clock:before {
+	content: "\e607";
+}
+.icon-credit-card:before {
+	content: "\e608";
+}
+.icon-desserts:before {
+	content: "\e609";
+}
+.icon-drinkables:before {
+	content: "\e60a";
+}
+.icon-edit1:before {
+	content: "\e60b";
+}
+.icon-gift:before {
+	content: "\e60c";
+}
+.icon-hot:before {
+	content: "\e60d";
+}
+.icon-like:before {
+	content: "\e60e";
+}
+.icon-menu:before {
+	content: "\e60f";
+}
+.icon-onigiri:before {
+	content: "\e610";
+}
+.icon-phone:before {
+	content: "\e611";
+}
+.icon-pizza:before {
+	content: "\e612";
+}
+.icon-roll:before {
+	content: "\e613";
+}
+.icon-salad:before {
+	content: "\e614";
+}
+.icon-sashimi:before {
+	content: "\e615";
+}
+.icon-souces:before {
+	content: "\e616";
+}
+.icon-soup:before {
+	content: "\e617";
+}
+.icon-sushi_menu:before {
+	content: "\e618";
+}
+.icon-sushibox:before {
+	content: "\e619";
+}
+.icon-sushi:before {
+	content: "\e61a";
+}
+.icon-user:before {
+	content: "\e61b";
+}
+.icon-warmroll:before {
+	content: "\e61c";
+}

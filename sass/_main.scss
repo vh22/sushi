@@ -3,7 +3,54 @@
 	ul{
 		padding: 30px;
 		li{
-			list-style-type: decimal;			
+			list-style-type: decimal;	
+			a{
+				color: #000;
+			}	
+		}
+	}
+}
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header-logo{
+	float: left;
+}
+.header-link{
+	float: left;
+	li{
+		float: left;
+		font-family: 'lato-black';
+		a{
+			text-decoration: none;
+			color: #5e5e5e;
+			font-size: 14px;
+			line-height: 18px;
+			font-family: 'lato-bold';
+		}
+		.icon{
+			font-size: 40px;
+			color: #e76b6b;
+			float: left;
+			margin-right: 15px;
+		}
+	}
+}
+.header__phone{
+	color: #5d5d5d;
+	font-size: 22px;
+	font-weight: bold;
+}
+.header__phone-link{
+	.header-link li &{
+		font-family: 'PT Sans', sans-serif;
+		font-size: 14px;
+		color: #159bea;
+		display: block;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
 		}
 	}
 }

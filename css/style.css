@@ -1,63 +1,190 @@
-/* line 1, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 1, ../sass/lib/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
-/* line 14, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 14, ../sass/lib/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-/* line 17, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 17, ../sass/lib/_reset.scss */
 b, strong { font-weight: bold; }
 
-/* line 20, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 20, ../sass/lib/_reset.scss */
 img { color: transparent; font-size: 0; vertical-align: middle; -ms-interpolation-mode: bicubic; }
 
-/* line 26, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 26, ../sass/lib/_reset.scss */
 body, html { height: 100%; }
 
-/* line 29, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 29, ../sass/lib/_reset.scss */
 img, fieldset, a img { border: none; }
 
-/* line 32, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 32, ../sass/lib/_reset.scss */
 input[type="submit"], button { cursor: pointer; }
-/* line 35, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 35, ../sass/lib/_reset.scss */
 input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
 
-/* line 40, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 40, ../sass/lib/_reset.scss */
 textarea { overflow: auto; }
 
-/* line 43, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 43, ../sass/lib/_reset.scss */
 input, button { margin: 0; padding: 0; border: 0; }
 
-/* line 48, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 48, ../sass/lib/_reset.scss */
 input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
 
-/* line 52, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 52, ../sass/lib/_reset.scss */
 ul, ol { list-style-type: none; }
 
-/* line 53, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 53, ../sass/lib/_reset.scss */
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-/* line 58, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 58, ../sass/lib/_reset.scss */
 svg { overflow: hidden; }
 
-/* line 60, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 60, ../sass/lib/_reset.scss */
 .clear:after, .clear:before { clear: both; display: block; zoom: 1; content: ''; }
 
-/* line 67, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 67, ../sass/lib/_reset.scss */
 .left { float: left; }
 
-/* line 68, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+/* line 68, ../sass/lib/_reset.scss */
 .right { float: right; }
 
-/* line 69, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
-html, body { font: 14px 'helios'; color: #000; }
+/* line 69, ../sass/lib/_reset.scss */
+html, body { font-family: 'PT Sans', sans-serif; font-size: 14px; color: #000; }
 
-/* line 1, D:/Dropbox/GRUNT-project/sass/_main.scss */
-body { background: red; }
+/* line 1, ../sass/_main.scss */
+.index-menu { padding: 50px; }
+/* line 3, ../sass/_main.scss */
+.index-menu ul { padding: 30px; }
+/* line 5, ../sass/_main.scss */
+.index-menu ul li { list-style-type: decimal; }
+/* line 7, ../sass/_main.scss */
+.index-menu ul li a { color: #000; }
 
-/* line 2, D:/Dropbox/GRUNT-project/sass/_main.scss */
-.out { width: 300px; height: 100px; background: green; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; position: relative; }
-/* line 8, D:/Dropbox/GRUNT-project/sass/_main.scss */
-.out:after { content: ''; position: absolute; top: 50px; left: 50px; background: url('/css/images/icons-s5491a564ed.png') 0 0 no-repeat; width: 19px; height: 18px; }
+/* line 13, ../sass/_main.scss */
+.wrapper { width: 1200px; margin: 0 auto; }
 
-/* line 12, D:/Dropbox/GRUNT-project/sass/_main.scss */
-#description { background: #fff; border: 3px solid yellow; height: 150px; width: 300px; overflow: hidden; position: absolute; }
+/* line 17, ../sass/_main.scss */
+.header-logo { float: left; }
+
+/* line 20, ../sass/_main.scss */
+.header-link { float: left; }
+/* line 22, ../sass/_main.scss */
+.header-link li { float: left; font-family: 'lato-black'; }
+/* line 25, ../sass/_main.scss */
+.header-link li a { text-decoration: none; color: #5e5e5e; font-size: 14px; line-height: 18px; font-family: 'lato-bold'; }
+/* line 32, ../sass/_main.scss */
+.header-link li .icon { font-size: 40px; color: #e76b6b; float: left; margin-right: 15px; }
+
+/* line 40, ../sass/_main.scss */
+.header__phone { color: #5d5d5d; font-size: 22px; font-weight: bold; }
+
+/* line 46, ../sass/_main.scss */
+.header-link li .header__phone-link { font-family: 'PT Sans', sans-serif; font-size: 14px; color: #159bea; display: block; text-decoration: underline; }
+/* line 52, ../sass/_main.scss */
+.header-link li .header__phone-link:hover { text-decoration: none; }
+
+@font-face { font-family: 'icomoon'; src: url("fonts/icomoon.eot?-bx0w1k"); src: url("fonts/icomoon.eot?#iefix-bx0w1k") format("embedded-opentype"), url("fonts/icomoon.woff?-bx0w1k") format("woff"), url("fonts/icomoon.ttf?-bx0w1k") format("truetype"), url("fonts/icomoon.svg?-bx0w1k#icomoon") format("svg"); font-weight: normal; font-style: normal; }
+/* line 12, ../sass/_icons.scss */
+[class^="icon"], [class*=" icon"] { font-family: 'icomoon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Enable Ligatures ================ */ -webkit-font-feature-settings: "liga"; -moz-font-feature-settings: "liga=1"; -moz-font-feature-settings: "liga"; -ms-font-feature-settings: "liga" 1; -o-font-feature-settings: "liga"; font-feature-settings: "liga"; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* line 34, ../sass/_icons.scss */
+.icon-favorite:before { content: "\e621"; }
+
+/* line 37, ../sass/_icons.scss */
+.icon-rubl:before { content: "\e620"; }
+
+/* line 40, ../sass/_icons.scss */
+.icon-fb:before { content: "\e61d"; }
+
+/* line 43, ../sass/_icons.scss */
+.icon-twitter:before { content: "\e61e"; }
+
+/* line 46, ../sass/_icons.scss */
+.icon-vk:before { content: "\e61f"; }
+
+/* line 49, ../sass/_icons.scss */
+.icon-child:before { content: "\e606"; }
+
+/* line 52, ../sass/_icons.scss */
+.icon-assorti_seti:before { content: "\e600"; }
+
+/* line 55, ../sass/_icons.scss */
+.icon-cake:before { content: "\e601"; }
+
+/* line 58, ../sass/_icons.scss */
+.icon-car:before { content: "\e602"; }
+
+/* line 61, ../sass/_icons.scss */
+.icon-cart:before { content: "\e603"; }
+
+/* line 64, ../sass/_icons.scss */
+.icon-checkbox:before { content: "\e604"; }
+
+/* line 67, ../sass/_icons.scss */
+.icon-checkbox_active:before { content: "\e605"; }
+
+/* line 70, ../sass/_icons.scss */
+.icon-clock:before { content: "\e607"; }
+
+/* line 73, ../sass/_icons.scss */
+.icon-credit-card:before { content: "\e608"; }
+
+/* line 76, ../sass/_icons.scss */
+.icon-desserts:before { content: "\e609"; }
+
+/* line 79, ../sass/_icons.scss */
+.icon-drinkables:before { content: "\e60a"; }
+
+/* line 82, ../sass/_icons.scss */
+.icon-edit1:before { content: "\e60b"; }
+
+/* line 85, ../sass/_icons.scss */
+.icon-gift:before { content: "\e60c"; }
+
+/* line 88, ../sass/_icons.scss */
+.icon-hot:before { content: "\e60d"; }
+
+/* line 91, ../sass/_icons.scss */
+.icon-like:before { content: "\e60e"; }
+
+/* line 94, ../sass/_icons.scss */
+.icon-menu:before { content: "\e60f"; }
+
+/* line 97, ../sass/_icons.scss */
+.icon-onigiri:before { content: "\e610"; }
+
+/* line 100, ../sass/_icons.scss */
+.icon-phone:before { content: "\e611"; }
+
+/* line 103, ../sass/_icons.scss */
+.icon-pizza:before { content: "\e612"; }
+
+/* line 106, ../sass/_icons.scss */
+.icon-roll:before { content: "\e613"; }
+
+/* line 109, ../sass/_icons.scss */
+.icon-salad:before { content: "\e614"; }
+
+/* line 112, ../sass/_icons.scss */
+.icon-sashimi:before { content: "\e615"; }
+
+/* line 115, ../sass/_icons.scss */
+.icon-souces:before { content: "\e616"; }
+
+/* line 118, ../sass/_icons.scss */
+.icon-soup:before { content: "\e617"; }
+
+/* line 121, ../sass/_icons.scss */
+.icon-sushi_menu:before { content: "\e618"; }
+
+/* line 124, ../sass/_icons.scss */
+.icon-sushibox:before { content: "\e619"; }
+
+/* line 127, ../sass/_icons.scss */
+.icon-sushi:before { content: "\e61a"; }
+
+/* line 130, ../sass/_icons.scss */
+.icon-user:before { content: "\e61b"; }
+
+/* line 133, ../sass/_icons.scss */
+.icon-warmroll:before { content: "\e61c"; }
