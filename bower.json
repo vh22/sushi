@@ -1,0 +1,21 @@
+{
+  "name": "GRUNT-project",
+  "version": "0.0.0",
+  "authors": [
+    "Лемешко Олександр Григорович <sheriff_15@ukr.net>"
+  ],
+  "description": "bower-example",
+  "main": "css/style.css",
+  "keywords": [],
+  "license": "durbala ISC",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "jquery-ui": "~1.11.1"
+  }
+}

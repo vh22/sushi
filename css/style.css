@@ -1,0 +1,63 @@
+/* line 1, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+/* line 14, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* line 17, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+b, strong { font-weight: bold; }
+
+/* line 20, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+img { color: transparent; font-size: 0; vertical-align: middle; -ms-interpolation-mode: bicubic; }
+
+/* line 26, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+body, html { height: 100%; }
+
+/* line 29, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+img, fieldset, a img { border: none; }
+
+/* line 32, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+input[type="submit"], button { cursor: pointer; }
+/* line 35, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
+
+/* line 40, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+textarea { overflow: auto; }
+
+/* line 43, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+input, button { margin: 0; padding: 0; border: 0; }
+
+/* line 48, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+/* line 52, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+ul, ol { list-style-type: none; }
+
+/* line 53, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+/* line 58, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+svg { overflow: hidden; }
+
+/* line 60, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+.clear:after, .clear:before { clear: both; display: block; zoom: 1; content: ''; }
+
+/* line 67, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+.left { float: left; }
+
+/* line 68, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+.right { float: right; }
+
+/* line 69, D:/Dropbox/GRUNT-project/sass/lib/_reset.scss */
+html, body { font: 14px 'helios'; color: #000; }
+
+/* line 1, D:/Dropbox/GRUNT-project/sass/_main.scss */
+body { background: red; }
+
+/* line 2, D:/Dropbox/GRUNT-project/sass/_main.scss */
+.out { width: 300px; height: 100px; background: green; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; position: relative; }
+/* line 8, D:/Dropbox/GRUNT-project/sass/_main.scss */
+.out:after { content: ''; position: absolute; top: 50px; left: 50px; background: url('/css/images/icons-s5491a564ed.png') 0 0 no-repeat; width: 19px; height: 18px; }
+
+/* line 12, D:/Dropbox/GRUNT-project/sass/_main.scss */
+#description { background: #fff; border: 3px solid yellow; height: 150px; width: 300px; overflow: hidden; position: absolute; }
