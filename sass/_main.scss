@@ -1,19 +1,9 @@
-body {background: red;}
-.out {
-	width: 300px;
-	height: 100px;
-	background: green;
-	@include border-radius(10px);
-	position: relative;
-	&:after {
-		@include ip(default, 50px, 50px)
+.index-menu{
+	padding: 50px;
+	ul{
+		padding: 30px;
+		li{
+			list-style-type: decimal;			
+		}
 	}
-}
-#description {
-	background: #fff;
-	border: 3px solid yellow;
-	height:150px;
-	width: 300px;
-	overflow: hidden;
-	position: absolute;
 }
