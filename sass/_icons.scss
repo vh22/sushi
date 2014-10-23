@@ -1,15 +1,4 @@
-@font-face {
-	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-bx0w1k');
-	src:url('fonts/icomoon.eot?#iefix-bx0w1k') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-bx0w1k') format('woff'),
-		url('fonts/icomoon.ttf?-bx0w1k') format('truetype'),
-		url('fonts/icomoon.svg?-bx0w1k#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="icon"], [class*=" icon"] {
+.icon {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -30,106 +19,30 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-.icon-favorite:before {
-	content: "\e621";
+.icon-menu{font-size: 40px;}
+.icon-account{font-size: 38px;}
+.icon-cart{font-size: 37px;}
+.icon-clock{font-size: 42px;}
+.icon-car{font-size: 55px;}
+.icon-credit{font-size: 42px;}
+.icon-phone{
+	font-size: 40px;
+	.header-top__link .header-top__request &{margin: -2px 10px 0 10px;}
 }
-.icon-rubl:before {
-	content: "\e620";
-}
-.icon-fb:before {
-	content: "\e61d";
-}
-.icon-twitter:before {
-	content: "\e61e";
-}
-.icon-vk:before {
-	content: "\e61f";
-}
-.icon-child:before {
-	content: "\e606";
-}
-.icon-assorti_seti:before {
-	content: "\e600";
-}
-.icon-cake:before {
-	content: "\e601";
-}
-.icon-car:before {
-	content: "\e602";
-}
-.icon-cart:before {
-	content: "\e603";
-}
-.icon-checkbox:before {
-	content: "\e604";
-}
-.icon-checkbox_active:before {
-	content: "\e605";
-}
-.icon-clock:before {
-	content: "\e607";
-}
-.icon-credit-card:before {
-	content: "\e608";
-}
-.icon-desserts:before {
-	content: "\e609";
-}
-.icon-drinkables:before {
-	content: "\e60a";
-}
-.icon-edit1:before {
-	content: "\e60b";
-}
-.icon-gift:before {
-	content: "\e60c";
-}
-.icon-hot:before {
-	content: "\e60d";
-}
-.icon-like:before {
-	content: "\e60e";
-}
-.icon-menu:before {
-	content: "\e60f";
-}
-.icon-onigiri:before {
-	content: "\e610";
-}
-.icon-phone:before {
-	content: "\e611";
-}
-.icon-pizza:before {
-	content: "\e612";
-}
-.icon-roll:before {
-	content: "\e613";
-}
-.icon-salad:before {
-	content: "\e614";
-}
-.icon-sashimi:before {
-	content: "\e615";
-}
-.icon-souces:before {
-	content: "\e616";
-}
-.icon-soup:before {
-	content: "\e617";
-}
-.icon-sushi_menu:before {
-	content: "\e618";
-}
-.icon-sushibox:before {
-	content: "\e619";
-}
-.icon-sushi:before {
-	content: "\e61a";
-}
-.icon-user:before {
-	content: "\e61b";
-}
-.icon-warmroll:before {
-	content: "\e61c";
-}
+.icon-twitter{color: #6fcafd;}
+.icon-facebook{color: #455796;}
+.icon-vkontakte{color: #5e6fa4;}
+.icon-fz41{font-size: 41px;}
+.icon-fz39{font-size: 39px;}
+.icon-fz35{font-size: 35px;}
+.icon-fz37{font-size: 37px;}
+.icon-fz32{font-size: 32px;}
+.icon-fz43{font-size: 43px;}
+.icon-fz33{font-size: 33px;}
+.icon-fz45{font-size: 45px;}
+/* .werewr{
+	&:before{
+		content: 'ok';
+		@extend .icon;
+	}
+} */
