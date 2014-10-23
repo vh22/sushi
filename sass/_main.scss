@@ -31,6 +31,7 @@ body > .container {
 	height: 365px;
 	margin-top: -365px;
 }
+a, .icon{@include transition(all ease .3s);}
 .logo{float: left;margin-right: 60px;}
 .header-top{margin-bottom: 20px; padding-top: 20px;}
 .header-top__link{
@@ -359,5 +360,10 @@ body > .container {
 	.action-hor__text{
 		float: left;
 		width: 240px;
+	}
+	.action-hor__block__right{
+		img{
+			float: right;
+		}
 	}
 }
