@@ -54,12 +54,12 @@ a, .icon{@include transition(all ease .3s);}
 		}
 	}
 }
-.header-top__request{padding-top: 10px;}
-.header-top__request__phone{
+.call-request{padding-top: 10px;}
+.call-request__phone{
 	color: #5d5d5d;
 	font-size: 22px;
 }
-.header-top__request__phone-link{
+.call-request__phone-link{
 	.header-top__link li &{
 		font-family: 'PT Sans', sans-serif;
 		font-size: 14px;
@@ -591,22 +591,6 @@ a, .icon{@include transition(all ease .3s);}
 		.step__text-color{color: #ed7272;}
 		.step__text-b{font-family: 'lato-bold';}
 	}	
-}
-@-webkit-keyframes progress-bar-stripes {
-	from {background-position: 40px 0;}
-	to {background-position: 0 0;}
-}
-@-o-keyframes progress-bar-stripes {
-	from {background-position: 40px 0;}
-	to {background-position: 0 0;}
-}
-@keyframes progress-bar-stripes {
-	from {background-position: 40px 0;}
-	to {background-position: 0 0;}
-}
-progress{
-	display: inline-block;
-	vertical-align: baseline;
 }
 .progress {
 	height: 5px;
