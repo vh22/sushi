@@ -72,6 +72,8 @@ a, .icon{@include transition(all ease .3s);}
 }
 .header-bottom{
 	background: #ffffff;
+	width: 1200px;
+	z-index: 100;
 	@include box-shadow(0 15px 25px rgba(106,91,33,.25));
 }
 .header-bottom__left{
@@ -257,9 +259,15 @@ a, .icon{@include transition(all ease .3s);}
 	text-align: right;
 	margin-bottom: 30px;
 }
+.sticky-wrapper{
+	height: auto !important;
+}
+.menu-height{height: auto !important;}
 .big-menu{
 	display: none;
 	width: 100%;
+	max-width: 1200px;
+	z-index: 100;
 	background: #e76b6b;
 	ul{padding: 0 0 10px;}
 	li{
@@ -340,7 +348,12 @@ a, .icon{@include transition(all ease .3s);}
 	width: 40%;
 	img{float: left; width: 50%;}
 }
-.actions__little{float: left; width: 20%; img{width: 100%}}
+.actions__little{
+	float: left;
+	width: 20%; 
+	img{width: 100%}
+	a{text-decoration: none;}
+}
 .action__text{
 	float: left;
 	text-align: center;
