@@ -62,6 +62,7 @@ body { background: #fcf7f3; }
 @font-face { font-family: "lato-heavy"; src: url("fonts/lato-heavy.eot"); src: url("fonts/lato-heavy.eot?#iefix") format("embedded-opentype"), url("fonts/lato-heavy.woff") format("woff"), url("fonts/lato-heavy.ttf") format("truetype"), url("fonts/lato-heavy.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "icomoon"; src: url("fonts/icomoon.eot"); src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg") format("svg"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "sansation-bold"; src: url("fonts/sansation-bold.eot"); src: url("fonts/sansation-bold.eot?#iefix") format("embedded-opentype"), url("fonts/sansation-bold.woff") format("woff"), url("fonts/sansation-bold.ttf") format("truetype"), url("fonts/sansation-bold.svg") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "lato-medium"; src: url("fonts/lato-medium.eot"); src: url("fonts/lato-medium.eot?#iefix") format("embedded-opentype"), url("fonts/lato-medium.woff") format("woff"), url("fonts/lato-medium.ttf") format("truetype"), url("fonts/lato-medium.svg") format("svg"); font-weight: normal; font-style: normal; }
 /* line 1, ../sass/_main.scss */
 .index-menu { padding: 50px; }
 /* line 3, ../sass/_main.scss */
@@ -365,35 +366,35 @@ a, .icon { -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit
 .pizza a p { padding: 37px 0 0; }
 
 /* line 493, ../sass/_main.scss */
-.poll { background: url("images/bg-poll.png") top center no-repeat; }
+.poll { background: #e1ddd9 url("images/bg-poll.png") top center no-repeat; }
 
-/* line 496, ../sass/_main.scss */
+/* line 494, ../sass/_main.scss */
 .poll-text { width: 580px; float: left; padding: 153px 0 153px 28px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 502, ../sass/_main.scss */
-.poll-text__text { font-family: 'lato-regular'; font-size: 25px; color: #fff; line-height: 33px; padding-left: 5px; }
+/* line 500, ../sass/_main.scss */
+.poll-text__text { font-family: 'lato-regular'; font-size: 25px; color: #fff; line-height: 33px; padding-left: 5px; margin-bottom: 55px; }
 
-/* line 509, ../sass/_main.scss */
-.poll-text__small { font-size: 16px; color: #fff; font-family: 'lato-regular'; }
+/* line 508, ../sass/_main.scss */
+.poll-text__small { font-size: 16px; color: #fff; font-family: 'lato-regular'; margin-bottom: 5px; }
 
 /* line 514, ../sass/_main.scss */
 .poll-text__title { font-weight: bold; font-family: 'PT Sans', sans-serif; color: #fff; font-size: 45px; margin-bottom: 54px; }
 
 /* line 521, ../sass/_main.scss */
-.poll-stat { float: right; background: #fff; width: 410px; padding: 5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
-/* line 527, ../sass/_main.scss */
-.poll-stat > div { border: 1px solid #cacac9; padding: 20px 25px; }
-/* line 530, ../sass/_main.scss */
-.poll-stat > div > p { font-size: 18px; color: #000; }
+.poll-stat { float: right; background: #fff; width: 410px; margin-top: 58px; padding: 5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+/* line 528, ../sass/_main.scss */
+.poll-stat .poll-stat__block { border: 1px solid #cacac9; padding: 20px 25px; }
+/* line 531, ../sass/_main.scss */
+.poll-stat .poll-stat__block > p { font-size: 18px; color: #000; margin-bottom: 25px; }
 
-/* line 536, ../sass/_main.scss */
+/* line 538, ../sass/_main.scss */
 .title-step { font-size: 40px; font-weight: bold; color: #000; text-align: center; padding: 40px 0px; }
-/* line 542, ../sass/_main.scss */
+/* line 544, ../sass/_main.scss */
 .title-step span { color: #e76b6b; }
 
-/* line 544, ../sass/_main.scss */
+/* line 546, ../sass/_main.scss */
 .step { background: #fff; margin-bottom: 25px; -moz-box-shadow: 0 0 18px rgba(105, 105, 103, 0.15); -webkit-box-shadow: 0 0 18px rgba(105, 105, 103, 0.15); box-shadow: 0 0 18px rgba(105, 105, 103, 0.15); }
-/* line 548, ../sass/_main.scss */
+/* line 550, ../sass/_main.scss */
 .step img { float: left; }
 /* line 552, ../sass/_main.scss */
 .step .step__text { float: left; width: 800px; padding: 10px 25px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
@@ -412,6 +413,56 @@ a, .icon { -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit
 .list-circle li .step__text-color { color: #ed7272; }
 /* line 579, ../sass/_main.scss */
 .list-circle li .step__text-b { font-family: 'lato-bold'; }
+
+@-webkit-keyframes progress-bar-stripes { from { background-position: 40px 0; }
+  to { background-position: 0 0; } }
+@-o-keyframes progress-bar-stripes { from { background-position: 40px 0; }
+  to { background-position: 0 0; } }
+@keyframes progress-bar-stripes { from { background-position: 40px 0; }
+  to { background-position: 0 0; } }
+/* line 594, ../sass/_main.scss */
+progress { display: inline-block; vertical-align: baseline; }
+
+/* line 598, ../sass/_main.scss */
+.progress { height: 5px; margin-bottom: 9px; background-color: #e8e8e8; width: 270px; float: left; }
+
+/* line 605, ../sass/_main.scss */
+.sr-only { position: relative; top: -17px; font-size: 13px; color: #5d5d5d; right: -50px; }
+
+/* line 612, ../sass/_main.scss */
+.progress-bar { float: left; width: 0; height: 100%; font-size: 12px; line-height: 20px; color: #5d5d5d; text-align: center; background-color: #e76b6b; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); -webkit-transition: width .6s ease; -o-transition: width .6s ease; transition: width .6s ease; }
+
+/* line 628, ../sass/_main.scss */
+.progress-block label { font-size: 15px; font-family: 'lato-regular'; color: #000; margin-bottom: 13px; display: block; }
+/* line 635, ../sass/_main.scss */
+.progress-block p { float: left; line-height: 3px; margin-left: 7px; }
+
+/* line 641, ../sass/_main.scss */
+input[type=radio] { display: none; }
+
+/* line 642, ../sass/_main.scss */
+.radio { margin-bottom: 17px; }
+
+/* line 643, ../sass/_main.scss */
+.radio label:before { font-family: 'icomoon'; content: "\e604"; font-size: 16px; color: #d7dbdd; margin-right: 15px; }
+
+/* line 650, ../sass/_main.scss */
+input[type=radio]:checked + label:before { content: "\e605"; text-align: center; color: #e76b6b; font-size: 16px; }
+
+/* line 656, ../sass/_main.scss */
+input[type=radio]:checked + label { color: #e76b6b; }
+
+/* line 657, ../sass/_main.scss */
+.radio label { font-family: 'lato-medium'; font-size: 16px; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+/* line 663, ../sass/_main.scss */
+.poll-btn { margin: 38px 0 16px; }
+
+/* line 664, ../sass/_main.scss */
+.progress-wrapper { display: none; }
+
+/* line 665, ../sass/_main.scss */
+.poll-all { font-size: 16px; color: #000; top: 10px; position: relative; }
 
 /* line 1, ../sass/_icons.scss */
 .icon { font-family: 'icomoon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Enable Ligatures ================ */ -webkit-font-feature-settings: "liga"; -moz-font-feature-settings: "liga=1"; -moz-font-feature-settings: "liga"; -ms-font-feature-settings: "liga" 1; -o-font-feature-settings: "liga"; font-feature-settings: "liga"; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -479,3 +530,18 @@ a, .icon { -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit
 		@extend .icon;
 	}
 } */
+/* line 1, ../sass/_btn.scss */
+.btn-pink { background: #e76b6b; color: #fff; cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+/* line 6, ../sass/_btn.scss */
+.btn-pink:hover { background: #e35656; }
+
+/* line 8, ../sass/_btn.scss */
+.btn-silver { background: #d7dbdd; color: #000000; cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+/* line 13, ../sass/_btn.scss */
+.btn-silver:hover { background: #e0e5e7; }
+
+/* line 15, ../sass/_btn.scss */
+.btn-vote { font-weight: bold; padding: 7px 28px; font-size: 16px; display: inline-block; }
+
+/* line 21, ../sass/_btn.scss */
+.btn-result { padding: 7px 29px; font-size: 16px; margin-left: 20px; display: inline-block; }

@@ -1,0 +1,26 @@
+.btn-pink{
+	background: #e76b6b;
+	color: #fff;
+	cursor: pointer;
+	@include border-radius(5px);
+	&:hover{background: #e35656;}
+}
+.btn-silver{
+	background: #d7dbdd;
+	color: #000000;
+	cursor: pointer;
+	@include border-radius(5px);
+	&:hover{background: #e0e5e7;}
+}
+.btn-vote{
+	font-weight: bold;
+	padding: 7px 28px;
+	font-size: 16px;
+	display: inline-block;
+}
+.btn-result{
+	padding: 7px 29px;
+	font-size: 16px;
+	margin-left: 20px;
+	display: inline-block;
+}

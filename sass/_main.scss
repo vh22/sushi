@@ -490,9 +490,7 @@ a, .icon{@include transition(all ease .3s);}
 		text-decoration: none;
 	}
 }
-.poll{
-	background: url('images/bg-poll.png') top center no-repeat;
-}
+.poll{background: #e1ddd9 url('images/bg-poll.png') top center no-repeat;}
 .poll-text{
 	width: 580px;
 	float: left;
@@ -505,11 +503,13 @@ a, .icon{@include transition(all ease .3s);}
 	color: #fff;
 	line-height: 33px;
 	padding-left: 5px;
+	margin-bottom: 55px;
 }
 .poll-text__small{
 	font-size: 16px;
 	color: #fff;
 	font-family: 'lato-regular';
+	margin-bottom: 5px;
 }
 .poll-text__title{
 	font-weight: bold;
@@ -522,14 +522,16 @@ a, .icon{@include transition(all ease .3s);}
 	float: right;
 	background: #fff;
 	width: 410px;
+	margin-top: 58px;
 	padding: 5px;
 	@include bb;
-	&>div{
+	.poll-stat__block{
 		border: 1px solid #cacac9;
 		padding: 20px 25px;
 		&>p{
 			font-size: 18px;
 			color: #000;
+			margin-bottom: 25px;
 		}
 	}
 }
@@ -545,9 +547,7 @@ a, .icon{@include transition(all ease .3s);}
 	background: #fff;
 	margin-bottom: 25px;
 	@include box-shadow(0 0 18px rgba(105,105,103,.15));
-	img{
-		float: left;
-	}
+	img{float: left;}
 
 	.step__text{
 		float: left;
@@ -579,30 +579,92 @@ a, .icon{@include transition(all ease .3s);}
 		.step__text-b{font-family: 'lato-bold';}
 	}	
 }
-
-
-
-
-
-
-
-// .progress {
-//   margin: 5px 0 3px;
-//   border: 6px solid #333;
-//   background: #333;
-//   overflow: hidden;
-//   border-radius: 50px;
-//   -moz-border-radius: 50px;
-//   -webkit-border-radius: 50px;
-//   box-shadow: 1px 1px 1px #777;
-//   -moz-box-shadow: 1px 1px 1px #777;
-//   -webkit-box-shadow: 1px 1px 1px #777;
-//   }
-//   .progress > span {
-//   display: block;
-//   height: 20px;
-//   width: 20%;
-//   border-radius: 5px;
-//   -moz-border-radius: 5px;
-//   -webkit-border-radius: 5px;
-//   }
+@-webkit-keyframes progress-bar-stripes {
+	from {background-position: 40px 0;}
+	to {background-position: 0 0;}
+}
+@-o-keyframes progress-bar-stripes {
+	from {background-position: 40px 0;}
+	to {background-position: 0 0;}
+}
+@keyframes progress-bar-stripes {
+	from {background-position: 40px 0;}
+	to {background-position: 0 0;}
+}
+progress{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.progress {
+	height: 5px;
+	margin-bottom: 9px;
+	background-color: #e8e8e8;
+	width: 270px;
+	float: left;
+}
+.sr-only{
+	position: relative;
+	top: -17px;
+	font-size: 13px;
+	color: #5d5d5d;
+	right: -50px;
+}
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #5d5d5d;
+  text-align: center;
+  background-color: #e76b6b;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+  -webkit-transition: width .6s ease;
+       -o-transition: width .6s ease;
+          transition: width .6s ease;
+}
+.progress-block{
+	label{
+		font-size: 15px;
+		font-family: 'lato-regular';
+		color: #000;
+		margin-bottom: 13px;
+		display: block;
+	}
+	p{
+		float: left;
+		line-height: 3px;
+		margin-left: 7px;
+	}
+}
+input[type=radio] {display: none;} 
+.radio{margin-bottom: 17px;} 
+.radio label:before {  
+	font-family: 'icomoon';
+    content: "\e604";  
+    font-size: 16px;
+    color: #d7dbdd;
+    margin-right: 15px;
+}  
+input[type=radio]:checked + label:before {  
+    content: "\e605";
+    text-align: center;  
+    color: #e76b6b;
+    font-size: 16px;
+}  
+input[type=radio]:checked + label{color: #e76b6b;}
+.radio label{
+	font-family: 'lato-medium';
+	font-size: 16px;
+	cursor: pointer;
+	@include nosel;
+}
+.poll-btn{margin: 38px 0 16px;}
+.progress-wrapper{display: none;}
+.poll-all{
+	font-size: 16px;
+	color: #000;
+	top: 10px;
+	position: relative;
+}
