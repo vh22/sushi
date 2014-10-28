@@ -414,53 +414,55 @@ a, .icon { -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit
 /* line 581, ../sass/_main.scss */
 .list-circle { padding-left: 15px; }
 /* line 583, ../sass/_main.scss */
-.list-circle li { list-style-image: url("images/circle-li.png"); font-family: 'lato-regular'; padding-left: 12px; font-size: 16px; line-height: 18px; margin-top: 17px; }
+.list-circle li { font-family: 'lato-regular'; padding-left: 12px; font-size: 16px; line-height: 18px; position: relative; margin-top: 17px; }
 /* line 590, ../sass/_main.scss */
+.list-circle li:before { content: ''; position: absolute; width: 10px; height: 10px; border-radius: 50%; background: #ed7272; display: block; left: -17px; top: 4px; }
+/* line 601, ../sass/_main.scss */
 .list-circle li:first-child { margin-top: 0; }
-/* line 591, ../sass/_main.scss */
+/* line 602, ../sass/_main.scss */
 .list-circle li .step__text-color { color: #ed7272; }
-/* line 592, ../sass/_main.scss */
+/* line 603, ../sass/_main.scss */
 .list-circle li .step__text-b { font-family: 'lato-bold'; }
 
-/* line 595, ../sass/_main.scss */
+/* line 606, ../sass/_main.scss */
 .progress { height: 5px; margin-bottom: 9px; background-color: #e8e8e8; width: 270px; float: left; }
 
-/* line 602, ../sass/_main.scss */
+/* line 613, ../sass/_main.scss */
 .sr-only { position: relative; top: -17px; font-size: 13px; color: #5d5d5d; right: -50px; }
 
-/* line 609, ../sass/_main.scss */
+/* line 620, ../sass/_main.scss */
 .progress-bar { float: left; width: 0; height: 100%; font-size: 12px; line-height: 20px; color: #5d5d5d; text-align: center; background-color: #e76b6b; -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); -webkit-transition: width .6s ease; -o-transition: width .6s ease; transition: width .6s ease; }
 
-/* line 625, ../sass/_main.scss */
+/* line 636, ../sass/_main.scss */
 .progress-block label { font-size: 15px; font-family: 'lato-regular'; color: #000; margin-bottom: 13px; display: block; }
-/* line 632, ../sass/_main.scss */
+/* line 643, ../sass/_main.scss */
 .progress-block p { float: left; line-height: 3px; margin-left: 7px; }
 
-/* line 638, ../sass/_main.scss */
+/* line 649, ../sass/_main.scss */
 input[type=radio] { display: none; }
 
-/* line 639, ../sass/_main.scss */
+/* line 650, ../sass/_main.scss */
 .radio { margin-bottom: 17px; }
 
-/* line 640, ../sass/_main.scss */
+/* line 651, ../sass/_main.scss */
 .radio label:before { font-family: 'icomoon'; content: "\e604"; font-size: 16px; color: #d7dbdd; margin-right: 15px; }
 
-/* line 647, ../sass/_main.scss */
+/* line 658, ../sass/_main.scss */
 input[type=radio]:checked + label:before { content: "\e605"; text-align: center; color: #e76b6b; font-size: 16px; }
 
-/* line 653, ../sass/_main.scss */
+/* line 664, ../sass/_main.scss */
 input[type=radio]:checked + label { color: #e76b6b; }
 
-/* line 654, ../sass/_main.scss */
+/* line 665, ../sass/_main.scss */
 .radio label { font-family: 'lato-medium'; font-size: 16px; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
-/* line 660, ../sass/_main.scss */
+/* line 671, ../sass/_main.scss */
 .poll-btn { margin: 38px 0 16px; }
 
-/* line 661, ../sass/_main.scss */
+/* line 672, ../sass/_main.scss */
 .progress-wrapper { display: none; }
 
-/* line 662, ../sass/_main.scss */
+/* line 673, ../sass/_main.scss */
 .poll-all { font-size: 16px; color: #000; top: 10px; position: relative; }
 
 /* line 1, ../sass/_icons.scss */

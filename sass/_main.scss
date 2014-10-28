@@ -581,12 +581,23 @@ a, .icon{@include transition(all ease .3s);}
 .list-circle{
 	padding-left: 15px;
 	li{
-		list-style-image: url('images/circle-li.png');
 		font-family: 'lato-regular';
 		padding-left: 12px;
 		font-size: 16px;
 		line-height: 18px;
+		position: relative;
 		margin-top: 17px;
+		&:before{
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: #ed7272;
+			display: block;
+			left: -17px;
+			top: 4px;
+		}
 		&:first-child{margin-top: 0;}
 		.step__text-color{color: #ed7272;}
 		.step__text-b{font-family: 'lato-bold';}
