@@ -1,11 +1,25 @@
 $(function(){
-
+    var bigMenu = $('.big-menu');
+    var banerTime = $('.banner');
 	$('.js-menu').click(function() {
 	    var buttonMenu = $(this);
-	    var bigMenu = $('body').find('.big-menu');
 	    buttonMenu[buttonMenu.hasClass('active') ? 'removeClass' : 'addClass']('active');
-	    // bigMenu[bigMenu.hasClass('active') ? 'removeClass' : 'addClass']('active');
-	    bigMenu.slideToggle();
+        if(buttonMenu.hasClass('active')){
+            bigMenu.stop().slideDown(400, function(){
+                $(this).css('display', 'block');
+            });
+            banerTime.stop().animate({
+                'padding-top': 155
+            }, 400);
+        }else{
+           bigMenu.stop().slideUp(400, function(){
+                $(this).removeAttr('style');
+            });
+             banerTime.stop().animate({
+                'padding-top': 0
+            }, 400);
+        }
+//	    bigMenu.slideDown();
 	    return false;
 	});
 
@@ -17,6 +31,6 @@ $(function(){
 
 	$(window).load(function(){
       $(".js-header-bottom").sticky({ topSpacing: 0, center:true, className:"hey" });
-      $(".js-big-menu").sticky({ topSpacing: 65, center:true, className:"menu-height" });
+//      $(".js-big-menu").sticky({ topSpacing: 65, center:true, className:"menu-height" });
     });
 });
