@@ -397,10 +397,9 @@ a, .icon{@include transition(all ease .3s); text-decoration: none;}
 	}
 	&.active{display: block;}
 }
-//.banner{
-//  position: relative;
-//  z-index: 100;
-//}
+.banner{	
+	position: relative;
+}
 .banner-time{
 	background: url('images/baner-time-bg.png') no-repeat;
 	margin: 4px 0;
@@ -444,12 +443,14 @@ a, .icon{@include transition(all ease .3s); text-decoration: none;}
 		margin-bottom: 5px;
 	}
 }
+.actions{padding-bottom: 40px;}
 .actions .wrapper-shadow{background: #fff;}
 .actions > .content{
 	&:after{
 		background: url('images/shadow.png') 0 -5px no-repeat;
-		height: 25px;
+		height: 40px;
 		width: 100%;
+		position: absolute;
 	}
 }
 .action_main{background: #fcfbf4;}
