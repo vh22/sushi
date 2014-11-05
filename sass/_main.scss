@@ -358,19 +358,24 @@ a, .icon{@include transition(all ease .3s); text-decoration: none;}
 }
 .menu-height{height: auto !important;}
 .big-menu{
-	display: none;
+	height: 0;
+	overflow: hidden;
 	width: 100%;
 	max-width: 1200px;
 	z-index: 102;
 	background: #e76b6b;
     position: absolute;
     left: 0;
+    @include transition(all ease .3s);
 	ul{padding: 0 0 10px;}
 	li{
 		width: 12.5%;
 		text-align: center;
 		float: left;
 		padding: 12px 10px 0;
+		height: 0;
+		overflow: hidden;
+		@include transition(all ease .3s);
 		@include bb;
 		a{
 			text-transform: uppercase;
@@ -795,7 +800,7 @@ input[type=radio]:checked + label{color: #e76b6b;}
 .show-big-menu:hover {
 	background: #e76b6b;
 	a, a:before{color: #fff;}
-	.big-menu{display: block;}
+	.big-menu{height: 160px; overflow: visible; li{height: 75px;}}
 }
 .breadcrumbs{
 	ul{

@@ -6,7 +6,8 @@ $(function(){
 	    buttonMenu[buttonMenu.hasClass('active') ? 'removeClass' : 'addClass']('active');
         if(buttonMenu.hasClass('active')){
             bigMenu.stop().slideDown(400, function(){
-                $(this).css('display', 'block');
+                $(this).css('height', '160');
+                $(this).find('li').css('height', '75');
             });
             headerBottom.stop().animate({
                 'padding-bottom': 159
