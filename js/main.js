@@ -1,6 +1,6 @@
 $(function(){
     var bigMenu = $('.big-menu');
-    var banerTime = $('.banner');
+    var headerBottom = $('.header-bottom')
 	$('.js-menu').click(function() {
 	    var buttonMenu = $(this);
 	    buttonMenu[buttonMenu.hasClass('active') ? 'removeClass' : 'addClass']('active');
@@ -8,18 +8,18 @@ $(function(){
             bigMenu.stop().slideDown(400, function(){
                 $(this).css('display', 'block');
             });
-            banerTime.stop().animate({
-                'padding-top': 155
+            headerBottom.stop().animate({
+                'padding-bottom': 159
             }, 400);
         }else{
            bigMenu.stop().slideUp(400, function(){
                 $(this).removeAttr('style');
             });
-             banerTime.stop().animate({
-                'padding-top': 0
+             headerBottom.stop().animate({
+                'padding-bottom': 0
             }, 400);
         }
-//	    bigMenu.slideDown();
+        //bigMenu.slideDown();
 	    return false;
 	});
 

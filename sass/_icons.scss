@@ -26,6 +26,9 @@
 .icon-twitter{color: #6fcafd;}
 .icon-facebook{color: #455796;}
 .icon-vkontakte{color: #5e6fa4;}
+.icon-fz22{font-size: 22px;}
+.icon-fz23{font-size: 23px;}
+.icon-fz28{font-size: 28px;}
 .icon-fz41{font-size: 41px;}
 .icon-fz39{font-size: 39px;}
 .icon-fz35{font-size: 35px;}
@@ -41,6 +44,117 @@
 .icon-fz38{font-size: 38px;}
 .icon-fz42{font-size: 42px;}
 .icon-fz55{font-size: 55px;}
+.icon-chetbox:before {
+	content: "\e643";
+}
+.icon-chetbox_active:before {
+	content: "\e644";
+}
+.icon-peper:before {
+	content: "\e604";
+}
+.icon-price:before {
+	content: "\e605";
+}
+.icon-vegan:before {
+	content: "\e642";
+}
+.icon-plus_konk:before {
+	content: "\e641";
+}
+.icon-konkurs_end:before {
+	content: "\e63a";
+}
+.icon-two:before {
+	content: "\e63b";
+}
+.icon-equal_konstr:before {
+	content: "\e63c";
+}
+.icon-konkurs_openwote:before {
+	content: "\e63d";
+}
+.icon-one:before {
+	content: "\e63e";
+}
+.icon-plusl_konstr:before {
+	content: "\e63f";
+}
+.icon-three:before {
+	content: "\e640";
+}
+.icon-konk_end:before {
+	content: "\e639";
+}
+.icon-rewadmin:before {
+	content: "\e62d";
+}
+.icon-rewuser:before {
+	content: "\e638";
+}
+.icon-star:before {
+	content: "\e637";
+}
+.icon-error:before {
+	content: "\e625";
+}
+.icon-accept:before {
+	content: "\e62c";
+}
+.icon-razver:before {
+	content: "\e62a";
+}
+.icon-sver:before {
+	content: "\e62b";
+}
+.icon-arrowcal1:before {
+	content: "\e635";
+}
+.icon-arrowcal2:before {
+	content: "\e636";
+}
+.icon-osminog:before {
+	content: "\e634";
+}
+.icon-popupsushi:before {
+	content: "\e633";
+}
+.icon-cancel:before {
+	content: "\e632";
+}
+.icon-question:before {
+	content: "\e631";
+}
+.icon-oplata_cart:before {
+	content: "\e62e";
+}
+.icon-oplata_cash:before {
+	content: "\e62f";
+}
+.icon-oplata_im:before {
+	content: "\e630";
+}
+.icon-calendar:before {
+	content: "\e627";
+}
+.icon-delete_box:before {
+	content: "\e628";
+}
+.icon-time:before {
+	content: "\e629";
+}
+.icon-delete:before {
+	content: "\e626";
+}
+.icon-sort5:before {
+	content: "\e622";
+}
+.icon-sort8:before {
+	content: "\e623";
+}
+.icon-arrow_back:before {
+	content: "\e624";
+}
 .icon-favorite:before {
 	content: "\e621";
 }
@@ -70,12 +184,6 @@
 }
 .icon-cart:before {
 	content: "\e603";
-}
-.icon-checkbox:before {
-	content: "\e604";
-}
-.icon-checkbox_active:before {
-	content: "\e605";
 }
 .icon-clock:before {
 	content: "\e607";
