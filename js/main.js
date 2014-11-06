@@ -4,23 +4,7 @@ $(function(){
 	$('.js-menu').click(function() {
 	    var buttonMenu = $(this);
 	    buttonMenu[buttonMenu.hasClass('active') ? 'removeClass' : 'addClass']('active');
-        if(buttonMenu.hasClass('active')){
-            bigMenu.stop().slideDown(400, function(){
-                $(this).css('height', '160');
-                $(this).find('li').css('height', '75');
-            });
-            headerBottom.stop().animate({
-                'padding-bottom': 159
-            }, 400);
-        }else{
-           bigMenu.stop().slideUp(400, function(){
-                $(this).removeAttr('style');
-            });
-             headerBottom.stop().animate({
-                'padding-bottom': 0
-            }, 400);
-        }
-        //bigMenu.slideDown();
+        buttonMenu.hasClass('active') ? headerBottom.addClass('active') : headerBottom.removeClass('active');
 	    return false;
 	});
 
