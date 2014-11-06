@@ -19,7 +19,30 @@ body > .container {
 	@include bb; 
 	margin: 0 auto;
 }
-.bg-header{background: url('../css/images/back-header.png') top center no-repeat; padding-bottom: 40px;}
+.bg-header{
+	background: #e7dbcb url('../css/images/bg/blik.png') top center no-repeat; 
+	padding-bottom: 40px;
+	//background: #e7dbcb;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		background: url('../css/images/bg/right.png') no-repeat;
+		right: 0;
+		bottom: 0;
+		width: 495px;
+		height: 496px;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		background: url('../css/images/bg/left.png') no-repeat;
+		left: 0;
+		top: 0;
+		width: 538px;
+		height: 540px;
+	}
+}
 .footer {
 	clear: both;
 	position: relative;
@@ -28,7 +51,9 @@ body > .container {
 	margin-top: -365px;
 }
 header{
-  margin-bottom: 4px;
+	margin-bottom: 4px;
+	position: relative;
+	z-index: 2;
 }
 a, .icon{@include transition(all ease .3s); text-decoration: none;}
 .logo{float: left;margin-right: 60px;}
@@ -123,8 +148,8 @@ a, .icon{@include transition(all ease .3s); text-decoration: none;}
 .header-bottom{
 	background: #ffffff;
 	width: 1200px;
-	z-index: 100;
-	@include box-shadow(0 15px 25px rgba(106,91,33,.25));
+	//z-index: 100;
+	@include box-shadow(0 0 19px rgba(106,91,33,.25));
 }
 .header-bottom__left{
 	float: left;
@@ -395,6 +420,7 @@ a, .icon{@include transition(all ease .3s); text-decoration: none;}
 }
 .banner{	
 	position: relative;
+	z-index: 1;
 }
 .banner-time{
 	background: url('images/baner-time-bg.png') no-repeat;
@@ -438,6 +464,10 @@ a, .icon{@include transition(all ease .3s); text-decoration: none;}
 		padding-right: 15px;
 		margin-bottom: 5px;
 	}
+}
+.actions{
+	position: relative;
+	z-index: 1;
 }
 .actions .wrapper-shadow{background: #fff;}
 .actions > .content{
