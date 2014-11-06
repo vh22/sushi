@@ -21,8 +21,7 @@ body > .container {
 }
 .bg-header{
 	background: #e7dbcb url('../css/images/bg/blik.png') top center no-repeat; 
-	padding-bottom: 40px;
-	//background: #e7dbcb;
+	padding-bottom: 10px;
 	position: relative;
 	&:before{
 		content: '';
@@ -40,7 +39,7 @@ body > .container {
 		left: 0;
 		top: 0;
 		width: 538px;
-		height: 540px;
+		height: 100%;
 	}
 }
 .footer {
@@ -54,6 +53,7 @@ header{
 	margin-bottom: 4px;
 	position: relative;
 	z-index: 2;
+	// background: url('../css/images/bg/left.png') no-repeat left top;
 }
 a, .icon{@include transition(all ease .3s); text-decoration: none;}
 .logo{float: left;margin-right: 60px;}
@@ -468,6 +468,7 @@ a, .icon{@include transition(all ease .3s); text-decoration: none;}
 .actions{
 	position: relative;
 	z-index: 1;
+	padding-bottom: 30px;
 }
 .actions .wrapper-shadow{background: #fff;}
 .actions > .content{
