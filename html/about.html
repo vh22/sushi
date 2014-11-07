@@ -14,9 +14,12 @@
     <style type="text/css">html,*{filter: none;}</style>
     <![endif]-->
 </head>
-<body>
+<body ng-app="sushiApp">
 <div class="container">
     <div class="wrapper">
+
+        <!-- HEADER -->
+
         <div class="bg-header">
             <header>
                 <div class="content">
@@ -49,7 +52,7 @@
                             <nav>
                                 <ul class="clear">
                                     <li><a href="#">Подарки и скидки</a></li>
-                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#" class="active">О нас</a></li>
                                     <li><a href="#">Отзывы</a></li>
                                     <li><a href="#">Интересноe</a></li>
                                     <li><a href="#"><b>WOK</b> - Конструктор</a></li>
@@ -93,6 +96,8 @@
                 </div>
             </header>
         </div>
+
+        <!-- CONTENT -->
 
         <section>
             <div class="content">
@@ -199,8 +204,14 @@
                 </div>
             </div>
         </section>
+
+        <!-- END CONTENT -->
+
     </div>
 </div>
+
+<!-- FOOTER -->
+
 <div class="footer">
     <footer>
         <div class="footer-top">
@@ -280,7 +291,9 @@
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
 <!-- endbower -->
+<script src="../js/directives.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
