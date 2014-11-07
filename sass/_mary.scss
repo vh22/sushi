@@ -74,10 +74,37 @@
   font: 24px "lato-semibold";
   margin-top: 50px;
 }
+
 .sale-block{
-	width: 385px;
-	height: 615px;
-	float: left;
-	position: relative;
-	margin-left: 15px;
+	margin-right: -22px;
+	.step{
+		width: 385px;
+		height: 615px;
+		float: left;
+		position: relative;
+		margin-right: 22px;
+	}
+	h2{
+		font: 16px "PT Sans",sans-serif;
+		color: #E76B6B;
+	}
+	h3{
+		font: bold 14px "PT Sans",sans-serif;
+		color: #000;
+		height: 50px;
+	}
+	p{
+		font: 13px 'lato-regular';
+		span{
+			color: #000;
+			font-family: 'lato-black';
+		}
+	}
+	img{
+		width: 385px;
+		height: 270px;
+	}
+	.min-sale{
+		margin: 10px;
+	}
 }
