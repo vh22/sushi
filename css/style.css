@@ -594,6 +594,49 @@ html, body, .container { height: 100%; }
 /* line 1035, ../sass/_main.scss */
 .counter .ui-spinner-down span { display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; background: url('../css/images/icons-sb4792690e5.png') 0 -22px no-repeat; width: 5px; height: 3px; }
 
+/* line 1, ../sass/_mary.scss */
+.about { padding: 25px; position: relative; background: #fff; margin: 35px 0 70px 0; -moz-box-shadow: 0 0 18px rgba(105, 105, 103, 0.15); -webkit-box-shadow: 0 0 18px rgba(105, 105, 103, 0.15); box-shadow: 0 0 18px rgba(105, 105, 103, 0.15); }
+/* line 8, ../sass/_mary.scss */
+.about a { color: #E76B6B; text-decoration: underline; }
+/* line 12, ../sass/_mary.scss */
+.about p { font-family: 'lato-regular'; color: #5e5e5e; margin-bottom: 25px; }
+/* line 17, ../sass/_mary.scss */
+.about h2 { margin-bottom: 15px; font: 22px "lato-semibold"; color: #545451; }
+/* line 22, ../sass/_mary.scss */
+.about h3 { text-align: center; color: #545451; font: 24px "lato-semibold"; margin-top: 50px; }
+/* line 28, ../sass/_mary.scss */
+.about h4 { color: #545451; font: 18px "lato-semibold"; }
+/* line 32, ../sass/_mary.scss */
+.about .text-color { color: #E76B6B; }
+/* line 33, ../sass/_mary.scss */
+.about .semibold { font: 16px "lato-semibold"; }
+/* line 36, ../sass/_mary.scss */
+.about h5 { color: #E76B6B; font: 18px "lato-semibold"; margin-bottom: 10px; }
+/* line 42, ../sass/_mary.scss */
+.about li { font: 14px 'lato-regular'; color: #5e5e5e; }
+
+/* line 48, ../sass/_mary.scss */
+.main-block { text-align: center; }
+/* line 50, ../sass/_mary.scss */
+.main-block p { font: 18px 'lato-italic'; margin: 10px; }
+/* line 54, ../sass/_mary.scss */
+.main-block img { width: 100%; }
+
+/* line 57, ../sass/_mary.scss */
+.leftimg { float: left; margin: 5px 35px 5px 5px; }
+
+/* line 61, ../sass/_mary.scss */
+.rightimg { float: right; margin: 5px 5px 5px 35px; }
+
+/* line 65, ../sass/_mary.scss */
+.block { position: relative; float: left; margin: 10px 0 5px 0; }
+/* line 69, ../sass/_mary.scss */
+.block .text-block { overflow: hidden; }
+/* line 72, ../sass/_mary.scss */
+.block .order { font-family: 'lato-italic'; }
+/* line 75, ../sass/_mary.scss */
+.block ul { padding-left: 20px; }
+
 /* line 1, ../sass/_icons.scss */
 .icon { font-family: 'icomoon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Enable Ligatures ================ */ -webkit-font-feature-settings: "liga"; -moz-font-feature-settings: "liga=1"; -moz-font-feature-settings: "liga"; -ms-font-feature-settings: "liga" 1; -o-font-feature-settings: "liga"; font-feature-settings: "liga"; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
