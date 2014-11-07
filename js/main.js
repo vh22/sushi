@@ -4,7 +4,13 @@ $(function(){
     $('.js-menu').click(function() {
         var buttonMenu = $(this);
         buttonMenu[buttonMenu.hasClass('active') ? 'removeClass' : 'addClass']('active');
-        buttonMenu.hasClass('active') ? headerBottom.addClass('active') : headerBottom.removeClass('active');
+        if(buttonMenu.hasClass('active')) {
+            headerBottom.addClass('active');
+            $('header').addClass('opened-menu');
+        } else {
+            headerBottom.removeClass('active');
+            $('header').removeClass('opened-menu');
+        }
         return false;
     });
 

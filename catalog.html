@@ -4,12 +4,8 @@
     <meta charset="utf-8">
     <title>Template</title>
     <meta name="viewport" content="initial-scale=1"/>
-
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
-    <!-- bower:css -->
-
-    <!-- endbower -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,7 +18,7 @@
 <div class="container">
 <div class="wrapper">
 <div class="bg-header">
-    <header>
+    <header class="opened-menu">
         <div class="content">
             <div class="header-top clear">
                 <div class="logo">
@@ -67,7 +63,7 @@
                                 <div class="big-menu js-big-menu">
                                     <nav>
                                         <ul class="clear">
-                                            <li><a href="#"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
+                                            <li><a href="#" class="active"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
                                             <li><a href="#"><span class="icon icon-fz39 icon-roll"></span>Роллы</a></li>
                                             <li><a href="#"><span class="icon icon-fz35 icon-warmroll"></span>Теплые роллы</a></li>
                                             <li><a href="#"><span class="icon icon-fz37 icon-sushibox"></span>Бокс-суши</a></li>
@@ -102,7 +98,7 @@
         <div class="clear">
             <div class="breadcrumbs left">
                 <ul>
-                    <li><a href="#">Главная</a> /</li>
+                    <li><a href="#">Главная</a></li>
                     <li>Суши</li>
                 </ul>
             </div>
@@ -430,7 +426,6 @@
         </div>
     </footer>
 </div>
-<!-- END out-->
 
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -438,7 +433,6 @@
 <script src="bower_components/angular/angular.js"></script>
 <script src="js/directives.js"></script>
 <!-- endbower -->
-
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
