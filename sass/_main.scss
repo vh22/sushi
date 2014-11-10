@@ -3,6 +3,7 @@ a, .icon{
   text-decoration: none;
 }
 body{
+  font-family: $font;
   > .container {
     height: auto;
     min-height: 100%;
@@ -61,20 +62,21 @@ html, body, .container {height: 100%;}
   float: left;
   li{
     float: left;
-    font-family: 'lato-black';
+    font-weight: 800;
     min-width: 240px;
     &:first-child{min-width: 207px;}
     p{
       text-decoration: none;
       color: #5e5e5e;
-      font-size: 14px;
       line-height: 18px;
       padding-top: 13px;
       display: block;
-      font-family: 'lato-bold';
+      font-weight: 700;
+      font-size: 14px;
       &:before {
         color: #e76b6b;
         line-height: 44px;
+        font-weight: 400;
         font-family: 'icomoon';
       }
     }
@@ -127,6 +129,7 @@ html, body, .container {height: 100%;}
     color: #e76b6b;
     line-height: 44px;
     font-family: 'icomoon';
+    font-weight: 400;
   }
 }
 .call-request__phone{
@@ -135,8 +138,7 @@ html, body, .container {height: 100%;}
 }
 .call-request__phone-link{
   .header-top__link li &{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 14px;
+    font: 14px $fontPt;
     color: #159bea;
     display: block;
     padding: 0;
@@ -148,6 +150,7 @@ html, body, .container {height: 100%;}
   background: #ffffff;
   width: 1200px;
   padding-bottom: 1px;
+  font-family: $fontPt;
   @include box-shadow(0 0 19px rgba(106,91,33,.25));
   @include transition(all ease .3s);
   &.active{padding-bottom: 157px;}
@@ -265,7 +268,6 @@ html, body, .container {height: 100%;}
 }
 .list-menu{
   text-align: center;
-  font-family: 'lato-regular';
   li{
     display: inline-block;
     color: #000000;
@@ -329,10 +331,9 @@ html, body, .container {height: 100%;}
     margin-left: 45px;
     a{
       text-decoration: none;
-      font-size: 15px;
       display: block;
       color: #de6c28;
-      font-family: 'sansation-bold';
+      font: 700 15px $fontSansation;
       &:hover{text-decoration: underline;}
       span{
         font-size: 26px;
@@ -350,7 +351,7 @@ html, body, .container {height: 100%;}
     width: 118px;
     &:nth-child(3n+3){padding-left: 48px;}
     a{
-      font-family: 'PT Sans', sans-serif;
+      font-family: $fontPt;
       color: #000;
       line-height: 35px;
       text-decoration: underline;
@@ -361,8 +362,7 @@ html, body, .container {height: 100%;}
 .footer-bottom__application{
   float: left;
   p{
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
+    font: 18px $fontPt;
     color: #e27777;
     padding: 10px 2px;
     margin-bottom: 32px;
@@ -376,7 +376,7 @@ html, body, .container {height: 100%;}
   @include bb;
   a{
     display: block;
-    font-family: 'lato-black';
+    font-weight: 800;
     font-size: 22px;
     color: #808080;
     text-decoration: none;
@@ -455,7 +455,7 @@ html, body, .container {height: 100%;}
     float: left;
     padding: 22px 17px 0;
     p{
-      font-family: 'lato-bold';
+      font-weight: 700;
       font-size: 25px;
       color: #030303;
       margin-bottom: 23px;
@@ -478,10 +478,10 @@ html, body, .container {height: 100%;}
     float: right;
     padding: 4px 23px;
     p{
-      font-family: 'lato-bold';
+      font-weight: 700;
+      font-size: 24px;
       color: #ff3809;
       text-align: right;
-      font-size: 24px;
       padding-right: 15px;
       margin-bottom: 5px;
     }
@@ -566,7 +566,6 @@ html, body, .container {height: 100%;}
   padding: 0 15px;
 }
 .action__descript{
-  font-family: 'lato-regular';
   color: #555555;
   line-height: 20px;
 }
@@ -574,10 +573,9 @@ html, body, .container {height: 100%;}
   font-size: 30px;
   color: #000;
   padding: 5px 0 20px;
-  font-family: 'lato-heavy';
+  font-weight: 900;
 }
 .action__text_main{
-  font-family: 'lato-regular';
   color: #000000;
   padding: 7px 0 6px;
   line-height: 20px;
@@ -673,7 +671,6 @@ html, body, .container {height: 100%;}
   @include bb;
 }
 .poll-text__text{
-  font-family: 'lato-regular';
   font-size: 25px;
   color: #fff;
   line-height: 33px;
@@ -683,14 +680,11 @@ html, body, .container {height: 100%;}
 .poll-text__small{
   font-size: 16px;
   color: #fff;
-  font-family: 'lato-regular';
   margin-bottom: 5px;
 }
 .poll-text__title{
-  font-weight: bold;
-  font-family: 'PT Sans', sans-serif;
+  font: bold 45px $fontPt;
   color: #fff;
-  font-size: 45px;
   margin-bottom: 54px;
 }
 .poll-stat{
@@ -743,7 +737,6 @@ html, body, .container {height: 100%;}
 .list-circle{
   padding-left: 15px;
   li{
-    font-family: 'lato-regular';
     padding-left: 12px;
     font-size: 16px;
     line-height: 18px;
@@ -762,7 +755,7 @@ html, body, .container {height: 100%;}
     }
     &:first-child{margin-top: 0;}
     .step__text-color{color: #ed7272;}
-    .step__text-b{font-family: 'lato-bold';}
+    .step__text-b{font-weight: 700}
   }
 }
 .progress {
@@ -797,7 +790,6 @@ html, body, .container {height: 100%;}
 .progress-block{
   label{
     font-size: 15px;
-    font-family: 'lato-regular';
     color: #000;
     margin-bottom: 13px;
     display: block;
@@ -811,7 +803,7 @@ html, body, .container {height: 100%;}
 .radio{
   margin-bottom: 17px;
   label{
-    font-family: 'lato-medium';
+    font-weight: 500;
     font-size: 16px;
     cursor: pointer;
     @include nosel;
@@ -877,7 +869,6 @@ html, body, .container {height: 100%;}
       &:last-child:after{display: none}
       a{
         color: #e76b6b;
-        font-family: 'lato-regular';
         font-size: 14px;
         text-decoration: underline;
         &:hover{text-decoration: none;}
@@ -908,7 +899,9 @@ html, body, .container {height: 100%;}
   margin-bottom: 5px;
 }
 .products__description{
-  font: 18px/20px 'lato-italic';
+  font-size: 18px;
+  line-height: 20px;
+  font-style: italic;
   color: #5e5e5e;
   text-align: center;
   margin-bottom: 40px;
@@ -1076,4 +1069,8 @@ html, body, .container {height: 100%;}
       @include s(counter-down);
     }
   }
+}
+
+.back-to{
+
 }

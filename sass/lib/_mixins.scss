@@ -1,4 +1,4 @@
-@mixin font($alias, $name) {
+@mixin font($alias, $name, $weight, $style) {
 	@font-face{
 		font-family: $alias;
 		src: url("fonts/" + $name + ".eot");
@@ -6,8 +6,8 @@
 			 url("fonts/" + $name + ".woff") format("woff"), 
 			 url("fonts/" + $name + ".ttf") format("truetype"),
 			 url("fonts/" + $name + ".svg") format("svg");
-		font-weight: normal;
-		font-style: normal;
+		font-weight: $weight;
+		font-style: $style;
 	}
 }
 

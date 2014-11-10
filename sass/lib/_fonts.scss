@@ -1,9 +1,9 @@
-@include font('lato-bold', 'lato-bold');
-@include font('lato-italic', 'lato-italic');
-@include font('lato-regular', 'lato-regular');
-@include font('lato-semibold', 'lato-semibold');
-@include font('lato-black', 'lato-black');
-@include font('lato-heavy', 'lato-heavy');
-@include font('icomoon', 'icomoon');
-@include font('sansation-bold', 'sansation-bold');
-@include font('lato-medium', 'lato-medium');
+@include font('Lato', 'lato-regular', normal, normal); //lato-regular
+@include font('Lato', 'lato-italic', normal, italic); //lato-italic
+@include font('Lato', 'lato-medium', 500, normal); //lato-medium
+@include font('Lato', 'lato-semibold', 600, normal); //lato-semibold
+@include font('Lato', 'lato-bold', 700, normal); //lato-bold
+@include font('Lato', 'lato-black', 800, normal); //lato-black
+@include font('Lato', 'lato-heavy', 900, normal); //lato-heavy
+@include font('icomoon', 'icomoon', normal, normal); // icons
+@include font('Sansation', 'sansation-bold', 700, normal); //sansation-bold
