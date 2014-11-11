@@ -228,13 +228,9 @@
 				border: 1px solid transparent;
 				line-height: 26px;
 				@include border-radius (50%);
-				&:hover{
-					border-color: #e76b6b;
-				}
+				&:hover{border-color: #e76b6b;}
 			}
-			&.active a{
-				border-color: #000;
-			}
+			&.active a{border-color: #000;}
 			&.navigation a:hover{
 				color: #e76b6b;
 				border-color: transparent;
@@ -245,9 +241,7 @@
 .window{
 	background: #fff;
 	padding: 40px 50px 35px 30px;
-	.close{
-		cursor: pointer;
-	}
+	.close{cursor: pointer;}
 	button{
 		width: 175px;
 		height: 45px;
@@ -259,9 +253,8 @@
 		font-weight: 700;
 		text-align: center;
 		line-height: 35px;
-		&:hover{
-			background: #e35656;
-		}
+		&:hover{background: #e35656;}
+		position: relative;
 	}
 	textarea{
 		background: none repeat scroll 0 0 #fff;
@@ -271,8 +264,13 @@
 	    resize: none;
 	    width: 550px;
 	    margin: 20px 0;
+	    position: relative;
 	}
-	p{font-size: 25px;}
+	p{
+		font-size: 25px;
+		color: #5d5d5d;
+		position: relative;
+	}
 	i{
 		color:#e35656;
 		position: absolute;
@@ -288,95 +286,72 @@
 		right: -55px;
 		top: -95px;
 	}
-	// &:before{
-	// 	content: "\e634";
-	// 	color: #fcf0f0;
-	// 	font: 345px 'icomoon';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// }
-}
-
-.right-block{
-	float: left;
-	width: 245px;
-	position: relative;
-	margin-top: 80px;
-	font-size: 16.88px;
-	li{
-		margin: 0 15px 20px 0;
-		cursor: pointer;
-		// &:before{
-		// 	content: "";
-		// 	color: #e76b6b;
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// }
-	}
-	.active{
-		display: block;
-		border: dotted 1px #e76b6b;
-		border-radius: 10px;
+	&:before{
+		content: "\e634";
+		color: #fcf0f0;
+		font: 345px 'icomoon';
+		position: absolute;
+		left: 0;
+		top: 0;
 	}
 }
-.left-block{
-	h2{
-		font-size: 22px;
-		padding-bottom: 15px;
-		display: block;
+.arhive{
+	color: #5d5d5d;
+	p{
+		>a{
+			text-decoration: underline;
+			color: #e76b6b;
+			&:hover{text-decoration: none;}
+		}
 	}
-	.block{
-		// height: 1225px;
+	.single-arhive{
+		padding: 25px 0 0 14px;
+		margin: 0;
+		>img{
+			width: 875px;
+			height: 300px;
+			display: block;
+			position: relative;
+			margin: 0 0 20px 0;
+			float: right;
+		}
+		>p{margin-top: 10px;}
+	}
+	.arhive-block{
+		color: #5d5d5d;
+		padding: 20px 13px;
+		border-top: 1px solid #e5e5e5;
+		img{
+			margin-right: 17px;
+			width: 300px;
+			height: 150px;
+			position: relative;
+			float: left;
+		}
+		h3{
+			font-size: 20px;
+			width: 700;
+			margin-bottom: 13px;
+		}
 		div{
-			padding: 20px 13px;
-			border-top: 1px solid #e5e5e5;
-			img{
-				margin-right: 17px;
-				width: 300px;
-				height: 150px;
-				position: relative;
-				float: left;
-			}
-			p{
-				>a{
-					text-decoration: underline;
-					color: #e76b6b;
-					&:hover{text-decoration: none;}
-				}
-			}
+			position: relative;
+			overflow: hidden;
 			>a{
+				display: block;
+				margin-top: 13px;
 				text-decoration: underline;
 				color: #92d0f5;
 				&:hover{text-decoration: none;}
 			}
-			h3{
-				font-size: 20px;
-				width: 700;
-				margin-bottom: 13px;
-			}
-			&.single-block{
-				padding: 0;
-				img{
-					width: 920px;
-					height: 300px;
-					margin: 25px 0;
-					position: relative;
-				}
-			}
 		}
 	}
-	color: #5d5d5d;
-	float: left;
-	position: relative;
-	width: 955px;
-	.products__title{text-align: left;}
 	.social-icons{
 		border-top: 1px solid #e5e5e5;
 		margin-top: 30px;
 		padding-top: 20px;
 		ul{
+			display: block;
+			margin-bottom: 30px;
 			left: 50%;
 			position: relative;
 			float: left;
