@@ -57,3 +57,33 @@
 	box-sizing: border-box;
 }
 @mixin bb {@include border-box;}
+
+@mixin ico ($ico,$size,$color,$height){
+  content: $ico;
+  font: $size/$height $icon;
+  color: $color;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin absLT ($left,$top){
+  position: absolute;
+  left: $left;
+  top: $top;
+}
+@mixin absRT ($right,$top){
+  position: absolute;
+  right: $right;
+  top: $top;
+}
+@mixin absLB ($left,$bottom){
+  position: absolute;
+  left: $left;
+  bottom: $bottom;
+}
+@mixin absRB ($right,$bottom){
+  position: absolute;
+  right: $right;
+  bottom: $bottom;
+}

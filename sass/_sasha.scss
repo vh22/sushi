@@ -1,0 +1,176 @@
+.left-sidebar{
+	float: left;
+	margin-left: -21px;
+	padding-top: 82px;
+	ul{
+		li{
+			a{
+				font: 17px $fontPt;
+				color: #000;
+				display: block;
+				padding: 6px 67px 7px 48px;
+				position: relative;
+				border: 2px dotted #fcf7f3;
+				@include border-radius(40px);
+				&:before{
+					content: '';
+					width: 10px;
+					height: 10px;
+					background: #e4e3df;
+					display: block;
+					@include absLT(16px, 12px);
+					@include border-radius(50%);
+					@include transition(all ease .3s);
+				}
+				&:hover, &.active{
+					border: 2px dotted #ed7272;
+					&:before{background: #ed7272;}
+				}
+			}
+		}
+	}
+}
+.office{
+	overflow: hidden;
+	padding-left: 10px;
+	margin-bottom: 60px;
+}
+.office-title{
+	font: 34px/44px $fontPt;
+	color: #5e5e5e;
+	margin-bottom: 25px;
+}
+.personal{
+	background: #fff;
+	padding: 10px 10px 0 10px;
+}
+.personal-title{
+	font: 22px/36px $fontPt;
+	padding: 0 0 10px 13px;
+	color: #5d5d5d;
+	border-bottom: 1px solid #e5e5e5;
+}
+.personal-email{
+	padding: 6px 0 0 13px;
+	p{
+		float: left;
+		font: 18px/40px $fontPt;
+		margin-right: 40px;
+	}
+	.email-title{color: #5d5d5d;}
+	.email-discount{
+		color: #e76b6b;
+		float: right;
+		margin-right: 0;
+	}
+}
+.personal-data{
+	padding: 0 13px;
+	margin-bottom: 20px;
+	div{
+		float: left;
+		margin-right: 20px;	
+	}
+	label{
+		display: block;
+		color: #5d5d5d;
+		font-size: 15px;
+		line-height: 43px;
+	}
+	input{
+		border: 1px solid #c1c1c1;
+		font-size: 14px;
+		height: 43px;
+		padding: 0 10px;
+		color: #5d5d5d;
+		width: 348px;
+	}
+}
+.birthday{
+	padding: 2px 12px 24px;
+	border-bottom: 1px solid #e5e5e5;
+	div{
+		width: 370px;
+		margin-right: 20px;
+		float: left;
+		p{
+			font: 16px $fontPt;
+			color: #5d5d5d;
+			float: left;
+		}
+	}
+	.birthday-day{float: right;}
+	.birthday-warning{
+		font: 14px/22px $fontPt;
+		color: #8a8a8a;
+		font-style: italic;
+		position: relative;
+		overflow: hidden;
+		padding-left: 27px;
+		&:before{
+			content: '\e631';
+			font-family: $icon;
+			color: #e76b6b;
+			font-size: 20px;
+			font-style: normal;
+			@include absLT(0, 0);
+		}
+	}
+}
+.address{
+	padding: 27px 12px 8px;
+	border-bottom: 1px solid #e5e5e5;
+	.title{
+		font: 16px $fontPt;
+		color: #5d5d5d;
+		float: left;
+		width: 173px;
+	}
+	div{
+		overflow: hidden;
+		margin-bottom: 10px;
+		p{
+			font: 16px $fontPt;
+			color: #5d5d5d;
+			position: relative;
+			margin-bottom: 10px;
+			span{
+				color: #e76b6b;
+				cursor: pointer;
+				&:hover{color: #e35656;}
+				&.icon-edit1{
+					margin-left: 20px;
+				}
+			}
+		}
+		a{
+			font-size: 13px;
+			color: #159bea;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+.edit-email{
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0 13px;
+	p{
+		float: left;
+		font: 16px/79px $fontPt;
+		color: #5d5d5d;
+		margin-right: 35px;
+	}
+	a.btn{
+		line-height: 80px;
+		padding: 12px 30px;
+	}
+}
+.save-form{
+	padding: 0 15px;
+	a.btn{
+		padding: 12px 52px;
+		line-height: 105px;
+	}
+}
