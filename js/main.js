@@ -34,4 +34,28 @@ $(function(){
     $(window).scroll(function(){
         $('.sticked-menu').length ? $('header').addClass('sticked') : $('header').removeClass('sticked');
     });
+
+    $('.window').dialog({
+        autoOpen: false,
+        height: 345,
+        width: 635,
+        modal: true,
+        resizable: false,
+        closeOnEscape: true,
+        show: {
+            effect: 'fade',
+            duration: 1000
+        },
+        open: function(){
+            $('.ui-widget-overlay, .close').bind('click', function(){
+               $('.window').dialog('close');     
+            });
+        }
+    });
+
+    $('.ui-dialog-titlebar').remove();
+
+    $('.add-review').click(function(){
+        $('#add-review').dialog('open');
+    });
 });
