@@ -155,23 +155,7 @@
 		line-height: 35px;
 		margin-bottom: 10px;
 	}
-	i{
-		width: 170px;
-		height: 35px;
-		background: #e76b6b;
-		color: #fff;
-		border-radius: 5px;
-		float: right;
-		font-size: 18px;
-		font-style: normal;
-		font-weight: 700;
-		text-align: center;
-		line-height: 35px;
-		&:hover{
-			cursor: pointer;
-			background: #e35656;
-		}
-	}
+	i{float: right;}
 	>div{
 		padding: 20px 0 20px 60px;
 		border-top: solid 1px #e5e5e5;	
@@ -238,23 +222,18 @@
 		}
 	}
 }
+
+
+// ОТЗЫВЫ ВСПЛЫВАШКА
+
+
 .window{
 	background: #fff;
 	padding: 40px 50px 35px 30px;
 	.close{cursor: pointer;}
-	button{
-		width: 175px;
-		height: 45px;
-		background: #e76b6b;
-		color: #fff;
-		border-radius: 5px;
-		font-size: 18px;
-		font-style: normal;
-		font-weight: 700;
-		text-align: center;
-		line-height: 35px;
-		&:hover{background: #e35656;}
+	.btn-remove-arch{
 		position: relative;
+		margin-bottom: 10px;
 	}
 	textarea{
 		background: none repeat scroll 0 0 #fff;
@@ -265,6 +244,8 @@
 	    width: 550px;
 	    margin: 20px 0;
 	    position: relative;
+	    padding: 10px;
+		font-family: 'lato-regular';
 	}
 	p{
 		font-size: 25px;
@@ -276,7 +257,7 @@
 		position: absolute;
 		right: -37px;
 		top: -33px;
-		z-index: 5;
+		z-index: 1;
 	}
 	&:after{
 		content: "\e633";
@@ -291,10 +272,14 @@
 		color: #fcf0f0;
 		font: 345px 'icomoon';
 		position: absolute;
-		left: 0;
-		top: 0;
+		left: -5px;
+		top: -75px;
 	}
 }
+
+
+//ИНТЕРЕСНОЕ
+
 .arhive{
 	color: #5d5d5d;
 	p{
@@ -308,7 +293,7 @@
 		padding: 25px 0 0 14px;
 		margin: 0;
 		>img{
-			width: 875px;
+			width: 920px;
 			height: 300px;
 			display: block;
 			position: relative;
@@ -367,7 +352,143 @@
 			.icon-fb{color: #39579a;}
 			.od{color: #f4960f;}
 			.mail{color: #2f69a1;}
-			.plus{color: #e86340;}
+			.plus{
+				color: #e86340;
+			}
+		}
+	}
+}
+
+//ИНТЕРЕСНОЕ КОНКУРСЫ
+
+.competitions{
+	border-top: 1px solid #e5e5e5;
+	padding: 20px 0 20px 0;
+	position: relative;
+	float: left;
+	.cmpetition-img{
+		margin-right: 15px;
+		position: relative;
+		float: left;
+		img{
+			display: block;
+			width: 290px;
+			height: 200px;
+		}
+		i{
+			border: 2px dotted #1e71b8;
+			border-radius: 15px;
+		    display: block;
+		    font-size: 22px;
+		    padding: 0 0 0 70px;
+		    position: relative;
+		    width: 216px;
+		    height: 70px;
+		    margin: 15px 0 0 0;
+		    line-height: 70px;
+		    &.plus{
+		    	border-color: #ed7272;
+		    	line-height: 30px;
+		    	&:before{
+					content: "\e63d";
+					color: #ed7272;
+		    	}
+		    }
+		    &:before{
+				content: "\e621";
+				color: #1e71b8;
+				font: 40px 'icomoon';
+				position: absolute;
+				left: 13px;
+				top: 13px;
+		    }
+		}
+	}
+	.competition-text{
+		position: relative;
+		overflow: hidden;
+		i{
+			width: 170px;
+			height: 40px;
+			background: #e76b6b;
+			color: #fff;
+			border-radius: 5px;
+			float: left;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			text-align: center;
+			line-height: 40px;
+			margin-right: 40px;
+			&:hover{
+				cursor: pointer;
+				background: #e35656;
+			}
+		}
+		>a{
+			display: block;
+			margin-top: 13px;
+			text-decoration: underline;
+			color: #92d0f5;
+			line-height: 40px;
+			&:hover{text-decoration: none;}
+		}
+		p{
+			margin-bottom: 10px;
+			span{
+				color: #ed7272;
+				width: 600;
+			}
+		}
+		h3{
+			font-size: 20px;
+			width: 700;
+		}
+		h2{
+			margin: 10px 0 10px 0;
+			display: block;
+			background-color: #f5f5f5;
+			padding-left: 55px;
+			font-size: 24px;
+			color: #e76b6b;
+			height: 60px;
+			line-height: 60px;
+			&:before{
+				content: "\e629";
+				color: #5d5d5d;
+				font: 32px 'icomoon';
+				position: absolute;
+				left: 12px;
+				top: 78px;
+			}
+		}
+	}
+}
+
+
+// SINGLE-PAGE COMPETITION
+
+
+.competition-answer{
+	border-top: 1px solid #e5e5e5;
+	p{
+		span {
+		    border-left: 1px dashed #8a8a8a;
+		    color: #8a8a8a;
+		    font-size: 12px;
+		    margin-left: 10px;
+		    padding-left: 10px;
+		}
+	}
+	.answer{
+		border-top: 1px solid #e5e5e5;
+		p{
+			position: relative;
+		}
+		img{
+			width: 240px;
+			height: 180px;
+			display: block;
 		}
 	}
 }
