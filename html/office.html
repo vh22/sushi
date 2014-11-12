@@ -140,13 +140,13 @@
                                 <input id="2" type="text" value="Иванов">
                             </div>
                         </div>
-                        <div class="birthday clear" ng-controller="DatepickerDemoCtrl">
+                        <div class="birthday calendar-input clear" ng-controller="DatepickerDemoCtrl">
                             <div class="calendar">
                                 <label for="3">Дата Рождения</label>
                                 <p class="input-group">
-                                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
                                     <span class="input-group-btn">
-                                    <button type="button" class="btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    <button type="button" class="btn-default" ng-click="open($event)"><span class="icon icon-calendar"></span></button>
                                     </span>
                                 </p>
                             </div>
@@ -154,7 +154,7 @@
                                 <p>Дата рождения:</p>
                                 <p class="birthday-day">1 октября 1976 года</p>
                             </div> -->
-                            <p class="birthday-warning">Задать дату можно только единожды</p>
+                            <p class="birthday-warning mt">Задать дату можно только единожды</p>
                         </div>
                         <div class="address">
                             <div class="phone clear">
@@ -175,10 +175,10 @@
                         </div>
                         <div class="edit-email clear">
                             <p>Изменить пароль для логина <span>mail_mail@gmail.com</span></p>
-                            <a href="#" class="btn">Сменить пароль</a>
+                            <a href="#" class="button">Сменить пароль</a>
                         </div>
                         <div class="save-form">
-                             <a href="#" class="btn">Сохранить</a>
+                             <a href="#" class="button">Сохранить</a>
                         </div>
                     </form>
                 </div>
@@ -274,10 +274,10 @@
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
-<script src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
 <!-- endbower -->
-<script src="../js/directives.js"></script>
+<script src="../js/ctrl.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
