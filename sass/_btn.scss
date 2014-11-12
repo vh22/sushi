@@ -34,6 +34,13 @@
 }
 .btn-save{
 	font: 18px $fontPt;
-	font-weight: bold;
-	
+	font-weight: bold;	
+}
+.btn-archive{
+	color: #e76b6b;
+	&:hover{color: #e35656;}
+}
+.btn-remove-arch{
+	padding: 8px 35px;
+	display: inline-block;
 }
