@@ -894,7 +894,14 @@ html, body, .container {height: 100%;}
   top: 10px;
   position: relative;
 }
-.poll-btn{margin: 38px 0 16px;}
+.poll-btn{
+  margin: 38px 0 16px;
+  .btn{
+    float: left;
+    width: 164px;
+    &.grey{margin-left: 20px}
+  }
+}
 .pos-static{position: static !important;}
 .product{
   position: relative;
@@ -937,13 +944,12 @@ html, body, .container {height: 100%;}
 .product-buy{
   input{
     float: left;
-    width: 60px;
   }
-  a{display: inline-block;}
   .icon-cart{
     color: $hover;
     padding: 2px 4px;
     display: inline-block;
+    cursor: pointer;
     &:hover{
       color: #a62702;
     }
@@ -1086,6 +1092,7 @@ html, body, .container {height: 100%;}
   }
 }
 .rating{
+  margin-bottom: 20px;
   >p{
     font: 18px $fontPt;
     color: #000;
@@ -1098,6 +1105,7 @@ html, body, .container {height: 100%;}
   }
   .left{
     width: 125px;
+    margin-top: -13px;
     p{
       color: #000;
       font: 52px $fontPt;
@@ -1121,9 +1129,31 @@ html, body, .container {height: 100%;}
     .icon-star{
       font: 14px $font;
       color: #737373;
+      float: left;
+      margin: 2px 7px 0 0;
       &:before{
         font: 11px $icon;
         margin-right: 5px;
+      }
+    }
+    li{
+      overflow: hidden;
+      p{
+        float: left;
+        max-width: 74%;
+        height: 19px;
+        i{
+          color: #0c0808;
+          font-size: 13px;
+          font-style: normal;
+          display: block;
+          margin: 3px 0 0 15px;
+        }
+        &.rate-1{background: #a0c15a}
+        &.rate-2{background: #add633}
+        &.rate-3{background: #ffd935}
+        &.rate-4{background: #ffb235}
+        &.rate-5{background: #ff8c5a}
       }
     }
   }
@@ -1208,5 +1238,11 @@ html, body, .container {height: 100%;}
   text-align: center;
   padding: 40px 0px;
   span{color: $hover;}
+}
+.quantity{
+  @include border-radius(10px);
+  border: 2px dashed #939292;
+  padding: 20px 30px 15px;
+  margin-bottom: 35px;
 }
 .wrapper{padding-bottom: 365px;}

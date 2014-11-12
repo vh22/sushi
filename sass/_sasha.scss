@@ -1,362 +1,380 @@
 .left-sidebar{
-	float: left;
-	margin-left: -21px;
-	padding-top: 82px;
-	ul{
-		li{
-			a{
-				font: 17px/35px $fontPt;
-				color: #000;
-				display: block;
-				position: relative;
-				border: 2px dotted #fcf7f3;
-				width: 256px;
-				padding-left: 50px;
-				@include bb;
-				@include border-radius(40px);
-				&:before{
-					content: '';
-					width: 10px;
-					height: 10px;
-					background: #e4e3df;
-					display: block;
-					@include absLT(16px, 12px);
-					@include border-radius(50%);
-					@include transition(all ease .3s);
-				}
-				&:hover, &.active{
-					border: 2px dotted #ed7272;
-					&:before{background: #ed7272;}
-				}
-			}
-		}
-	}
+  float: left;
+  margin-left: -21px;
+  padding-top: 82px;
+  ul{
+    li{
+      a{
+        font: 17px/35px $fontPt;
+        color: #000;
+        display: block;
+        position: relative;
+        border: 2px dotted #fcf7f3;
+        width: 256px;
+        padding-left: 50px;
+        @include bb;
+        @include border-radius(40px);
+        &:before{
+          content: '';
+          width: 10px;
+          height: 10px;
+          background: #e4e3df;
+          display: block;
+          @include absLT(16px, 12px);
+          @include border-radius(50%);
+          @include transition(all ease .3s);
+        }
+        &:hover, &.active{
+          border: 2px dotted #ed7272;
+          &:before{background: #ed7272;}
+        }
+      }
+    }
+  }
 }
+
 .office{
-	overflow: hidden;
-	padding: 0 0 10px 10px;
-	margin-bottom: 50px;
+  overflow: hidden;
+  padding: 0 0 10px 10px;
+  margin-bottom: 50px;
 }
 .office-title{
-	font: 34px/44px $fontPt;
-	color: #5e5e5e;
-	margin-bottom: 25px;
+  font: 34px/44px $fontPt;
+  color: #5e5e5e;
+  margin-bottom: 25px;
 }
 .personal{
-	background: #fff;
-	padding: 10px 10px 0 10px;
-	@include box-shadow(rgba(105, 105, 103, 0.15) 0 0 10px);
+  background: #fff;
+  padding: 10px 10px 0 10px;
+  @include box-shadow(rgba(105, 105, 103, 0.15) 0 0 10px);
 }
 .personal-title{
-	font: 22px/36px $fontPt;
-	padding: 0 0 10px 13px;
-	color: #5d5d5d;
-	border-bottom: 1px solid #e5e5e5;
+  font: 22px/36px $fontPt;
+  padding: 0 0 10px 13px;
+  color: #5d5d5d;
+  border-bottom: 1px solid #e5e5e5;
 }
 .personal-email{
-	padding: 6px 0 0 13px;
-	p{
-		float: left;
-		font: 18px/40px $fontPt;
-		margin-right: 40px;
-	}
-	.email-title{color: #5d5d5d;}
-	.email-discount{
-		color: #e76b6b;
-		float: right;
-		margin-right: 0;
-	}
+  padding: 6px 0 0 13px;
+  p{
+    float: left;
+    font: 18px/40px $fontPt;
+    margin-right: 40px;
+  }
+  .email-title{color: #5d5d5d;}
+  .email-discount{
+    color: #e76b6b;
+    float: right;
+    margin-right: 0;
+  }
 }
 .personal-data{
-	padding: 0 13px;
-	margin-bottom: 20px;
-	div{
-		float: left;
-		margin-right: 20px;	
-	}
-	label{
-		display: block;
-		color: #5d5d5d;
-		font-size: 15px;
-		line-height: 43px;
-	}
-	input{
-		border: 1px solid #c1c1c1;
-		font-size: 14px;
-		height: 43px;
-		padding: 0 10px;
-		color: #5d5d5d;
-		width: 348px;
-	}
+  padding: 0 13px;
+  margin-bottom: 20px;
+  div{
+    float: left;
+    margin-right: 20px;
+  }
+  label{
+    display: block;
+    color: #5d5d5d;
+    font-size: 15px;
+    line-height: 43px;
+  }
+  input{
+    border: 1px solid #c1c1c1;
+    font-size: 14px;
+    height: 43px;
+    padding: 0 10px;
+    color: #5d5d5d;
+    width: 348px;
+  }
 }
 .birthday{
-	padding: 2px 12px 24px;
-	border-bottom: 1px solid #e5e5e5;
-	div{
-		width: 370px;
-		margin-right: 20px;
-		float: left;
-		p{
-			font: 16px $fontPt;
-			color: #5d5d5d;
-			float: left;
-		}
-	}
-	.birthday-day{float: right;}
-	.birthday-warning{
-		font: 14px/22px $fontPt;
-		color: #8a8a8a;
-		font-style: italic;
-		position: relative;
-		overflow: hidden;
-		padding-left: 27px;
-		&:before{
-			content: '\e631';
-			font-family: $icon;
-			color: #e76b6b;
-			font-size: 20px;
-			font-style: normal;
-			@include absLT(0, 0);
-		}
-	}
+  padding: 2px 12px 24px;
+  border-bottom: 1px solid #e5e5e5;
+  div{
+    width: 370px;
+    margin-right: 20px;
+    float: left;
+    p{
+      font: 16px $fontPt;
+      color: #5d5d5d;
+      float: left;
+    }
+  }
+  .birthday-day{float: right;}
+  .birthday-warning{
+    font: 14px/22px $fontPt;
+    color: #8a8a8a;
+    font-style: italic;
+    position: relative;
+    overflow: hidden;
+    padding-left: 27px;
+    &:before{
+      content: '\e631';
+      font-family: $icon;
+      color: #e76b6b;
+      font-size: 20px;
+      font-style: normal;
+      @include absLT(0, 0);
+    }
+  }
 }
 .address{
-	padding: 27px 12px 8px;
-	border-bottom: 1px solid #e5e5e5;
-	.title{
-		font: 16px $fontPt;
-		color: #5d5d5d;
-		float: left;
-		width: 173px;
-	}
-	div{
-		overflow: hidden;
-		margin-bottom: 10px;
-		p{
-			font: 16px $fontPt;
-			color: #5d5d5d;
-			position: relative;
-			margin-bottom: 10px;
-			span{
-				color: #e76b6b;
-				cursor: pointer;
-				&:hover{color: #e35656;}
-				&.icon-edit1{margin-left: 20px;}
-			}
-		}
-		a{
-			font-size: 13px;
-			color: #159bea;
-			text-decoration: underline;
-			&:hover{text-decoration: none;}
-		}
-	}
+  padding: 27px 12px 8px;
+  border-bottom: 1px solid #e5e5e5;
+  .title{
+    font: 16px $fontPt;
+    color: #5d5d5d;
+    float: left;
+    width: 173px;
+  }
+  div{
+    overflow: hidden;
+    margin-bottom: 10px;
+    p{
+      font: 16px $fontPt;
+      color: #5d5d5d;
+      position: relative;
+      margin-bottom: 10px;
+      span{
+        color: #e76b6b;
+        cursor: pointer;
+        &:hover{color: #e35656;}
+        &.icon-edit1{margin-left: 20px;}
+      }
+    }
+    a{
+      font-size: 13px;
+      color: #159bea;
+      text-decoration: underline;
+      &:hover{text-decoration: none;}
+    }
+  }
 }
 .edit-email{
-	border-bottom: 1px solid #e5e5e5;
-	padding: 0 13px;
-	p{
-		float: left;
-		font: 16px/79px $fontPt;
-		color: #5d5d5d;
-		margin-right: 35px;
-	}
-	a.btn{
-		line-height: 80px;
-		padding: 12px 30px;
-	}
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 13px;
+  line-height: 80px;
+  p{
+    float: left;
+    font: 16px/79px $fontPt;
+    color: #5d5d5d;
+    margin-right: 35px;
+  }
+  a.btn{
+    float: left;
+    margin-top: 15px;
+  }
 }
 .save-form{
-	padding: 0 15px;
-	a.btn{
-		padding: 12px 52px;
-		line-height: 105px;
-	}
+  padding: 35px 15px;
 }
 .date-order{
-	p{
-		font: 16px/18px $font;
-		color: #5d5d5d;
-		padding-left: 13px;
-	}
+  p{
+    font: 16px/18px $font;
+    color: #5d5d5d;
+    padding-left: 13px;
+  }
 }
 .name-order{
-	a{
-		font: 14px/18px $fontPt;
-		color: #e76b6b;
-		text-decoration: underline;
-		display: block;
-		width: 70%;
-		&:hover{text-decoration: none;}
-	}
+  a{
+    font: 14px/18px $fontPt;
+    color: #e76b6b;
+    text-decoration: underline;
+    display: block;
+    width: 70%;
+    &:hover{text-decoration: none;}
+  }
 }
 .price-order{
-	p{
-		font: 16px/18px $font;
-		color: #5d5d5d;
-		position: relative;
-		display: inline-block;
-		padding: 0 20px 0 15px;
-		&:before{
-			content: '\e620';
-			font-family: $icon;
-			font-size: 13px;
-			@include absRT(0, 0);
-		}
-	}
+  p{
+    font: 16px/18px $font;
+    color: #5d5d5d;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px 0 15px;
+    &:before{
+      content: '\e620';
+      font-family: $icon;
+      font-size: 13px;
+      @include absRT(0, 0);
+    }
+  }
 }
 .personal-discount{
-	p{
-		font: 22px/90px $fontPt;
-		color: #000;
-		text-align: right;
-		padding-bottom: 13px;
-	}
+  p{
+    font: 22px/90px $fontPt;
+    color: #000;
+    text-align: right;
+    padding-bottom: 13px;
+  }
 }
 .date-order{
-	font: 18px $fontPt;
-	color: #5d5d5d;
+  font: 18px $fontPt;
+  color: #5d5d5d;
 }
 .when-order{
-	padding: 14px 0px 15px 14px;
-	border-bottom: 1px solid #e5e5e5;
-	margin-bottom: 5px;
-	.order-discount{line-height: 25px;}
+  padding: 14px 0px 15px 14px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 5px;
+  .order-discount{line-height: 25px;}
 }
 .when-order-date{
-	font: 18px $fontPt;
-	color: #5d5d5d;
-	float: left;
+  font: 18px $fontPt;
+  color: #5d5d5d;
+  float: left;
 }
 .day-order{
-	color: #8a8a8a;
-	margin-left: 5px;
+  color: #8a8a8a;
+  margin-left: 5px;
 }
 .time-order{
-	color: #8a8a8a;
-	border-left: 1px dashed #8a8a8a;
-	padding-left: 10px;
-}	
+  color: #8a8a8a;
+  border-left: 1px dashed #8a8a8a;
+  padding-left: 10px;
+}
 .order-discount{
-	color: #e76b6b;
-	float: right;
-	margin-right: 0;
-	font-size: 18px;
+  color: #e76b6b;
+  float: right;
+  margin-right: 0;
+  font-size: 18px;
 }
 .row-title{
-	p{
-		font: 12px/38px $font;
-		text-transform: uppercase;
-		color: #8a8a8a;
-		padding: 10px 15px 0;
-	}
+  p{
+    font: 12px/38px $font;
+    text-transform: uppercase;
+    color: #8a8a8a;
+    padding: 10px 15px 0;
+  }
 }
 .row{
-	display: table;
-	border-bottom: 1px solid #e5e5e5;
-	width: 100%;
-	div{
-		display: table-cell;
-		vertical-align: middle;
-	}
+  display: table;
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+  div{
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 .archive-two {
-	&>.row{
-		div{
-			&:nth-child(1){width: 55%;}
-			&:nth-child(2){
-				width: 35%;
-				text-align: center;
-				p{padding-left: 0;}
-			}
-			&:nth-child(3){
-				width: 20%;
-				text-align: center;
-				p{padding-left: 0;}
-			}
-		}
-	}
-	.row-order{min-height: 115px;}
+  &>.row{
+    div{
+      &:nth-child(1){width: 55%;}
+      &:nth-child(2){
+        width: 35%;
+        text-align: center;
+        p{padding-left: 0;}
+      }
+      &:nth-child(3){
+        width: 20%;
+        text-align: center;
+        p{padding-left: 0;}
+      }
+    }
+  }
+  .row-order{height: 115px;}
 }
 .archive{
-	&>.row{
-		div{
-			&:nth-child(1){width: 30%;}
-			&:nth-child(2){
-				width: 57%;
-				p{padding-left: 0;}
-			}
-			&:nth-child(3){width: 13%;}
-		}
-	}
-	.row-order{min-height: 95px;}
+  &>.row{
+    div{
+      &:nth-child(1){width: 30%;}
+      &:nth-child(2){
+        width: 57%;
+        p{padding-left: 0;}
+      }
+      &:nth-child(3){width: 13%;}
+    }
+  }
+  .row-order{height: 95px;}
 }
 .last-order{
-	&>.row{
-		div{
-			&:nth-child(1){width: 55%;}
-			&:nth-child(2){
-				width: 15%;
-				text-align: center;
-				p{padding-left: 0;}
-			}
-			&:nth-child(3){
-				width: 15%;
-				text-align: center;
-				p{padding-left: 0;}
-			}
-			&:nth-child(4){
-				width: 15%;
-				text-align: center;
-				p{padding-left: 0;}
-			}
-		}
-	}
-	.row-order{min-height: 115px;}
+  &>.row{
+    div{
+      &:nth-child(1){width: 55%;}
+      &:nth-child(2){
+        width: 15%;
+        text-align: center;
+        p{padding-left: 0;}
+      }
+      &:nth-child(3){
+        width: 15%;
+        text-align: center;
+        p{padding-left: 0;}
+      }
+      &:nth-child(4){
+        width: 15%;
+        text-align: center;
+        p{padding-left: 0;}
+      }
+    }
+  }
+  .row-order{height: 115px;}
 }
 .link-office{
-	font-size: 13px;
-	color: #159bea;
-	text-decoration: underline;
-	&:hover{text-decoration: none;}
+  font-size: 13px;
+  color: #159bea;
+  text-decoration: underline;
+  &:hover{text-decoration: none;}
 }
 .img-office{
-	float: left;
-	margin: 0px 25px 0 13px;
+  float: left;
+  margin: 0px 25px 0 13px;
 }
 .name-archive-product{
-	font: 14px/18px $fontPt;
-	font-weight: bold;
-	color: #5d5d5d;
-	overflow: hidden;
-	text-transform: uppercase;
-	margin-bottom: 5px;
-	padding-top: 10px;
+  font: 14px/18px $fontPt;
+  font-weight: bold;
+  color: #5d5d5d;
+  overflow: hidden;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-top: 10px;
 }
 .amount-product{
-	font: 16px/18px $font;
-	color: #5d5d5d;
+  font: 16px/18px $font;
+  color: #5d5d5d;
 }
 .sum-price{
-	text-align: right;
-	padding: 10px 0px 25px;
-	p{
-		font: 22px/37px $fontPt;
-		font-weight: bold;
-		color: #5d5d5d;
-		margin-bottom: 8px;
-		span{
-			position: relative;
-			padding-right: 20px;
-			&:before{
-				content: '\e620';
-				font-family: $icon;
-				color: #5d5d5d;
-				font-size: 17px;
-				font-weight: normal;
-				@include absRT(0, -5px);
-			}
-		}
-	}
+  text-align: right;
+  padding: 10px 0px 25px;
+  p{
+    font: 22px/37px $fontPt;
+    font-weight: bold;
+    color: #5d5d5d;
+    margin-bottom: 8px;
+    span{
+      position: relative;
+      padding-right: 20px;
+      &:before{
+        content: '\e620';
+        font-family: $icon;
+        color: #5d5d5d;
+        font-size: 17px;
+        font-weight: normal;
+        @include absRT(0, -5px);
+      }
+    }
+  }
+  .btn{
+    float: right;
+    &.grey{margin-right: 10px}
+  }
 }
 .no-visible{display: none;}
+.calendar{
+  label{
+    display: block;
+    color: #5d5d5d;
+    font-size: 15px;
+    line-height: 43px;
+  }
+  input{
+    border: 1px solid #c1c1c1;
+    font-size: 14px;
+    height: 43px;
+    padding: 0 10px;
+    color: #5d5d5d;
+    width: 155px;
+  }
+}

@@ -21,7 +21,7 @@
 <!-- HEADER -->
 
 <div class="bg-header">
-    <header class="opened-menu">
+    <header>
         <div class="content">
             <div class="header-top clear">
                 <div class="logo">
@@ -132,19 +132,28 @@
                         </div>
                         <div class="personal-data clear">
                             <div>
-                                <label for="">Имя</label>
-                                <input type="text" value="Степан">
+                                <label for="1">Имя</label>
+                                <input id="1" type="text" value="Степан">
                             </div>
                             <div>
-                                <label for="">Фамилия</label>
-                                <input type="text" value="Иванов">
+                                <label for="2">Фамилия</label>
+                                <input id="2" type="text" value="Иванов">
                             </div>
                         </div>
-                        <div class="birthday clear">
-                            <div class="clear">
+                        <div class="birthday clear" ng-controller="DatepickerDemoCtrl">
+                            <div class="calendar">
+                                <label for="3">Дата Рождения</label>
+                                <p class="input-group">
+                                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" max-date="" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+                                    <span class="input-group-btn">
+                                    <button type="button" class="btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </p>
+                            </div>
+                            <!-- <div class="clear">
                                 <p>Дата рождения:</p>
                                 <p class="birthday-day">1 октября 1976 года</p>
-                            </div>
+                            </div> -->
                             <p class="birthday-warning">Задать дату можно только единожды</p>
                         </div>
                         <div class="address">
@@ -166,10 +175,10 @@
                         </div>
                         <div class="edit-email clear">
                             <p>Изменить пароль для логина <span>mail_mail@gmail.com</span></p>
-                            <a href="#" class="btn btn-pink btn-save">Сменить пароль</a>
+                            <a href="#" class="btn">Сменить пароль</a>
                         </div>
                         <div class="save-form">
-                             <a href="#" class="btn btn-pink btn-save">Сохранить</a>
+                             <a href="#" class="btn">Сохранить</a>
                         </div>
                     </form>
                 </div>
@@ -265,6 +274,8 @@
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <!-- endbower -->
 <script src="../js/directives.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
