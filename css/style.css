@@ -373,11 +373,11 @@ html, body, .container { height: 100%; }
 /* line 689, ../sass/_main.scss */
 .item .item-info > p { font-size: 14px; line-height: 18px; }
 /* line 693, ../sass/_main.scss */
-.item .item-info .icon { color: #8a8989; font: 14px "PT Sans", Arial, sans-serif; cursor: pointer; display: inline-block; margin: 15px 0 20px; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.item .item-info .icon-like { color: #8a8989; font: 14px "PT Sans", Arial, sans-serif; cursor: pointer; display: inline-block; margin: 15px 0 20px; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
 /* line 700, ../sass/_main.scss */
-.item .item-info .icon:before { font: 22px icomoon; margin-right: 7px; position: relative; top: 5px; }
+.item .item-info .icon-like:before { font: 22px icomoon; margin-right: 7px; position: relative; top: 5px; }
 /* line 706, ../sass/_main.scss */
-.item .item-info .icon:hover { color: #e76b6b; }
+.item .item-info .icon-like:hover { color: #e76b6b; }
 
 /* line 710, ../sass/_main.scss */
 .list-circle { padding-left: 15px; }
@@ -576,55 +576,59 @@ html, body, .container { height: 100%; }
 /* line 1101, ../sass/_main.scss */
 .rating .left p { color: #000; font: 52px "PT Sans", Arial, sans-serif; text-align: center; }
 /* line 1106, ../sass/_main.scss */
-.rating .left .icon { font-size: 13px; color: #8a8989; margin-bottom: 0; pointer-events: none; }
-/* line 1111, ../sass/_main.scss */
-.rating .left .icon:before { font-size: 14px; top: 1px; }
-/* line 1117, ../sass/_main.scss */
+.rating .left .icon { font: 13px Lato, Arial, sans-serif; color: #8a8989; display: block; margin: 10px 0 0; pointer-events: none; }
+/* line 1112, ../sass/_main.scss */
+.rating .left .icon:before { font: 14px icomoon; top: 1px; margin-right: 5px; }
+/* line 1119, ../sass/_main.scss */
 .rating .right { width: 120px; }
-
 /* line 1121, ../sass/_main.scss */
-.social { margin-bottom: 27px; }
-/* line 1123, ../sass/_main.scss */
-.social li { float: left; margin-left: 45px; }
-/* line 1126, ../sass/_main.scss */
-.social li a { text-decoration: none; display: block; color: #de6c28; font: 700 15px Sansation, Arial, sans-serif; }
+.rating .right .icon-star { font: 14px Lato, Arial, sans-serif; color: #737373; }
+/* line 1124, ../sass/_main.scss */
+.rating .right .icon-star:before { font: 11px icomoon; margin-right: 5px; }
+
 /* line 1131, ../sass/_main.scss */
+.social { margin-bottom: 27px; }
+/* line 1133, ../sass/_main.scss */
+.social li { float: left; margin-left: 45px; }
+/* line 1136, ../sass/_main.scss */
+.social li a { text-decoration: none; display: block; color: #de6c28; font: 700 15px Sansation, Arial, sans-serif; }
+/* line 1141, ../sass/_main.scss */
 .social li a:hover { text-decoration: underline; }
-/* line 1132, ../sass/_main.scss */
+/* line 1142, ../sass/_main.scss */
 .social li a span { font-size: 26px; display: block; float: left; margin: -5px 5px 0 0; }
-/* line 1139, ../sass/_main.scss */
+/* line 1149, ../sass/_main.scss */
 .social li:first-child { margin-left: 0; }
 
-/* line 1142, ../sass/_main.scss */
+/* line 1152, ../sass/_main.scss */
 .stars { width: 93px; height: 17px; position: relative; background: #e3e3e3; margin: 0 auto; }
-/* line 1148, ../sass/_main.scss */
+/* line 1158, ../sass/_main.scss */
 .stars:before { background: url('../css/images/icons-s6a4f66378a.png') 0 -87px no-repeat; width: 93px; height: 17px; position: absolute; left: 0; top: 0; content: ''; width: 100%; height: 100%; }
-/* line 1155, ../sass/_main.scss */
+/* line 1165, ../sass/_main.scss */
 .stars span { display: block; background: #737373; width: 0; height: 100%; }
 
-/* line 1162, ../sass/_main.scss */
+/* line 1172, ../sass/_main.scss */
 .sticky-wrapper { height: auto !important; position: relative; }
 
-/* line 1166, ../sass/_main.scss */
+/* line 1176, ../sass/_main.scss */
 .step { background: #fff; margin-bottom: 25px; -moz-box-shadow: 0 0 18px rgba(105, 105, 103, 0.15); -webkit-box-shadow: 0 0 18px rgba(105, 105, 103, 0.15); box-shadow: 0 0 18px rgba(105, 105, 103, 0.15); }
-/* line 1170, ../sass/_main.scss */
+/* line 1180, ../sass/_main.scss */
 .step img { float: left; }
-/* line 1172, ../sass/_main.scss */
+/* line 1182, ../sass/_main.scss */
 .step .step__text { float: left; width: 800px; padding: 10px 25px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
-/* line 1177, ../sass/_main.scss */
+/* line 1187, ../sass/_main.scss */
 .step .step__text p { font: 25px "PT Sans", Arial, sans-serif; color: #000; margin-bottom: 25px; }
-/* line 1185, ../sass/_main.scss */
+/* line 1195, ../sass/_main.scss */
 .step.step_right img { float: right; }
 
-/* line 1188, ../sass/_main.scss */
+/* line 1198, ../sass/_main.scss */
 .sr-only { position: relative; top: -17px; font: 13px "PT Sans", Arial, sans-serif; color: #5d5d5d; right: -50px; }
 
-/* line 1195, ../sass/_main.scss */
+/* line 1205, ../sass/_main.scss */
 .title-step { font: 700 40px "PT Sans", Arial, sans-serif; color: #000; text-align: center; padding: 40px 0px; }
-/* line 1200, ../sass/_main.scss */
+/* line 1210, ../sass/_main.scss */
 .title-step span { color: #e76b6b; }
 
-/* line 1202, ../sass/_main.scss */
+/* line 1212, ../sass/_main.scss */
 .wrapper { padding-bottom: 365px; }
 
 /* line 1, ../sass/_mary.scss */
@@ -638,78 +642,230 @@ html, body, .container { height: 100%; }
 .main-block p a { color: #E76B6B; text-decoration: underline; }
 /* line 18, ../sass/_mary.scss */
 .main-block p a:hover { text-decoration: none; }
-/* line 22, ../sass/_mary.scss */
+/* line 20, ../sass/_mary.scss */
 .main-block img { width: 100%; }
 
-/* line 24, ../sass/_mary.scss */
+/* line 22, ../sass/_mary.scss */
 .text-block { position: relative; float: left; margin: 10px 0 5px 0; }
-/* line 28, ../sass/_mary.scss */
+/* line 26, ../sass/_mary.scss */
 .text-block .reg { color: #5d5d5d; }
-/* line 29, ../sass/_mary.scss */
+/* line 27, ../sass/_mary.scss */
 .text-block div { overflow: hidden; }
-/* line 30, ../sass/_mary.scss */
+/* line 28, ../sass/_mary.scss */
 .text-block .text-order { font-style: italic; }
-/* line 33, ../sass/_mary.scss */
+/* line 29, ../sass/_mary.scss */
 .text-block ul { padding-left: 20px; }
-/* line 34, ../sass/_mary.scss */
+/* line 30, ../sass/_mary.scss */
 .text-block a { color: #E76B6B; text-decoration: underline; }
-/* line 38, ../sass/_mary.scss */
+/* line 34, ../sass/_mary.scss */
 .text-block a:hover { text-decoration: none; }
-/* line 41, ../sass/_mary.scss */
+/* line 35, ../sass/_mary.scss */
 .text-block p { color: #5e5e5e; margin-bottom: 25px; }
+/* line 39, ../sass/_mary.scss */
+.text-block h2 { margin-bottom: 15px; font-size: 22px; font-weight: 600; color: #545451; }
 /* line 45, ../sass/_mary.scss */
-.text-block h2 { margin-bottom: 15px; font-size: 22px; font-weight: 600px; color: #545451; }
-/* line 51, ../sass/_mary.scss */
-.text-block h4 { color: #545451; font-size: 18px; font-weight: 600px; }
-/* line 56, ../sass/_mary.scss */
+.text-block h4 { color: #545451; font-size: 18px; font-weight: 600; }
+/* line 50, ../sass/_mary.scss */
 .text-block .text-color { color: #E76B6B; }
-/* line 57, ../sass/_mary.scss */
-.text-block .semibold { font-size: 16px; font-weight: 600px; }
+/* line 51, ../sass/_mary.scss */
+.text-block .semibold { font-size: 16px; font-weight: 600; }
+/* line 55, ../sass/_mary.scss */
+.text-block h5 { color: #E76B6B; font-size: 18px; font-weight: 600; margin-bottom: 10px; }
 /* line 61, ../sass/_mary.scss */
-.text-block h5 { color: #E76B6B; font-size: 18px; font-weight: 600px; margin-bottom: 10px; }
-/* line 67, ../sass/_mary.scss */
 .text-block li { font-size: 14px; color: #5e5e5e; }
-/* line 71, ../sass/_mary.scss */
+/* line 65, ../sass/_mary.scss */
 .text-block .leftimg { float: left; margin: 5px 35px 5px 5px; }
-/* line 75, ../sass/_mary.scss */
+/* line 69, ../sass/_mary.scss */
 .text-block .rightimg { float: right; margin: 5px 5px 5px 35px; }
 
-/* line 80, ../sass/_mary.scss */
-.slogan { text-align: center; color: #545451; font-size: 24px; font-weight: 600px; margin-top: 50px; }
+/* line 74, ../sass/_mary.scss */
+.slogan { text-align: center; color: #545451; font-size: 24px; font-weight: 600; margin-top: 50px; }
 
-/* line 88, ../sass/_mary.scss */
+/* line 81, ../sass/_mary.scss */
 .sale-block { margin-right: -22px; }
-/* line 90, ../sass/_mary.scss */
+/* line 83, ../sass/_mary.scss */
 .sale-block .step { width: 385px; height: 615px; float: left; position: relative; margin-right: 22px; }
-/* line 97, ../sass/_mary.scss */
+/* line 90, ../sass/_mary.scss */
 .sale-block h2 { font: 16px "PT Sans", Arial, sans-serif; color: #E76B6B; }
-/* line 101, ../sass/_mary.scss */
+/* line 94, ../sass/_mary.scss */
 .sale-block h3 { font: bold 14px "PT Sans", Arial, sans-serif; color: #000; height: 50px; }
-/* line 106, ../sass/_mary.scss */
+/* line 99, ../sass/_mary.scss */
 .sale-block p { font-size: 13px; }
-/* line 108, ../sass/_mary.scss */
-.sale-block p span { color: #000; font-weight: 800px; }
-/* line 113, ../sass/_mary.scss */
+/* line 101, ../sass/_mary.scss */
+.sale-block p span { color: #000; font-weight: 800; }
+/* line 106, ../sass/_mary.scss */
 .sale-block img { width: 385px; height: 270px; }
-/* line 117, ../sass/_mary.scss */
+/* line 110, ../sass/_mary.scss */
 .sale-block .text-block { margin: 10px; }
 
-/* line 121, ../sass/_mary.scss */
+/* line 112, ../sass/_mary.scss */
 .pay { text-align: center; }
-/* line 123, ../sass/_mary.scss */
-.pay p { font: 28px "PT Sans", Arial, sans-serif; color: #545451; }
-/* line 127, ../sass/_mary.scss */
+/* line 114, ../sass/_mary.scss */
+.pay p { font: 28px "PT Sans", Arial, sans-serif; color: #545451; height: 35px; }
+/* line 119, ../sass/_mary.scss */
 .pay button { width: 225px; height: 50px; border: solid 1px #a4a4a4; border-radius: 5px; font: bold 18px "PT Sans", Arial, sans-serif; color: #E76B6B; background: #e9e9e9; margin-bottom: 75px; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
-/* line 138, ../sass/_mary.scss */
+/* line 129, ../sass/_mary.scss */
 .pay button:hover { background: #fff; border-color: #e76b6b; }
-/* line 142, ../sass/_mary.scss */
+/* line 134, ../sass/_mary.scss */
 .pay hr { width: 200px; height: 1px; background: none repeat scroll 0 0 #e1e0db; margin: 40px auto; border: medium none; }
-/* line 149, ../sass/_mary.scss */
+/* line 141, ../sass/_mary.scss */
 .pay .icon-accept { color: #4aa20f; }
-/* line 150, ../sass/_mary.scss */
+/* line 142, ../sass/_mary.scss */
 .pay .icon-error { color: #e35656; }
-/* line 151, ../sass/_mary.scss */
+/* line 143, ../sass/_mary.scss */
 .pay span { display: inline-block; margin-top: 65px; margin-bottom: 40px; }
+
+/* line 149, ../sass/_mary.scss */
+.review { color: #5e5e5e; }
+/* line 151, ../sass/_mary.scss */
+.review > p { font-size: 18px; overflow: hidden; height: 35px; line-height: 35px; margin-bottom: 10px; }
+/* line 158, ../sass/_mary.scss */
+.review i { float: right; }
+/* line 159, ../sass/_mary.scss */
+.review > div { padding: 20px 0 20px 60px; border-top: solid 1px #e5e5e5; position: relative; }
+/* line 163, ../sass/_mary.scss */
+.review > div:before { content: "\e638"; color: #c9c9c9; font: 40px 'icomoon'; position: absolute; left: 0; top: 23px; }
+/* line 171, ../sass/_mary.scss */
+.review > div.admin { margin-left: 60px; }
+/* line 173, ../sass/_mary.scss */
+.review > div.admin .name { color: #e76b6b; }
+/* line 174, ../sass/_mary.scss */
+.review > div.admin:before { content: "\e62d"; }
+/* line 176, ../sass/_mary.scss */
+.review > div .name { margin-top: 0; font-size: 16px; font-weight: 700; }
+/* line 181, ../sass/_mary.scss */
+.review > div p { overflow: hidden; margin-top: 15px; }
+/* line 184, ../sass/_mary.scss */
+.review > div p > span { color: #8a8a8a; font-size: 12px; border-left: 1px dashed #8a8a8a; margin-left: 10px; padding-left: 10px; }
+
+/* line 194, ../sass/_mary.scss */
+.pagination { padding: 40px 0 20px 0; border-top: solid 1px #e5e5e5; }
+/* line 197, ../sass/_mary.scss */
+.pagination ul { position: relative; left: 50%; float: left; }
+/* line 201, ../sass/_mary.scss */
+.pagination ul li { float: left; position: relative; right: 50%; margin: 0 3px; text-align: center; }
+/* line 207, ../sass/_mary.scss */
+.pagination ul li a { color: #000; display: block; width: 28px; height: 28px; border: 1px solid transparent; line-height: 26px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+/* line 215, ../sass/_mary.scss */
+.pagination ul li a:hover { border-color: #e76b6b; }
+/* line 217, ../sass/_mary.scss */
+.pagination ul li.active a { border-color: #000; }
+/* line 218, ../sass/_mary.scss */
+.pagination ul li.navigation a:hover { color: #e76b6b; border-color: transparent; }
+
+/* line 225, ../sass/_mary.scss */
+.ui-dialog { z-index: 999; }
+
+/* line 228, ../sass/_mary.scss */
+.ui-widget-overlay { background: rgba(0, 0, 0, 0.5); height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 998; }
+
+/* line 241, ../sass/_mary.scss */
+.window { background: #fff; position: relative; }
+/* line 244, ../sass/_mary.scss */
+.window .close { cursor: pointer; }
+/* line 245, ../sass/_mary.scss */
+.window .btn-remove-arch { position: relative; margin-bottom: 10px; }
+/* line 249, ../sass/_mary.scss */
+.window textarea { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; background: none repeat scroll 0 0 #fff; border: 1px solid #aea9a0; font: 14px Lato, Arial, sans-serif; height: 170px; resize: none; width: 100%; margin: 20px 0; position: relative; padding: 10px; color: #5e5e5e; }
+/* line 262, ../sass/_mary.scss */
+.window p { font-size: 25px; color: #5d5d5d; position: relative; }
+/* line 267, ../sass/_mary.scss */
+.window i { color: #e35656; position: absolute; right: -37px; top: -33px; z-index: 1; }
+/* line 274, ../sass/_mary.scss */
+.window:after { content: "\e633"; color: #fff; font: 100px 'icomoon'; position: absolute; right: -55px; top: -85px; }
+/* line 282, ../sass/_mary.scss */
+.window .window-inner { overflow: hidden; padding: 30px 35px; position: relative; }
+/* line 286, ../sass/_mary.scss */
+.window .window-inner:before { content: "\e634"; color: #fcf0f0; font: 345px 'icomoon'; position: absolute; left: -6px; top: -44px; }
+
+/* line 300, ../sass/_mary.scss */
+.arhive { color: #5d5d5d; }
+/* line 303, ../sass/_mary.scss */
+.arhive p > a { text-decoration: underline; color: #e76b6b; }
+/* line 306, ../sass/_mary.scss */
+.arhive p > a:hover { text-decoration: none; }
+/* line 309, ../sass/_mary.scss */
+.arhive .single-arhive { padding: 25px 0 0 14px; margin: 0; }
+/* line 312, ../sass/_mary.scss */
+.arhive .single-arhive > img { width: 920px; height: 300px; display: block; position: relative; margin: 0 0 20px 0; float: right; }
+/* line 320, ../sass/_mary.scss */
+.arhive .single-arhive > p { margin-top: 10px; }
+/* line 322, ../sass/_mary.scss */
+.arhive .arhive-block { color: #5d5d5d; padding: 20px 13px; border-bottom: 1px solid #e5e5e5; }
+/* line 326, ../sass/_mary.scss */
+.arhive .arhive-block img { margin-right: 17px; width: 300px; height: 150px; position: relative; float: left; }
+/* line 333, ../sass/_mary.scss */
+.arhive .arhive-block h3 { font-size: 20px; width: 700; margin-bottom: 13px; }
+/* line 338, ../sass/_mary.scss */
+.arhive .arhive-block div { position: relative; overflow: hidden; }
+/* line 341, ../sass/_mary.scss */
+.arhive .arhive-block div > a { display: block; margin-top: 13px; text-decoration: underline; color: #92d0f5; }
+/* line 346, ../sass/_mary.scss */
+.arhive .arhive-block div > a:hover { text-decoration: none; }
+/* line 349, ../sass/_mary.scss */
+.arhive .arhive-block:last-child { border-bottom: none; }
+/* line 351, ../sass/_mary.scss */
+.arhive .social-icons { border-top: 1px solid #e5e5e5; margin-top: 30px; padding-top: 20px; }
+/* line 355, ../sass/_mary.scss */
+.arhive .social-icons ul { display: block; margin-bottom: 30px; left: 50%; position: relative; float: left; }
+/* line 361, ../sass/_mary.scss */
+.arhive .social-icons ul li { position: relative; float: left; margin: 0 2px; width: 40px; height: 40px; right: 50%; }
+/* line 369, ../sass/_mary.scss */
+.arhive .social-icons ul .icon-vk { color: #41658b; }
+/* line 370, ../sass/_mary.scss */
+.arhive .social-icons ul .icon-fb { color: #39579a; }
+/* line 371, ../sass/_mary.scss */
+.arhive .social-icons ul .od { color: #f4960f; }
+/* line 372, ../sass/_mary.scss */
+.arhive .social-icons ul .mail { color: #2f69a1; }
+/* line 373, ../sass/_mary.scss */
+.arhive .social-icons ul .plus { color: #e86340; }
+
+/* line 382, ../sass/_mary.scss */
+.competitions { border-top: 1px solid #e5e5e5; padding: 20px 0 20px 0; position: relative; float: left; }
+/* line 387, ../sass/_mary.scss */
+.competitions .cmpetition-img { margin-right: 15px; position: relative; float: left; }
+/* line 391, ../sass/_mary.scss */
+.competitions .cmpetition-img img { display: block; width: 290px; height: 200px; }
+/* line 396, ../sass/_mary.scss */
+.competitions .cmpetition-img i { border: 2px dotted #1e71b8; border-radius: 15px; display: block; font-size: 22px; padding: 0 0 0 70px; position: relative; width: 216px; height: 70px; margin: 15px 0 0 0; line-height: 70px; }
+/* line 407, ../sass/_mary.scss */
+.competitions .cmpetition-img i.plus { border-color: #ed7272; line-height: 30px; }
+/* line 410, ../sass/_mary.scss */
+.competitions .cmpetition-img i.plus:before { content: "\e63d"; color: #ed7272; }
+/* line 415, ../sass/_mary.scss */
+.competitions .cmpetition-img i:before { content: "\e621"; color: #1e71b8; font: 40px 'icomoon'; position: absolute; left: 13px; top: 13px; }
+/* line 425, ../sass/_mary.scss */
+.competitions .competition-text { position: relative; overflow: hidden; }
+/* line 428, ../sass/_mary.scss */
+.competitions .competition-text i { width: 170px; height: 40px; background: #e76b6b; color: #fff; border-radius: 5px; float: left; font-size: 16px; font-style: normal; font-weight: 700; text-align: center; line-height: 40px; margin-right: 40px; }
+/* line 441, ../sass/_mary.scss */
+.competitions .competition-text i:hover { cursor: pointer; background: #e35656; }
+/* line 446, ../sass/_mary.scss */
+.competitions .competition-text > a { display: block; margin-top: 13px; text-decoration: underline; color: #92d0f5; line-height: 40px; }
+/* line 452, ../sass/_mary.scss */
+.competitions .competition-text > a:hover { text-decoration: none; }
+/* line 454, ../sass/_mary.scss */
+.competitions .competition-text p { margin-bottom: 10px; }
+/* line 456, ../sass/_mary.scss */
+.competitions .competition-text p span { color: #ed7272; width: 600; }
+/* line 461, ../sass/_mary.scss */
+.competitions .competition-text h3 { font-size: 20px; width: 700; }
+/* line 465, ../sass/_mary.scss */
+.competitions .competition-text h2 { margin: 10px 0 10px 0; display: block; background-color: #f5f5f5; padding-left: 55px; font-size: 24px; color: #e76b6b; height: 60px; line-height: 60px; }
+/* line 474, ../sass/_mary.scss */
+.competitions .competition-text h2:before { content: "\e629"; color: #5d5d5d; font: 32px 'icomoon'; position: absolute; left: 12px; top: 78px; }
+
+/* line 490, ../sass/_mary.scss */
+.competition-answer { border-top: 1px solid #e5e5e5; }
+/* line 493, ../sass/_mary.scss */
+.competition-answer p span { border-left: 1px dashed #8a8a8a; color: #8a8a8a; font-size: 12px; margin-left: 10px; padding-left: 10px; }
+/* line 501, ../sass/_mary.scss */
+.competition-answer .answer { border-top: 1px solid #e5e5e5; }
+/* line 503, ../sass/_mary.scss */
+.competition-answer .answer p { position: relative; }
+/* line 506, ../sass/_mary.scss */
+.competition-answer .answer img { width: 240px; height: 180px; display: block; }
 
 /* line 1, ../sass/_sasha.scss */
 .left-sidebar { float: left; margin-left: -21px; padding-top: 82px; }

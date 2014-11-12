@@ -46,14 +46,18 @@ $(function(){
 
     $('.window').dialog({
         autoOpen: false,
-        height: 345,
+//        height: 345,
         width: 635,
         modal: true,
         resizable: false,
         closeOnEscape: true,
         show: {
             effect: 'fade',
-            duration: 1000
+            duration: 800
+        },
+        hide: {
+          effect: 'explode',
+            duration: 500
         },
         open: function(){
             $('.ui-widget-overlay, .close').bind('click', function(){

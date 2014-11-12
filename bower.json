@@ -1,19 +1,20 @@
 {
-  "name": "GRUNT-project",
+  "name": "SushiProfi",
   "version": "0.0.0",
   "authors": [
-    "Лемешко Олександр Григорович <sheriff_15@ukr.net>"
+    "Developers"
   ],
   "description": "bower-example",
   "main": "css/style.css",
   "keywords": [],
-  "license": "durbala ISC",
+  "license": "MIT",
   "ignore": [
     "node_modules",
     "bower_components"
   ],
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "jquery-ui": "~1.11.2"
   },
   "devDependencies": {
     "sticky": "*",
