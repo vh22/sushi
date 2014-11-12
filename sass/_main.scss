@@ -690,7 +690,7 @@ html, body, .container {height: 100%;}
       font-size: 14px;
       line-height: 18px;
     }
-    .icon{
+    .icon-like{
       color: #8a8989;
       font: 14px $fontPt;
       cursor: pointer;
@@ -1104,18 +1104,28 @@ html, body, .container {height: 100%;}
       text-align: center;
     }
     .icon{
-      font-size: 13px;
+      font: 13px $font;
       color: #8a8989;
-      margin-bottom: 0;
+      display: block;
+      margin: 10px 0 0;
       pointer-events: none;
       &:before{
-        font-size: 14px;
+        font: 14px $icon;
         top: 1px;
+        margin-right: 5px;
       }
     }
   }
   .right{
     width: 120px;
+    .icon-star{
+      font: 14px $font;
+      color: #737373;
+      &:before{
+        font: 11px $icon;
+        margin-right: 5px;
+      }
+    }
   }
 }
 .social{

@@ -14,20 +14,21 @@
     <style type="text/css">html,*{filter: none;}</style>
     <![endif]-->
 </head>
-<body ng-app="sushiApp">
+<body>
 <div class="container">
 <div class="wrapper">
 
 <!-- HEADER -->
 
 <div class="bg-header">
-    <header class="opened-menu">
+    <header>
         <div class="content">
             <div class="header-top clear">
                 <div class="logo">
                     <a href="#"><img src="../css/images/logo-header.png" alt="logo"></a>
                 </div>
                 <div class="header-top__link">
+                    <nav>
                         <ul class="clear">
                             <li>
                                 <p class="header-top__receiving">Прием  заказов: <br> с 10.00 до 23.00</p>
@@ -43,9 +44,10 @@
                                 <a href="#" class="call-request__phone-link">Заказать звонок</a>
                             </li>
                         </ul>
+                    </nav>
                 </div>
             </div>
-            <div class="header-bottom js-header-bottom clear active">
+            <div class="header-bottom js-header-bottom clear">
                 <div class="header-bottom__left">
                     <nav>
                         <ul class="clear">
@@ -60,11 +62,11 @@
                 <div class="header-bottom__right">
                     <nav>
                         <ul class="clear">
-                            <li class="pos-static show-big-menu"><a href="#" class="header-bottom__menu js-menu active">Меню</a>
+                            <li class="pos-static show-big-menu"><a href="#" class="header-bottom__menu js-menu">Меню</a>
                                 <div class="big-menu js-big-menu">
                                     <nav>
                                         <ul class="clear">
-                                            <li><a href="#" class="active"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
+                                            <li><a href="#"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
                                             <li><a href="#"><span class="icon icon-fz39 icon-roll"></span>Роллы</a></li>
                                             <li><a href="#"><span class="icon icon-fz35 icon-warmroll"></span>Теплые роллы</a></li>
                                             <li><a href="#"><span class="icon icon-fz37 icon-sushibox"></span>Бокс-суши</a></li>
@@ -81,12 +83,13 @@
                                             <li><a href="#"><span class="icon icon-fz37 icon-drinkables"></span>Напитки</a></li>
                                             <li><a href="#"><span class="icon icon-fz45 icon-souces"></span>Соусы</a></li>
                                             <li><a href="#"><span class="icon icon-fz35 icon-like"></span>Избранное</a></li>
+
                                         </ul>
                                     </nav>
                                 </div>
                             </li>
                             <li><a href="#" class="header-bottom__account">Личный <br> кабинет</a></li>
-                            <li><a href="#" class="header-bottom__basket">Корзина <span class="cart-count">21</span></a> </li>
+                            <li><a href="#" class="header-bottom__basket">Корзина</a> <span class="cart-count">21</span></li>
                         </ul>
                     </nav>
                 </div>
@@ -98,79 +101,84 @@
 <!-- CONTENT -->
 
 <section>
-    <div class="content clear">
-        <div class="clear">
+    <div class="content">
+       <div class="clear">
             <div class="breadcrumbs left">
                 <ul>
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">Суши</a></li>
-                    <li>Ролл-ассорти Кумимаки</li>
+                    <li><a href="#">Интересное</a></li>
+                    <li>Факты о Японии</li>
                 </ul>
             </div>
-            <a href="#" class="back-to right">Вернуться в каталог</a>
         </div>
-        <div class="item">
-            <div class="item-img left">
-                <img src="../images/sushi.png" alt="" />
-                <div class="nutrition">
-                    <p>Пищевая ценность на 100 грамм:</p>
-                    <div>
-                        <p>Белки<span>8,468 г.</span></p>
-                        <p>Жиры<span>8,468 г.</span></p>
-                        <p>Углеводы<span>8,468 г.</span></p>
-                    </div>
-                    <span>Калорийность: 476 ккал</span>
-                </div>
-            </div>
-            <div class="item-info right">
-                <h1>Ролл-ассорти Кумимаки</h1>
-                <span>Состав:</span>
-                <p>Ассорти из классических японских роллов: сякэ маки, тэкка маки, изуми тай маки, ика маки спайс, кай ёси маки спайс, тамаго маки.</p>
-                <i class="icon icon-like">Добавить в избранное</i>
-                <div class="rating">
-                    <p>Рейтинг:</p>
-                    <div class="clear">
-                        <div class="left">
-                            <p>4,6</p>
-                            <div class="stars"><span style="width:92%"></span></div>
-                            <span class="icon icon-user">Оценило 47 чел.</span>
-                        </div>
-                        <div class="right">
-                            <ul>
-                                <li>
-                                    <span class="icon icon-star">5</span>
-                                    <p class="rate-1" style="width: 100%"><i>1020</i></p>
-                                </li>
-                                <li>
-                                    <span class="icon icon-star">4</span>
-                                    <p class="rate-2" style="width: 55.3%"><i>564</i></p>
-                                </li>
-                                <li>
-                                    <span class="icon icon-star">3</span>
-                                    <p class="rate-3" style="width: 15.9%"><i>105</i></p>
-                                </li>
-                                <li>
-                                    <span class="icon icon-star">2</span>
-                                    <p class="rate-4" style="width: 5.9%"><i>52</i></p>
-                                </li>
-                                <li>
-                                    <span class="icon icon-star">1</span>
-                                    <p class="rate-5" style="width: 2.3%"><i>12</i></p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="quantity">
+        <div class="clear">
+            <div class="left-sidebar">
+               <nav>
+                   <ul>
+                       <li><a href="#">Факты о Японии</a></li>
+                       <li><a href="#">Рецепты японской кухни</a></li>
+                       <li><a href="#">Японские праздники</a></li>
+                       <li><a href="#" class="active">Конкурсы</a></li>
+                       <li><a href="#">Архив опросов</a></li>
+                       <li><a href="#">Архив конкурсов</a></li>
+                   </ul>
+               </nav>
+               <!-- <div class="vk-block">
 
-                </div>
-                <div class="social">
-                    <img src="../images/social.png" alt="" />
-                </div>
+               </div> -->
             </div>
+            <div class="office">
+                <p class="office-title">Конкурсы</p>
+                <div class="personal clear arhive">
+                    <div class="competitions">
+                        <div class="cmpetition-img">
+                            <img src="">
+                            <i class="plus">Идёт приём конкурсных работ</i>
+                        </div>
+                        <div class="competition-text">
+                            <h3>Конкурс на лучший веселый стих по теме Суши - Пиво - Октоберфест</h3>
+                            <h2>Старт голосования: 25 сентября</h2>
+                            <p>В конкурсе и голосовании участвуют зарегистрированные пользователи, сделавшие хотя бы один заказ. Творите, выдумывайте, фантазируйте!</p>
+                            <p>Конкурс проводится с <span>18-го сентября по 2-е октября</span></p>
+                            <p>Три победителя занявших 1-е, 2-е и 3-е места, получают в подарок БЕСПЛАТНЫЙ заказ суши на 2000, 1500 и 1000 рублей соответственно! Подведение итогов 03 октября в 15-00. Спешите участвовать!!! </p>
+                            <i>Добавить работу</i>
+                            <a href="">Смотреть полностью...</a>
+                        </div>
+                    </div>
+                    <div class="competitions">
+                        <div class="cmpetition-img">
+                            <img src="">
+                            <i>Идёт голосование</i>
+                        </div>
+                        <div class="competition-text">
+                            <h3>Конкурс на лучший веселый стих по теме Суши - Пиво - Октоберфест</h3>
+                            <h2>Старт голосования: 25 сентября</h2>
+                            <p>В конкурсе и голосовании участвуют зарегистрированные пользователи, сделавшие хотя бы один заказ. Творите, выдумывайте, фантазируйте!</p>
+                            <p>Конкурс проводится с <span>18-го сентября по 2-е октября</span></p>
+                            <p>Три победителя занявших 1-е, 2-е и 3-е места, получают в подарок БЕСПЛАТНЫЙ заказ суши на 2000, 1500 и 1000 рублей соответственно! Подведение итогов 03 октября в 15-00. Спешите участвовать!!! </p>
+                            <a href="">Смотреть полностью...</a>
+                        </div>
+                    </div>
+                    <div class="competitions">
+                        <div class="cmpetition-img">
+                            <img src="">
+                            <i>Идёт голосование</i>
+                        </div>
+                        <div class="competition-text">
+                            <h3>Конкурс на лучший веселый стих по теме Суши - Пиво - Октоберфест</h3>
+                            <h2>Старт голосования: 25 сентября</h2>
+                            <p>В конкурсе и голосовании участвуют зарегистрированные пользователи, сделавшие хотя бы один заказ. Творите, выдумывайте, фантазируйте!</p>
+                            <p>Конкурс проводится с <span>18-го сентября по 2-е октября</span></p>
+                            <p>Три победителя занявших 1-е, 2-е и 3-е места, получают в подарок БЕСПЛАТНЫЙ заказ суши на 2000, 1500 и 1000 рублей соответственно! Подведение итогов 03 октября в 15-00. Спешите участвовать!!! </p>
+                            <a href="">Смотреть полностью...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
 </section>
+
 
 <!-- END CONTENT -->
 
@@ -191,18 +199,18 @@
             <div class="content">
                 <nav>
                     <ul class="list-menu clear">
-                        <li><a href="#">Суши-Профи</a> - бесплатная доставка, </li>
-                        <li><a href="#">суши</a>, </li>
-                        <li><a href="#">роллов</a>, </li>
-                        <li><a href="#">бокс-суши</a>, </li>
-                        <li><a href="#">онигири</a>, </li>
-                        <li><a href="#">сашими</a>, </li>
-                        <li><a href="#">ассорти-сетов суши и роллов</a>, </li>
-                        <li><a href="#">салатов</a>, </li>
-                        <li><a href="#">супов</a>, </li>
-                        <li><a href="#">горячих блюд</a>, </li>
-                        <li><a href="#">десертов</a>, и </li>
-                        <li><a href="#">напитков</a>.</li>
+                        <li><a href="#">Суши-Профи</a>-бесплатная доставка,</li>
+                        <li>&nbsp;<a href="#">суши</a>,</li>
+                        <li>&nbsp;<a href="#">роллов</a>,</li>
+                        <li>&nbsp;<a href="#">бокс-суши</a>,</li>
+                        <li>&nbsp;<a href="#">онигири</a>,</li>
+                        <li>&nbsp;<a href="#">сашими</a>,</li>
+                        <li>&nbsp;<a href="#">ассорти-сетов суши и роллов</a>,</li>
+                        <li>&nbsp;<a href="#">салатов</a>,</li>
+                        <li>&nbsp;<a href="#">супов</a>,</li>
+                        <li>&nbsp;<a href="#">горячих блюд</a>,</li>
+                        <li>&nbsp;<a href="#">десертов</a>, и</li>
+                        <li>&nbsp;<a href="#">напитков</a>.</li>
                     </ul>
                 </nav>
             </div>
@@ -247,7 +255,7 @@
                     </div>
                 </div>
                 <div class="footer-bottom__developer">
-                    <p class="number-developer">+7 (495) 617-14-24</p>
+                    <a href="#" class="number-developer">+7 (495) 617-14-24</a>
                     <a href="http://4-com.pro/"><img src="../css/images/developer.png" alt=""></a>
                 </div>
             </div>
