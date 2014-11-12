@@ -60,7 +60,9 @@
 
 @mixin ico ($ico,$size,$color,$height){
   content: $ico;
-  font: $size/$height $icon;
+  font-size: $size;
+  line-height: $height;
+  font-family: 'icomoon';
   color: $color;
   speak: none;
   -webkit-font-smoothing: antialiased;
