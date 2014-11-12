@@ -32,6 +32,7 @@
 		}
 	}
 }
+
 .office{
 	overflow: hidden;
 	padding: 0 0 10px 10px;
@@ -360,3 +361,19 @@
 	}
 }
 .no-visible{display: none;}
+.calendar{
+	label{
+		display: block;
+		color: #5d5d5d;
+		font-size: 15px;
+		line-height: 43px;
+	}
+	input{
+		border: 1px solid #c1c1c1;
+		font-size: 14px;
+		height: 43px;
+		padding: 0 10px;
+		color: #5d5d5d;
+		width: 155px;
+	}
+}
