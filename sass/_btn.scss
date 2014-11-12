@@ -1,4 +1,4 @@
-.btn{
+.button{
   @include border-radius(5px);
   @include transition(all ease .4s);
   cursor: pointer;
@@ -27,6 +27,7 @@
   &.small{
     height: 40px;
     line-height: 40px;
+    font-size: 16px;
   }
   &.silver{
     background: #e9e9e9;
@@ -39,26 +40,6 @@
       border-color: #e76b6b;
     }
   }
-}
-
-.btn-silver{
-  background: #d7dbdd;
-  color: #000000;
-  cursor: pointer;
-  @include border-radius(5px);
-  &:hover{background: #e0e5e7;}
-}
-.btn-vote{
-  font-weight: bold;
-  padding: 7px 28px;
-  font-size: 16px;
-  display: inline-block;
-}
-.btn-result{
-  padding: 7px 29px;
-  font-size: 16px;
-  margin-left: 20px;
-  display: inline-block;
 }
 
 .btn-archive{
