@@ -53,11 +53,11 @@ $(function(){
         closeOnEscape: true,
         show: {
             effect: 'fade',
-            duration: 800
+            duration: 500
         },
         hide: {
           effect: 'explode',
-            duration: 500
+            duration: 300
         },
         open: function(){
             $('.ui-widget-overlay, .close').bind('click', function(){
