@@ -6,6 +6,10 @@
 	font-weight: bold;
 	@include border-radius(5px);
 	&:hover{background: #e35656;}
+	.sum-price &{
+		padding: 8px 35px;
+		display: inline-block;
+	}
 }
 .btn-silver{
 	background: #d7dbdd;
@@ -40,10 +44,6 @@
 .btn-archive{
 	color: #e76b6b;
 	&:hover{color: #e35656;}
-}
-.btn-remove-arch{
-	padding: 8px 35px;
-	display: inline-block;
 }
 .btn-grey{
 	background: #d7dbdd;
