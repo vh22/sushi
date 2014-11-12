@@ -894,7 +894,14 @@ html, body, .container {height: 100%;}
   top: 10px;
   position: relative;
 }
-.poll-btn{margin: 38px 0 16px;}
+.poll-btn{
+  margin: 38px 0 16px;
+  .btn{
+    float: left;
+    width: 164px;
+    &.grey{margin-left: 20px}
+  }
+}
 .pos-static{position: static !important;}
 .product{
   position: relative;
@@ -937,13 +944,12 @@ html, body, .container {height: 100%;}
 .product-buy{
   input{
     float: left;
-    //width: 60px;
   }
-  a{display: inline-block;}
   .icon-cart{
     color: $hover;
     padding: 2px 4px;
     display: inline-block;
+    cursor: pointer;
     &:hover{
       color: #a62702;
     }
