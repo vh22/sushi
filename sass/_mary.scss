@@ -351,7 +351,7 @@
   	border-top: none;
   	padding-top: 10px;
   }
-  .cmpetition-img{
+  .competition-img{
     margin-right: 15px;
     position: relative;
     float: left;
@@ -442,13 +442,74 @@
 	  }
     }
     .konkurs-data{
+    	margin-top: 15px;
+    	border-top: 1px solid #e5e5e5;
+    	padding: 15px 0;
     	h4{
     		color: #000;
     		font-size: 22px;
+    		margin-bottom: 10px;
     	}
     	p{
     		margin: 0;
     		padding: 0;
+    	}
+    	.data-left{
+    		width: 40%;
+    		float: left;
+    	}
+    	.data-right{
+    		float: right;
+    		width: 60%;
+    		h4{
+				padding-left: 25px;
+				position: relative;
+				&:before{
+					content: "\e639";
+			        color: #e76b6b;
+			        font: 24px 'icomoon';
+			        position: absolute;
+			        left: -3px;
+			        top: 3px;
+				}
+    		}
+    	}
+    }
+    .konkurs-winners{
+    	border-top: 1px solid #e5e5e5;
+    	padding: 15px 0;
+    	h4{
+    		color: #e76b6b;
+    		font-size: 22px;
+    	}
+    	ul{
+    		text-align: center;
+    		margin: 15px 0;
+
+    		li{
+    			float: left;
+    			position: relative;
+    			border: 1px solid #8a8a8a;
+    			padding: 20px 0;
+    			font-size: 18px;
+    			width: 33.1%;
+    			margin: 0 -1px 0 0;
+    			.winners-name{
+    				width: 700;
+    				color: #000;
+    			}
+    		}
+    	}
+    }
+    ul{
+    	li{
+    		float: left;
+    		position: relative;
+    		border-left: 3px dotted #e5e5e5;
+    		height: 70px;
+    		&:last-child{
+    			border-right: 3px dotted #e5e5e5;
+    		}
     	}
     }
   }
@@ -459,8 +520,11 @@
 
 
 .competition-answer{
-  border-top: 1px solid #e5e5e5;
-  p{
+  >p{
+  	height: 55px;
+  	line-height: 55px;
+  	border-top: 1px solid #e5e5e5;
+  	padding-left: 10px;
     span {
       border-left: 1px dashed #8a8a8a;
       color: #8a8a8a;
@@ -471,14 +535,22 @@
   }
   .answer{
     border-top: 1px solid #e5e5e5;
+    padding: 20px 10px;
     p{
       position: relative;
+      overflow: hidden;
     }
     img{
       width: 240px;
       height: 180px;
-      display: block;
+      float: left;
+      margin-right: 25px;
     }
+  }
+  .name{
+  	color: #5e5e5e;
+	font-size: 16px;
+	width: 700;
   }
 }
 .vk-social{
@@ -486,6 +558,14 @@
 	img{
 		display: block;
 		margin: 0 auto;
+	}
+}
+.add-answer{
+	border-top: 1px solid #e5e5e5;
+
+	i{
+		float: right;
+		margin: 20px 0;
 	}
 }
 
