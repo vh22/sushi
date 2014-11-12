@@ -34,7 +34,6 @@ $(function(){
         $(this).html();
         return false;
     });
-
     $(window).load(function(){
         $(".js-header-bottom").sticky({ topSpacing: 0, center:true, className:"sticked-menu" });
 //      $(".js-big-menu").sticky({ topSpacing: 65, center:true, className:"menu-height" });
@@ -44,31 +43,31 @@ $(function(){
         $('.sticked-menu').length ? $('header').addClass('sticked') : $('header').removeClass('sticked');
     });
 
-    $('.window').dialog({
-        autoOpen: false,
-//        height: 345,
-        width: 635,
-        modal: true,
-        resizable: false,
-        closeOnEscape: true,
-        show: {
-            effect: 'fade',
-            duration: 800
-        },
-        hide: {
-          effect: 'explode',
-            duration: 500
-        },
-        open: function(){
-            $('.ui-widget-overlay, .close').bind('click', function(){
-               $('.window').dialog('close');     
-            });
-        }
-    });
+//     $('.window').dialog({
+//         autoOpen: false,
+// //        height: 345,
+//         width: 635,
+//         modal: true,
+//         resizable: false,
+//         closeOnEscape: true,
+//         show: {
+//             effect: 'fade',
+//             duration: 800
+//         },
+//         hide: {
+//           effect: 'explode',
+//             duration: 500
+//         },
+//         open: function(){
+//             $('.ui-widget-overlay, .close').bind('click', function(){
+//                $('.window').dialog('close');     
+//             });
+//         }
+//     });
 
-    $('.ui-dialog-titlebar').remove();
+//     $('.ui-dialog-titlebar').remove();
 
-    $('.add-review').click(function(){
-        $('#add-review').dialog('open');
-    });
+//     $('.add-review').click(function(){
+//         $('#add-review').dialog('open');
+//     });
 });
