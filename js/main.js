@@ -43,31 +43,33 @@ $(function(){
         $('.sticked-menu').length ? $('header').addClass('sticked') : $('header').removeClass('sticked');
     });
 
-//     $('.window').dialog({
-//         autoOpen: false,
-// //        height: 345,
-//         width: 635,
-//         modal: true,
-//         resizable: false,
-//         closeOnEscape: true,
-//         show: {
-//             effect: 'fade',
-//             duration: 800
-//         },
-//         hide: {
-//           effect: 'explode',
-//             duration: 500
-//         },
-//         open: function(){
-//             $('.ui-widget-overlay, .close').bind('click', function(){
-//                $('.window').dialog('close');     
-//             });
-//         }
-//     });
+    if ($('.window').length){
+        $('.window').dialog({
+            autoOpen: false,
+//        height: 345,
+            width: 635,
+            modal: true,
+            resizable: false,
+            closeOnEscape: true,
+            show: {
+                effect: 'fade',
+                duration: 300
+            },
+            hide: {
+                effect: 'drop',
+                duration: 200
+            },
+            open: function(){
+                $('.ui-widget-overlay, .close').bind('click', function(){
+                    $('.window').dialog('close');
+                });
+            }
+        });
 
-//     $('.ui-dialog-titlebar').remove();
+        $('.ui-dialog-titlebar').remove();
 
-//     $('.add-review').click(function(){
-//         $('#add-review').dialog('open');
-//     });
+        $('.add-review').click(function(){
+            $('#add-review').dialog('open');
+        });
+    }
 });
