@@ -25,6 +25,15 @@ $(function(){
         $(this).addClass('active');
         $('.list-product').hasClass('five') ? $('.list-product').removeClass('five').addClass('eight') : $('.list-product').removeClass('eight').addClass('five');
     });
+    $('.js-more').click(function(){
+        // var order = $(this).closest('.personal').find('.no');
+        // order.hasClass('no-visible') ? order.removeClass('no-visible').addClass('visible') : order.removeClass('visible').addClass('no-visible');
+        // order.slideToggle( "slow", function() {
+        //     $(this).css('display', 'table');
+        // });
+        $(this).html();
+        return false;
+    });
 
     $(window).load(function(){
         $(".js-header-bottom").sticky({ topSpacing: 0, center:true, className:"sticked-menu" });

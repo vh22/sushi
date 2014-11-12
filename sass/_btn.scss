@@ -2,6 +2,8 @@
 	background: #e76b6b;
 	color: #fff;
 	cursor: pointer;
+	font: 18px $fontPt;
+	font-weight: bold;
 	@include border-radius(5px);
 	&:hover{background: #e35656;}
 }
@@ -33,8 +35,7 @@
 //	}
 }
 .btn-save{
-	font: 18px $fontPt;
-	font-weight: bold;	
+		
 }
 .btn-archive{
 	color: #e76b6b;
@@ -43,4 +44,22 @@
 .btn-remove-arch{
 	padding: 8px 35px;
 	display: inline-block;
+}
+.btn-grey{
+	background: #d7dbdd;
+	color: #000;
+	position: relative;
+	font: 16px/19px $font;
+	font-weight: 500;
+	padding: 12px 12px 11px 40px;
+	@include border-radius(5px);
+	&:hover{background: #e0e5e7;}
+	&:before{
+		content: '\e62a';
+		font-family: $icon;
+		color: #5d5d5d;
+		font-size: 25px;
+		font-weight: normal;
+		@include absLT(8px, 10px);
+	}
 }
