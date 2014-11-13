@@ -77,13 +77,14 @@
   label{
     display: block;
     color: #5d5d5d;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 43px;
+    text-transform: uppercase;
   }
   input{
     border: 1px solid #c1c1c1;
     font-size: 14px;
-    height: 43px;
+    height: 40px;
     padding: 0 10px;
     color: #5d5d5d;
     width: 348px;
@@ -119,7 +120,8 @@
       @include absLT(0, 0);
     }
   }
-  .dropdown-menu{
+}
+.dropdown-menu{
     li:nth-child(2){display: none;}
     div{
         position: absolute;
@@ -198,7 +200,6 @@
             color: #989391;
         }
     }
-  }
 }
 .address{
   padding: 27px 12px 8px;
@@ -444,13 +445,13 @@
   label{
     display: block;
     color: #5d5d5d;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 43px;
   }
   input{
     border: 1px solid #c1c1c1;
     font-size: 14px;
-    height: 43px;
+    height: 40px;
     padding: 0 35px 0 10px;
     color: #5d5d5d;
     width: 175px;
@@ -552,10 +553,166 @@
     color: #5e5e5e;
 }
 .my-lunch{
+    width: 370px;
+    float: right;
+    background: #fff;
+    padding-top: 35px;
+    @include bb;
     .lunch-title{
         font: 700 20px/20px $fontPt;
         color: #5e5e5e;
         border-bottom: 1px solid #e5e5e5;
-        span{float: right;}
+        margin: 0 10px;
+        padding-bottom: 7px;
+        span{
+            float: right;
+            color: #e76b6b; 
+            cursor: pointer;
+            &:hover{color: #e35656;}    
+            &.icon-edit1{font-size: 16px;}
+            &.icon-delete_box{font-size: 17px; margin-left: 5px;}
+        }
+    }
+    img{max-width: 45px;}
+    .row-lunch{
+        display: table;
+        min-height: 60px;
+        margin: 0 10px;
+        border-bottom: 1px dashed #939292;
+        &>div{
+            display: table-cell;
+            vertical-align: middle;
+            &:nth-child(1){width: 15%;}
+            &:nth-child(2){width: 55%;}
+            &:nth-child(3){width: 10%;}
+            &:nth-child(4){width: 10%;}
+        }
+        p{
+             font: 13px/18px $fontPt;
+             color: #5d5d5d;
+             text-align: center;
+             &.name-lunch{
+                font: 700 13px/18px $fontPt;
+                text-align: left;
+            }
+        }
+    }
+    
+    .price-lunch{
+        position: relative;
+        padding-right: 10px;
+        &:before{
+            content: '\e620';
+            font-family: $icon;
+            @include absRT(0,0);
+            font-size: 11px;
+        }
+    }
+    .lunch-discount{
+        padding: 0 10px;
+        p{
+           font: 18px/50px $fontPt;
+           color: #5e5e5e;
+           text-align: right;
+           span{
+               position: relative;
+               padding-right: 15px;
+               &:before{
+                   content: '\e620';
+                   font-family: $icon;
+                   @include absRT(0,-13px);
+                   font-size: 13px;
+               }
+           } 
+       }
+    }
+    .lunch-cost{
+        background: #e76b6b;
+        padding: 0 10px;
+        p{
+            color: #fff;
+            font: 700 20px/53px $fontPt;
+            &:nth-child(1){float: left;}
+            &:nth-child(2){float: right;}
+        }
+    }
+}
+.checkout-form{
+    float: left;
+    width: 810px;
+    input{
+        border: 1px solid #c1c1c1;
+        font-size: 14px;
+        height: 40px;
+        padding: 0 10px;
+        color: #5d5d5d;
+    }
+    label{
+        display: block;
+        color: #5d5d5d;
+        font-size: 14px;
+        line-height: 43px;
+        text-transform: uppercase;
+    }
+    .form-block{
+        background: #fff;
+        padding: 20px 0 25px 20px;
+        margin-bottom: 20px;
+    }
+    .col-two, .col-four{
+        div{
+            float: left;
+            margin-right: 20px;
+        }
+    }
+    .col-two{
+        input{width: 352px;}
+    }
+    .col-one{
+        input{width: 746px;}
+    }
+    .col-four{
+        input{width: 155px;}
+    }
+    .calendar{
+        float: left;
+        margin-right: 20px;
+    }
+    .time{
+        float: left;
+        div{
+            float: left;
+            margin-right: 20px;
+            position: relative;
+            &:before{
+                content: '\e629';
+                font-family: $icon;
+                @include absRT(10px,10px);
+                font-size: 23px;
+                color: #5d5d5d;
+            }
+            input{
+                width: 100px;
+                padding-right: 35px;
+            }
+            p{
+                float: left;
+                text-transform: uppercase;
+                color: #5d5d5d;
+                font-size: 15px;
+                padding: 15px 10px 15px 0;
+            }
+        }
+    }
+    textarea{
+        resize: none;
+        padding: 10px;
+        width: 745px;
+        height: 100px;
+    }
+    .payment{
+        li:nth-child(1){
+            
+        }
     }
 }

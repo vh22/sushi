@@ -110,11 +110,186 @@
         </div>
         <p class="checkot-title">Оформление заказа</p>
        <div class="clear">
-           <div>
-               
+           <div class="checkout-form">
+               <form action="">
+                   <div class="form-block">
+                       <div class="col-two clear">
+                            <div>
+                                <label for="1">Имя</label>
+                                <input id="1" type="text" value="Степан">
+                            </div>
+                            <div>
+                                <label for="2">Фамилия</label>
+                                <input id="2" type="text" value="Иванов">
+                            </div>
+                        </div>
+                   </div>
+                    <div class="form-block">
+                        <div class="col-two clear">
+                             <div>
+                                 <label for="1">Выбрать телефон</label>
+                                 <input id="2" type="text" value="Иванов">
+                             </div>
+                             <div>
+                                 <label for="2">Добавить телефон</label>
+                                 <input id="2" type="text" value="Иванов">
+                             </div>
+                         </div>
+                         <div class="col-one">
+                             <label for="3">Адрес</label>
+                             <input type="text" id="3" value="м. Калужская, ул. Старокалужское ш-е, д. 65, корп. 0А---А, стр. 5, под. 5, этаж 3, кв. 122">
+                         </div>
+                         <div class="col-two clear">
+                             <div>
+                                 <label for="4">Метро</label>
+                                 <input id="4" type="text" value="">
+                             </div>
+                             <div>
+                                 <label for="5">Улица</label>
+                                 <input id="5" type="text" value="">
+                             </div>
+                         </div>
+                         <div class="col-four clear">
+                             <div>
+                                 <label for="6">Дом</label>
+                                 <input id="6" type="text" value="">
+                             </div>
+                             <div>
+                                 <label for="7">Корпус</label>
+                                 <input id="7" type="text" value="">
+                             </div>
+                             <div>
+                                 <label for="8">Строение</label>
+                                 <input id="8" type="text" value="">
+                             </div>
+                             <div>
+                                 <label for="9">Подъезд</label>
+                                 <input id="9" type="text" value="">
+                             </div>
+                             <div>
+                                 <label for="10">Код двери</label>
+                                 <input id="10" type="text" value="">
+                             </div>
+                             <div>
+                                 <label for="11">Этаж</label>
+                                 <input id="11" type="text" value="">
+                             </div>
+                             <div>
+                                 <label for="12">Квартира</label>
+                                 <input id="12" type="text" value="">
+                             </div>
+                         </div>
+                    </div>
+                    <div class="form-block clear" ng-controller="DatepickerDemoCtrl">
+                        <div class="calendar">
+                            <label>Дата доставки</label>
+                            <p class="input-group">
+                                <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" datepicker-options="dateOptions" close-text="Close" />
+                                <span class="input-group-btn">
+                                <button type="button" class="btn-default" ng-click="open($event)"><span class="icon icon-calendar"></span></button>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="time clear">
+                            <label>Удобное время доставки</label>
+                            <div>
+                                <p>C:</p>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <p>До:</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <div>
+                            <label for="13">Количество персон</label>
+                            <input id="13" type="text" value="">
+                        </div>
+                        <div>
+                            <label for="14">Дополнительная информация или особые требования</label>
+                            <textarea name="" id="14" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-block payment">
+                        <p>Oплата</p>
+                        <div ng-controller="tabsController">
+                            <ul>
+                                <li ng-class="{'active': activeTab == 'cont-1'}">
+                                    <a href="javascript:;" ng-click="switchToTab('cont-1')">
+                                       Наличные 
+                                    </a>
+                                </li>
+                                <li ng-class="{'active': activeTab == 'cont-2'}">
+                                    <a href="javascript:;" ng-click="switchToTab('cont-2')">
+                                        Банковская карта
+                                    </a>
+                                </li>
+                                <li ng-class="{'active': activeTab == 'cont-3'}">
+                                    <a href="javascript:;" ng-click="switchToTab('cont-3')">
+                                        Электронные деньги
+                                    </a>
+                                </li>
+                            </ul>
+                            <div ng-show="activeTab == 'cont-1'">1</div>
+                            <div ng-show="activeTab == 'cont-2'">2</div>
+                            <div ng-show="activeTab == 'cont-3'">3</div>
+                        </div>
+                    </div>
+               </form>
            </div>
            <div class="my-lunch clear">
-               <p class="lunch-title">Мой обед <span></span> <span></span> </p>
+               <p class="lunch-title">Мой обед <span class="icon icon-delete_box"></span> <span class="icon icon-edit1"></span></p>
+               <div class="row-lunch">
+                   <div>
+                        <img src="../images/products/archiv.png" alt="">
+                   </div>
+                   <div>
+                       <p class="name-lunch">Онигири Темпура Спайси Кай Ёси</p>
+                   </div>
+                   <div>
+                       <p><span>1</span> шт.</p>
+                   </div>
+                   <div>
+                       <p class="price-lunch">255</p>
+                   </div>
+               </div>
+               <div class="row-lunch">
+                   <div>
+                        <img src="../images/products/archiv.png" alt="">
+                   </div>
+                   <div>
+                       <p class="name-lunch">Онигири Темпура Спайси Кай Ёси</p>
+                   </div>
+                   <div>
+                       <p><span>1</span> шт.</p>
+                   </div>
+                   <div>
+                       <p class="price-lunch">255</p>
+                   </div>
+               </div>
+               <div class="row-lunch">
+                   <div>
+                        <img src="../images/products/archiv.png" alt="">
+                   </div>
+                   <div>
+                       <p class="name-lunch">Онигири Темпура Спайси Кай Ёси</p>
+                   </div>
+                   <div>
+                       <p><span>1</span> шт.</p>
+                   </div>
+                   <div>
+                       <p class="price-lunch">255</p>
+                   </div>
+               </div>
+               <div class="lunch-discount">
+                   <p>Скидка <span>255</span></p>
+               </div>
+               <div class="lunch-cost clear">
+                   <p>Итого к оплате:</p>
+                   <p><span>5255</span> руб.</p>
+               </div>
            </div>
        </div>
     </div>
@@ -207,8 +382,11 @@
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
 <!-- endbower -->
-<script src="../js/directives.js"></script>
-<script type="text/javascript" src="../js/main.js"></script>
+<script src="../js/ctrl.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
