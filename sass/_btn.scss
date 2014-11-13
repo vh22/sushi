@@ -23,6 +23,11 @@
       @include ico('\e62a',25px,#5d5d5d,19px);
       @include absLT(8px, 10px);
     }
+    &.active{
+      &:before{
+        @include transform(rotate(180deg));
+      }
+    }
   }
   &.small{
     height: 40px;
