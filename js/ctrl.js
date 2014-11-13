@@ -31,4 +31,9 @@ angular.module('sushiApp').controller('DatepickerDemoCtrl', function ($scope) {
 }).config(function (datepickerConfig, datepickerPopupConfig) {
       datepickerConfig.showWeeks = false;
       datepickerPopupConfig.toggleWeeksText = null;
-});
+}).controller('tabsController', ['$scope', function($scope) { 
+  $scope.activeTab = 'cont-1'; 
+  $scope.switchToTab = function( tab ) { 
+    $scope.activeTab = tab; 
+  } 
+}]);
