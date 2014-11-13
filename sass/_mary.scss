@@ -198,6 +198,10 @@
         line-height: 26px;
         @include border-radius (50%);
         &:hover{border-color: #e76b6b;}
+        .next{
+        	@include transform(rotate(-180deg));
+        	@include transition(all ease .1s);
+        }
       }
       &.active a{border-color: #000;}
       &.navigation a:hover{
@@ -358,7 +362,6 @@
     img{
       display: block;
       width: 290px;
-      height: 200px;
     }
     i{
       border: 2px dotted #1e71b8;
@@ -399,7 +402,11 @@
   .competition-text{
     position: relative;
     overflow: hidden;
-    i{margin-right: 40px;}
+    >i{
+    	margin-right: 40px;
+    	float: left;
+    }
+    .link-office{line-height: 47px;}
     p{
       margin-bottom: 10px;
       span{
@@ -408,7 +415,7 @@
       }
     }
     h3{
-      font-size: 20px;
+      font: bold 20px $fontPt;
       width: 700;
       a{color: #5d5d5d;}
     }
@@ -427,7 +434,7 @@
         font: 32px 'icomoon';
         position: absolute;
         left: 12px;
-        top: 78px;
+        top: 48px;
       }
       &.complete{
 		color: #4aa20f;
@@ -437,7 +444,7 @@
 	        font: 32px 'icomoon';
 	        position: absolute;
 	        left: 12px;
-	        top: 78px;
+	        top: 48px;
 		}
 	  }
     }
@@ -482,10 +489,9 @@
     		color: #e76b6b;
     		font-size: 22px;
     	}
-    	ul{
+    	>ul{
     		text-align: center;
     		margin: 15px 0;
-
     		li{
     			float: left;
     			position: relative;
@@ -501,12 +507,20 @@
     		}
     	}
     }
-    ul{
+    >ul{
+    	text-align: center;
+    	margin-top: 10px;
     	li{
     		float: left;
     		position: relative;
     		border-left: 3px dotted #e5e5e5;
     		height: 70px;
+    		width: 100px;
+    		.icone-red{
+    			color: #e45e5e;
+    			margin-bottom: 8px;
+    			display: inline-block;
+    		}
     		&:last-child{
     			border-right: 3px dotted #e5e5e5;
     		}
@@ -540,17 +554,42 @@
       position: relative;
       overflow: hidden;
     }
-    img{
-      width: 240px;
-      height: 180px;
-      float: left;
-      margin-right: 25px;
+    div{
+    	float: left;
+    	width: 240px;
+    	margin-right: 25px;
+    	img{
+	      width: 240px;
+	      margin-bottom: 20px;
+	    }
+	    a{
+	    	margin: 0 auto;
+	    	&.like{
+	    		background: #4aa20f;
+	    		pointer-events: none;
+	    	}
+	    	i{
+	    		top: 5px;
+	    		right: 6px;
+	    		position: relative;
+	    	}
+	    }
     }
   }
   .name{
   	color: #5e5e5e;
 	font-size: 16px;
 	width: 700;
+  }
+  >i{
+  	border: 2px dotted #e76b6b;
+    border-radius: 17px;
+    font-size: 22px;
+    padding: 6px 10px;
+    margin: 6px 0;
+    position: relative;
+    float: right;
+    color: #e76b6b;
   }
 }
 .vk-social{
@@ -562,10 +601,76 @@
 }
 .add-answer{
 	border-top: 1px solid #e5e5e5;
-
 	i{
 		float: right;
 		margin: 20px 0;
 	}
 }
 
+
+//LOGIN
+
+.login-block{
+	position: relative;
+	&:before{
+		content: "\e634";
+		color: #fcf0f0;
+	    font: 750px 'icomoon';
+	    position: absolute;
+	    left: -9px;
+	    top: -160px;
+	}
+	
+	form{
+		font: 14px $font;
+		color: #5d5d5d;
+		margin: 0 auto;
+		display: block;
+		width: 400px;
+		position: relative;
+		z-index: 1;
+		padding: 130px 0;
+		input{
+			font: 14px $font;
+			color: #5d5d5d;
+			height: 40px;
+			border: solid 1px #5d5d5d;
+			display: block;
+			padding: 0 10px;
+			position: relative;
+			width: 100%;
+			margin: 15px 0;
+		}
+		a{
+			line-height: 40px;
+		}
+		.login-checkbox{
+			display: block;
+			line-height: 40px;
+			label{
+				float: left;
+				>input{
+				margin: 0;
+				width: 40px;
+				height: 40px;
+				float: left;
+				}
+			}
+			a{
+				float: right;
+			}
+		}
+		button{
+			margin: 0 auto;
+		}
+	}
+	a{
+		font-style: italic;
+		color: #e76b6b;
+		text-decoration: underline;
+		cursor: pointer;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
