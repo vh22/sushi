@@ -64,7 +64,7 @@
                                 <div class="big-menu js-big-menu">
                                     <nav>
                                         <ul class="clear">
-                                            <li><a href="#" class="active"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
+                                            <li><a href="#"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
                                             <li><a href="#"><span class="icon icon-fz39 icon-roll"></span>Роллы</a></li>
                                             <li><a href="#"><span class="icon icon-fz35 icon-warmroll"></span>Теплые роллы</a></li>
                                             <li><a href="#"><span class="icon icon-fz37 icon-sushibox"></span>Бокс-суши</a></li>
@@ -213,9 +213,9 @@
                         </div>
                     </div>
                     <div class="form-block payment">
-                        <p>Oплата</p>
+                        <p class="payment-title">Oплата</p>
                         <div ng-controller="tabsController">
-                            <ul>
+                            <ul class="clear">
                                 <li ng-class="{'active': activeTab == 'cont-1'}">
                                     <a href="javascript:;" ng-click="switchToTab('cont-1')">
                                        Наличные 
@@ -232,10 +232,24 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div ng-show="activeTab == 'cont-1'">1</div>
+                            <div ng-show="activeTab == 'cont-1'">
+                                <div>
+                                    <label for="15">Потребуется ли сдача курьеру</label>
+                                    <input type="checkbox" id="15">
+                                </div>
+                                <div>
+                                    <label for="16"></label>
+                                    <input type="text">
+                                </div>
+                            </div>
                             <div ng-show="activeTab == 'cont-2'">2</div>
                             <div ng-show="activeTab == 'cont-3'">3</div>
                         </div>
+                    </div>
+                    <div class="finish-payment">
+                        <a href="#">Назад</a>
+                        <a href="#" class="white-arrow">Перейти к оплате</a>
+                        <a href="#">Вернуться в магазин</a>
                     </div>
                </form>
            </div>
