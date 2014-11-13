@@ -199,8 +199,8 @@
         @include border-radius (50%);
         &:hover{border-color: #e76b6b;}
         .next{
-        	@include transform(rotate(-180deg));
-        	@include transition(all ease .1s);
+          @include transform(rotate(-180deg));
+          @include transition(all ease .1s);
         }
       }
       &.active a{border-color: #000;}
@@ -315,10 +315,10 @@
       float: left;
     }
     h3{
-    	a{
-    		color: #5d5d5d;
-    		&:hover{color: #e76b6b;}
-    	}
+      a{
+        color: #5d5d5d;
+        &:hover{color: #e76b6b;}
+      }
       font-size: 20px;
       width: 700;
       margin-bottom: 13px;
@@ -327,8 +327,8 @@
       position: relative;
       overflow: hidden;
       .link-office{
-      	display: inline-block;
-      	margin-top: 13px;
+        display: inline-block;
+        margin-top: 13px;
       }
     }
     &:last-child{border-bottom:none;}
@@ -337,10 +337,10 @@
     border-top: 1px solid #e5e5e5;
     margin-top: 30px;
     padding: 20px 0;
-	img{
-		display: block;
-		margin: auto;
-	}
+    img{
+      display: block;
+      margin: auto;
+    }
   }
 }
 
@@ -352,8 +352,8 @@
   position: relative;
   float: left;
   &:first-child{
-  	border-top: none;
-  	padding-top: 10px;
+    border-top: none;
+    padding-top: 10px;
   }
   .competition-img{
     margin-right: 15px;
@@ -403,8 +403,8 @@
     position: relative;
     overflow: hidden;
     >i{
-    	margin-right: 40px;
-    	float: left;
+      margin-right: 40px;
+      float: left;
     }
     .link-office{line-height: 47px;}
     p{
@@ -437,94 +437,94 @@
         top: 48px;
       }
       &.complete{
-		color: #4aa20f;
-		&:before{
-			content: "\e63a";
-	        color: #5d5d5d;
-	        font: 32px 'icomoon';
-	        position: absolute;
-	        left: 12px;
-	        top: 48px;
-		}
-	  }
+        color: #4aa20f;
+        &:before{
+          content: "\e63a";
+          color: #5d5d5d;
+          font: 32px 'icomoon';
+          position: absolute;
+          left: 12px;
+          top: 48px;
+        }
+      }
     }
     .konkurs-data{
-    	margin-top: 15px;
-    	border-top: 1px solid #e5e5e5;
-    	padding: 15px 0;
-    	h4{
-    		color: #000;
-    		font-size: 22px;
-    		margin-bottom: 10px;
-    	}
-    	p{
-    		margin: 0;
-    		padding: 0;
-    	}
-    	.data-left{
-    		width: 40%;
-    		float: left;
-    	}
-    	.data-right{
-    		float: right;
-    		width: 60%;
-    		h4{
-				padding-left: 25px;
-				position: relative;
-				&:before{
-					content: "\e639";
-			        color: #e76b6b;
-			        font: 24px 'icomoon';
-			        position: absolute;
-			        left: -3px;
-			        top: 3px;
-				}
-    		}
-    	}
+      margin-top: 15px;
+      border-top: 1px solid #e5e5e5;
+      padding: 15px 0;
+      h4{
+        color: #000;
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      p{
+        margin: 0;
+        padding: 0;
+      }
+      .data-left{
+        width: 40%;
+        float: left;
+      }
+      .data-right{
+        float: right;
+        width: 60%;
+        h4{
+          padding-left: 25px;
+          position: relative;
+          &:before{
+            content: "\e639";
+            color: #e76b6b;
+            font: 24px 'icomoon';
+            position: absolute;
+            left: -3px;
+            top: 3px;
+          }
+        }
+      }
     }
     .konkurs-winners{
-    	border-top: 1px solid #e5e5e5;
-    	padding: 15px 0;
-    	h4{
-    		color: #e76b6b;
-    		font-size: 22px;
-    	}
-    	>ul{
-    		text-align: center;
-    		margin: 15px 0;
-    		li{
-    			float: left;
-    			position: relative;
-    			border: 1px solid #8a8a8a;
-    			padding: 20px 0;
-    			font-size: 18px;
-    			width: 33.1%;
-    			margin: 0 -1px 0 0;
-    			.winners-name{
-    				width: 700;
-    				color: #000;
-    			}
-    		}
-    	}
+      border-top: 1px solid #e5e5e5;
+      padding: 15px 0;
+      h4{
+        color: #e76b6b;
+        font-size: 22px;
+      }
+      >ul{
+        text-align: center;
+        margin: 15px 0;
+        li{
+          float: left;
+          position: relative;
+          border: 1px solid #8a8a8a;
+          padding: 20px 0;
+          font-size: 18px;
+          width: 33.1%;
+          margin: 0 -1px 0 0;
+          .winners-name{
+            width: 700;
+            color: #000;
+          }
+        }
+      }
     }
     >ul{
-    	text-align: center;
-    	margin-top: 10px;
-    	li{
-    		float: left;
-    		position: relative;
-    		border-left: 3px dotted #e5e5e5;
-    		height: 70px;
-    		width: 100px;
-    		.icone-red{
-    			color: #e45e5e;
-    			margin-bottom: 8px;
-    			display: inline-block;
-    		}
-    		&:last-child{
-    			border-right: 3px dotted #e5e5e5;
-    		}
-    	}
+      text-align: center;
+      margin-top: 10px;
+      li{
+        float: left;
+        position: relative;
+        border-left: 3px dotted #e5e5e5;
+        height: 70px;
+        width: 100px;
+        .icone-red{
+          color: #e45e5e;
+          margin-bottom: 8px;
+          display: inline-block;
+        }
+        &:last-child{
+          border-right: 3px dotted #e5e5e5;
+        }
+      }
     }
   }
 }
@@ -535,10 +535,10 @@
 
 .competition-answer{
   >p{
-  	height: 55px;
-  	line-height: 55px;
-  	border-top: 1px solid #e5e5e5;
-  	padding-left: 10px;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid #e5e5e5;
+    padding-left: 10px;
     span {
       border-left: 1px dashed #8a8a8a;
       color: #8a8a8a;
@@ -555,34 +555,34 @@
       overflow: hidden;
     }
     div{
-    	float: left;
-    	width: 240px;
-    	margin-right: 25px;
-    	img{
-	      width: 240px;
-	      margin-bottom: 20px;
-	    }
-	    a{
-	    	margin: 0 auto;
-	    	&.like{
-	    		background: #4aa20f;
-	    		pointer-events: none;
-	    	}
-	    	i{
-	    		top: 5px;
-	    		right: 6px;
-	    		position: relative;
-	    	}
-	    }
+      float: left;
+      width: 240px;
+      margin-right: 25px;
+      img{
+        width: 240px;
+        margin-bottom: 20px;
+      }
+      a{
+        margin: 0 auto;
+        &.like{
+          background: #4aa20f;
+          pointer-events: none;
+        }
+        i{
+          top: 5px;
+          right: 6px;
+          position: relative;
+        }
+      }
     }
   }
   .name{
-  	color: #5e5e5e;
-	font-size: 16px;
-	width: 700;
+    color: #5e5e5e;
+    font-size: 16px;
+    width: 700;
   }
   >i{
-  	border: 2px dotted #e76b6b;
+    border: 2px dotted #e76b6b;
     border-radius: 17px;
     font-size: 22px;
     padding: 6px 10px;
@@ -593,103 +593,62 @@
   }
 }
 .vk-social{
-	margin-top: 15px;
-	img{
-		display: block;
-		margin: 0 auto;
-	}
+  margin-top: 15px;
+  img{
+    display: block;
+    margin: 0 auto;
+  }
 }
 .add-answer{
-	border-top: 1px solid #e5e5e5;
-	i{
-		float: right;
-		margin: 20px 0;
-	}
+  border-top: 1px solid #e5e5e5;
+  i{
+    float: right;
+    margin: 20px 0;
+  }
 }
 
 
 //LOGIN
 
 .login-block{
-	position: relative;
-	&:before{
-		content: "\e634";
-		color: #fcf0f0;
-	    font: 750px 'icomoon';
-	    position: absolute;
-	    left: -9px;
-	    top: -86px;
-	}
-	form{
-		font: 14px $font;
-		color: #5d5d5d;
-		margin: 0 auto;
-		display: block;
-		width: 400px;
-		position: relative;
-		z-index: 1;
-		padding: 130px 0;
-		input{
-			font: 14px $font;
-			color: #5d5d5d;
-			height: 40px;
-			border: solid 1px #5d5d5d;
-			display: block;
-			padding: 0 10px;
-			position: relative;
-			width: 390px;
-			margin: 15px 0;
-			@include box-sizing(border-box);
-		}
-		a{
-			text-align: center;
-			display: block;
-		}
-		button{
-			margin: 0 auto;
-			display: block;
-		}
-	}
-	a{
-		font-style: italic;
-		color: #e76b6b;
-		text-decoration: underline;
-		cursor: pointer;
-		&:hover{
-			text-decoration: none;
-		}
-	}
-}
-.checkbox-block{
-	.checkbox + label {
-		cursor: pointer;
-		display: block;
-	}
-	.checkbox:not(checked) {
-		position: absolute;
-		opacity: 0;
-	}
-	.checkbox {
-		vertical-align: top;
-		width: 17px;
-		height: 17px;
-	}
-	.checkbox:not(checked) + label {
-		position: relative;
-		padding: 0 0 0 25px;
-		height: 18px;
-		line-height: 18px;
-	}
-	.checkbox:not(checked) + label:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 18px;
-		height: 18px;
-		border: 1px solid #aea9a0;
-		background: #fff;
-		z-index: 8;
-	}
+  position: relative;
+  &:before{
+    content: "\e634";
+    color: #fcf0f0;
+    font: 750px 'icomoon';
+    position: absolute;
+    left: -9px;
+    top: -86px;
+  }
+  form{
+    font: 14px $font;
+    color: #5d5d5d;
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    position: relative;
+    z-index: 1;
+    padding: 130px 0;
+    input{
+      width: 390px;
+    }
+    a{
+      text-align: center;
+      display: block;
+    }
+    button{
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  a{
+    font-style: italic;
+    color: #e76b6b;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover{
+      text-decoration: none;
+    }
+  }
 }
 

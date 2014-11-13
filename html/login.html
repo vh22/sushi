@@ -66,7 +66,7 @@
                                         <div class="big-menu js-big-menu">
                                             <nav>
                                                 <ul class="clear">
-                                                    <li><a href="#" class="active"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
                                                     <li><a href="#"><span class="icon icon-fz39 icon-roll"></span>Роллы</a></li>
                                                     <li><a href="#"><span class="icon icon-fz35 icon-warmroll"></span>Теплые роллы</a></li>
                                                     <li><a href="#"><span class="icon icon-fz37 icon-sushibox"></span>Бокс-суши</a></li>
@@ -112,25 +112,26 @@
                 <p class="products__title">Вход на сайт</p>
                 <div class="block clear login-block">
                     
-                    <form class="clear">
-                        <div class="form-group">
-                            <label>E-MAIL</label><br />
-                            <input type="text">
+                    <form class="clear" action="#">
+                        <div class="form-block error">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                            <span>Введите правильный e-mail</span>
                         </div>
-                        <div class="form-group">
-                            <label>ПАРОЛЬ</label><br />
-                            <input type="password">
+                        <div class="form-block">
+                            <label for="password">Пароль</label>
+                            <input type="password" name="password" id="password">
+                            <span>Введите правильный пароль</span>
                         </div>
                         <div class="login-checkbox clear">
-                            <div class="checkbox-block">
-                                <input type="checkbox" class="checkbox">
-                                <label>Запомнить меня</label>
+                            <div class="checkbox">
+                                <input type="checkbox" name="remember-me" id="remember-me">
+                                <label for="remember-me">Запомнить меня</label>
                             </div>
-                            
-                            <a href="">Забыли пароль?</a>
+                            <a href="#">Забыли пароль?</a>
                         </div>
-                        <button class="button small">Войти</button>
-                        <a href="">У меня еще нет аккаунта</a>
+                        <button class="button">Войти</button>
+                        <a href="#">У меня еще нет аккаунта</a>
                     </form>
                     
                 </div>
