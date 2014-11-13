@@ -213,6 +213,80 @@ html, body, .container {height: 100%;}
     }
   }
 }
+.basket{
+  .archive-two .row-order{height: 135px;}
+  .name-archive-product{
+    padding: 0;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .product-inside{
+    font-size: 12px;
+    line-height: 18px;
+    width: 110px;
+    color: #8a8a8a;
+    display: block;
+    text-align: left;
+  }
+  .img{
+    line-height: 135px;
+    float: left;
+    width: 100px;
+    margin: 0 25px 0 13px;
+    img{
+      float: none;
+      margin: 0;
+    }
+  }
+  .txt{
+    float: left;
+    margin-top: 15px;
+  }
+  .row{
+    display: table-row;
+    >div{
+      border-bottom: 1px solid #e5e5e5;
+      &:not(:first-child){
+        width: auto!important;
+        text-align: center;
+      }
+    }
+  }
+  .row-title{
+    p{padding: 10px 0 0}
+    >div{
+      &:not(:first-child){
+        padding: 0 30px;
+      }
+    }
+  }
+  .row-order p{
+    white-space: nowrap;
+    color: #5d5d5d;
+    font-size: 16px;
+    .icon-rubl{font-size: 12px;}
+  }
+  .counter{
+    input{margin-right: 0}
+    .ui-spinner-up{
+      right: 5px;
+      top: -4px;
+    }
+    .ui-spinner-down{
+      bottom: -2px;
+      right: 5px;
+    }
+  }
+  .icon-delete{
+    color: #5d5d5d;
+    &:hover{color: #e76b6b;}
+  }
+  >.button{
+    float: right;
+    width: 260px;
+    margin-top: 30px;
+  }
+}
 .bg-header{
   background: #e7dbcb url('../css/images/bg/blik.png') top center no-repeat;
   padding-bottom: 10px;
@@ -295,6 +369,74 @@ html, body, .container {height: 100%;}
     &.active{
       color: $hover;
       pointer-events: none;
+    }
+  }
+}
+.choose-gift{
+  border: 2px dashed #939292;
+  margin: 25px 10px 30px;
+  padding: 20px 40px 15px;
+  @include border-radius(13px);
+  .title{
+    color: #5e5e5e;
+    font: 18px $fontPt;
+    margin-bottom: 20px;
+  }
+  >div{
+    margin-bottom: 20px;
+  }
+  .radio{
+    float: left;
+    width: 71%;
+    padding-left: 20px;
+    margin-bottom: 0;
+    img{
+      width: 100px;
+      float: left;
+      margin: 0 27px;
+    }
+    .txt{
+      float: left;
+      width: 75%;
+      p{
+        color: #5d5d5d;
+        font: bold 14px $fontPt;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        @include transition(all ease .3s);
+        i{
+          color: #8a8a8a;
+          text-transform: none;
+        }
+      }
+      span{
+        color: #8a8a8a;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    }
+    label{
+      &:before{
+        left: -727px;
+        top: 27px;
+      }
+      &:after{
+        left: -722px;
+        top: 32px;
+      }
+    }
+    input:checked + label{
+      p{color: #e76b6b}
+    }
+  }
+  .right{
+    float: right;
+    p{
+      font-size: 16px;
+      color: #5d5d5d;
+      float: left;
+      margin: 25px 45px 0;
+      .icon-rubl{font-size: 12px}
     }
   }
 }
@@ -927,6 +1069,7 @@ html, body, .container {height: 100%;}
     text-align: center;
     padding: 0 20px;
     margin: 15px 0;
+    height: 40px;
   }
   .product__img{
     position: relative;
@@ -1232,6 +1375,54 @@ html, body, .container {height: 100%;}
   font: 13px $fontPt;
   color: #5d5d5d;
   right: -50px;
+}
+.summ-block{
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+  .left{
+    border: 2px dashed #939292;
+    margin: 0 0 0 10px;
+    padding: 25px 50px;
+    overflow: hidden;
+    float: left;
+    @include border-radius(13px);
+    p{
+      color: #5d5d5d;
+      font: 18px/40px $fontPt;
+      margin-right: 60px;
+      float: left;
+    }
+    .button{float: left}
+  }
+  .right{
+    float: right;
+    margin-right: 10px;
+    width: 260px;
+    font-family: $fontPt;
+    p{
+      color: #5d5d5d;
+      font-size: 16px;
+      &:first-child{
+        margin-bottom: 17px;
+      }
+      b{
+        font-size: 25px;
+        font-weight: normal;
+      }
+      i{
+        font-size: 25px;
+        font-style: normal;
+        font-weight: bold;
+        .icon-rubl{font-size: 20px}
+      }
+      .red{color: #e76b6b}
+      >span{
+        font-weight: bold;
+        .icon-rubl{font-size: 13px}
+        &:last-child{float: right}
+      }
+    }
+  }
 }
 .title-step{
   font: 700 40px $fontPt;

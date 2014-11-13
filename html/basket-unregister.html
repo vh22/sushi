@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <meta name="viewport" content="initial-scale=1"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+    <style type="text/css">html,*{filter: none;}</style>
+    <![endif]-->
+</head>
+<body ng-app="sushiApp">
+<div class="container">
+    <div class="wrapper">
+
+        <!-- HEADER -->
+
+        <div class="bg-header">
+            <header>
+                <div class="content">
+                    <div class="header-top clear">
+                        <div class="logo">
+                            <a href="#"><img src="../css/images/logo-header.png" alt="logo"></a>
+                        </div>
+                        <div class="header-top__link">
+                            <nav>
+                                <ul class="clear">
+                                    <li>
+                                        <p class="header-top__receiving">Прием  заказов: <br> с 10.00 до 23.00</p>
+                                    </li>
+                                    <li>
+                                        <p class="header-top__delivery">Бесплатная <br> доставка по Москве</p>
+                                    </li>
+                                    <li>
+                                        <p class="header-top__credit">Оплата картами, <br> электронными деньгами</p>
+                                    </li>
+                                    <li class="call-request">
+                                        <span class="call-request__phone">+7 (495) 617-14-24</span>
+                                        <a href="#" class="call-request__phone-link">Заказать звонок</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-bottom js-header-bottom clear">
+                        <div class="header-bottom__left">
+                            <nav>
+                                <ul class="clear">
+                                    <li><a href="#">Подарки и скидки</a></li>
+                                    <li><a href="#" class="active">О нас</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">Интересноe</a></li>
+                                    <li><a href="#"><b>WOK</b> - Конструктор</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-bottom__right">
+                            <nav>
+                                <ul class="clear">
+                                    <li class="pos-static show-big-menu"><a href="#" class="header-bottom__menu js-menu">Меню</a>
+                                        <div class="big-menu js-big-menu">
+                                            <nav>
+                                                <ul class="clear">
+                                                    <li><a href="#" class="active"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz39 icon-roll"></span>Роллы</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz35 icon-warmroll"></span>Теплые роллы</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz37 icon-sushibox"></span>Бокс-суши</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz32 icon-onigiri"></span>Онигири</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz43 icon-sashimi"></span>Сашими</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz33 icon-assorti_seti"></span>Ассорти-сеты</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz33 icon-pizza"></span>Пицца</a></li>
+
+                                                    <li><a href="#"><span class="icon icon-fz39 icon-salad"></span>салаты</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz39 icon-soup"></span>Супы</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz39 icon-hot"></span>Горячее</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz45 icon-desserts"></span>Десерты</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz35 icon-child"></span>Детям</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz37 icon-drinkables"></span>Напитки</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz45 icon-souces"></span>Соусы</a></li>
+                                                    <li><a href="#"><span class="icon icon-fz35 icon-like"></span>Избранное</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="header-bottom__account">Личный <br> кабинет</a></li>
+                                    <li><a href="#" class="header-bottom__basket">Корзина <span class="cart-count">21</span></a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- CONTENT -->
+
+        <section>
+            <div class="content">
+                <div class="clear">
+                    <div class="breadcrumbs left">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li>Корзина</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="products__title">Мой обед</p>
+                <div class="block basket clear">
+                    <div class="table archive-two">
+                        <div class="row row-title">
+                            <div><p>Название</p></div>
+                            <div><p>Вес</p></div>
+                            <div><p>Цена</p></div>
+                            <div><p>Скидка</p></div>
+                            <div><p>Количество</p></div>
+                            <div><p>Сумма</p></div>
+                            <div><p></p></div>
+                        </div>
+                        <div class="row row-order">
+                            <div>
+                                <div class="img">
+                                    <img src="../images/products/5.png" class="img-office" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
+                                    <span class="product-inside">Нежный краб, Помидор, огурец, Сливочный сыр, Спайси соус</span>
+                                </div>
+                            </div>
+                            <div><p>300 г.</p></div>
+                            <div><p>250 <span class="icon icon-rubl"></span></p></div>
+                            <div><p>25 <span class="icon icon-rubl"></span></p></div>
+                            <div><span class="counter" counter value="1" min="1" max="99"></span></div>
+                            <div><p>1500 <span class="icon icon-rubl"></span></p></div>
+                            <div><a href="#" class="btn-archive"><span class="icon icon-delete icon-fz14"></span></a></div>
+                        </div>
+                        <div class="row row-order">
+                            <div>
+                                <div class="img">
+                                    <img src="../images/products/archiv.png" class="img-office" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
+                                    <span class="product-inside">Нежный краб, Помидор, огурец, Сливочный сыр, Спайси соус</span>
+                                </div>
+                            </div>
+                            <div><p>300 г.</p></div>
+                            <div><p>250 <span class="icon icon-rubl"></span></p></div>
+                            <div><p>25 <span class="icon icon-rubl"></span></p></div>
+                            <div><span class="counter" counter value="1" min="1" max="99"></span></div>
+                            <div><p>1500 <span class="icon icon-rubl"></span></p></div>
+                            <div><a href="#" class="btn-archive"><span class="icon icon-delete icon-fz14"></span></a></div>
+                        </div>
+                        <div class="row row-order">
+                            <div>
+                                <div class="img">
+                                    <img src="../images/products/4.png" class="img-office" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
+                                    <span class="product-inside">Нежный краб, Помидор, огурец, Сливочный сыр, Спайси соус</span>
+                                </div>
+                            </div>
+                            <div><p>300 г.</p></div>
+                            <div><p>250 <span class="icon icon-rubl"></span></p></div>
+                            <div><p>25 <span class="icon icon-rubl"></span></p></div>
+                            <div><span class="counter" counter value="1" min="1" max="99"></span></div>
+                            <div><p>1500 <span class="icon icon-rubl"></span></p></div>
+                            <div><a href="#" class="btn-archive"><span class="icon icon-delete icon-fz14"></span></a></div>
+                        </div>
+                        <div class="row row-order">
+                            <div>
+                                <div class="img">
+                                    <img src="../images/products/3.png" class="img-office" alt="">
+                                </div>
+                                <div class="txt">
+                                    <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
+                                    <span class="product-inside">Нежный краб, Помидор, огурец, Сливочный сыр, Спайси соус</span>
+                                </div>
+                            </div>
+                            <div><p>300 г.</p></div>
+                            <div><p>250 <span class="icon icon-rubl"></span></p></div>
+                            <div><p>25 <span class="icon icon-rubl"></span></p></div>
+                            <div><span class="counter" counter value="1" min="1" max="99"></span></div>
+                            <div><p>1500 <span class="icon icon-rubl"></span></p></div>
+                            <div><a href="#" class="btn-archive"><span class="icon icon-delete icon-fz14"></span></a></div>
+                        </div>
+                    </div>
+                    <div class="choose-gift">
+                        <p class="title">Выберите подарок:</p>
+                        <div class="clear">
+                            <div class="radio">
+                                <input id="gift-1" type="radio" name="gift" value="">
+                                <label for="gift-1">
+                                    <img src="../images/products/1.png" alt="" />
+                                    <span class="txt">
+                                        <p>Онигири Темпура Спайси Кай Ёси <i>(230 г.)</i></p>
+                                        <span>(Нежный краб, Помидор, огурец, Сливочный сыр, Спайси соус)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="right">
+                                <p>1 шт.</p>
+                                <p>0 <span class="icon icon-rubl"></span></p>
+                            </div>
+                        </div>
+                        <div class="clear">
+                            <div class="radio">
+                                <input id="gift-2" type="radio" name="gift" value="">
+                                <label for="gift-2">
+                                    <img src="../images/products/2.png" alt="" />
+                                    <span class="txt">
+                                        <p>Онигири Темпура Спайси Кай Ёси <i>(230 г.)</i></p>
+                                        <span>(Нежный краб, Помидор, огурец, Сливочный сыр, Спайси соус)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="right">
+                                <p>1 шт.</p>
+                                <p>0 <span class="icon icon-rubl"></span></p>
+                            </div>
+                        </div>
+                        <div class="clear">
+                            <div class="radio">
+                                <input id="gift-3" type="radio" name="gift" value="">
+                                <label for="gift-3">
+                                    <img src="../images/products/3.png" alt="" />
+                                    <span class="txt">
+                                        <p>Онигири Темпура Спайси Кай Ёси <i>(230 г.)</i></p>
+                                        <span>(Нежный краб, Помидор, огурец, Сливочный сыр, Спайси соус)</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="right">
+                                <p>1 шт.</p>
+                                <p>0 <span class="icon icon-rubl"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summ-block clear">
+                        <div class="left">
+                            <p>Закажите еще на 600 руб. и получите БОЛЬШОЙ подарок</p>
+                            <a href="#" class="button small">Вернуться в меню</a>
+                        </div>
+                        <div class="right">
+                            <p class="clear">
+                                <span>Сумма: 2545 <span class="icon icon-rubl"></span></span>
+                            </p>
+                            <p><b>Итого к оплате: <i class="red">1567 <span class="icon icon-rubl"></span></i></b></p>
+                            <p>Общий вес: <em>1145 г.</em></p>
+                        </div>
+                    </div>
+                    <a href="#" class="button">Оформить заказ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- END CONTENT -->
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+    <footer>
+        <div class="footer-top">
+            <div class="content">
+                <p>Суши-Профи - профессиональный подход к японской кухне. Мы знаем толк в том что делаем.</p>
+                <p>И готовы поделиться этим с Вами. Доставка суши и хорошего настроения к Вам.</p>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="content">
+                <nav>
+                    <ul class="list-menu clear">
+                        <li><a href="#">Суши-Профи</a> - бесплатная доставка, </li>
+                        <li><a href="#">суши</a>, </li>
+                        <li><a href="#">роллов</a>, </li>
+                        <li><a href="#">бокс-суши</a>, </li>
+                        <li><a href="#">онигири</a>, </li>
+                        <li><a href="#">сашими</a>, </li>
+                        <li><a href="#">ассорти-сетов суши и роллов</a>, </li>
+                        <li><a href="#">салатов</a>, </li>
+                        <li><a href="#">супов</a>, </li>
+                        <li><a href="#">горячих блюд</a>, </li>
+                        <li><a href="#">десертов</a>, и </li>
+                        <li><a href="#">напитков</a>.</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="content clear">
+                <div class="logo logo-footer">
+                    <div>
+                        <a href="#"><img src="../css/images/logo-header.png" alt="logo"></a>
+						<span>
+							<span class="copy">&copy;</span>
+							<span class="text">«Суши-Профи» — <br> Доставка суши и <br> хорошего настроения.</span>
+						</span>
+                    </div>
+                </div>
+                <div class="footer-bottom__social">
+                    <div class="social clear">
+                        <ul>
+                            <li><a href="#"><span class="icon icon-twitter"></span>twitter</a></li>
+                            <li><a href="#"><span class="icon icon-facebook icon-fb"></span>facebook</a></li>
+                            <li><a href="#"><span class="icon icon-vkontakte icon-vk"></span>vkontakte</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-two-row clear">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Суши</a></li>
+                                <li><a href="#">Заказ суши</a></li>
+                                <li><a href="#">Суши на дом</a></li>
+                                <li><a href="#">Роллы</a></li>
+                                <li><a href="#">Доставка суши</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer-bottom__application">
+                    <p class="application-title">Доставка Суши-Профи» у вас на ладоне!</p>
+                    <div class="application">
+                        <a href="#"><img src="../css/images/appy.png" alt=""></a>
+                        <a href="#"><img src="../css/images/google.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer-bottom__developer">
+                    <p class="number-developer">+7 (495) 617-14-24</p>
+                    <a href="http://4-com.pro/"><img src="../css/images/developer.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- bower:js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/sticky/jquery.sticky.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<!-- endbower -->
+<script src="../js/directives.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
