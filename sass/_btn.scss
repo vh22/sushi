@@ -43,6 +43,12 @@
 }
 
 .btn-archive{
-  color: #e76b6b;
-  &:hover{color: #e35656;}
+    color: #e76b6b;
+    &:hover{color: #e35656;}
+}
+.btn-menu{
+    float: right;
+    height: 35px;
+    width: 115px;
+    line-height: 35px;
 }

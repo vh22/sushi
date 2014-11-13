@@ -127,6 +127,7 @@
         z-index: 10;
         border: 1px solid #e6e6e6;
         padding: 5px;
+        margin: 5px 0; 
         @include box-shadow(rgba(10, 11, 11, 0.2) 0 0 5px);
         table{outline: none;}
         thead{
@@ -167,16 +168,22 @@
                         padding: 5px;
                         font-size: 14px;
                         color: #5e5e5e;
-                        &:hover{
-                            background: #e76b6b;
-                            color: #fff;
-                        }
+                    }
+                    &:hover{
+                        background: #e76b6b;
+                        span{color: #fff;}
                     }
                 }
                
             }
             th{
-                button{background: none;}
+                button{
+                    background: none;
+                    strong{
+                        font: bold 14px $fontPt;
+                        color: #5d5d5d;
+                    }
+                }
                 small{
                     font: bold 13px $fontPt;
                     color: #5e5e5e;
@@ -184,7 +191,7 @@
             }
             &:nth-child(2){
                 th:first-child{display: none;}
-                th{text-align: center;}
+                th{text-align: center; padding: 0 9px;}
             }
         }
         .text-muted{
@@ -441,7 +448,6 @@
     font-size: 15px;
     line-height: 43px;
   }
-  
   input{
     border: 1px solid #c1c1c1;
     font-size: 14px;
@@ -453,13 +459,90 @@
   }
 }
 .input-group-btn{
-    @include absRT(-5px, 0);
+    @include absRT(10px, 10px);
     span{
         font-size: 24px;
         color: #5d5d5d;
-        @include absRT(10px, 10px);
+        @include absRT(0, 0);
+    }
+    button{
+        width: 24px;
+        height: 24px;
+        background: none;
     }
 }
 .input-group{position: relative;}
 .calendar-input{margin-top: -15px;  }
 .mt{margin-top: 53px;}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+.fade.in {
+    opacity: 1;
+}
+.modal-backdrop.in {
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.modal {
+    display: none;
+    overflow: auto;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    background-clip: padding-box;
+    outline: 0;
+}
+.change-pass{
+
+}
+.del-favorite {
+    text-align: center;
+    a{
+       font-size: 13px;
+        color: #8a8a8a;
+        padding-left: 20px;
+        line-height: 30px;
+        text-decoration: underline;
+        position: relative; 
+        &:before{
+            content: '\e628';
+            font-family: $icon;
+            color: #8a8a8a;
+            font-size: 17px;
+            @include absLT(0, -10px);
+        }
+        &:hover{
+            color: #e76b6b;
+            text-decoration: none;
+            &:before{color: #e76b6b;}
+        } 
+    }
+}

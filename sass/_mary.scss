@@ -111,25 +111,10 @@
 }
 .pay{
   text-align: center;
+  margin-bottom: 75px;
   p{
     font: 28px $fontPt;
     color: #545451;
-    height: 35px;
-  }
-  button{
-    width: 225px;
-    height: 50px;
-    border: solid 1px #a4a4a4;
-    border-radius: 5px;
-    font: bold 18px $fontPt;
-    color: #E76B6B;
-    background: #e9e9e9;
-    margin-bottom: 75px;
-    @include transition(all ease .3s);
-    &:hover{
-      background: #fff;
-      border-color: #e76b6b;
-    }
   }
   hr{
     width: 200px;
@@ -222,9 +207,7 @@
     }
   }
 }
-.ui-dialog{
-  z-index: 999;
-}
+.ui-dialog{z-index: 999;}
 .ui-widget-overlay{
   background: rgba(0, 0, 0, 0.5);
   height: 100%;
@@ -307,15 +290,12 @@
     }
   }
   .single-arhive{
-    padding: 25px 0 0 14px;
+    padding: 25px 14px 0 14px;
     margin: 0;
     >img{
-      width: 920px;
+      width: 100%;
       height: 300px;
-      display: block;
-      position: relative;
       margin: 0 0 20px 0;
-      float: right;
     }
     >p{margin-top: 10px;}
   }
@@ -331,6 +311,10 @@
       float: left;
     }
     h3{
+    	a{
+    		color: #5d5d5d;
+    		&:hover{color: #e76b6b;}
+    	}
       font-size: 20px;
       width: 700;
       margin-bottom: 13px;
@@ -338,12 +322,9 @@
     div{
       position: relative;
       overflow: hidden;
-      >a{
-        display: block;
-        margin-top: 13px;
-        text-decoration: underline;
-        color: #92d0f5;
-        &:hover{text-decoration: none;}
+      .link-office{
+      	display: inline-block;
+      	margin-top: 13px;
       }
     }
     &:last-child{border-bottom:none;}
@@ -351,29 +332,11 @@
   .social-icons{
     border-top: 1px solid #e5e5e5;
     margin-top: 30px;
-    padding-top: 20px;
-    ul{
-      display: block;
-      margin-bottom: 30px;
-      left: 50%;
-      position: relative;
-      float: left;
-      li{
-        position: relative;
-        float: left;
-        margin: 0 2px;
-        width: 40px;
-        height: 40px;
-        right: 50%;
-      }
-      .icon-vk{color: #41658b;}
-      .icon-fb{color: #39579a;}
-      .od{color: #f4960f;}
-      .mail{color: #2f69a1;}
-      .plus{
-        color: #e86340;
-      }
-    }
+    padding: 20px 0;
+	img{
+		display: block;
+		margin: auto;
+	}
   }
 }
 
@@ -384,7 +347,11 @@
   padding: 20px 0 20px 0;
   position: relative;
   float: left;
-  .cmpetition-img{
+  &:first-child{
+  	border-top: none;
+  	padding-top: 10px;
+  }
+  .competition-img{
     margin-right: 15px;
     position: relative;
     float: left;
@@ -412,6 +379,13 @@
           color: #ed7272;
         }
       }
+      &.konkurs_end{
+        border-color: #4aa20f;
+        &:before{
+          content: "\e63a";
+          color: #5d5d5d;
+        }
+      }
       &:before{
         content: "\e621";
         color: #1e71b8;
@@ -425,32 +399,7 @@
   .competition-text{
     position: relative;
     overflow: hidden;
-    i{
-      width: 170px;
-      height: 40px;
-      background: #e76b6b;
-      color: #fff;
-      border-radius: 5px;
-      float: left;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      text-align: center;
-      line-height: 40px;
-      margin-right: 40px;
-      &:hover{
-        cursor: pointer;
-        background: #e35656;
-      }
-    }
-    >a{
-      display: block;
-      margin-top: 13px;
-      text-decoration: underline;
-      color: #92d0f5;
-      line-height: 40px;
-      &:hover{text-decoration: none;}
-    }
+    i{margin-right: 40px;}
     p{
       margin-bottom: 10px;
       span{
@@ -461,6 +410,7 @@
     h3{
       font-size: 20px;
       width: 700;
+      a{color: #5d5d5d;}
     }
     h2{
       margin: 10px 0 10px 0;
@@ -479,6 +429,88 @@
         left: 12px;
         top: 78px;
       }
+      &.complete{
+		color: #4aa20f;
+		&:before{
+			content: "\e63a";
+	        color: #5d5d5d;
+	        font: 32px 'icomoon';
+	        position: absolute;
+	        left: 12px;
+	        top: 78px;
+		}
+	  }
+    }
+    .konkurs-data{
+    	margin-top: 15px;
+    	border-top: 1px solid #e5e5e5;
+    	padding: 15px 0;
+    	h4{
+    		color: #000;
+    		font-size: 22px;
+    		margin-bottom: 10px;
+    	}
+    	p{
+    		margin: 0;
+    		padding: 0;
+    	}
+    	.data-left{
+    		width: 40%;
+    		float: left;
+    	}
+    	.data-right{
+    		float: right;
+    		width: 60%;
+    		h4{
+				padding-left: 25px;
+				position: relative;
+				&:before{
+					content: "\e639";
+			        color: #e76b6b;
+			        font: 24px 'icomoon';
+			        position: absolute;
+			        left: -3px;
+			        top: 3px;
+				}
+    		}
+    	}
+    }
+    .konkurs-winners{
+    	border-top: 1px solid #e5e5e5;
+    	padding: 15px 0;
+    	h4{
+    		color: #e76b6b;
+    		font-size: 22px;
+    	}
+    	ul{
+    		text-align: center;
+    		margin: 15px 0;
+
+    		li{
+    			float: left;
+    			position: relative;
+    			border: 1px solid #8a8a8a;
+    			padding: 20px 0;
+    			font-size: 18px;
+    			width: 33.1%;
+    			margin: 0 -1px 0 0;
+    			.winners-name{
+    				width: 700;
+    				color: #000;
+    			}
+    		}
+    	}
+    }
+    ul{
+    	li{
+    		float: left;
+    		position: relative;
+    		border-left: 3px dotted #e5e5e5;
+    		height: 70px;
+    		&:last-child{
+    			border-right: 3px dotted #e5e5e5;
+    		}
+    	}
     }
   }
 }
@@ -488,8 +520,11 @@
 
 
 .competition-answer{
-  border-top: 1px solid #e5e5e5;
-  p{
+  >p{
+  	height: 55px;
+  	line-height: 55px;
+  	border-top: 1px solid #e5e5e5;
+  	padding-left: 10px;
     span {
       border-left: 1px dashed #8a8a8a;
       color: #8a8a8a;
@@ -500,13 +535,37 @@
   }
   .answer{
     border-top: 1px solid #e5e5e5;
+    padding: 20px 10px;
     p{
       position: relative;
+      overflow: hidden;
     }
     img{
       width: 240px;
       height: 180px;
-      display: block;
+      float: left;
+      margin-right: 25px;
     }
   }
+  .name{
+  	color: #5e5e5e;
+	font-size: 16px;
+	width: 700;
+  }
 }
+.vk-social{
+	margin-top: 15px;
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+}
+.add-answer{
+	border-top: 1px solid #e5e5e5;
+
+	i{
+		float: right;
+		margin: 20px 0;
+	}
+}
+

@@ -14,7 +14,7 @@
     <style type="text/css">html,*{filter: none;}</style>
     <![endif]-->
 </head>
-<body>
+<body ng-app="sushiApp">
 <div class="container">
 <div class="wrapper">
 
@@ -28,7 +28,6 @@
                     <a href="#"><img src="../css/images/logo-header.png" alt="logo"></a>
                 </div>
                 <div class="header-top__link">
-                    <nav>
                         <ul class="clear">
                             <li>
                                 <p class="header-top__receiving">Прием  заказов: <br> с 10.00 до 23.00</p>
@@ -44,7 +43,6 @@
                                 <a href="#" class="call-request__phone-link">Заказать звонок</a>
                             </li>
                         </ul>
-                    </nav>
                 </div>
             </div>
             <div class="header-bottom js-header-bottom clear">
@@ -66,7 +64,7 @@
                                 <div class="big-menu js-big-menu">
                                     <nav>
                                         <ul class="clear">
-                                            <li><a href="#"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
+                                            <li><a href="#" class="active"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
                                             <li><a href="#"><span class="icon icon-fz39 icon-roll"></span>Роллы</a></li>
                                             <li><a href="#"><span class="icon icon-fz35 icon-warmroll"></span>Теплые роллы</a></li>
                                             <li><a href="#"><span class="icon icon-fz37 icon-sushibox"></span>Бокс-суши</a></li>
@@ -83,13 +81,12 @@
                                             <li><a href="#"><span class="icon icon-fz37 icon-drinkables"></span>Напитки</a></li>
                                             <li><a href="#"><span class="icon icon-fz45 icon-souces"></span>Соусы</a></li>
                                             <li><a href="#"><span class="icon icon-fz35 icon-like"></span>Избранное</a></li>
-
                                         </ul>
                                     </nav>
                                 </div>
                             </li>
                             <li><a href="#" class="header-bottom__account">Личный <br> кабинет</a></li>
-                            <li><a href="#" class="header-bottom__basket">Корзина</a> <span class="cart-count">21</span></li>
+                            <li><a href="#" class="header-bottom__basket">Корзина <span class="cart-count">21</span></a> </li>
                         </ul>
                     </nav>
                 </div>
@@ -101,88 +98,122 @@
 <!-- CONTENT -->
 
 <section>
-    <div class="content">
-       <div class="clear">
+    <div class="content clear">
+        <div class="clear">
             <div class="breadcrumbs left">
                 <ul>
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">Интересное</a></li>
-                    <li>Факты о Японии</li>
+                    <li>Личный кабинет</li>
                 </ul>
             </div>
         </div>
         <div class="clear">
             <div class="left-sidebar">
-                <nav>
-                    <ul>
-                        <li><a href="#" class="active">Факты о Японии</a></li>
-                        <li><a href="#">Рецепты японской кухни</a></li>
-                        <li><a href="#">Японские праздники</a></li>
-                        <li><a href="#">Конкурсы</a></li>
-                        <li><a href="#">Архив опросов</a></li>
-                        <li><a href="#">Архив конкурсов</a></li>
-                    </ul>
-                </nav>
-                <div class="vk-social">
-                    <img src="../images/vk.png">
-                </div>
+               <nav>
+                   <ul>
+                       <li><a href="#">Личные данные</a></li>
+                       <li><a href="#" class="active">Избранные блюда</a></li>
+                       <li><a href="#">Последние заказы</a></li>
+                       <li><a href="#">Архив заказов</a></li>
+                       <li><a href="#">Мои оценки блюд</a></li>
+                       <li><a href="#">Выход</a></li>
+                   </ul>
+               </nav>
             </div>
             <div class="office">
-                <p class="office-title">Век живи, век учись</p>
-                <div class="personal clear arhive">
-                    <p class="personal-title">Факты о Японии</p>
-                    <div class="arhive-block">
-                        <a href=""><img src="http://placekitten.com/g/300/150"></a>
-                        <div>
-                            <h3><a href="">Онигири</a></h3>
-                            <p><a href="">Онигири</a> — блюдо японской кухни из риса, слепленного в треугольной или круглой форме. Обычно в онигири кладут начинку и заворачивают в лист сушёных водорослей нори. Начинка также может быть равномерно примешана в рис, а в качестве обёртки вместо нори иногда используются листья салата, омлет и даже ломтики ветчины. В Японии онигири распространены и популярны настолько, что существуют специализированные магазинчики, которые продают только онигири.</p>
-                            <a class="link-office" href="">Читать далее...</a>
-                        </div>
-                    </div>
-                    <div class="arhive-block">
-                        <a href=""><img src="http://placekitten.com/g/300/150"></a>
-                        <div>
-                            <h3><a href="">Онигири</a></h3>
-                            <p><a href="">Онигири</a> — блюдо японской кухни из риса, слепленного в треугольной или круглой форме. Обычно в онигири кладут начинку и заворачивают в лист сушёных водорослей нори. Начинка также может быть равномерно примешана в рис, а в качестве обёртки вместо нори иногда используются листья салата, омлет и даже ломтики ветчины. В Японии онигири распространены и популярны настолько, что существуют специализированные магазинчики, которые продают только онигири.</p>
-                            <a class="link-office" href="">Читать далее...</a>
-                        </div>
-                    </div>
-                    <div class="arhive-block">
-                        <div>
-                            <h3><a href="">Онигири</a></h3>
-                            <p><a href="">Онигири</a> — блюдо японской кухни из риса, слепленного в треугольной или круглой форме. Обычно в онигири кладут начинку и заворачивают в лист сушёных водорослей нори. Начинка также может быть равномерно примешана в рис, а в качестве обёртки вместо нори иногда используются листья салата, омлет и даже ломтики ветчины. В Японии онигири распространены и популярны настолько, что существуют специализированные магазинчики, которые продают только онигири.</p>
-                            <a class="link-office" href="">Читать далее...</a>
-                        </div>
-                    </div>
-                    <div class="arhive-block">
-                        <a href=""><img src="http://placekitten.com/g/300/150"></a>
-                        <div>
-                            <h3><a href="">Онигири</a></h3>
-                            <p><a href="">Онигири</a> — блюдо японской кухни из риса, слепленного в треугольной или круглой форме. Обычно в онигири кладут начинку и заворачивают в лист сушёных водорослей нори. Начинка также может быть равномерно примешана в рис, а в качестве обёртки вместо нори иногда используются листья салата, омлет и даже ломтики ветчины. В Японии онигири распространены и популярны настолько, что существуют специализированные магазинчики, которые продают только онигири.</p>
-                            <a class="link-office" href="">Читать далее...</a>
-                        </div>
-                    </div>
-                    <div class="arhive-block">
-                        <a href=""><img src="http://placekitten.com/g/300/150"></a>
-                        <div>
-                            <h3><a href="">Онигири</a></h3>
-                            <p><a href="">Онигири</a> — блюдо японской кухни из риса, слепленного в треугольной или круглой форме. Обычно в онигири кладут начинку и заворачивают в лист сушёных водорослей нори. Начинка также может быть равномерно примешана в рис, а в качестве обёртки вместо нори иногда используются листья салата, омлет и даже ломтики ветчины. В Японии онигири распространены и популярны настолько, что существуют специализированные магазинчики, которые продают только онигири.</p>
-                            <a class="link-office" href="">Читать далее...</a>
-                        </div>
-                    </div>
-                    <div class="arhive-block">
-                        <div>
-                            <h3><a href="">Онигири</a></h3>
-                            <p><a href="">Онигири</a> — блюдо японской кухни из риса, слепленного в треугольной или круглой форме. Обычно в онигири кладут начинку и заворачивают в лист сушёных водорослей нори. Начинка также может быть равномерно примешана в рис, а в качестве обёртки вместо нори иногда используются листья салата, омлет и даже ломтики ветчины. В Японии онигири распространены и популярны настолько, что существуют специализированные магазинчики, которые продают только онигири.</p>
-                            <a class="link-office" href="">Читать далее...</a>
-                        </div>
-                    </div>
+                <p class="office-title">Мой личный кабинет</p>
+                <div class="personal clear">
+                    <p class="personal-title">Избранные блюда  <a href="#" class="button btn-menu">В меню</a></p>
+                    
+                    <ul class="list-product four">
+                        <li class="product">
+                            <a href="#">
+                                <span class="product__img">
+                                    <img src="../images/products/3.png" alt="">
+                                </span>
+                                <p class="product__title">Суши Каппа Спайси Унаги Тамаго</p>
+                            </a>
+                            <div class="product-buy clear">
+                                <p class="product-price">356 <span class="icon icon-rubl icon-fz23"></span></p>
+                                <span class="counter" counter value="0" min="1"></span>
+                                <span class="icon icon-cart icon-fz22"></span>
+                            </div>
+                            <div class="del-favorite">
+                                <a href="#">Удалить из избранного</a>
+                            </div>
+                            
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <span class="product__img">
+                                    <img src="../images/products/3.png" alt="">
+                                </span>
+                                <p class="product__title">Суши Каппа Спайси Унаги Тамаго</p>
+                            </a>
+                            <div class="product-buy">
+                                <p class="product-price">356 <span class="icon icon-rubl icon-fz23"></span></p>
+                                <span class="counter" counter value="0" min="1"></span>
+                                <span class="icon icon-cart icon-fz22"></span>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <span class="product__img">
+                                    <img src="../images/products/3.png" alt="">
+                                </span>
+                                <p class="product__title">Суши Каппа Спайси Унаги Тамаго</p>
+                            </a>
+                            <div class="product-buy">
+                                <p class="product-price">356 <span class="icon icon-rubl icon-fz23"></span></p>
+                                <span class="counter" counter value="0" min="1"></span>
+                                <span class="icon icon-cart icon-fz22"></span>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <span class="product__img">
+                                    <img src="../images/products/3.png" alt="">
+                                </span>
+                                <p class="product__title">Суши Каппа Спайси Унаги Тамаго</p>
+                            </a>
+                            <div class="product-buy">
+                                <p class="product-price">356 <span class="icon icon-rubl icon-fz23"></span></p>
+                                <span class="counter" counter value="0" min="1"></span>
+                                <span class="icon icon-cart icon-fz22"></span>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <span class="product__img">
+                                    <img src="../images/products/3.png" alt="">
+                                </span>
+                                <p class="product__title">Суши Каппа Спайси Унаги Тамаго</p>
+                            </a>
+                            <div class="product-buy">
+                                <p class="product-price">356 <span class="icon icon-rubl icon-fz23"></span></p>
+                                <span class="counter" counter value="0" min="1"></span>
+                                <span class="icon icon-cart icon-fz22"></span>
+                            </div>
+                        </li>
+                        <li class="product">
+                            <a href="#">
+                                <span class="product__img">
+                                    <img src="../images/products/3.png" alt="">
+                                </span>
+                                <p class="product__title">Суши Каппа Спайси Унаги Тамаго</p>
+                            </a>
+                            <div class="product-buy">
+                                <p class="product-price">356 <span class="icon icon-rubl icon-fz23"></span></p>
+                                <span class="counter" counter value="0" min="1"></span>
+                                <span class="icon icon-cart icon-fz22"></span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
 </section>
-
 
 <!-- END CONTENT -->
 
@@ -259,7 +290,7 @@
                     </div>
                 </div>
                 <div class="footer-bottom__developer">
-                    <a href="#" class="number-developer">+7 (495) 617-14-24</a>
+                    <p class="number-developer">+7 (495) 617-14-24</p>
                     <a href="http://4-com.pro/"><img src="../css/images/developer.png" alt=""></a>
                 </div>
             </div>

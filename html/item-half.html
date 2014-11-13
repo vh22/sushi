@@ -21,7 +21,7 @@
         <!-- HEADER -->
 
         <div class="bg-header">
-            <header>
+            <header class="opened-menu">
                 <div class="content">
                     <div class="header-top clear">
                         <div class="logo">
@@ -45,7 +45,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="header-bottom js-header-bottom clear">
+                    <div class="header-bottom js-header-bottom clear active">
                         <div class="header-bottom__left">
                             <nav>
                                 <ul class="clear">
@@ -60,7 +60,7 @@
                         <div class="header-bottom__right">
                             <nav>
                                 <ul class="clear">
-                                    <li class="pos-static show-big-menu"><a href="#" class="header-bottom__menu js-menu">Меню</a>
+                                    <li class="pos-static show-big-menu"><a href="#" class="header-bottom__menu js-menu active">Меню</a>
                                         <div class="big-menu js-big-menu">
                                             <nav>
                                                 <ul class="clear">
@@ -103,77 +103,84 @@
                     <div class="breadcrumbs left">
                         <ul>
                             <li><a href="#">Главная</a></li>
-                            <li>Личный кабинет</li>
+                            <li><a href="#">Суши</a></li>
+                            <li>Ролл-ассорти Кумимаки</li>
                         </ul>
                     </div>
+                    <a href="#" class="back-to right">Вернуться в каталог</a>
                 </div>
-                <div class="clear">
-                    <div class="left-sidebar">
-                        <nav>
-                            <ul>
-                                <li><a href="#" class="active">Личные данные</a></li>
-                                <li><a href="#">Избранные блюда</a></li>
-                                <li><a href="#">Последние заказы</a></li>
-                                <li><a href="#">Архив заказов</a></li>
-                                <li><a href="#">Мои оценки блюд</a></li>
-                                <li><a href="#">Выход</a></li>
-                            </ul>
-                        </nav>
+                <div class="item">
+                    <div class="item-img left">
+                        <img src="../images/sushi.png" alt="" />
+                        <div class="nutrition">
+                            <p>Пищевая ценность на 100 грамм:</p>
+                            <div>
+                                <p>Белки<span>8,468 г.</span></p>
+                                <p>Жиры<span>8,468 г.</span></p>
+                                <p>Углеводы<span>8,468 г.</span></p>
+                            </div>
+                            <span>Калорийность: 476 ккал</span>
+                        </div>
                     </div>
-                    <div class="office">
-                        <p class="office-title">Мой личный кабинет</p>
-                        <div class="personal clear">
-                            <p class="personal-title">Личные данные</p>
-                            <form action="">
-                                <div class="personal-email clear">
-                                    <p class="email-title">Электронный адрес:</p>
-                                    <p class="email-name">mail_mail.gmail.com</p>
-                                    <p class="email-discount">Текущий уровень персональной скидки: <span>10%</span></p>
+                    <div class="item-info right">
+                        <h1>Ролл-ассорти Кумимаки</h1>
+                        <span>Состав:</span>
+                        <p>Ассорти из классических японских роллов: сякэ маки, тэкка маки, изуми тай маки, ика маки спайс, кай ёси маки спайс, тамаго маки.</p>
+                        <i class="icon icon-like">Добавить в избранное</i>
+                        <div class="rating">
+                            <p>Рейтинг:</p>
+                            <div class="clear">
+                                <div class="left">
+                                    <p>4,6</p>
+                                    <div class="stars"><span style="width:92%"></span></div>
+                                    <span class="icon icon-user">Оценило 47 чел.</span>
                                 </div>
-                                <div class="personal-data clear">
-                                    <div>
-                                        <label for="1">Имя</label>
-                                        <input id="1" type="text" value="Степан">
-                                    </div>
-                                    <div>
-                                        <label for="2">Фамилия</label>
-                                        <input id="2" type="text" value="Иванов">
-                                    </div>
+                                <div class="right">
+                                    <ul>
+                                        <li>
+                                            <span class="icon icon-star">5</span>
+                                            <p class="rate-1" style="width: 100%"><i>1020</i></p>
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-star">4</span>
+                                            <p class="rate-2" style="width: 55.3%"><i>564</i></p>
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-star">3</span>
+                                            <p class="rate-3" style="width: 15.9%"><i>105</i></p>
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-star">2</span>
+                                            <p class="rate-4" style="width: 5.9%"><i>52</i></p>
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-star">1</span>
+                                            <p class="rate-5" style="width: 2.3%"><i>12</i></p>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="birthday clear">
-                                    <div class="calendar">
-                                        <div class="clear">
-                                            <p>Дата рождения:</p>
-                                            <p class="birthday-day">1 октября 1976 года</p>
-                                        </div>
-                                    </div>
-                                    <p class="birthday-warning">Задать дату можно только единожды</p>
-                                </div>
-                                <div class="address">
-                                    <div class="phone clear">
-                                        <p class="title">Телефон:</p>
-                                        <div>
-                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
-                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
-                                            <a href="#">Добавить телефон</a>
-                                        </div>
-                                    </div>
-                                    <div class="street clear">
-                                        <p class="title">Адрес:</p>
-                                        <div>
-                                            <p class="phone-number">ул. Южная 56, корпус 4, стр. 0А---А, под. 3, код двери 4555, 3 этаж, кв. 54 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
-                                            <a href="#">Добавить aдрес</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="edit-email clear" ng-controller="ModalDemoCtrl">
-                                    <p>Изменить пароль для логина <span>mail_mail@gmail.com</span></p>
-                                    <a href="" class="button">Сменить пароль</a>
-                                </div>
-                                <div class="save-form">
-                                    <a href="#" class="button">Сохранить</a>
-                                </div>
-                            </form>
+                            </div>
+                        </div>
+                        <div class="quantity half">
+                            <div class="order-half">
+                                <p>Вы можете заказать</p>
+                                <i>Половину порции</i>
+                            </div>
+                            <p class="lined">
+                                <b class="icon icon-rubl">140</b>
+                                <span>140 г.</span>
+                            </p>
+                            <p>
+                                <b class="icon icon-rubl">240</b>
+                                <span>280 г.</span>
+                            </p>
+                            <div class="count clear">
+                                <span class="counter" counter value="1" min="1" max="99"></span>
+                                <a href="#" class="button small">Купить</a>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <img src="../images/social.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -263,36 +270,12 @@
     </footer>
 </div>
 
-
-
-    <script type="text/ng-template" id="myModalContent.html">
-        <div class="window change-pass">
-            <i class="close icon icon-fz22 icon-cancel" ng-click="cancel()"></i>
-            <div class="modal-body window-inner">
-                <form action="#">
-                    <p>Ваш отзыв</p>
-                    <textarea cols="10" rows="10"></textarea>
-                    <button class="button btn-remove-arch" type="submit" ng-click="ok()">Сохранить</button>
-                </form>
-            </div>  
-        </div>
-    </script>
-
-    
-
-
-
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
-<script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
-<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-<script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
 <!-- endbower -->
-
-<script src="../js/ctrl.js"></script>
-<script src="../js/modalCtrl.js"></script>
+<script src="../js/directives.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
