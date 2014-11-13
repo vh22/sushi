@@ -19,7 +19,6 @@ header{
   }
 }
 html, body, .container {height: 100%;}
-
 .actions{
   position: relative;
   z-index: 1;
@@ -752,6 +751,7 @@ html, body, .container {height: 100%;}
     @include transition(all ease .3s);
   }
   &.five .product{width: 20%}
+  &.four .product{width: 25%;}
   &.eight .product{
     width: 12.5%;
     .product__img{
@@ -896,7 +896,7 @@ html, body, .container {height: 100%;}
 }
 .poll-btn{
   margin: 38px 0 16px;
-  .btn{
+  .button{
     float: left;
     width: 164px;
     &.grey{margin-left: 20px}
@@ -1160,6 +1160,7 @@ html, body, .container {height: 100%;}
 }
 .social{
   margin-bottom: 27px;
+  text-align: center;
   li {
     float: left;
     margin-left: 45px;
@@ -1244,5 +1245,103 @@ html, body, .container {height: 100%;}
   border: 2px dashed #939292;
   padding: 20px 30px 15px;
   margin-bottom: 35px;
+  .count{
+    margin-bottom: 15px;
+    p{
+      color: #5d5d5d;
+      font-size: 20px;
+      font-style: italic;
+      margin-right: 25px;
+      float: left;
+      margin-top: 4px;
+    }
+    span{float: left}
+    .counter{
+      input{
+        width: 40px;
+        margin: 0;
+      }
+      .ui-spinner-up{
+        right: 5px;
+        top: 6px;
+      }
+      .ui-spinner-down{
+        bottom: 5px;
+        right: 5px;
+      }
+    }
+  }
+  >p{
+    color: #5d5d5d;
+    font-size: 20px;
+    font-style: italic;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    b{
+      color: #000;
+      font: 800 34px $font;
+      margin: 0 10px;
+      position: relative;
+      padding-right: 20px;
+      &:before{
+        @include absRB(0,8px);
+        font: 400 15px $icon;
+      }
+    }
+    span{
+      display: block;
+    }
+  }
+  .button{width:100%}
+  .order-half{
+    text-align: center;
+    line-height: 16px;
+    margin: -15px 0 15px;
+    p{
+      font-size: 13px;
+      color: #000;
+    }
+    i{
+      font-size: 14px;
+      text-decoration: underline;
+      color: #e76b6b;
+      font-style: normal;
+      cursor: pointer;
+      &:hover{text-decoration: none;}
+    }
+  }
+  &.half{
+    >p{
+      float: left;
+      width: 50%;
+      b{margin: 0 0 0 20px}
+      span{
+        text-align: center;
+        width: 115px;
+      }
+      &.lined{
+        position: relative;
+        &:after{
+          @include absRT(-5px,-2px);
+          content: '/';
+          color: #000;
+          font-size: 35px;
+          font-weight: 800;
+        }
+        b{margin-left: 0px}
+        span{width: 82px;}
+      }
+    }
+    .count{
+      margin-bottom: 0px;
+      .button{
+        float: left;
+        height: 34px;
+        line-height: 34px;
+        width: 113px;
+      }
+      .counter{margin: 1px 28px 0 0}
+    }
+  }
 }
-.wrapper{padding-bottom: 365px;}
+.wrapper{padding-bottom: 365px}
