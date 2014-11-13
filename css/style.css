@@ -901,197 +901,243 @@ html, body, .container { height: 100%; }
 /* line 29, ../sass/_sasha.scss */
 .left-sidebar ul li a:hover:before, .left-sidebar ul li a.active:before { background: #ed7272; }
 
-/* line 36, ../sass/_sasha.scss */
+/* line 35, ../sass/_sasha.scss */
 .office { overflow: hidden; padding: 0 0 10px 10px; margin-bottom: 50px; }
 
-/* line 41, ../sass/_sasha.scss */
+/* line 40, ../sass/_sasha.scss */
 .office-title { font: 34px/44px "PT Sans", Arial, sans-serif; color: #5e5e5e; margin-bottom: 25px; }
 
-/* line 46, ../sass/_sasha.scss */
+/* line 45, ../sass/_sasha.scss */
 .personal { background: #fff; padding: 10px 10px 0 10px; -moz-box-shadow: rgba(105, 105, 103, 0.15) 0 0 10px; -webkit-box-shadow: rgba(105, 105, 103, 0.15) 0 0 10px; box-shadow: rgba(105, 105, 103, 0.15) 0 0 10px; }
 
-/* line 51, ../sass/_sasha.scss */
+/* line 50, ../sass/_sasha.scss */
 .personal-title { font: 22px/36px "PT Sans", Arial, sans-serif; padding: 0 0 10px 13px; color: #5d5d5d; border-bottom: 1px solid #e5e5e5; }
 
-/* line 57, ../sass/_sasha.scss */
+/* line 56, ../sass/_sasha.scss */
 .personal-email { padding: 6px 0 0 13px; }
-/* line 59, ../sass/_sasha.scss */
+/* line 58, ../sass/_sasha.scss */
 .personal-email p { float: left; font: 18px/40px "PT Sans", Arial, sans-serif; margin-right: 40px; }
-/* line 64, ../sass/_sasha.scss */
+/* line 63, ../sass/_sasha.scss */
 .personal-email .email-title { color: #5d5d5d; }
-/* line 65, ../sass/_sasha.scss */
+/* line 64, ../sass/_sasha.scss */
 .personal-email .email-discount { color: #e76b6b; float: right; margin-right: 0; }
 
-/* line 71, ../sass/_sasha.scss */
+/* line 70, ../sass/_sasha.scss */
 .personal-data { padding: 0 13px; margin-bottom: 20px; }
-/* line 74, ../sass/_sasha.scss */
+/* line 73, ../sass/_sasha.scss */
 .personal-data div { float: left; margin-right: 20px; }
-/* line 78, ../sass/_sasha.scss */
+/* line 77, ../sass/_sasha.scss */
 .personal-data label { display: block; color: #5d5d5d; font-size: 15px; line-height: 43px; }
-/* line 84, ../sass/_sasha.scss */
+/* line 83, ../sass/_sasha.scss */
 .personal-data input { border: 1px solid #c1c1c1; font-size: 14px; height: 43px; padding: 0 10px; color: #5d5d5d; width: 348px; }
 
-/* line 93, ../sass/_sasha.scss */
+/* line 92, ../sass/_sasha.scss */
 .birthday { padding: 2px 12px 24px; border-bottom: 1px solid #e5e5e5; }
-/* line 96, ../sass/_sasha.scss */
-.birthday div { width: 370px; margin-right: 20px; float: left; }
-/* line 100, ../sass/_sasha.scss */
-.birthday div p { font: 16px "PT Sans", Arial, sans-serif; color: #5d5d5d; float: left; }
+/* line 95, ../sass/_sasha.scss */
+.birthday .calendar { width: 370px; margin-right: 20px; float: left; }
+/* line 99, ../sass/_sasha.scss */
+.birthday .calendar p { font: 16px "PT Sans", Arial, sans-serif; color: #5d5d5d; float: left; }
+/* line 105, ../sass/_sasha.scss */
+.birthday .birthday-day { float: right !important; }
 /* line 106, ../sass/_sasha.scss */
-.birthday .birthday-day { float: right; }
-/* line 107, ../sass/_sasha.scss */
 .birthday .birthday-warning { font: 14px/22px "PT Sans", Arial, sans-serif; color: #8a8a8a; font-style: italic; position: relative; overflow: hidden; padding-left: 27px; }
-/* line 114, ../sass/_sasha.scss */
+/* line 113, ../sass/_sasha.scss */
 .birthday .birthday-warning:before { content: '\e631'; font-family: icomoon; color: #e76b6b; font-size: 20px; font-style: normal; position: absolute; left: 0; top: 0; }
-
+/* line 123, ../sass/_sasha.scss */
+.birthday .dropdown-menu li:nth-child(2) { display: none; }
 /* line 124, ../sass/_sasha.scss */
-.address { padding: 27px 12px 8px; border-bottom: 1px solid #e5e5e5; }
-/* line 127, ../sass/_sasha.scss */
-.address .title { font: 16px "PT Sans", Arial, sans-serif; color: #5d5d5d; float: left; width: 173px; }
-/* line 133, ../sass/_sasha.scss */
-.address div { overflow: hidden; margin-bottom: 10px; }
-/* line 136, ../sass/_sasha.scss */
-.address div p { font: 16px "PT Sans", Arial, sans-serif; color: #5d5d5d; position: relative; margin-bottom: 10px; }
-/* line 141, ../sass/_sasha.scss */
-.address div p span { color: #e76b6b; cursor: pointer; }
-/* line 144, ../sass/_sasha.scss */
-.address div p span:hover { color: #e35656; }
+.birthday .dropdown-menu div { position: absolute; background: #ffffff; z-index: 10; border: 1px solid #e6e6e6; padding: 5px; -moz-box-shadow: rgba(10, 11, 11, 0.2) 0 0 5px; -webkit-box-shadow: rgba(10, 11, 11, 0.2) 0 0 5px; box-shadow: rgba(10, 11, 11, 0.2) 0 0 5px; }
+/* line 131, ../sass/_sasha.scss */
+.birthday .dropdown-menu div table { outline: none; }
+/* line 135, ../sass/_sasha.scss */
+.birthday .dropdown-menu div thead tr:first-child th:first-child i:before { content: '\e635'; font-family: icomoon; color: #000000; font-size: 15px; font-style: normal; }
+/* line 143, ../sass/_sasha.scss */
+.birthday .dropdown-menu div thead tr:first-child th:nth-child(2) { width: 130px !important; }
 /* line 145, ../sass/_sasha.scss */
+.birthday .dropdown-menu div thead tr:first-child th:nth-child(3) button { transform: rotate(180deg); padding-top: 1px; }
+/* line 149, ../sass/_sasha.scss */
+.birthday .dropdown-menu div thead tr:first-child th:nth-child(3) i:before { content: '\e635'; font-family: icomoon; color: #000000; font-size: 15px; font-style: normal; transform: rotate(15deg); }
+/* line 160, ../sass/_sasha.scss */
+.birthday .dropdown-menu div tr { padding: 0 5px; }
+/* line 163, ../sass/_sasha.scss */
+.birthday .dropdown-menu div tr td button { background: none; padding: 5px 0; }
+/* line 166, ../sass/_sasha.scss */
+.birthday .dropdown-menu div tr td button span { padding: 5px; font-size: 14px; color: #5e5e5e; }
+/* line 170, ../sass/_sasha.scss */
+.birthday .dropdown-menu div tr td button span:hover { background: #e76b6b; color: #fff; }
+/* line 179, ../sass/_sasha.scss */
+.birthday .dropdown-menu div tr th button { background: none; }
+/* line 180, ../sass/_sasha.scss */
+.birthday .dropdown-menu div tr th small { font: bold 13px "PT Sans", Arial, sans-serif; color: #5e5e5e; }
+/* line 186, ../sass/_sasha.scss */
+.birthday .dropdown-menu div tr:nth-child(2) th:first-child { display: none; }
+/* line 187, ../sass/_sasha.scss */
+.birthday .dropdown-menu div tr:nth-child(2) th { text-align: center; }
+/* line 190, ../sass/_sasha.scss */
+.birthday .dropdown-menu div .text-muted { color: #989391; }
+
+/* line 196, ../sass/_sasha.scss */
+.address { padding: 27px 12px 8px; border-bottom: 1px solid #e5e5e5; }
+/* line 199, ../sass/_sasha.scss */
+.address .title { font: 16px "PT Sans", Arial, sans-serif; color: #5d5d5d; float: left; width: 173px; }
+/* line 205, ../sass/_sasha.scss */
+.address div { overflow: hidden; margin-bottom: 10px; }
+/* line 208, ../sass/_sasha.scss */
+.address div p { font: 16px "PT Sans", Arial, sans-serif; color: #5d5d5d; position: relative; margin-bottom: 10px; }
+/* line 213, ../sass/_sasha.scss */
+.address div p span { color: #e76b6b; cursor: pointer; }
+/* line 216, ../sass/_sasha.scss */
+.address div p span:hover { color: #e35656; }
+/* line 217, ../sass/_sasha.scss */
 .address div p span.icon-edit1 { margin-left: 20px; }
-/* line 148, ../sass/_sasha.scss */
+/* line 220, ../sass/_sasha.scss */
 .address div a { font-size: 13px; color: #159bea; text-decoration: underline; }
-/* line 152, ../sass/_sasha.scss */
+/* line 224, ../sass/_sasha.scss */
 .address div a:hover { text-decoration: none; }
 
-/* line 156, ../sass/_sasha.scss */
+/* line 228, ../sass/_sasha.scss */
 .edit-email { border-bottom: 1px solid #e5e5e5; padding: 0 13px; line-height: 80px; }
-/* line 160, ../sass/_sasha.scss */
+/* line 232, ../sass/_sasha.scss */
 .edit-email p { float: left; font: 16px/79px "PT Sans", Arial, sans-serif; color: #5d5d5d; margin-right: 35px; }
-/* line 166, ../sass/_sasha.scss */
-.edit-email a.btn { float: left; margin-top: 15px; }
+/* line 238, ../sass/_sasha.scss */
+.edit-email a.button { float: left; margin-top: 15px; }
 
-/* line 171, ../sass/_sasha.scss */
+/* line 243, ../sass/_sasha.scss */
 .save-form { padding: 35px 15px; }
 
-/* line 175, ../sass/_sasha.scss */
+/* line 247, ../sass/_sasha.scss */
 .date-order p { font: 16px/18px Lato, Arial, sans-serif; color: #5d5d5d; padding-left: 13px; }
 
-/* line 182, ../sass/_sasha.scss */
+/* line 254, ../sass/_sasha.scss */
 .name-order a { font: 14px/18px "PT Sans", Arial, sans-serif; color: #e76b6b; text-decoration: underline; display: block; width: 70%; }
-/* line 188, ../sass/_sasha.scss */
+/* line 260, ../sass/_sasha.scss */
 .name-order a:hover { text-decoration: none; }
 
-/* line 192, ../sass/_sasha.scss */
+/* line 264, ../sass/_sasha.scss */
 .price-order p { font: 16px/18px Lato, Arial, sans-serif; color: #5d5d5d; position: relative; display: inline-block; padding: 0 20px 0 15px; }
-/* line 198, ../sass/_sasha.scss */
+/* line 270, ../sass/_sasha.scss */
 .price-order p:before { content: '\e620'; font-family: icomoon; font-size: 13px; position: absolute; right: 0; top: 0; }
 
-/* line 207, ../sass/_sasha.scss */
+/* line 279, ../sass/_sasha.scss */
 .personal-discount p { font: 22px/90px "PT Sans", Arial, sans-serif; color: #000; text-align: right; padding-bottom: 13px; }
 
-/* line 214, ../sass/_sasha.scss */
+/* line 286, ../sass/_sasha.scss */
 .date-order { font: 18px "PT Sans", Arial, sans-serif; color: #5d5d5d; }
 
-/* line 218, ../sass/_sasha.scss */
+/* line 290, ../sass/_sasha.scss */
 .when-order { padding: 14px 0px 15px 14px; border-bottom: 1px solid #e5e5e5; margin-bottom: 5px; }
-/* line 222, ../sass/_sasha.scss */
+/* line 294, ../sass/_sasha.scss */
 .when-order .order-discount { line-height: 25px; }
 
-/* line 224, ../sass/_sasha.scss */
+/* line 296, ../sass/_sasha.scss */
 .when-order-date { font: 18px "PT Sans", Arial, sans-serif; color: #5d5d5d; float: left; }
 
-/* line 229, ../sass/_sasha.scss */
+/* line 301, ../sass/_sasha.scss */
 .day-order { color: #8a8a8a; margin-left: 5px; }
 
-/* line 233, ../sass/_sasha.scss */
+/* line 305, ../sass/_sasha.scss */
 .time-order { color: #8a8a8a; border-left: 1px dashed #8a8a8a; padding-left: 10px; }
 
-/* line 238, ../sass/_sasha.scss */
+/* line 310, ../sass/_sasha.scss */
 .order-discount { color: #e76b6b; float: right; margin-right: 0; font-size: 18px; }
 
-/* line 245, ../sass/_sasha.scss */
+/* line 317, ../sass/_sasha.scss */
 .row-title p { font: 12px/38px Lato, Arial, sans-serif; text-transform: uppercase; color: #8a8a8a; padding: 10px 15px 0; }
 
-/* line 252, ../sass/_sasha.scss */
+/* line 324, ../sass/_sasha.scss */
 .row { display: table; border-bottom: 1px solid #e5e5e5; width: 100%; }
-/* line 256, ../sass/_sasha.scss */
+/* line 328, ../sass/_sasha.scss */
 .row div { display: table-cell; vertical-align: middle; }
 
-/* line 264, ../sass/_sasha.scss */
+/* line 336, ../sass/_sasha.scss */
 .archive-two > .row div:nth-child(1) { width: 55%; }
-/* line 265, ../sass/_sasha.scss */
+/* line 337, ../sass/_sasha.scss */
 .archive-two > .row div:nth-child(2) { width: 35%; text-align: center; }
-/* line 268, ../sass/_sasha.scss */
+/* line 340, ../sass/_sasha.scss */
 .archive-two > .row div:nth-child(2) p { padding-left: 0; }
-/* line 270, ../sass/_sasha.scss */
+/* line 342, ../sass/_sasha.scss */
 .archive-two > .row div:nth-child(3) { width: 20%; text-align: center; }
-/* line 273, ../sass/_sasha.scss */
+/* line 345, ../sass/_sasha.scss */
 .archive-two > .row div:nth-child(3) p { padding-left: 0; }
-/* line 277, ../sass/_sasha.scss */
+/* line 349, ../sass/_sasha.scss */
 .archive-two .row-order { height: 115px; }
 
-/* line 282, ../sass/_sasha.scss */
+/* line 354, ../sass/_sasha.scss */
 .archive > .row div:nth-child(1) { width: 30%; }
-/* line 283, ../sass/_sasha.scss */
+/* line 355, ../sass/_sasha.scss */
 .archive > .row div:nth-child(2) { width: 57%; }
-/* line 285, ../sass/_sasha.scss */
+/* line 357, ../sass/_sasha.scss */
 .archive > .row div:nth-child(2) p { padding-left: 0; }
-/* line 287, ../sass/_sasha.scss */
+/* line 359, ../sass/_sasha.scss */
 .archive > .row div:nth-child(3) { width: 13%; }
-/* line 290, ../sass/_sasha.scss */
+/* line 362, ../sass/_sasha.scss */
 .archive .row-order { height: 95px; }
 
-/* line 295, ../sass/_sasha.scss */
+/* line 367, ../sass/_sasha.scss */
 .last-order > .row div:nth-child(1) { width: 55%; }
-/* line 296, ../sass/_sasha.scss */
+/* line 368, ../sass/_sasha.scss */
 .last-order > .row div:nth-child(2) { width: 15%; text-align: center; }
-/* line 299, ../sass/_sasha.scss */
+/* line 371, ../sass/_sasha.scss */
 .last-order > .row div:nth-child(2) p { padding-left: 0; }
-/* line 301, ../sass/_sasha.scss */
+/* line 373, ../sass/_sasha.scss */
 .last-order > .row div:nth-child(3) { width: 15%; text-align: center; }
-/* line 304, ../sass/_sasha.scss */
+/* line 376, ../sass/_sasha.scss */
 .last-order > .row div:nth-child(3) p { padding-left: 0; }
-/* line 306, ../sass/_sasha.scss */
+/* line 378, ../sass/_sasha.scss */
 .last-order > .row div:nth-child(4) { width: 15%; text-align: center; }
-/* line 309, ../sass/_sasha.scss */
+/* line 381, ../sass/_sasha.scss */
 .last-order > .row div:nth-child(4) p { padding-left: 0; }
-/* line 313, ../sass/_sasha.scss */
+/* line 385, ../sass/_sasha.scss */
 .last-order .row-order { height: 115px; }
 
-/* line 315, ../sass/_sasha.scss */
+/* line 387, ../sass/_sasha.scss */
 .link-office { font-size: 13px; color: #159bea; text-decoration: underline; }
-/* line 319, ../sass/_sasha.scss */
+/* line 391, ../sass/_sasha.scss */
 .link-office:hover { text-decoration: none; }
 
-/* line 321, ../sass/_sasha.scss */
+/* line 393, ../sass/_sasha.scss */
 .img-office { float: left; margin: 0px 25px 0 13px; }
 
-/* line 325, ../sass/_sasha.scss */
+/* line 397, ../sass/_sasha.scss */
 .name-archive-product { font: 14px/18px "PT Sans", Arial, sans-serif; font-weight: bold; color: #5d5d5d; overflow: hidden; text-transform: uppercase; margin-bottom: 5px; padding-top: 10px; }
 
-/* line 334, ../sass/_sasha.scss */
+/* line 406, ../sass/_sasha.scss */
 .amount-product { font: 16px/18px Lato, Arial, sans-serif; color: #5d5d5d; }
 
-/* line 338, ../sass/_sasha.scss */
+/* line 410, ../sass/_sasha.scss */
 .sum-price { text-align: right; padding: 10px 0px 25px; }
-/* line 341, ../sass/_sasha.scss */
+/* line 413, ../sass/_sasha.scss */
 .sum-price p { font: 22px/37px "PT Sans", Arial, sans-serif; font-weight: bold; color: #5d5d5d; margin-bottom: 8px; }
-/* line 346, ../sass/_sasha.scss */
+/* line 418, ../sass/_sasha.scss */
 .sum-price p span { position: relative; padding-right: 20px; }
-/* line 349, ../sass/_sasha.scss */
+/* line 421, ../sass/_sasha.scss */
 .sum-price p span:before { content: '\e620'; font-family: icomoon; color: #5d5d5d; font-size: 17px; font-weight: normal; position: absolute; right: 0; top: -5px; }
-/* line 359, ../sass/_sasha.scss */
-.sum-price .btn { float: right; }
-/* line 361, ../sass/_sasha.scss */
-.sum-price .btn.grey { margin-right: 10px; }
+/* line 431, ../sass/_sasha.scss */
+.sum-price .button { float: right; }
+/* line 433, ../sass/_sasha.scss */
+.sum-price .button.grey { margin-right: 10px; }
 
-/* line 364, ../sass/_sasha.scss */
+/* line 436, ../sass/_sasha.scss */
 .no-visible { display: none; }
 
-/* line 366, ../sass/_sasha.scss */
+/* line 438, ../sass/_sasha.scss */
 .calendar label { display: block; color: #5d5d5d; font-size: 15px; line-height: 43px; }
-/* line 372, ../sass/_sasha.scss */
-.calendar input { border: 1px solid #c1c1c1; font-size: 14px; height: 43px; padding: 0 10px; color: #5d5d5d; width: 155px; }
+/* line 445, ../sass/_sasha.scss */
+.calendar input { border: 1px solid #c1c1c1; font-size: 14px; height: 43px; padding: 0 35px 0 10px; color: #5d5d5d; width: 175px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+
+/* line 455, ../sass/_sasha.scss */
+.input-group-btn { position: absolute; right: -5px; top: 0; }
+/* line 457, ../sass/_sasha.scss */
+.input-group-btn span { font-size: 24px; color: #5d5d5d; position: absolute; right: 10px; top: 10px; }
+
+/* line 463, ../sass/_sasha.scss */
+.input-group { position: relative; }
+
+/* line 464, ../sass/_sasha.scss */
+.calendar-input { margin-top: -15px; }
+
+/* line 465, ../sass/_sasha.scss */
+.mt { margin-top: 53px; }
 
 /* line 1, ../sass/_icons.scss */
 .icon { font-family: 'icomoon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; /* Enable Ligatures ================ */ -webkit-font-feature-settings: "liga"; -moz-font-feature-settings: "liga=1"; -moz-font-feature-settings: "liga"; -ms-font-feature-settings: "liga" 1; -o-font-feature-settings: "liga"; font-feature-settings: "liga"; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
