@@ -635,10 +635,22 @@
     a{
       text-align: center;
       display: block;
+      margin-top: 15px;
     }
     button{
       margin: 0 auto;
       display: block;
+    }
+    .login-checkbox{
+    	.checkbox{
+    		float: left;
+    		position: relative;
+    	}
+    	margin-bottom: 25px;
+    	a{
+    		float: right;
+    		margin-top: 2px;
+    	}
     }
   }
   a{
@@ -650,5 +662,11 @@
       text-decoration: none;
     }
   }
+}
+.input-pass{
+	input{
+		font-size: 25px;
+		letter-spacing: 5px;
+	}
 }
 
