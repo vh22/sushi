@@ -131,13 +131,15 @@
                                     <p class="email-discount">Текущий уровень персональной скидки: <span>10%</span></p>
                                 </div>
                                 <div class="personal-data clear">
-                                    <div>
-                                        <label for="1">Имя</label>
-                                        <input id="1" type="text" value="Степан">
+                                    <div class="form-block">
+                                        <label for="name">Имя</label>
+                                        <input id="name" type="text" value="Степан">
+                                        <span>Введите правильно</span>
                                     </div>
-                                    <div>
-                                        <label for="2">Фамилия</label>
-                                        <input id="2" type="text" value="Иванов">
+                                    <div class="form-block">
+                                        <label for="surname">Фамилия</label>
+                                        <input id="surname" type="text" value="Иванов">
+                                        <span>Введите правильно</span>
                                     </div>
                                 </div>
                                 <div class="birthday clear">
@@ -168,7 +170,7 @@
                                 </div>
                                 <div class="edit-email clear" ng-controller="ModalDemoCtrl">
                                     <p>Изменить пароль для логина <span>mail_mail@gmail.com</span></p>
-                                    <a href="" class="button">Сменить пароль</a>
+                                    <a href="" class="button" ng-click="open('sm')">Сменить пароль</a>
                                 </div>
                                 <div class="save-form">
                                     <a href="#" class="button">Сохранить</a>
@@ -270,9 +272,22 @@
             <i class="close icon icon-fz22 icon-cancel" ng-click="cancel()"></i>
             <div class="modal-body window-inner">
                 <form action="#">
-                    <p>Ваш отзыв</p>
-                    <textarea cols="10" rows="10"></textarea>
-                    <button class="button btn-remove-arch" type="submit" ng-click="ok()">Сохранить</button>
+                   <p class="title-modal">Изменить пароль</p>
+                    <div class="form-block">
+                        <label for="old-pass">Имя</label>
+                        <input id="old-pass" type="password" value="">
+                        <span>Введите правильно</span>
+                    </div>
+                    <div class="form-block">
+                        <label for="pass">Имя</label>
+                        <input id="pass" type="password" value="">
+                        <span>Введите правильно</span>
+                    </div>
+                    <div class="form-block">
+                        <label for="new-pass">Имя</label>
+                        <input id="new-pass" type="password" value="">
+                        <span>Введите правильно</span>
+                    </div>
                 </form>
             </div>  
         </div>
