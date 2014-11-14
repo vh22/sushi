@@ -112,18 +112,18 @@
                 <p class="products__title">Востановление пароля</p>
                 <div class="block clear login-block">
                     
-                    <form class="clear" action="#">
-                        <div class="form-block input-pass">
+                    <form class="clear input-pass check-form" action="#">
+                        <div class="form-block">
                             <label for="password">новый пароль</label>
                             <input type="password" name="password" id="password">
                             <span>Введите правильный пароль</span>
                         </div>
-                        <div class="form-block input-pass">
+                        <div class="form-block">
                             <label for="password">повторите пароль</label>
                             <input type="password" name="password" id="password">
                             <span>Введите правильный пароль</span>
                         </div>
-                        <button class="button">Сохранить</button>
+                        <button class="button pass-sent">Сохранить</button>
                     </form>
                     
                 </div>
@@ -213,9 +213,20 @@
     </footer>
 </div>
 
+
+<div id="pass-sent" class="window">
+    <i class="close icon icon-fz22 icon-cancel"></i>
+    <div class="window-inner pass-window clear">
+        <p>На ваш адрес отправлено письмо для восстановления пароля. Если вы не видите письма, проверьте папку “Спам”</p>
+        <a href="" class="button btn-remove-arch close">Закрыть</a>
+    </div>
+</div>
+
+
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
 <!-- endbower -->
 <script src="../js/directives.js"></script>

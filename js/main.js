@@ -20,6 +20,16 @@ $(function(){
         block.find('.progress-wrapper').show();
     });
 
+    $('.open-results').click(function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass('active').text('Посмотреть результаты');
+            $(this).next('.show-results').hide(300);
+        } else {
+            $(this).addClass('active').text('Скрыть результаты');
+            $(this).next('.show-results').show(300);
+        }
+    });
+
     $('.change-view span').click(function(){
         $('.change-view span').removeClass('active');
         $(this).addClass('active');
@@ -70,6 +80,14 @@ $(function(){
 
         $('.add-review').click(function(){
             $('#add-review').dialog('open');
+        });
+        $('.pass-success').click(function(){
+            $('#pass-success').dialog({width: 500});
+            $('#pass-success').dialog('open');
+        });
+        $('.pass-sent').click(function(){
+            $('#pass-sent').dialog({width: 725});
+            $('#pass-sent').dialog('open');
         });
     }
 });

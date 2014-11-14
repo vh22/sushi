@@ -190,7 +190,7 @@
       margin: 0 3px;
       text-align: center;
       a{
-        color: #000;
+        color: #5d5d5d;
         display: block;
         width: 28px;
         height: 28px;
@@ -198,12 +198,13 @@
         line-height: 26px;
         @include border-radius (50%);
         &:hover{border-color: #e76b6b;}
-        .next{
+      }
+      &.next{
           @include transform(rotate(-180deg));
           @include transition(all ease .1s);
+          margin-top: -7px;
         }
-      }
-      &.active a{border-color: #000;}
+      &.active a{border-color: #5d5d5d;}
       &.navigation a:hover{
         color: #e76b6b;
         border-color: transparent;
@@ -229,35 +230,6 @@
   background: #fff;
   position: relative;
   .close{cursor: pointer;}
-  .btn-remove-arch{
-    position: relative;
-    margin-bottom: 10px;
-  }
-  textarea{
-    @include bb;
-    background: none repeat scroll 0 0 #fff;
-    border: 1px solid #aea9a0;
-    font: 14px $font;
-    height: 170px;
-    resize: none;
-    width: 100%;
-    margin: 20px 0;
-    position: relative;
-    padding: 10px;
-    color: #5e5e5e;
-  }
-  p{
-    font-size: 25px;
-    color: #5d5d5d;
-    position: relative;
-  }
-  i{
-    color:#e35656;
-    position: absolute;
-    right: -37px;
-    top: -33px;
-    z-index: 1;
-  }
   &:after{
     content: "\e633";
     color: #fff;
@@ -266,18 +238,41 @@
     right: -55px;
     top: -85px;
   }
+  i{
+    color:#e35656;
+    position: absolute;
+    right: -37px;
+    top: -33px;
+    z-index: 1;
+  }
+}
+.octopus:before{
+    content: "\e634";
+    color: #fcf0f0;
+    font: 345px 'icomoon';
+    position: absolute;
+    left: -6px;
+    top: -44px;
+}
+.your-review{
+  .btn-remove-arch{
+    position: relative;
+    margin-bottom: 10px;
+  }
+  textarea{
+    height: 170px;
+    margin: 20px 0;
+    position: relative;
+  }
+  p{
+    font-size: 25px;
+    color: #5d5d5d;
+    position: relative;
+  }
   .window-inner{
     overflow: hidden;
     padding: 30px 35px;
     position: relative;
-    &:before{
-      content: "\e634";
-      color: #fcf0f0;
-      font: 345px 'icomoon';
-      position: absolute;
-      left: -6px;
-      top: -44px;
-    }
   }
 }
 
@@ -612,6 +607,7 @@
 
 .login-block{
   position: relative;
+  overflow: hidden;
   &:before{
     content: "\e634";
     color: #fcf0f0;
@@ -625,13 +621,11 @@
     color: #5d5d5d;
     margin: 0 auto;
     display: block;
-    width: 400px;
+    width: 390px;
     position: relative;
     z-index: 1;
     padding: 130px 0;
-    input{
-      width: 390px;
-    }
+    input{width: 390px;}
     a{
       text-align: center;
       display: block;
@@ -642,11 +636,11 @@
       display: block;
     }
     .login-checkbox{
+    	margin-bottom: 25px;
     	.checkbox{
     		float: left;
     		position: relative;
     	}
-    	margin-bottom: 25px;
     	a{
     		float: right;
     		margin-top: 2px;
@@ -658,15 +652,84 @@
     color: #e76b6b;
     text-decoration: underline;
     cursor: pointer;
-    &:hover{
-      text-decoration: none;
-    }
+    &:hover{text-decoration: none;}
+    font-size: 15px;
   }
 }
+
 .input-pass{
 	input{
-		font-size: 25px;
+		font-size: 16px;
 		letter-spacing: 5px;
 	}
 }
-
+.check-form{
+	.button{margin-top: 15px;}
+}
+.login-check{
+	p{
+		float: right;
+		display: block;
+		font-size: 15px;
+		line-height: 42px;
+		margin-right: 10px;
+		width: 700;
+	}
+	label{float: left;}
+}
+.questions{
+	border-bottom: solid 1px #e5e5e5;
+	padding: 10px 10px 20px 10px;
+	h3{
+		font: 22px $fontPt;
+		color: #5d5d5d;
+		span{
+			color: #8a8a8a;
+			font-size: 13px;
+			border-left: 1px dashed #8a8a8a;
+			margin-left: 15px;
+			padding-left: 15px;
+		}
+	}
+	p{
+		color: #8a8a8a;
+		font: 16px $fontPt;
+	}
+	i{
+		font-style: normal;
+		color: #e76b6b;
+		text-decoration: underline;
+		margin: 15px 0;
+		display: inline-block;
+		&:hover{
+			cursor: pointer;
+			text-decoration: none;
+		}
+	}
+	.show-results{
+		border-top: solid 1px #e5e5e5;
+		width: 440px;
+		display: none;
+	}
+	&:last-child{
+		display: inline-block;
+		margin-bottom: 65px;
+		width: 98%;
+	}
+}
+.questions-block{
+	padding-bottom: 65px;
+	position: relative;
+}
+.pass-window{
+	text-align: center;
+	p{
+		font: 25px $fontPt;
+		color: #5d5d5d;
+		span{color: #4aa20f;}
+	}
+	a{
+		margin: 30px auto;
+		display: block;
+	}
+}
