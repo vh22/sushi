@@ -114,73 +114,87 @@
                <form action="">
                    <div class="form-single">
                        <div class="col-two clear">
-                            <div>
-                                <label for="1">Имя</label>
-                                <input id="1" type="text" value="Степан">
+                            <div class="form-block error">
+                                <label for="name">Имя</label>
+                                <input id="name" type="text" value="Степан">
+                                <span>Введите правильно</span>
                             </div>
-                            <div>
-                                <label for="2">Фамилия</label>
-                                <input id="2" type="text" value="Иванов">
+                            <div class="form-block">
+                                <label for="surname">Фамилия</label>
+                                <input id="surname" type="text" value="Иванов">
+                                <span>Введите правильно</span>
                             </div>
                         </div>
                    </div>
-                    <div class="form-single">
+                    <div class="form-single form-adress">
                         <div class="col-two clear">
-                             <div>
-                                 <label for="1">Выбрать телефон</label>
-                                 <input id="2" type="text" value="Иванов">
+                             <div class="form-block">
+                                 <label for="select-phone">Выбрать телефон</label>
+                                 <input id="select-phone" type="text" value="Иванов">
+                                 <span>Введите правильно</span>
                              </div>
-                             <div>
-                                 <label for="2">Добавить телефон</label>
-                                 <input id="2" type="text" value="Иванов">
+                             <div class="form-block">
+                                 <label for="add-phone">Добавить телефон</label>
+                                 <input id="add-phone" type="text" value="Иванов">
+                                 <span>Введите правильно</span>
                              </div>
                          </div>
-                         <div class="col-one">
-                             <label for="3">Адрес</label>
-                             <input type="text" id="3" value="м. Калужская, ул. Старокалужское ш-е, д. 65, корп. 0А---А, стр. 5, под. 5, этаж 3, кв. 122">
+                         <div class="col-one form-block">
+                             <label for="adress">Адрес</label>
+                             <input type="text" id="adress" value="м. Калужская, ул. Старокалужское ш-е, д. 65, корп. 0А---А, стр. 5, под. 5, этаж 3, кв. 122">
+                             <span>Введите правильно</span>
                          </div>
                          <div class="col-two clear">
-                             <div>
-                                 <label for="4">Метро</label>
-                                 <input id="4" type="text" value="">
+                             <div class="form-block">
+                                 <label for="metro">Метро</label>
+                                 <input id="metro" type="text" value="">
+                                 <span>Введите правильно</span>
                              </div>
-                             <div>
-                                 <label for="5">Улица</label>
-                                 <input id="5" type="text" value="">
+                             <div class="form-block">
+                                 <label for="street">Улица</label>
+                                 <input id="street" type="text" value="">
+                                 <span>Введите правильно</span>
                              </div>
                          </div>
                          <div class="col-four clear">
-                             <div>
-                                 <label for="6">Дом</label>
-                                 <input id="6" type="text" value="">
+                             <div class="form-block">
+                                 <label for="home">Дом</label>
+                                 <input id="home" type="text" value="">
+                                 <span>Введите правильно</span>
                              </div>
-                             <div>
-                                 <label for="7">Корпус</label>
-                                 <input id="7" type="text" value="">
+                             <div class="form-block">
+                                 <label for="housing">Корпус</label>
+                                 <input id="housing" type="text" value="">
+                                 <span>Введите правильно</span>
                              </div>
-                             <div>
-                                 <label for="8">Строение</label>
-                                 <input id="8" type="text" value="">
+                             <div class="form-block">
+                                 <label for="building">Строение</label>
+                                 <input id="building" type="text" value="">
+                                 <span>Введите правильно</span>
                              </div>
-                             <div>
-                                 <label for="9">Подъезд</label>
-                                 <input id="9" type="text" value="">
+                             <div class="form-block">
+                                 <label for="porch">Подъезд</label>
+                                 <input id="porch" type="text" value="">
+                                 <span>Введите правильно</span>
                              </div>
-                             <div>
-                                 <label for="10">Код двери</label>
-                                 <input id="10" type="text" value="">
+                             <div class="form-block">
+                                 <label for="code">Код двери</label>
+                                 <input id="code" type="text" value="">
+                                 <span>Введите правильно</span>
                              </div>
-                             <div>
-                                 <label for="11">Этаж</label>
-                                 <input id="11" type="text" value="">
+                             <div class="form-block">
+                                 <label for="floor">Этаж</label>
+                                 <input id="floor" type="text" value="">
+                                 <span>Введите правильно</span>
                              </div>
-                             <div>
-                                 <label for="12">Квартира</label>
-                                 <input id="12" type="text" value="">
+                             <div class="form-block">
+                                 <label for="apartment">Квартира</label>
+                                 <input id="apartment" type="text" value="">
+                                 <span>Введите правильно</span>
                              </div>
                          </div>
                     </div>
-                    <div class="form-single clear" ng-controller="DatepickerDemoCtrl">
+                    <div class="form-single form-time clear" ng-controller="DatepickerDemoCtrl">
                         <div class="calendar">
                             <label>Дата доставки</label>
                             <p class="input-group">
@@ -203,13 +217,14 @@
                         </div>
                     </div>
                     <div class="form-single">
-                        <div>
-                            <label for="13">Количество персон</label>
-                            <input id="13" type="text" value="">
+                        <div  class="form-block">
+                            <label for="number-persons">Количество персон</label>
+                            <input id="number-persons" type="text" value="">
+                            <span>Введите правильно</span>
                         </div>
                         <div>
-                            <label for="14">Дополнительная информация или особые требования</label>
-                            <textarea name="" id="14" ></textarea>
+                            <label for="more">Дополнительная информация или особые требования</label>
+                            <textarea name="" id="more" ></textarea>
                         </div>
                     </div>
                     <div class="form-single payment">
@@ -217,33 +232,52 @@
                         <div ng-controller="tabsController">
                             <ul class="clear">
                                 <li ng-class="{'active': activeTab == 'cont-1'}">
-                                    <a href="javascript:;" ng-click="switchToTab('cont-1')">
+                                    <p ng-click="switchToTab('cont-1')">
                                        Наличные 
-                                    </a>
+                                    </p>
                                 </li>
                                 <li ng-class="{'active': activeTab == 'cont-2'}">
-                                    <a href="javascript:;" ng-click="switchToTab('cont-2')">
+                                    <p ng-click="switchToTab('cont-2')">
                                         Банковская карта
-                                    </a>
+                                    </p>
                                 </li>
                                 <li ng-class="{'active': activeTab == 'cont-3'}">
-                                    <a href="javascript:;" ng-click="switchToTab('cont-3')">
+                                    <p ng-click="switchToTab('cont-3')">
                                         Электронные деньги
-                                    </a>
+                                    </p>
                                 </li>
                             </ul>
-                            <div ng-show="activeTab == 'cont-1'">
-                                <div>
-                                    <label for="15">Потребуется ли сдача курьеру</label>
-                                    <input type="checkbox" id="15">
+                            <div ng-show="activeTab == 'cont-1'" class="cash clear">
+                                <div class="renting">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="remember-me" id="deposit-courier">
+                                        <label for="deposit-courier">Потребуется ли сдача курьеру</label>
+                                    </div>
                                 </div>
-                                <div>
-                                    <label for="16"></label>
-                                    <input type="text">
+                                <div class="input-renting">
+                                    <label for="renting">Сдача с:</label>
+                                    <input type="text" id="renting">
                                 </div>
                             </div>
-                            <div ng-show="activeTab == 'cont-2'">2</div>
-                            <div ng-show="activeTab == 'cont-3'">3</div>
+                            <div ng-show="activeTab == 'cont-2'"></div>
+                            <div ng-show="activeTab == 'cont-3'" class="radios clear">
+                                <div class="radio-button">
+                                    <input id="yandex" type="radio" name="radio" checked="checked">
+                                    <label for="yandex">Яндекс деньги</label>
+                                </div>
+                                <div class="radio-button">
+                                    <input id="qiwi" type="radio" name="radio">
+                                    <label for="qiwi">Киви</label>
+                                </div>
+                                <div class="radio-button">
+                                    <input id="web" type="radio" name="radio">
+                                    <label for="web">Вебмани</label>
+                                </div>
+                                <div class="radio-button">
+                                    <input id="other" type="radio" name="radio">
+                                    <label for="other">Другое</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="finish-payment">
@@ -253,7 +287,7 @@
                     </div>
                </form>
            </div>
-           <div class="my-lunch clear">
+           <div class="my-lunch js-my-lunch clear">
                <p class="lunch-title">Мой обед <span class="icon icon-delete_box"></span> <span class="icon icon-edit1"></span></p>
                <div class="row-lunch">
                    <div>

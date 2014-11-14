@@ -8,7 +8,7 @@ angular.module('sushiApp').controller('ModalDemoCtrl', function ($scope, $modal,
     var modalInstance = $modal.open({
       templateUrl: 'myModalContent.html',
       controller: 'ModalInstanceCtrl',
-      size: size,
+      size: 700,
       resolve: {
         items: function () {
           return $scope.items;

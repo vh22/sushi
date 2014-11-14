@@ -64,7 +64,7 @@
                                         <div class="big-menu js-big-menu">
                                             <nav>
                                                 <ul class="clear">
-                                                    <li><a href="#"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
+                                                    <li><a href="#" class="active"><span class="icon icon-fz41 icon-sushi"></span>суши</a></li>
                                                     <li><a href="#"><span class="icon icon-fz39 icon-roll"></span>Роллы</a></li>
                                                     <li><a href="#"><span class="icon icon-fz35 icon-warmroll"></span>Теплые роллы</a></li>
                                                     <li><a href="#"><span class="icon icon-fz37 icon-sushibox"></span>Бокс-суши</a></li>
@@ -111,11 +111,11 @@
                     <div class="left-sidebar">
                         <nav>
                             <ul>
-                                <li><a href="#" class="active">Личные данные</a></li>
+                                <li><a href="#">Личные данные</a></li>
                                 <li><a href="#">Избранные блюда</a></li>
                                 <li><a href="#">Последние заказы</a></li>
                                 <li><a href="#">Архив заказов</a></li>
-                                <li><a href="#">Мои оценки блюд</a></li>
+                                <li><a href="#" class="active">Мои оценки блюд</a></li>
                                 <li><a href="#">Выход</a></li>
                             </ul>
                         </nav>
@@ -123,60 +123,89 @@
                     <div class="office">
                         <p class="office-title">Мой личный кабинет</p>
                         <div class="personal clear">
-                            <p class="personal-title">Личные данные</p>
-                            <form action="">
-                                <div class="personal-email clear">
-                                    <p class="email-title">Электронный адрес:</p>
-                                    <p class="email-name">mail_mail.gmail.com</p>
-                                    <p class="email-discount">Текущий уровень персональной скидки: <span>10%</span></p>
-                                </div>
-                                <div class="personal-data clear">
+                            <p class="personal-title">Мои оценки блюд</p>
+                            <div class="table my-appraisal">
+                                <div class="row row-title">
                                     <div>
-                                        <label for="name">Имя</label>
-                                        <input id="name" type="text" value="Степан">
+                                        <p>Состав заказа</p>
                                     </div>
                                     <div>
-                                        <label for="surname">Фамилия</label>
-                                        <input id="surname" type="text" value="Иванов">
+                                        <p>Оценка</p>
+                                    </div>
+                                    <div>
+                                        <p>Изменить</p>
                                     </div>
                                 </div>
-                                <div class="birthday clear" ng-controller="DatepickerDemoCtrl">
-                                    <div class="calendar">
-                                        <label>Дата Рождения</label>
-                                        <p class="input-group">
-                                            <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="dt" is-open="opened" min-date="minDate" datepicker-options="dateOptions" close-text="Close" />
-                                            <span class="input-group-btn">
-                                            <button type="button" class="btn-default" ng-click="open($event)"><span class="icon icon-calendar"></span></button>
-                                            </span>
-                                        </p>
+                                <div class="row row-order">
+                                    <div>
+                                        <img src="../images/products/archiv.png" class="img-office" alt="">
+                                        <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
+                                        <p class="link-office">Узнать состав</p>
                                     </div>
-                                    <p class="birthday-warning mt">Задать дату можно только единожды</p>
-                                </div>
-                                <div class="address">
-                                    <div class="phone clear">
-                                        <p class="title">Телефон:</p>
-                                        <div>
-                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
-                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
-                                            <a href="#">Добавить телефон</a>
-                                        </div>
+                                    <div>
+                                        <div class="stars"><span style="width:80%"></span></div> 
+                                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты Далеко-далеко за словесными горами в...</p>
                                     </div>
-                                    <div class="street clear">
-                                        <p class="title">Адрес:</p>
-                                        <div>
-                                            <p class="phone-number">ул. Южная 56, корпус 4, стр. 0А---А, под. 3, код двери 4555, 3 этаж, кв. 54 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
-                                            <a href="#">Добавить aдрес</a>
-                                        </div>
+                                    <div>
+                                         <a href="#" class="change">Изменить</a>
                                     </div>
                                 </div>
-                                <div class="edit-email clear">
-                                    <p>Изменить пароль для логина <span>mail_mail@gmail.com</span></p>
-                                    <a href="#" class="button">Сменить пароль</a>
+                                <div class="row row-order">
+                                    <div>
+                                        <img src="../images/products/archiv.png" class="img-office" alt="">
+                                        <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
+                                        <p class="link-office">Узнать состав</p>
+                                    </div>
+                                    <div>
+                                        <div class="stars"><span style="width:80%"></span></div> 
+                                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты Далеко-далеко за словесными горами в...</p>
+                                    </div>
+                                    <div>
+                                         <a href="#" class="change">Изменить</a>
+                                    </div>
                                 </div>
-                                <div class="save-form">
-                                    <a href="#" class="button">Сохранить</a>
+                                <div class="row row-order">
+                                    <div>
+                                        <img src="../images/products/archiv.png" class="img-office" alt="">
+                                        <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
+                                        <p class="link-office">Узнать состав</p>
+                                    </div>
+                                    <div>
+                                        <div class="stars"><span style="width:80%"></span></div> 
+                                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты Далеко-далеко за словесными горами в...</p>
+                                    </div>
+                                    <div>
+                                         <a href="#" class="change">Изменить</a>
+                                    </div>
                                 </div>
-                            </form>
+                                <div class="row row-order">
+                                    <div>
+                                        <img src="../images/products/archiv.png" class="img-office" alt="">
+                                        <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
+                                        <p class="link-office">Узнать состав</p>
+                                    </div>
+                                    <div>
+                                        <div class="stars"><span style="width:80%"></span></div> 
+                                        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты Далеко-далеко за словесными горами в...</p>
+                                    </div>
+                                    <div>
+                                         <a href="#" class="change">Изменить</a>
+                                    </div>
+                                </div>
+                                <div class="pagination clear">
+                                    <ul>
+                                        <li class="navigation"><a href=""><i class="icon icon-fz15 icon-arrow"></i></a></li>
+                                        <li class="active"><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">...</a></li>
+                                        <li><a href="">10</a></li>
+                                        <li class="navigation"><a href=""><i class="icon icon-fz15 icon-arrow next"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -223,10 +252,10 @@
                 <div class="logo logo-footer">
                     <div>
                         <a href="#"><img src="../css/images/logo-header.png" alt="logo"></a>
-                        <span>
-                            <span class="copy">&copy;</span>
-                            <span class="text">«Суши-Профи» — <br> Доставка суши и <br> хорошего настроения.</span>
-                        </span>
+						<span>
+							<span class="copy">&copy;</span>
+							<span class="text">«Суши-Профи» — <br> Доставка суши и <br> хорошего настроения.</span>
+						</span>
                     </div>
                 </div>
                 <div class="footer-bottom__social">
@@ -274,7 +303,9 @@
 <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
 <!-- endbower -->
+
 <script src="../js/ctrl.js"></script>
-<script src="../js/main.js"></script>
+<script src="../js/modalCtrl.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
