@@ -90,5 +90,13 @@ $(function(){
             $('#pass-sent').dialog({width: 725});
             $('#pass-sent').dialog('open');
         });
+        $('.structure').click(function(){
+            $('#structure').dialog({width: 270});
+            $('#structure').dialog('open');
+        });
+        $('.pass-change').click(function(){
+            $('#pass-change').dialog({width: 405});
+            $('#pass-change').dialog('open');
+        });
     }
 });

@@ -23,7 +23,7 @@ app.controller('DatepickerDemoCtrl', function ($scope) {
   };
 
   $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
-  $scope.format = $scope.formats[0];
+  $scope.format = $scope.formats[2];
 }).config(function (datepickerConfig, datepickerPopupConfig) {
       datepickerConfig.showWeeks = false;
       datepickerPopupConfig.toggleWeeksText = null;

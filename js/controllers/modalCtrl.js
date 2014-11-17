@@ -1,7 +1,7 @@
 
 app.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
 
-  $scope.items = ['item1', 'item2', 'item3'];
+  $scope.items = ['user.passOld'];
 
   $scope.open = function (template) {
 
@@ -16,7 +16,7 @@ app.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
       }
     });
 
-    modalInstance.result.then(function (selectedItem) {
+    modalInstance.result.then(function (data) {
       $scope.selected = selectedItem;
     }, function () {
       $log.info('Modal dismissed at: ' + new Date());
