@@ -99,9 +99,23 @@ $(function(){
             $('#pass-change').dialog('open');
             $('.pass-success').click(function(){
                 $('#pass-change').dialog('close');
-                $('#pass-success').dialog({width: 500});
-                $('#pass-success').dialog('open');
             });
+        });
+        $('.phone-change').click(function(){
+            $('#phone-change').dialog({width: 410});
+            $('#phone-change').dialog('open');
+        });
+        $('.phone-add').click(function(){
+            $('#phone-add').dialog({width: 410});
+            $('#phone-add').dialog('open');
+        });
+        $('.adress-change').click(function(){
+            $('#adress-change').dialog({width: 840});
+            $('#adress-change').dialog('open');
+        });
+        $('.adress-add').click(function(){
+            $('#adress-add').dialog({width: 840});
+            $('#adress-add').dialog('open');
         });
     }
 });
