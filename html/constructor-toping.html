@@ -137,20 +137,21 @@
                     </div>
                     <div class="body clear">
                         <div class="items">
-                            <div class="active">
-                                <div class="img"><img src="../images/constructor/chili.png" alt="" /></div>
-                                <p>Свежий перец чили</p>
-                                <i class="close icon icon-fz22 icon-cancel"></i>
-                            </div>
-                            <div>
-                                <div class="img"><img src="../images/constructor/chili.png" alt="" /></div>
-                                <p>Свежий перец чили</p>
-                            </div>
-                            <div>
-                                <div class="img"><img src="../images/constructor/chili.png" alt="" /></div>
-                                <p>Свежий перец чили</p>
-                            </div>
-                            
+                            <perfect-scrollbar class="items" wheel-propagation="true" wheel-speed="20">
+                                <div class="noodle active">
+                                    <div class="img"><img src="../images/constructor/chili.png" alt="" /></div>
+                                    <p>Свежий перец чили</p>
+                                    <i class="close icon icon-fz22 icon-cancel"></i>
+                                </div>
+                                <div class="noodle">
+                                    <div class="img"><img src="../images/constructor/chili.png" alt="" /></div>
+                                    <p>Свежий перец чили</p>
+                                </div>
+                                <div class="noodle">
+                                    <div class="img"><img src="../images/constructor/chili.png" alt="" /></div>
+                                    <p>Свежий перец чили</p>
+                                </div>
+                            </perfect-scrollbar>
                         </div>
                         <div class="full-item">
                             <div class="img"><img src="../images/constructor/plate.png" alt="" /></div>
@@ -262,14 +263,17 @@
 <script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
+<script src="../bower_components/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+<script src="../bower_components/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+<script src="../bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
 <!-- endbower -->
 
-<script src="../js/factorys/app.js"></script>
+<script src="../js/app.js"></script>
 <script src="../js/controllers/datePicker.js"></script>
 <script src="../js/controllers/rating.js"></script>
 <script src="../js/controllers/DropdownCtrl.js"></script>
 <script src="../js/controllers/tabs.js"></script>
-<script src="../js/controllers/modalCtrl.js"></script>
+<script src="../js/services/modal.js"></script>
 <script src="../js/directives/counter.js"></script>
 <script src="../js/directives/autocomplete.js"></script>
 <script src="../js/main.js"></script>
