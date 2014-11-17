@@ -205,7 +205,7 @@
       }
       &.next{
           & a i{
-            margin-top: -2px;
+            margin-top: -4px;
           }
           @include transform(rotate(-180deg));
           @include transition(all ease .1s);
@@ -352,7 +352,6 @@
   border-top: 1px solid #e5e5e5;
   padding: 20px 0 20px 0;
   position: relative;
-  float: left;
   &:first-child{
     border-top: none;
     padding-top: 10px;
@@ -430,13 +429,14 @@
       color: #e76b6b;
       height: 60px;
       line-height: 60px;
+      position: relative;
       &:before{
         content: "\e629";
         color: #5d5d5d;
         font: 32px 'icomoon';
         position: absolute;
         left: 12px;
-        top: 48px;
+        top: 15px;
       }
       &.complete{
         color: #4aa20f;
@@ -740,32 +740,32 @@
 }
 #pass-sent{
 	.window-inner{
-	    padding: 50px 0 30px 0;
-	    position: relative;
-	    p{
-	    	display: block;
-	    	margin-bottom: 30px;
-	    }
+    padding: 50px 0 30px 0;
+    position: relative;
+    p{
+    	display: block;
+    	margin-bottom: 30px;
+    }
 	}
 }
 #pass-success{
 	.window-inner{
-	    padding: 30px 35px;
-	    position: relative;
-	    text-align: left;
-	    p{
-	    	display: block;
-	    	padding: 0 0 23px 113px;
-	    	margin: 23px 0 10px 0;
-	    	&:before{
-	    		content: "\e62c";
-			    color: #4aa20f;
-			    font: 80px 'icomoon';
-			    position: absolute;
-			    left: 35px;
-			    top: 30px;
-	    	}
-	    }
+    padding: 30px 35px;
+    position: relative;
+    text-align: left;
+    p{
+    	display: block;
+    	padding: 0 0 23px 113px;
+    	margin: 23px 0 10px 0;
+    	&:before{
+    		content: "\e62c";
+		    color: #4aa20f;
+		    font: 80px 'icomoon';
+		    position: absolute;
+		    left: 35px;
+		    top: 30px;
+    	}
+    }
 	}
 }
 #structure{
@@ -868,12 +868,12 @@
     overflow: hidden;
     padding: 15px;
     form{
+      margin: 0 20px;
       .form-left{
         float: left;
         margin-right: 22px;
       }
       .form-right{float: right;}
-      margin: 0 20px;
       .form-block-big{
         input{width: 100%;}
       }
@@ -894,6 +894,57 @@
     button{
       margin: 0 0 30px 20px;
       width: 175px;
+    }
+  }
+}
+
+
+// WOC
+
+
+.constructor{
+  .header{
+    ul{
+      .full{
+        div{
+          border: 2px solid;
+          &>i{
+            color: #000;
+            font-size: 18px;
+            position: absolute;
+            font-style: normal;
+            left: 20px;
+            top: 8px;
+            text-align: left;
+          }
+          img{
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  .body{
+    .full-item{
+      .txt{
+        p{
+          font-style: italic;
+          width: 600;
+          color: #000;
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        .title{
+          text-align: left;
+          font-size: 22px;
+        }
+        h2{
+          color: #e76b6b;
+          float: left;
+          font-size: 16px;
+          margin: 10px 25px 15px 0;
+        }
+      }
     }
   }
 }
