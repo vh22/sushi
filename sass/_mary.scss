@@ -322,7 +322,7 @@
         &:hover{color: #e76b6b;}
       }
       font-size: 20px;
-      width: 700;
+      font-weight: 700;
       margin-bottom: 13px;
     }
     div{
@@ -412,12 +412,12 @@
       margin-bottom: 10px;
       span{
         color: #ed7272;
-        width: 600;
+        font-weight: 600;
       }
     }
     h3{
       font: bold 20px $fontPt;
-      width: 700;
+      font-weight: 700;
       a{color: #5d5d5d;}
     }
     h2{
@@ -446,7 +446,7 @@
           font: 32px 'icomoon';
           position: absolute;
           left: 12px;
-          top: 48px;
+          top: 15px;
         }
       }
     }
@@ -503,7 +503,7 @@
           width: 33.1%;
           margin: 0 -1px 0 0;
           .winners-name{
-            width: 700;
+            font-weight: 700;
             color: #000;
           }
         }
@@ -581,7 +581,7 @@
   .name{
     color: #5e5e5e;
     font-size: 16px;
-    width: 700;
+    font-weight: 700;
   }
   >i{
     border: 2px dotted #e76b6b;
@@ -679,7 +679,7 @@
 		font-size: 15px;
 		line-height: 42px;
 		margin-right: 10px;
-		width: 700;
+		font-weight: 700;
 	}
 	label{float: left;}
 }
@@ -929,7 +929,7 @@
       .txt{
         p{
           font-style: italic;
-          width: 600;
+          font-weight: 600;
           color: #000;
           font-size: 18px;
           margin-bottom: 15px;
@@ -937,6 +937,7 @@
         .title{
           text-align: left;
           font-size: 22px;
+          font-weight: 600;
         }
         h2{
           color: #e76b6b;
@@ -947,9 +948,25 @@
         div{
           div{
             float: left;
+            height: 35px;
+            line-height: 35px;
+          }
+          >span{
+            margin: 0 30px 0 0;
           }
           p{
+            font-size: 35px;
+            font-weight: 800;
+            font-style: normal;
             float: left;
+            height: 35px;
+            line-height: 35px;
+          }
+          .button{
+            float: right;
+            height: 35px;
+            line-height: 35px;
+            margin-right: 113px;
           }
         }
       }
