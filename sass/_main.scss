@@ -1148,9 +1148,11 @@ textarea{
 }
 .items{
   width: 590px;
-  height: 100%;
+  height: 580px;
   float: left;
-  >div{
+  overflow: hidden;
+  position: relative;
+  .noodle{
     float: left;
     width: 250px;
     height: 110px;
@@ -1526,6 +1528,21 @@ textarea{
   }
 }
 .progress-wrapper{display: none;}
+.ps-scrollbar-y-rail{
+  width: 9px;
+  @include border-radius(5px);
+  @include box-shadow(inset 0 0 5px 0 rgba(138,138,138,0.5));
+  position: absolute;
+  right: 0;
+  background: #fff;
+  .ps-scrollbar-y{
+    @include box-shadow(0 2px 5px 0 rgba(0,0,0,0.2));
+    @include border-radius(5px);
+    background: #e76b6b;
+    width: 9px;
+    position: absolute;
+  }
+}
 .radio{
   margin-bottom: 17px;
   label{
