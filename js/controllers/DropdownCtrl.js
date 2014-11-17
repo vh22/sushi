@@ -1,4 +1,4 @@
-var app = angular.module('sushiApp', ['ui.bootstrap']);
+
 app.controller('DropdownCtrl', function ($scope) {
     $scope.payment = [
         {id: '1', name: 'Наличные', url: '../css/images/pay/cash.png'},

@@ -1,5 +1,5 @@
 /* Directives */
-angular.module('sushiApp', []).directive('counter', function() {
+app.directive('counter', function() {
     return {
         restrict: 'A',
         scope: { value: '=value' },
