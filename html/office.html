@@ -155,7 +155,7 @@
                                     <div class="phone clear">
                                         <p class="title">Телефон:</p>
                                         <div>
-                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1" ng-click="open('editPhone')"></span> <span class="icon icon-delete_box"></span></p>
+                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
                                             <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
                                             <a href="#">Добавить телефон</a>
                                         </div>
@@ -170,7 +170,7 @@
                                 </div>
                                 <div class="edit-email clear">
                                     <p>Изменить пароль для логина <span>mail_mail@gmail.com</span></p>
-                                    <a href="" class="button" ng-click="open('myModalContent')">Сменить пароль</a>
+                                    <a href="" class="button" ng-click="open('change-pass')">Сменить пароль</a>
                                 </div>
                                 <div class="save-form">
                                     <a href="#" class="button">Сохранить</a>
@@ -267,58 +267,43 @@
 
 
 
-    <script type="text/ng-template" id="myModalContent">
-        <div class="window change-pass">
-            <i class="close icon icon-fz22 icon-cancel" ng-click="cancel()"></i>
-            <div class="modal-body window-inner">
-                <form action="#">
-                   <p class="title-modal">Изменить пароль</p>
-                    <div class="form-block">
-                        <label for="old-pass">Имя</label>
-                        <input id="old-pass" type="password" value="">
-                        <span>Введите правильно</span>
-                    </div>
-                    <div class="form-block">
-                        <label for="pass">Имя</label>
-                        <input id="pass" type="password" value="">
-                        <span>Введите правильно</span>
-                    </div>
-                    <div class="form-block">
-                        <label for="new-pass">Имя</label>
-                        <input id="new-pass" type="password" value="">
-                        <span>Введите правильно</span>
-                    </div>
-                </form>
-            </div>  
+<script type="text/ng-template" id="change-pass">
+    <div id="pass-change" class="window">
+        <i class="close icon icon-fz22 icon-cancel" ng-click="cancel()"></i>
+        <div class="window-inner octopus clear">
+            <p>Изменить пароль</p>
+            <form class="clear" name="myForm">
+                <div class="form-block">
+                    <label for="password-old">старый пароль</label>
+                    <input type="password" name="password-old" ng-model="user.passOld" id="password-old">
+                    <span>Введите правильный пароль</span>
+                </div>
+                <div class="form-block">
+                    <label for="password-new">новый пароль</label>
+                    <input type="password" name="password-new" ng-model="user.passNew" id="password-new">
+                    <span>Введите правильный пароль</span>
+                </div>
+                <div class="form-block">
+                    <label for="password-new2">повторите пароль</label>
+                    <input type="password" name="password-new2" ng-model="user.passNewTwo" id="password-new2">
+                    <span>Введите правильный пароль</span>
+                </div>
+            </form>
+            <button type="submit" class="button pass-success" ng-click="ok()">Сохранить</button>
         </div>
-    </script>
+    </div>
+</script>
 
-
- <script type="text/ng-template" id="editPhone">
-        <div class="window change-pass">
-            <i class="close icon icon-fz22 icon-cancel" ng-click="cancel()"></i>
-            <div class="modal-body window-inner">
-                <form action="#">
-                   <p class="title-modal">Изменить пароль</p>
-                    <div class="form-block">
-                        <label for="old-pass">Имя</label>
-                        <input id="old-pass" type="password" value="">
-                        <span>Введите правильно</span>
-                    </div>
-                    <div class="form-block">
-                        <label for="pass">Имя</label>
-                        <input id="pass" type="password" value="">
-                        <span>Введите правильно</span>
-                    </div>
-                    <div class="form-block">
-                        <label for="new-pass">Имя</label>
-                        <input id="new-pass" type="password" value="">
-                        <span>Введите правильно</span>
-                    </div>
-                </form>
-            </div>
+<script type="text/ng-template" id="editPhoneSucces">
+    <div id="pass-success" class="window">
+        <i class="close icon icon-fz22 icon-cancel" ng-click="cancel()"></i>
+        <div class="window-inner pass-window clear">
+            <p>Пароль успешно изменен</p>
+            <a href="" class="button btn-remove-arch close" ng-click="ok()">Готово</a>
         </div>
-    </script>
+    </div>
+</script>
+
 
     
 
