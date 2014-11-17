@@ -16,6 +16,7 @@ app.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
       }
     });
 
+
     modalInstance.result.then(function (data) {
       $scope.selected = selectedItem;
     }, function () {
