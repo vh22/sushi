@@ -90,5 +90,18 @@ $(function(){
             $('#pass-sent').dialog({width: 725});
             $('#pass-sent').dialog('open');
         });
+        $('.structure').click(function(){
+            $('#structure').dialog({width: 270});
+            $('#structure').dialog('open');
+        });
+        $('.pass-change').click(function(){
+            $('#pass-change').dialog({width: 405});
+            $('#pass-change').dialog('open');
+            $('.pass-success').click(function(){
+                $('#pass-change').dialog('close');
+                $('#pass-success').dialog({width: 500});
+                $('#pass-success').dialog('open');
+            });
+        });
     }
 });
