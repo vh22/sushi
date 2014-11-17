@@ -171,7 +171,7 @@
                                 </div>
                                 <div class="edit-email clear">
                                     <p>Изменить пароль для логина <span>mail_mail@gmail.com</span></p>
-                                    <a href="#" class="button pass-change">Сменить пароль</a>
+                                    <a href="#" class="button">Сменить пароль</a>
                                 </div>
                                 <div class="save-form">
                                     <a href="#" class="button">Сохранить</a>
@@ -267,52 +267,23 @@
 </div>
 
 
-
-
-<div id="pass-change" class="window">
-    <i class="close icon icon-fz22 icon-cancel"></i>
-    <div class="window-inner octopus clear">
-        <p>Изменить пароль</p>
-        <form class="clear">
-            <div class="form-block">
-                <label for="password-old">старый пароль</label>
-                <input type="password" name="password-old" id="password-old">
-                <span>Введите правильный пароль</span>
-            </div>
-            <div class="form-block">
-                <label for="password-new">новый пароль</label>
-                <input type="password" name="password-new" id="password-new">
-                <span>Введите правильный пароль</span>
-            </div>
-            <div class="form-block">
-                <label for="password-new2">повторите пароль</label>
-                <input type="password" name="password-new2" id="password-new2">
-                <span>Введите правильный пароль</span>
-            </div>
-        </form>
-        <button type="submit" class="button pass-success">Сохранить</button>
-    </div>
-</div>
-<div id="pass-success" class="window">
-    <i class="close icon icon-fz22 icon-cancel"></i>
-    <div class="window-inner pass-window clear">
-        <p>Пароль успешно изменен</p>
-        <a href="" class="button btn-remove-arch close">Готово</a>
-    </div>
-</div>
-
-
-
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
-<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
 <!-- endbower -->
-<script src="../js/ctrl.js"></script>
+
+<script src="../js/factorys/app.js"></script>
+<script src="../js/controllers/datePicker.js"></script>
+<script src="../js/controllers/rating.js"></script>
+<script src="../js/controllers/DropdownCtrl.js"></script>
+<script src="../js/controllers/tabs.js"></script>
+<script src="../js/controllers/modalCtrl.js"></script>
+<script src="../js/directives/counter.js"></script>
+<script src="../js/directives/autocomplete.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
