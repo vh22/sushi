@@ -4,7 +4,7 @@ app.run(function($rootScope, $modal) {
     templateUrl = templateUrl || [];
     modalInstance = $modal.open({
       templateUrl: templateUrl,
-      windowClass: template,
+      windowClass: templateUrl,
       controller: function($scope, $modalInstance) {
         $scope.close = function() {
           $modalInstance.dismiss('cancel');
@@ -13,6 +13,9 @@ app.run(function($rootScope, $modal) {
           $modalInstance.dismiss('cancel');
           $scope.$root.openModal(templateUrl);
         };
+         $scope.ok = function () {
+            $modalInstance.close($scope.selected.item);
+          };
       }
     });
   };

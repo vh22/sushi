@@ -15,7 +15,7 @@
     <style type="text/css">html,*{filter: none;}</style>
     <![endif]-->
 </head>
-<body ng-app="sushiApp" ng-controller="ModalDemoCtrl">
+<body ng-app="sushiApp">
 <div class="container">
     <div class="wrapper">
 
@@ -270,7 +270,7 @@
 
 <script type="text/ng-template" id="change-pass">
     <div id="pass-change" class="window">
-        <i class="close icon icon-fz22 icon-cancel" ng-click="cancel()"></i>
+        <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
         <div class="window-inner octopus clear">
             <p>Изменить пароль</p>
             <form class="clear" name="myForm">
@@ -297,10 +297,10 @@
 
 <script type="text/ng-template" id="editPhoneSucces">
     <div id="pass-success" class="window">
-        <i class="close icon icon-fz22 icon-cancel" ng-click="cancel()"></i>
+        <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
         <div class="window-inner pass-window clear">
             <p>Пароль успешно изменен</p>
-            <a href="" class="button btn-remove-arch close" ng-click="ok()">Готово</a>
+            <a href="" class="button btn-remove-arch close" ng-click="close()">Готово</a>
         </div>
     </div>
 </script>
@@ -326,7 +326,6 @@
 <script src="../js/controllers/rating.js"></script>
 <script src="../js/controllers/DropdownCtrl.js"></script>
 <script src="../js/controllers/tabs.js"></script>
-<script src="../js/controllers/modalCtrl.js"></script>
 <script src="../js/directives/counter.js"></script>
 <script src="../js/directives/autocomplete.js"></script>
 <!--<script src="../js/main.js"></script>-->

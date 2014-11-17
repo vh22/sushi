@@ -33,7 +33,6 @@
     }
   }
 }
-
 .office{
   padding: 0 0 10px 10px;
   margin-bottom: 50px;
@@ -495,10 +494,6 @@
 .input-group{position: relative;}
 .calendar-input{margin-top: -15px;  }
 .mt{margin-top: 53px;}
-
-.change-pass{
-
-}
 .del-favorite {
   text-align: center;
   padding: 15px 0px 0;
@@ -1037,8 +1032,9 @@
     width: 410px;
     margin: -240px 0 0 -205px;
   }
-  .editPhone &{
-
+  .editPhoneSucces &{
+    width: 465px;
+    margin: -100px 0 0 -232px;
   }
 }
 img[ng-src="[]"]{
