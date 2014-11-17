@@ -643,7 +643,7 @@ textarea{
   }
   .ui-spinner-up{
     right: 15px;
-    top: -6px;
+    top: -7px;
     span{
       @include absLT(0,0);
       display: block;
@@ -655,7 +655,7 @@ textarea{
   }
   .ui-spinner-down{
     right: 15px;
-    bottom: 0;
+    bottom: 1px;
     span{
       @include absLT(0,0);
       display: block;
@@ -1812,7 +1812,7 @@ textarea{
       }
     }
   }
-  >p{
+  div>p{
     color: #5d5d5d;
     font-size: 20px;
     font-style: italic;
@@ -1852,7 +1852,7 @@ textarea{
     }
   }
   &.half{
-    >p{
+    div>p{
       float: left;
       width: 50%;
       b{margin: 0 0 0 20px}

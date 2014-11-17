@@ -2,6 +2,7 @@
   float: left;
   margin-left: -21px;
   padding-top: 82px;
+  width: 22%;
   ul{
     li{
       a{
@@ -33,9 +34,10 @@
   }
 }
 .office{
-  overflow: hidden;
   padding: 0 0 10px 10px;
   margin-bottom: 50px;
+  float: right;
+  width: 78%;
 }
 .office-title{
   font: 34px/44px $fontPt;
@@ -405,10 +407,11 @@
         text-align: center;
         p{padding-left: 0;}
       }
+
       &:nth-child(3){
         width: 15%;
         text-align: center;
-        p{padding: 0 20px 0 0;}
+        p{padding: 1px 20px 0 0;}
       }
       &:nth-child(4){
         width: 15%;
@@ -1036,4 +1039,7 @@
   .editPhone &{
 
   }
+}
+img[ng-src="[]"]{
+  display: none;
 }
