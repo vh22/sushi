@@ -117,5 +117,11 @@ $(function(){
             $('#adress-add').dialog({width: 840});
             $('#adress-add').dialog('open');
         });
+
+
+        // $('.close').click(function(){
+        //     $('.active').hide();
+        // });
+
     }
 });
