@@ -1812,7 +1812,7 @@ textarea{
       }
     }
   }
-  div>p{
+  .clear>p{
     color: #5d5d5d;
     font-size: 20px;
     font-style: italic;
@@ -1852,7 +1852,7 @@ textarea{
     }
   }
   &.half{
-    div>p{
+    .clear>p{
       float: left;
       width: 50%;
       b{margin: 0 0 0 20px}

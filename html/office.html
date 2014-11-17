@@ -171,7 +171,7 @@
                                 </div>
                                 <div class="edit-email clear">
                                     <p>Изменить пароль для логина <span>mail_mail@gmail.com</span></p>
-                                    <a href="" class="button" ng-click="open('change-pass')">Сменить пароль</a>
+                                    <a href="" class="button" ng-click="$root.openModal('change-pass')">Сменить пароль</a>
                                 </div>
                                 <div class="save-form">
                                     <a href="#" class="button">Сохранить</a>
@@ -290,7 +290,7 @@
                     <span>Введите правильный пароль</span>
                 </div>
             </form>
-            <button type="submit" class="button pass-success" ng-click="ok()">Сохранить</button>
+            <button type="submit" class="button pass-success" ng-click="goStep('editPhoneSucces')">Сохранить</button>
         </div>
     </div>
 </script>
@@ -320,7 +320,8 @@
 <script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
 <!-- endbower -->
 
-<script src="../js/factorys/app.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/services/modal.js"></script>
 <script src="../js/controllers/datePicker.js"></script>
 <script src="../js/controllers/rating.js"></script>
 <script src="../js/controllers/DropdownCtrl.js"></script>
@@ -328,6 +329,6 @@
 <script src="../js/controllers/modalCtrl.js"></script>
 <script src="../js/directives/counter.js"></script>
 <script src="../js/directives/autocomplete.js"></script>
-<script src="../js/main.js"></script>
+<!--<script src="../js/main.js"></script>-->
 </body>
 </html>
