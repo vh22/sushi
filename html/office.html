@@ -156,9 +156,9 @@
                                     <div class="phone clear">
                                         <p class="title">Телефон:</p>
                                         <div>
-                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
-                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
-                                            <a href="#">Добавить телефон</a>
+                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1" ng-click="$root.openModal('change-phone')"></span> <span class="icon icon-delete_box"></span></p>
+                                            <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1" ng-click="$root.openModal('change-phone')"></span> <span class="icon icon-delete_box"></span></p>
+                                            <a href="#" ng-click="$root.openModal('add-phone')">Добавить телефон</a>
                                         </div>
                                     </div>
                                     <div class="street clear">
@@ -294,7 +294,6 @@
         </div>
     </div>
 </script>
-
 <script type="text/ng-template" id="editPhoneSucces">
     <div id="pass-success" class="window">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
@@ -304,9 +303,38 @@
         </div>
     </div>
 </script>
-
-
-    
+<script type="text/ng-template" id="change-phone">
+    <div id="phone-change" class="phone window">
+    <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+    <div class="window-inner octopus clear">
+        <p>Редактировать номер телефона</p>
+        <form class="clear">
+            <div class="form-block">
+                <label for="phone">телефон</label>
+                <input type="text" name="phone" id="phone" value="+7 (555) 454-65-65">
+                <span>Номер введен неверно</span>
+            </div>
+        </form>
+        <button type="submit" class="button"  ng-click="close()">Сохранить</button>
+    </div>
+</div>
+</script>
+<script type="text/ng-template" id="add-phone">
+    <div id="phone-add" class="phone window">
+        <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+        <div class="window-inner octopus clear">
+            <p>Добавить номер телефона</p>
+            <form class="clear">
+                <div class="form-block error">
+                    <label for="phone">телефон</label>
+                    <input type="text" name="phone" id="phone" value="+7 (555) 454-65-65">
+                    <span>Номер введен неверно</span>
+                </div>
+            </form>
+            <button type="submit" class="button" ng-click="close()">Сохранить</button>
+        </div>
+    </div>
+</script>
 
 
 
