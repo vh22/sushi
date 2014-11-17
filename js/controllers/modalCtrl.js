@@ -1,14 +1,14 @@
 
-angular.module('sushiApp').controller('ModalDemoCtrl', function ($scope, $modal, $log) {
+app.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
 
   $scope.items = ['item1', 'item2', 'item3'];
 
-  $scope.open = function (size) {
+  $scope.open = function (template) {
 
     var modalInstance = $modal.open({
-      templateUrl: 'myModalContent.html',
+      templateUrl: template,
       controller: 'ModalInstanceCtrl',
-      size: 700,
+      windowClass: template,
       resolve: {
         items: function () {
           return $scope.items;
@@ -27,7 +27,7 @@ angular.module('sushiApp').controller('ModalDemoCtrl', function ($scope, $modal,
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
-angular.module('sushiApp').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
 
   $scope.items = items;
   $scope.selected = {

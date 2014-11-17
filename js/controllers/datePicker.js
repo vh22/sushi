@@ -1,5 +1,4 @@
-angular.module('sushiApp', ['ui.bootstrap']);
-angular.module('sushiApp').controller('DatepickerDemoCtrl', function ($scope) {
+app.controller('DatepickerDemoCtrl', function ($scope) {
 
 
   $scope.clear = function () {
@@ -10,9 +9,6 @@ angular.module('sushiApp').controller('DatepickerDemoCtrl', function ($scope) {
   $scope.disabled = function(date, mode) {
     return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
   };
-
-
-
 
   $scope.open = function($event) {
     $event.preventDefault();
@@ -31,22 +27,4 @@ angular.module('sushiApp').controller('DatepickerDemoCtrl', function ($scope) {
 }).config(function (datepickerConfig, datepickerPopupConfig) {
       datepickerConfig.showWeeks = false;
       datepickerPopupConfig.toggleWeeksText = null;
-}).controller('tabsController', ['$scope', function($scope) { 
-  $scope.activeTab = 'cont-1'; 
-  $scope.switchToTab = function( tab ) { 
-    $scope.activeTab = tab; 
-  } 
-}]).controller('RatingDemoCtrl', function ($scope) {
-  $scope.rate = 1;
-  $scope.max = 5;
-  $scope.isReadonly = false;
-
-  $scope.hoveringOver = function(value) {
-    $scope.overStar = value;
-    $scope.percent = 100 * (value / $scope.max);
-  };
-
-  $scope.ratingStates = [
-    {stateOn: 'icon-star', stateOff: 'icon-star'}
-  ];
 });
