@@ -97,6 +97,11 @@ $(function(){
         $('.pass-change').click(function(){
             $('#pass-change').dialog({width: 405});
             $('#pass-change').dialog('open');
+            $('.pass-success').click(function(){
+                $('#pass-change').dialog('close');
+                $('#pass-success').dialog({width: 500});
+                $('#pass-success').dialog('open');
+            });
         });
     }
 });
