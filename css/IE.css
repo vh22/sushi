@@ -1,3 +1,6 @@
 .my-appraisal > .row > div:nth-child(3) .change{
     text-decoration: none;
 }
+.del-favorite a{
+    text-decoration: none;
+}
