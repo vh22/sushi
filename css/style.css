@@ -431,7 +431,7 @@ body { font-family: Lato, Arial, sans-serif; }
 body > .container { height: auto; min-height: 100%; }
 
 /* line 12, ../sass/_main.scss */
-header { margin-bottom: 4px; position: relative; z-index: 997; }
+header { margin-bottom: 7px; position: relative; z-index: 997; }
 /* line 16, ../sass/_main.scss */
 header.sticked { padding-bottom: 68px; }
 /* line 18, ../sass/_main.scss */
