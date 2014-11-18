@@ -845,18 +845,23 @@ textarea{
   .txt{
     .title{
       color: #000;
-      text-align: center;
       font-size: 22px;
       line-height: 22px;
       font-style: italic;
       font-weight: 600;
+      &.center{text-align: center!important;}
+    }
+  }
+  .basket-count{
+    .counter{
+      .ui-spinner-up{top: -3px;}
+      .ui-spinner-down{bottom: -3px;}
     }
   }
 }
 .header-bottom{
   background: #ffffff;
   width: 1200px;
-  padding-bottom: 1px;
   font-family: $fontPt;
   @include box-shadow(0 0 19px rgba(106,91,33,.25));
   @include transition(all ease .3s);
@@ -1157,12 +1162,19 @@ textarea{
     width: 250px;
     height: 110px;
     border: 2px dashed transparent;
-    margin: 0 20px 30px 0;
+    margin: 7px 20px 23px 0;
     cursor: pointer;
     padding: 10px;
     @include border-radius(10px);
     @include transition(all ease .3s);
-    &.active{border-color: #e76b6b}
+    &:hover{
+      border-color: #ccc;
+      p{color: #5d5d5d}
+    }
+    &.active{
+      border-color: #e76b6b;
+      p{color: #000}
+    }
   }
   .img{
     display: table-cell;
@@ -1184,6 +1196,7 @@ textarea{
     line-height: 22px;
     vertical-align: middle;
     display: table-cell;
+    @include transition(all ease .3s);
   }
 }
 .list-circle{
@@ -1798,6 +1811,45 @@ textarea{
   text-align: center;
   padding: 40px 0px;
   span{color: $hover;}
+}
+.topings{
+  position: relative;
+  .icon-delete{
+    color: #000;
+    font-size: 14px;
+    @include absRT(10px,50%);
+    margin-top: -7px;
+  }
+  span{
+    @include transition(all ease .3s);
+    position: relative;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    &:last-child{border-bottom: none;}
+    img{
+      height: 90%;
+      max-width: 100%;
+    }
+    i{
+      @include absLT(20px,50%);
+      font: 16px $fontPt;
+      color: #000;
+      margin-top: -12px;
+    }
+  }
+  &.two-items{
+    span{
+      height: 50%;
+      line-height: 58px;
+    }
+  }
+  &.three-items{
+    span{
+      line-height: 35px;
+      height: 33.3%;
+    }
+  }
 }
 .quantity{
   @include border-radius(10px);
