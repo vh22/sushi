@@ -1501,7 +1501,7 @@ textarea{
 .del-favorite{
   text-align: center;
   padding: 15px 0px 0;
-  a{
+  p{
     font-size: 13px;
     color: #8a8a8a;
     padding-left: 20px;
@@ -2249,6 +2249,10 @@ textarea{
   &.four .product{width: 25%;}
   &.eight .product{
     width: 12.5%;
+    &:before{
+      right: -20px;
+      top: -15px;
+    }
     .product__img{
       height: 110px;
       line-height: 110px;
@@ -2934,19 +2938,34 @@ textarea{
   position: relative;
   &:before{
     content: '';
-    width: 130px;
-    height: 70px;
     z-index: 1;
-    display: none;
-    @include absRT(10px,10px);
+    @include absRT(0,0);
+    pointer-events: none;
   }
-  &.product__new:before{
-    display: block;
-    background: url('images/new.png') no-repeat;
+  &.new:before{
+    background: url('images/labels/new.png') no-repeat;
+    width: 111px;
+    height: 75px;
   }
-  &.product__acute:before{
-    display: block;
-    background: url('images/acute.png') no-repeat;
+  &.hot:before{
+    background: url('images/labels/hot.png') no-repeat;
+    width: 99px;
+    height: 83px;
+  }
+  &.hit:before{
+    background: url('images/labels/hit.png') no-repeat;
+    width: 99px;
+    height: 78px;
+  }
+  &.vegan:before{
+    background: url('images/labels/vegan.png') no-repeat;
+    width: 110px;
+    height: 88px;
+  }
+  &.best:before{
+    background: url('images/labels/bestprice.png') no-repeat;
+    width: 120px;
+    height: 92px;
   }
   .product__title{
     font: 18px/20px $fontPt;
