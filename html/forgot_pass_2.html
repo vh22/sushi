@@ -126,7 +126,7 @@
                             <input type="text" name="number" id="number">
                             <span>Неверно введено число</span>
                         </div>
-                        <p class="button pass-sent">Напомнить пароль</p>
+                        <p class="button pass-sent" ng-click="$root.openModal('sent-pass')">Напомнить пароль</p>
                     </form>
                     
                 </div>
@@ -216,15 +216,17 @@
     </footer>
 </div>
 
-<div id="pass-sent" class="window">
-    <i class="close icon icon-fz22 icon-cancel"></i>
-    <div class="window-inner pass-window clear">
-        <p>На ваш адрес отправлено письмо для восстановления<br />пароля. Если вы не видите письма, проверьте папку “Спам”</p>
-        <a href="" class="button btn-remove-arch close">Закрыть</a>
+
+
+<script type="text/ng-template" id="sent-pass">
+    <div id="pass-sent" class="window">
+        <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+        <div class="window-inner pass-window clear">
+            <p>На ваш адрес отправлено письмо для восстановления<br />пароля. Если вы не видите письма, проверьте папку “Спам”</p>
+            <a href="" class="button btn-remove-arch close" ng-click="close()">Закрыть</a>
+        </div>
     </div>
-</div>
-
-
+</script>
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
@@ -232,6 +234,9 @@
 <script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
+<script src="../bower_components/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+<script src="../bower_components/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+<script src="../bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
 <!-- endbower -->
 
 <script src="../js/app.js"></script>

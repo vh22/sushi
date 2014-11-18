@@ -11,7 +11,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--[if gte IE 9]>
-
+    <link rel="stylesheet" type="text/css" href="../css/IE.css">
     <style type="text/css">html,*{filter: none;}</style>
     <![endif]-->
 </head>
@@ -158,14 +158,14 @@
                                         <div>
                                             <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1" ng-click="$root.openModal('change-phone')"></span> <span class="icon icon-delete_box"></span></p>
                                             <p class="phone-number">+7 (454) 554-55-66 <span class="icon icon-edit1" ng-click="$root.openModal('change-phone')"></span> <span class="icon icon-delete_box"></span></p>
-                                            <a href="#" ng-click="$root.openModal('add-phone')">Добавить телефон</a>
+                                            <a href="" ng-click="$root.openModal('add-phone')">Добавить телефон</a>
                                         </div>
                                     </div>
                                     <div class="street clear">
                                         <p class="title">Адрес:</p>
                                         <div>
-                                            <p class="phone-number">ул. Южная 56, корпус 4, стр. 0А---А, под. 3, код двери 4555, 3 этаж, кв. 54 <span class="icon icon-edit1"></span> <span class="icon icon-delete_box"></span></p>
-                                            <a href="#">Добавить aдрес</a>
+                                            <p class="phone-number">ул. Южная 56, корпус 4, стр. 0А---А, под. 3, код двери 4555, 3 этаж, кв. 54 <span class="icon icon-edit1" ng-click="$root.openModal('change-addres')"></span> <span class="icon icon-delete_box"></span></p>
+                                            <a href="" ng-click="$root.openModal('add-addres')">Добавить aдрес</a>
                                         </div>
                                     </div>
                                 </div>
@@ -335,8 +335,140 @@
         </div>
     </div>
 </script>
+<script type="text/ng-template" id="change-addres">
+<div id="adress-change" class="adress window">
+    <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+    <div class="window-inner octopus clear">
+        <p>Редактировать адрес</p>
+        <form class="clear">
+            <div class="form-left">
+                <div class="form-block form-block-big">
+                    <label for="metro">Метро</label>
+                    <input id="metro" type="text" value="">
+                    <span>Введите правильно</span>
+                </div>
+                <div class="form-left">
+                    <div class="form-block">
+                        <label for="home">Дом</label>
+                        <input id="home" type="text" value="65">
+                        <span>Введите правильно</span>
+                    </div>
+                    <div class="form-block">
+                        <label for="code">Код двери</label>
+                        <input id="code" type="text" value="65">
+                        <span>Введите правильно</span>
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div class="form-block">
+                        <label for="housing">Корпус</label>
+                        <input id="housing" type="text" value="65">
+                        <span>Введите правильно</span>
+                    </div>
+                    <div class="form-block">
+                        <label for="floor">Этаж</label>
+                        <input id="floor" type="text" value="5">
+                        <span>Введите правильно</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-right">
+                <div class="form-block form-block-big">
+                    <label for="street">Улица</label>
+                    <input id="street" type="text" value="">
+                    <span>Введите правильно</span>
+                </div>
+                <div class="form-left">
+                    <div class="form-block">
+                        <label for="building">Строение</label>
+                        <input id="building" type="text" value="0A---A">
+                        <span>Введите правильно</span>
+                    </div>
+                    <div class="form-block">
+                        <label for="apartment">Квартира</label>
+                        <input id="apartment" type="text" value="254">
+                        <span>Введите правильно</span>
+                    </div>
+                </div>
+                <div class="form-right form-block">
+                    <label for="porch">Подъезд</label>
+                    <input id="porch" type="text" value="3">
+                    <span>Введите правильно</span>
+                </div>
 
+            </div>
+        </form>
+        <button type="submit" class="button" ng-click="close()">Готово</button>
+    </div>
+</div>
+</script>
+<script type="text/ng-template" id="add-addres">
+<div id="adress-add" class="adress window">
+    <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+    <div class="window-inner octopus clear">
+        <p>Добавить адрес</p>
+        <form class="clear">
+            <div class="form-left">
+                <div class="form-block form-block-big">
+                    <label for="metro">Метро</label>
+                    <input id="metro" type="text" value="">
+                    <span>Введите правильно</span>
+                </div>
+                <div class="form-left">
+                    <div class="form-block">
+                        <label for="home">Дом</label>
+                        <input id="home" type="text" value="65">
+                        <span>Введите правильно</span>
+                    </div>
+                    <div class="form-block">
+                        <label for="code">Код двери</label>
+                        <input id="code" type="text" value="65">
+                        <span>Введите правильно</span>
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div class="form-block">
+                        <label for="housing">Корпус</label>
+                        <input id="housing" type="text" value="65">
+                        <span>Введите правильно</span>
+                    </div>
+                    <div class="form-block">
+                        <label for="floor">Этаж</label>
+                        <input id="floor" type="text" value="5">
+                        <span>Введите правильно</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-right">
+                <div class="form-block form-block-big">
+                    <label for="street">Улица</label>
+                    <input id="street" type="text" value="">
+                    <span>Введите правильно</span>
+                </div>
+                <div class="form-left">
+                    <div class="form-block">
+                        <label for="building">Строение</label>
+                        <input id="building" type="text" value="0A---A">
+                        <span>Введите правильно</span>
+                    </div>
+                    <div class="form-block">
+                        <label for="apartment">Квартира</label>
+                        <input id="apartment" type="text" value="254">
+                        <span>Введите правильно</span>
+                    </div>
+                </div>
+                <div class="form-right form-block">
+                    <label for="porch">Подъезд</label>
+                    <input id="porch" type="text" value="3">
+                    <span>Введите правильно</span>
+                </div>
 
+            </div>
+        </form>
+        <button type="submit" class="button" ng-click="close()">Сохранить</button>
+    </div>
+</div>
+</script>
 
 
 <!-- bower:js -->
@@ -346,6 +478,9 @@
 <script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
+<script src="../bower_components/perfect-scrollbar/src/jquery.mousewheel.js"></script>
+<script src="../bower_components/perfect-scrollbar/src/perfect-scrollbar.js"></script>
+<script src="../bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
 <!-- endbower -->
 
 <script src="../js/app.js"></script>
