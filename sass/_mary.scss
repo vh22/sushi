@@ -716,6 +716,7 @@
 		border-top: solid 1px #e5e5e5;
 		width: 440px;
 		display: none;
+    padding-top: 10px;
 	}
 	&:last-child{
 		display: inline-block;
@@ -916,9 +917,7 @@
             top: 8px;
             text-align: left;
           }
-          img{
-            vertical-align: middle;
-          }
+          img{vertical-align: middle;}
         }
       }
     }
@@ -966,9 +965,7 @@
             height: 35px;
             line-height: 35px;
           }
-          >span{
-            margin: 0 30px 0 0;
-          }
+          >span{margin: 0 30px 0 0;}
           p{
             font-size: 35px;
             font-weight: 800;
@@ -985,6 +982,65 @@
           }
         }
       }
+    }
+  }
+}
+#phone-call{
+  position: relative;
+  .octopus:before{font: 350px 'icomoon';}
+  .window-inner{
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    p{
+      font: 25px $fontPt;
+      color: #5d5d5d;
+      position: relative;
+      margin-top: 35px;
+      padding: 0 15px 15px 15px;
+      border-bottom: solid 1px #e5e5e5;
+      width: 385px;
+    }
+    .form-block{
+      margin: 0 15px;
+      input{width: 100%;}
+    }
+    .button{
+      margin: 5px 0 30px 15px;
+      width: 180px;
+    }
+    .checkbox-block{
+      margin-top: 10px;
+      .checkbox{
+        float: left;
+        label{
+          margin-left: 15px;
+          line-height: 42px;
+          font-size: 13px;
+        }
+        label:before{top:12px;}
+        label:after{top:15px;}
+      }
+      .form-block{float: right;}
+    }
+  }
+}
+
+
+#phone-sent{
+  .window-inner{
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    p{
+      display: block;
+      margin-bottom: 20px;
+      font: 25px $fontPt;
+      color: #5d5d5d;
+    }
+    a{
+      margin: 0 auto;
+      display: block;
     }
   }
 }
