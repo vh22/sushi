@@ -873,9 +873,12 @@
         float: left;
         margin-right: 22px;
       }
+      input{
+        width: 174px;
+      }
       .form-right{float: right;}
       .form-block-big{
-        input{width: 100%;}
+        input{width: 370px;}
       }
     }
     p{
