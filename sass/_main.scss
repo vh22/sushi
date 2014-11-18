@@ -585,16 +585,6 @@ textarea{
     }
   }
 }
-.btn-archive{
-  color: #e76b6b;
-  &:hover{color: #e35656;}
-}
-.btn-menu{
-  float: right;
-  height: 35px;
-  width: 115px;
-  line-height: 35px;
-}
 .button{
   @include border-radius(5px);
   @include transition(all ease .4s);
@@ -642,6 +632,16 @@ textarea{
       border-color: #e76b6b;
     }
   }
+}
+.btn-archive{
+  color: #e76b6b;
+  &:hover{color: #e35656;}
+}
+.btn-menu{
+  float: right;
+  height: 35px;
+  width: 115px;
+  line-height: 35px;
 }
 .calendar{
   input{
@@ -1141,13 +1141,12 @@ textarea{
     div{
       float: left;
       width: 240px;
-      margin-right: 25px;
+      margin: 0 25px 0 0;
       img{
-        width: 240px;
-        margin-bottom: 20px;
+        width: 100%;
       }
       a{
-        margin: 0 auto;
+        margin: 20px auto 0;
         &.like{
           background: #4aa20f;
           pointer-events: none;
@@ -1170,7 +1169,7 @@ textarea{
     border-radius: 17px;
     font-size: 22px;
     padding: 6px 10px;
-    margin: 6px 0;
+    margin: 9px 0;
     position: relative;
     float: right;
     color: #e76b6b;
@@ -1196,16 +1195,19 @@ textarea{
       border: 2px dotted #1e71b8;
       border-radius: 15px;
       display: block;
-      font-size: 22px;
+      font-size: 20px;
       padding: 0 0 0 70px;
       position: relative;
       width: 216px;
       height: 70px;
       margin: 15px 0 0 0;
       line-height: 70px;
+      font-style: normal;
       &.plus{
         border-color: #ed7272;
-        line-height: 30px;
+        line-height: 25px;
+        padding-top: 10px;
+        height: 60px;
         &:before{
           content: "\e63d";
           color: #ed7272;
@@ -1259,22 +1261,18 @@ textarea{
       line-height: 60px;
       position: relative;
       &:before{
-        content: "\e629";
-        color: #5d5d5d;
-        font: 32px 'icomoon';
-        position: absolute;
-        left: 12px;
-        top: 15px;
+        margin-top: -16px;
+        font-weight: normal;
+        @include ico("\e629",32px,#5d5d5d,1);
+        @include absLT(12px,50%);
       }
       &.complete{
         color: #4aa20f;
         &:before{
-          content: "\e63a";
-          color: #5d5d5d;
-          font: 32px 'icomoon';
-          position: absolute;
-          left: 12px;
-          top: 15px;
+          @include ico("\e63a",32px,#5d5d5d,1);
+          @include absLT(12px,50%);
+          margin-top: -16px;
+          font-weight: normal;
         }
       }
     }
@@ -1307,7 +1305,7 @@ textarea{
             font: 24px 'icomoon';
             position: absolute;
             left: -3px;
-            top: 3px;
+            top: -1px;
           }
         }
       }
@@ -1426,69 +1424,7 @@ textarea{
       }
     }
   }
-  .body{
-    height: 580px;
-    .items{
-      .active{
-        position: relative;
-        i{
-          position: absolute;
-          top: -9px;
-          right: -10px;
-          color: #e76b6b;
-          background: #fff;
-        }
-      }
-    }
-    .full-item{
-      .txt{
-        p{
-          font-style: italic;
-          font-weight: 600;
-          color: #000;
-          font-size: 18px;
-          margin-bottom: 15px;
-        }
-        .title{
-          text-align: left;
-          font-size: 22px;
-          font-weight: 600;
-        }
-        .toping{
-          font-style: italic;
-          font-size: 16px;
-        }
-        h2{
-          color: #e76b6b;
-          float: left;
-          font-size: 16px;
-          margin: 10px 25px 15px 0;
-        }
-        div{
-          div{
-            float: left;
-            height: 35px;
-            line-height: 35px;
-          }
-          >span{margin: 0 30px 0 0;}
-          p{
-            font-size: 35px;
-            font-weight: 800;
-            font-style: normal;
-            float: left;
-            height: 35px;
-            line-height: 35px;
-          }
-          .button{
-            float: right;
-            height: 35px;
-            line-height: 35px;
-            margin-right: 113px;
-          }
-        }
-      }
-    }
-  }
+  .body{height: 580px}
 }
 .content {
   width: 1200px;
@@ -1790,6 +1726,55 @@ textarea{
     .counter{
       .ui-spinner-up{top: -3px;}
       .ui-spinner-down{bottom: -3px;}
+    }
+  }
+  .txt{
+    p{
+      font-style: italic;
+      font-weight: 600;
+      color: #000;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .title{
+      text-align: left;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .toping{
+      font-style: italic;
+      font-size: 16px;
+    }
+    h2{
+      color: #e76b6b;
+      float: left;
+      font-size: 16px;
+      font-weight: normal;
+      margin: 10px 25px 15px 0;
+    }
+    div{
+      div{
+        float: left;
+        height: 35px;
+        line-height: 35px;
+      }
+      >span{margin: 0 30px 0 0;}
+      p{
+        font-size: 35px;
+        font-weight: 800;
+        font-style: normal;
+        float: left;
+        height: 35px;
+        line-height: 35px;
+        width: 105px;
+      }
+      .button{
+        float: left;
+        height: 35px;
+        line-height: 35px;
+        padding: 0 20px;
+        width: auto;
+      }
     }
   }
 }
@@ -2170,6 +2155,16 @@ textarea{
     display: table-cell;
     @include transition(all ease .3s);
   }
+  .active{
+    position: relative;
+    i{
+      position: absolute;
+      top: -9px;
+      right: -10px;
+      color: #e76b6b;
+      background: #fff;
+    }
+  }
 }
 .last-order{
   &>.row{
@@ -2203,6 +2198,7 @@ textarea{
   color: #159bea;
   text-decoration: underline;
   cursor: pointer;
+  display: inline-block;
   &:hover{text-decoration: none;}
 }
 .list-circle{
@@ -3909,7 +3905,6 @@ textarea{
   }
   &:last-child{
     display: inline-block;
-    margin-bottom: 65px;
     width: 98%;
   }
 }
@@ -3980,7 +3975,40 @@ textarea{
   }
 }
 
+#add-to-basket{
+  position: relative;
+  .octopus:before{
+    font: 280px 'icomoon';
+    top: -34px;
+    left: -4px;
+  }
+  .window-inner{
+    padding: 50px 0 55px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    p{
+      display: block;
+      margin-bottom: 20px;
+      font: 25px $fontPt;
+      color: #5d5d5d;
+      position: relative;
+    }
+    a{
+      position: relative;
+      margin: 0 auto;
+      display: block;
+      width: 195px;
+      &.grey{margin-bottom: 20px;}
+      span{
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
 
+
+}
 #pass-change{
   position: relative;
   .window-inner{
@@ -4047,10 +4075,13 @@ textarea{
       font: 25px $fontPt;
       color: #5d5d5d;
       position: relative;
-      margin-top: 35px;
+      margin-top: 25px;
       padding: 0 15px 15px 15px;
       border-bottom: solid 1px #e5e5e5;
       width: 385px;
+    }
+    form{
+      margin-top: 10px;
     }
     .form-block{
       margin: 0 15px;
@@ -4072,7 +4103,10 @@ textarea{
         label:before{top:12px;}
         label:after{top:15px;}
       }
-      .form-block{float: right;}
+      .form-block{
+        float: right;
+        margin-left: 0px;
+      }
     }
   }
 }
