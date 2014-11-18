@@ -168,7 +168,7 @@
                         </div>
                     </div>
                     <div class="clear add-answer">
-                        <i class="button small add-review" href="#">Добавить работу</i>
+                        <i class="button small add-review add-file" href="#">Добавить работу</i>
                     </div>
                 </div>
             </div>            
@@ -260,9 +260,105 @@
     </footer>
 </div>
 
+
+
+<div id="add-file" class="window">
+    <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+    <div class="window-inner octopus clear">
+        <p class="title">Добавить работу</p>
+        <form class="clear" name="myForm">
+            <div class="form-block">
+                <label for="">добавить картинку</label>
+                <div class="upload">
+                    <p class="upload-block"></p>
+                    <label for="upload"></label>
+                    <input id="upload" type="file" name="upload" value="С:/">
+                </div>
+                <span>Файл не выбран</span>
+            </div>
+            <div class="form-block">
+                <label for="name">ваше имя</label>
+                <textarea cols="10" rows="10"></textarea>
+                <span>Введите правильно</span>
+            </div>
+        </form>
+        <button type="submit" class="button" ng-click="">Сохранить</button>
+    </div>
+</div>
+
+
+
+<style type="text/css">
+    #add-file .title{
+        font: 25px "PT Sans", Arial, sans-serif;
+        color: #5d5d5d;
+        position: relative;
+        margin-top: 40px;
+        padding: 0 15px 15px 15px;
+        border-bottom: solid 1px #e5e5e5;
+        width: 585px;
+    }
+    #add-file .window-inner{
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+    }
+    #add-file .octopus:before{
+        font: 400px 'icomoon';
+    }
+    #add-file{
+        position: relative;
+    }
+    #add-file textarea{
+        width: 550px;
+    }
+    #add-file form{
+        margin: 15px 20px 10px 20px;
+        position: relative;
+    }
+    #add-file .button{
+        margin-left: 20px;
+    }
+    .upload .upload-block{
+        width: 367px;
+        height: 42px;
+        border: 1px solid #c1c1c1;
+        display: inline-block;
+        background: #fff;
+        float: left;
+    }
+    .upload input{
+        display: none;
+        width: 367px;
+        height: 42px;
+    }
+    .upload label{
+        width: 42px;
+        height: 42px;
+        background: #e76b6b;
+        border-radius: 8px;
+        position: relative;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .upload label:before{
+        content: "\e641";
+        color: #fff;
+        font-size: 30px;
+        font-family: 'icomoon';
+        position: absolute;
+        top: 3px;
+        left: 6px;
+    }
+</style>
+
+
+
+
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>

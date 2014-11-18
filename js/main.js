@@ -46,7 +46,7 @@ $(function(){
     });
     $(window).load(function(){
         $(".js-header-bottom").sticky({ topSpacing: 0, center:true, className:"sticked-menu" });
-        $(".js-my-lunch").sticky({ topSpacing: 75, bottomSpacing: 397, center:true, className:"sticked-menu" });
+        $(".js-my-lunch").sticky({ topSpacing: 75, bottomSpacing: 398, center:true, className:"sticked-menu" });
 //      $(".js-big-menu").sticky({ topSpacing: 65, center:true, className:"menu-height" });
     });
 
@@ -129,7 +129,9 @@ $(function(){
             $('#add-to-basket').dialog({width: 305});
             $('#add-to-basket').dialog('open');
         });
-
-
+        $('.add-file').click(function(){
+            $('#add-file').dialog({width: 635});
+            $('#add-file').dialog('open');
+        });
     }
 });
