@@ -15,7 +15,7 @@
     <style type="text/css">html,*{filter: none;}</style>
     <![endif]-->
 </head>
-<body>
+<body ng-app="sushiApp">
 <div class="container">
 <div class="wrapper">
 
@@ -42,7 +42,7 @@
                             </li>
                             <li class="call-request">
                                 <span class="call-request__phone">+7 (495) 617-14-24</span>
-                                <a href="#" class="call-request__phone-link phone-call">Заказать звонок</a>
+                                <a href="" class="call-request__phone-link phone-call" ng-click="$root.openModal('call-phone')">Заказать звонок</a>
                             </li>
                         </ul>
                     </nav>
@@ -578,49 +578,50 @@
 
 
 
-<div id="phone-call" class="window">
-    <i class="close icon icon-fz22 icon-cancel" ng-click=""></i>
-    <div class="window-inner octopus clear">
-        <p>Укажите номер телефона и имя, мы перезвоним вам.</p>
-        <form class="clear" name="myForm">
-            <div class="form-block">
-                <label for="phone">номер телефона</label>
-                <input type="text" name="phone" ng-model="" id="phone" value="+7 (___) ___ __ __">
-                <span>Номер введен неверно</span>
-            </div>
-            <div class="form-block">
-                <label for="name">ваше имя</label>
-                <input type="text" name="name" ng-model="" id="name" value="Cтепан">
-                <span>Введите правильно</span>
-            </div>
-            <div class="clear checkbox-block">
-                <div class="checkbox">
-                    <input type="checkbox" name="time-call" id="time-call">
-                    <label for="time-call">Перезвонить сегодня в</label>
+
+
+
+
+<script type="text/ng-template" id="call-phone">
+    <div id="phone-call" class="window">
+        <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+        <div class="window-inner octopus clear">
+            <p>Укажите номер телефона и имя, мы перезвоним вам.</p>
+            <form class="clear" name="myForm">
+                <div class="form-block">
+                    <label for="phone">номер телефона</label>
+                    <input type="text" name="phone" ng-model="" id="phone" value="+7 (___) ___ __ __">
+                    <span>Номер введен неверно</span>
                 </div>
                 <div class="form-block">
-                    <input type="text" name="time" ng-model="" id="time" value="15:00">
+                    <label for="name">ваше имя</label>
+                    <input type="text" name="name" ng-model="" id="name" value="Cтепан">
                     <span>Введите правильно</span>
                 </div>
-            </div>
-        </form>
-        <button type="submit" class="button phone-sent" ng-click="">Заказать</button>
+                <div class="clear checkbox-block">
+                    <div class="checkbox">
+                        <input type="checkbox" name="time-call" id="time-call">
+                        <label for="time-call">Перезвонить сегодня в</label>
+                    </div>
+                    <div class="form-block">
+                        <input type="text" name="time" ng-model="" id="time" value="15:00">
+                        <span>Введите правильно</span>
+                    </div>
+                </div>
+            </form>
+            <button type="submit" class="button phone-sent" ng-click="goStep('sent-phone')">Заказать</button>
+        </div>
     </div>
-</div>
-
-
-
-<div id="phone-sent" class="window">
-    <i class="close icon icon-fz22 icon-cancel" ng-click=""></i>
-    <div class="window-inner clear">
-        <p>Ваша заявка принята!<br />В ближайшее время оператор свяжется с вами</p>
-        <a href="" class="button btn-remove-arch close" ng-click="">Закрыть</a>
+</script>
+<script type="text/ng-template" id="sent-phone">
+    <div id="phone-sent" class="window">
+        <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+        <div class="window-inner clear">
+            <p>Ваша заявка принята!<br />В ближайшее время оператор свяжется с вами</p>
+            <a href="" class="button btn-remove-arch close" ng-click="close()">Закрыть</a>
+        </div>
     </div>
-</div>
-
-
-
-
+</script>
 
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>

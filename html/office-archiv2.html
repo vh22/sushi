@@ -145,7 +145,7 @@
                             <div>
                                 <img src="../images/products/archiv.png" class="img-office" alt="">
                                 <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
-                                 <p class="link-office structure">Узнать состав</p>
+                                 <p class="link-office structure" ng-click="$root.openModal('structure-modal')">Узнать состав</p>
                             </div>
                             <div>
                                 <p class="amount-product"><span>5</span> шт.</p> 
@@ -158,7 +158,7 @@
                             <div>
                                 <img src="../images/products/archiv.png" class="img-office" alt="">
                                 <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
-                                <p class="link-office structure">Узнать состав</p>
+                                 <p class="link-office structure" ng-click="$root.openModal('structure-modal')">Узнать состав</p>
                             </div>
                             <div>
                                 <p class="amount-product"><span>5</span> шт.</p> 
@@ -171,7 +171,7 @@
                             <div>
                                 <img src="../images/products/archiv.png" class="img-office" alt="">
                                 <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
-                                 <p class="link-office structure">Узнать состав</p>
+                                 <p class="link-office structure" ng-click="$root.openModal('structure-modal')">Узнать состав</p>
                             </div>
                             <div>
                                 <p class="amount-product"><span>5</span> шт.</p> 
@@ -184,7 +184,7 @@
                             <div>
                                 <img src="../images/products/archiv.png" class="img-office" alt="">
                                 <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
-                                 <p class="link-office structure">Узнать состав</p>
+                                 <p class="link-office structure" ng-click="$root.openModal('structure-modal')">Узнать состав</p>
                             </div>
                             <div>
                                 <p class="amount-product"><span>5</span> шт.</p> 
@@ -287,6 +287,21 @@
     </footer>
 </div>
 
+
+<script type="text/ng-template" id="structure-modal">
+    <div id="structure" class="window">
+        <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+        <div class="window-inner octopus">
+            <p>Ролл америка</p>
+            <ul>
+                <li>Лосось</li>
+                <li>Угорь</li>
+                <li>Авокадо</li>
+                <li>Сливочный сыр<br/><span>Обжареный в кляре</span></li>
+            </ul>
+        </div>
+    </div>
+</script>
 <!-- bower:js -->
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/sticky/jquery.sticky.js"></script>
