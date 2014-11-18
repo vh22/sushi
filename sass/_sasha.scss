@@ -400,14 +400,13 @@
 }
 .last-order{
   &>.row{
-    &>div{
+    &>div, &.more-orders>.row>div{
       &:nth-child(1){width: 55%;}
       &:nth-child(2){
         width: 15%;
         text-align: center;
         p{padding-left: 0;}
       }
-
       &:nth-child(3){
         width: 15%;
         text-align: center;
@@ -420,6 +419,10 @@
       }
     }
   }
+  .more-orders>.row{
+      width: 100% !important;
+      display: table;
+    }
   .row-order{height: 115px;}
 }
 .link-office{

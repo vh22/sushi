@@ -29,21 +29,21 @@
                     <a href="#"><img src="../css/images/logo-header.png" alt="logo"></a>
                 </div>
                 <div class="header-top__link">
-                        <ul class="clear">
-                            <li>
-                                <p class="header-top__receiving">Прием  заказов: <br> с 10.00 до 23.00</p>
-                            </li>
-                            <li>
-                                <p class="header-top__delivery">Бесплатная <br> доставка по Москве</p>
-                            </li>
-                            <li>
-                                <p class="header-top__credit">Оплата картами, <br> электронными деньгами</p>
-                            </li>
-                            <li class="call-request">
-                                <span class="call-request__phone">+7 (495) 617-14-24</span>
-                                <a href="#" class="call-request__phone-link">Заказать звонок</a>
-                            </li>
-                        </ul>
+                    <ul class="clear">
+                        <li>
+                            <p class="header-top__receiving">Прием  заказов: <br> с 10.00 до 23.00</p>
+                        </li>
+                        <li>
+                            <p class="header-top__delivery">Бесплатная <br> доставка по Москве</p>
+                        </li>
+                        <li>
+                            <p class="header-top__credit">Оплата картами, <br> электронными деньгами</p>
+                        </li>
+                        <li class="call-request">
+                            <span class="call-request__phone">+7 (495) 617-14-24</span>
+                            <a href="#" class="call-request__phone-link">Заказать звонок</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="header-bottom js-header-bottom clear">
@@ -110,20 +110,20 @@
         </div>
         <div class="clear">
             <div class="left-sidebar">
-               <nav>
-                   <ul>
-                       <li><a href="#">Личные данные</a></li>
-                       <li><a href="#">Избранные блюда</a></li>
-                       <li><a href="#" class="active">Последние заказы</a></li>
-                       <li><a href="#">Архив заказов</a></li>
-                       <li><a href="#">Мои оценки блюд</a></li>
-                       <li><a href="#">Выход</a></li>
-                   </ul>
-               </nav>
+                <nav>
+                    <ul>
+                        <li><a href="#">Личные данные</a></li>
+                        <li><a href="#">Избранные блюда</a></li>
+                        <li><a href="#" class="active">Последние заказы</a></li>
+                        <li><a href="#">Архив заказов</a></li>
+                        <li><a href="#">Мои оценки блюд</a></li>
+                        <li><a href="#">Выход</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="office">
                 <p class="office-title">Мой личный кабинет</p>
-                <div class="personal clear">
+                <div class="personal clear" ng-controller="showAdditionalCtrl">
                     <p class="personal-title">Архив заказов</p>
                     <div class="when-order clear">
                         <p class="when-order-date">Дата заказа:  <span class="day-order">15 октября 2014 г.</span> <span class="time-order">15:32</span></p>
@@ -148,71 +148,73 @@
                             <div>
                                 <img src="../images/products/archiv.png" class="img-office" alt="">
                                 <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
-                                <a href="#" class="link-office">Узнать состав</a>
+                                <p class="link-office structure">Узнать состав</p>
                             </div>
                             <div>
-                                <p class="amount-product"><span>5</span> шт.</p> 
+                                <p class="amount-product"><span>5</span> шт.</p>
                             </div>
                             <div class="price-order">
                                 <p>1500</p>
                             </div>
                             <div>
-                                 <a href="#" class="btn-archive"><span class="icon icon-cart icon-fz30"></span></a>
+                                <a href="#" class="btn-archive"><span class="icon icon-cart icon-fz30"></span></a>
                             </div>
                         </div>
                         <div class="row row-order">
                             <div>
                                 <img src="../images/products/archiv.png" class="img-office" alt="">
                                 <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
-                                <a href="#" class="link-office">Узнать состав</a>
+                                <p class="link-office structure">Узнать состав</p>
                             </div>
                             <div>
-                                <p class="amount-product"><span>5</span> шт.</p> 
+                                <p class="amount-product"><span>5</span> шт.</p>
                             </div>
                             <div class="price-order">
                                 <p>1500</p>
                             </div>
                             <div>
-                                 <a href="#" class="btn-archive"><span class="icon icon-cart icon-fz30"></span></a>
+                                <a href="#" class="btn-archive"><span class="icon icon-cart icon-fz30"></span></a>
                             </div>
                         </div>
                         <div class="row row-order">
                             <div>
                                 <img src="../images/products/archiv.png" class="img-office" alt="">
                                 <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
-                                <a href="#" class="link-office">Узнать состав</a>
+                                <p class="link-office structure">Узнать состав</p>
                             </div>
                             <div>
-                                <p class="amount-product"><span>5</span> шт.</p> 
+                                <p class="amount-product"><span>5</span> шт.</p>
                             </div>
                             <div class="price-order">
                                 <p>1500</p>
                             </div>
                             <div>
-                                 <a href="#" class="btn-archive"><span class="icon icon-cart icon-fz30"></span></a>
+                                <a href="#" class="btn-archive"><span class="icon icon-cart icon-fz30"></span></a>
                             </div>
                         </div>
-                        <div class="row row-orderno-visible">
-                            <div>
-                                <img src="../images/products/archiv.png" class="img-office" alt="">
-                                <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
-                                <a href="#" class="link-office">Узнать состав</a>
-                            </div>
-                            <div>
-                                <p class="amount-product"><span>5</span> шт.</p> 
-                            </div>
-                            <div class="price-order">
-                                <p>1500</p>
-                            </div>
-                            <div>
-                                 <a href="#" class="btn-archive"><span class="icon icon-cart icon-fz30"></span></a>
+                        <div class="row more-orders" ng-show="orderAdditional">
+                            <div class="row row-order">
+                                <div>
+                                    <img src="../images/products/archiv.png" class="img-office" alt="">
+                                    <p class="name-archive-product">Онигири Темпура Спайси Кай Ёси</p>
+                                    <p class="link-office structure">Узнать состав</p>
+                                </div>
+                                <div>
+                                    <p class="amount-product"><span>5</span> шт.</p>
+                                </div>
+                                <div class="price-order">
+                                    <p>1500</p>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn-archive"><span class="icon icon-cart icon-fz30"></span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="sum-price clear">
                         <p>Сумма заказа: <span>2545</span></p>
-                        <a href="#" class="button small">Повторить заказ</a>
-                        <a href="#" class="button grey arrowed small">Показать весь заказ</a><!-- изменить текст на "Скрыть заказ" для ссылки добавить клас "active" -->
+                        <i class="button small">Повторить заказ</i>
+                        <i class="button grey arrowed small" ng-click="showMore()" ng-class="{'active' : orderAdditional}">{{ orderAdditional ? 'Скрыть заказ' : 'Показать весь заказ' }}</i>
                     </div>
                 </div>
             </div>
@@ -322,6 +324,7 @@
 <script src="../js/controllers/rating.js"></script>
 <script src="../js/controllers/DropdownCtrl.js"></script>
 <script src="../js/controllers/tabs.js"></script>
+<script src="../js/controllers/showAdditionalCtrl.js"></script>
 <script src="../js/directives/counter.js"></script>
 <script src="../js/directives/autocomplete.js"></script>
 <script src="../js/main.js"></script>
