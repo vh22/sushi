@@ -117,11 +117,16 @@ $(function(){
             $('#adress-add').dialog({width: 840});
             $('#adress-add').dialog('open');
         });
+        $('.phone-call').click(function(){
+            $('#phone-call').dialog({width: 435});
+            $('#phone-call').dialog('open');
+            $('.phone-sent').click(function(){
+                $('#phone-call').dialog('close');
+                $('#phone-sent').dialog({width: 600});
+                $('#phone-sent').dialog('open');
+            });
+        });
 
-
-        // $('.close').click(function(){
-        //     $('.active').hide();
-        // });
 
     }
 });
