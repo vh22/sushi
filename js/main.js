@@ -57,7 +57,6 @@ $(function(){
     if ($('.window').length){
         $('.window').dialog({
             autoOpen: false,
-//        height: 345,
             width: 635,
             modal: true,
             resizable: false,
@@ -125,6 +124,10 @@ $(function(){
                 $('#phone-sent').dialog({width: 600});
                 $('#phone-sent').dialog('open');
             });
+        });
+        $('.add-to-basket').click(function(){
+            $('#add-to-basket').dialog({width: 305});
+            $('#add-to-basket').dialog('open');
         });
 
 
