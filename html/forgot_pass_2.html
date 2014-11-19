@@ -216,12 +216,27 @@
     </footer>
 </div>
 
+<style type="text/css">
+    #pass-sent a {
+        position: relative;
+    }
+    #pass-sent p {
+        position: relative;
+    }
+    #pass-sent .window-inner{
+        overflow: hidden;
+    }
+    #pass-sent .octopus:before{
+        font: 335px 'icomoon';
+    }
+</style>
+
 
 
 <script type="text/ng-template" id="sent-pass">
     <div id="pass-sent" class="window">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
-        <div class="window-inner pass-window clear">
+        <div class="window-inner pass-window clear octopus">
             <p>На ваш адрес отправлено письмо для восстановления<br />пароля. Если вы не видите письма, проверьте папку “Спам”</p>
             <a href="" class="button btn-remove-arch close" ng-click="close()">Закрыть</a>
         </div>

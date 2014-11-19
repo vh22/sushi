@@ -578,7 +578,20 @@
 
 
 
-
+<style type="text/css">
+    #phone-sent .octopus:before{
+        font: 315px 'icomoon';
+    }
+    #phone-sent .window-inner{
+        overflow: hidden;
+    }
+    #phone-sent p {
+        position: relative;
+    }
+    #phone-sent a {
+        position: relative;
+    }
+</style>
 
 
 
@@ -616,7 +629,7 @@
 <script type="text/ng-template" id="sent-phone">
     <div id="phone-sent" class="window">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
-        <div class="window-inner clear">
+        <div class="window-inner clear octopus">
             <p>Ваша заявка принята!<br />В ближайшее время оператор свяжется с вами</p>
             <a href="" class="button btn-remove-arch close" ng-click="close()">Закрыть</a>
         </div>
