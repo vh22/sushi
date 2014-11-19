@@ -117,8 +117,9 @@
 <div class="products">
 <p class="products__title">Суши</p>
 <p class="products__description">В данном разделе для Вас предлагаються суши, изготовленные по особым рецептам повара-сушиста, на <br> профессиональном оборудовании.</p>
-<ul class="list-product five" ng-controller="TooltipDemoCtrl">
-<li class="product">
+<ul class="list-product five" ng-controller="TooltipCtrl">
+<li class="product vegan">
+
     <a href="#">
                                 <span class="product__img">
                                     <img src="../images/products/1.png" alt=""  tooltip-placement="bottom" tooltip="{{dynamicTooltip}}">
@@ -131,7 +132,7 @@
         <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
     </div>
 </li>
-<li class="product product__new">
+<li class="product new">
     <a href="#">
                                 <span class="product__img">
                                     <img src="../images/products/2.png" alt="">
@@ -144,7 +145,7 @@
         <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
     </div>
 </li>
-<li class="product product__acute">
+<li class="product hot">
     <a href="#">
                                 <span class="product__img">
                                     <img src="../images/products/3.png" alt="">
@@ -170,7 +171,7 @@
         <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
     </div>
 </li>
-<li class="product">
+<li class="product best">
     <a href="#">
                                 <span class="product__img">
                                     <img src="../images/products/5.png" alt="">
@@ -183,7 +184,7 @@
         <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
     </div>
 </li>
-<li class="product">
+<li class="product hit">
     <a href="#">
                                 <span class="product__img">
                                     <img src="../images/products/1.png" alt="">
@@ -250,7 +251,7 @@
         <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
     </div>
 </li>
-<li class="product product__new">
+<li class="product new">
     <a href="#">
                                 <span class="product__img">
                                     <img src="../images/products/2.png" alt="">
@@ -263,7 +264,7 @@
         <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
     </div>
 </li>
-<li class="product product__acute">
+<li class="product hot">
     <a href="#">
                                 <span class="product__img">
                                     <img src="../images/products/3.png" alt="">
@@ -276,7 +277,7 @@
         <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
     </div>
 </li>
-<li class="product">
+<li class="product hit">
     <a href="#">
                             <span class="product__img">
                                 <img src="../images/products/4.png" alt="">
@@ -325,10 +326,10 @@
     <div class="product-buy">
         <p class="product-price">356 <span class="icon icon-rubl icon-fz23"></span></p>
         <span class="counter" counter value="1" min="1" max="99"></span>
-       <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
+        <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
     </div>
 </li>
-<li class="product">
+<li class="product best">
     <a href="#">
                             <span class="product__img">
                                 <img src="../images/products/3.png" alt="">
@@ -341,7 +342,7 @@
         <span class="icon icon-cart icon-fz22 add-to-basket" ng-click="$root.openModal('add-basket')"></span>
     </div>
 </li>
-<li class="product">
+<li class="product vegan">
     <a href="#">
                             <span class="product__img">
                                 <img src="../images/products/4.png" alt="">
@@ -478,6 +479,7 @@
 <script src="../js/controllers/DropdownCtrl.js"></script>
 <script src="../js/controllers/tabs.js"></script>
 <script src="../js/controllers/tooltip.js"></script>
+<script src="../js/controllers/showAdditionalCtrl.js"></script>
 <script src="../js/directives/counter.js"></script>
 <script src="../js/directives/autocomplete.js"></script>
 <script src="../js/main.js"></script>
