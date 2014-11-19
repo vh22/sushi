@@ -1498,6 +1498,7 @@ textarea{
     text-decoration: underline;
     position: relative;
     display: inline-block;
+    cursor: pointer;
     &:before{
       content: '\e628';
       font-family: $icon;
@@ -2446,16 +2447,15 @@ textarea{
     transition: opacity .15s linear;
     &.in{opacity: 1;}
   }
-}
-
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0,-50%);
--ms-transform: translate(0,-50%);
-transform: translate(0,-50%);
--webkit-transition: -webkit-transform .3s ease-out;
--moz-transition: -moz-transform .3s ease-out;
--o-transition: -o-transform .3s ease-out;
-transition: transform .3s ease-out;
+  &.fade .modal-dialog {
+    @include transform (translate(0,-50%));
+    @include transition (transform .3s ease-out);
+  }
+  &.in .modal-dialog {
+    -webkit-transform: translate(0,90%);
+    -ms-transform: translate(0,90%);
+    transform: translate(0,90%);
+  }
 }
 .modal-backdrop {
   background: url('../css/images/pattern.png');
@@ -2522,12 +2522,10 @@ transition: transform .3s ease-out;
     width: 305px;
     margin: -145px 0 0 -153px;
   }
-}
-
-.modal.in .modal-dialog {
--webkit-transform: translate(0,90%);
--ms-transform: translate(0,90%);
-transform: translate(0,90%);
+  .file-add &{
+    width: 635px;
+    margin: -231px 0 0 -317px;
+  }
 }
 .mt{
   margin-top: 53px;

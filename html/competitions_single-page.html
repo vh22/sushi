@@ -15,7 +15,7 @@
     <style type="text/css">html,*{filter: none;}</style>
     <![endif]-->
 </head>
-<body>
+<body ng-app="sushiApp">
 <div class="container">
 <div class="wrapper">
 
@@ -168,7 +168,7 @@
                         </div>
                     </div>
                     <div class="clear add-answer">
-                        <i class="button small add-review add-file" href="#">Добавить работу</i>
+                        <i class="button small add-review add-file" ng-click="$root.openModal('file-add')">Добавить работу</i>
                     </div>
                 </div>
             </div>            
@@ -262,31 +262,33 @@
 
 
 
-<div id="add-file" class="window">
-    <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
-    <div class="window-inner octopus clear">
-        <p class="title">Добавить работу</p>
-        <form class="clear" name="myForm">
-            <div class="form-block">
-                <label for="">добавить картинку</label>
-                <div class="upload">
-                    <p class="upload-block"></p>
-                    <label for="upload"></label>
-                    <input id="upload" type="file" name="upload" value="С:/">
+
+
+<script type="text/ng-template" id="file-add">
+    <div id="add-file" class="window">
+        <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
+        <div class="window-inner octopus clear">
+            <p class="title">Добавить работу</p>
+            <form class="clear" name="myForm">
+                <div class="form-block">
+                    <label for="upload">добавить картинку</label>
+                    <div class="upload">
+                        <p class="upload-block"></p>
+                        <label for="upload"></label>
+                        <input id="upload" type="file" name="upload" value="С:/">
+                    </div>
+                    <span>Файл не выбран</span>
                 </div>
-                <span>Файл не выбран</span>
-            </div>
-            <div class="form-block">
-                <label for="name">ваше имя</label>
-                <textarea cols="10" rows="10"></textarea>
-                <span>Введите правильно</span>
-            </div>
-        </form>
-        <button type="submit" class="button" ng-click="">Сохранить</button>
+                <div class="form-block">
+                    <label for="name">ваше имя</label>
+                    <textarea id="name" cols="10" rows="10"></textarea>
+                    <span>Введите правильно</span>
+                </div>
+            </form>
+            <button type="submit" class="button" ng-click="close()">Сохранить</button>
+        </div>
     </div>
-</div>
-
-
+</script>
 
 <style type="text/css">
     #add-file .title{
