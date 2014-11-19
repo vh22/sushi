@@ -42,7 +42,7 @@
                             </li>
                             <li class="call-request">
                                 <span class="call-request__phone">+7 (495) 617-14-24</span>
-                                <a href="" class="call-request__phone-link phone-call" ng-click="$root.openModal('call-phone')">Заказать звонок</a>
+                                <a href="" class="call-request__phone-link phone-call" ng-click="$root.openModal('call-phone')" data-animation="am-fade-and-scale">Заказать звонок</a>
                             </li>
                         </ul>
                     </nav>
@@ -647,6 +647,7 @@
 <script src="../bower_components/perfect-scrollbar/src/jquery.mousewheel.js"></script>
 <script src="../bower_components/perfect-scrollbar/src/perfect-scrollbar.js"></script>
 <script src="../bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
 <!-- endbower -->
 
 <script src="../js/app.js"></script>
@@ -655,7 +656,6 @@
 <script src="../js/controllers/rating.js"></script>
 <script src="../js/controllers/DropdownCtrl.js"></script>
 <script src="../js/controllers/tabs.js"></script>
-<script src="../js/controllers/tooltip.js"></script>
 <script src="../js/controllers/showAdditionalCtrl.js"></script>
 <script src="../js/directives/counter.js"></script>
 <script src="../js/directives/autocomplete.js"></script>

@@ -15,10 +15,10 @@ header{
   z-index: 997;
   &.sticked{
     padding-bottom: 68px;
-    &.opened-menu{padding-bottom: 224px}
+    //    &.opened-menu{padding-bottom: 224px}
   }
 }
-html, body, .container {height: 100%;}
+html, .container {height: 100%;}
 img[ng-src="[]"]{
   display: none;
 }
@@ -1855,13 +1855,6 @@ textarea{
       @include transition(all ease .3s);
       @include absLT(7px,0);
     }
-    &.active{
-      + .big-menu{
-        visibility: visible;
-        opacity: 1;
-        height: 160px;
-      }
-    }
   }
   .header-bottom__basket{
     display: block;
@@ -1911,7 +1904,7 @@ textarea{
           line-height: 30px;
           padding-bottom: 5px;
         }
-        &:hover, &.active{
+        &:hover{
           background: #ffffff;
           color: $hover;
           span{color: $hover;}
@@ -2244,6 +2237,7 @@ textarea{
     &:before{
       right: -20px;
       top: -15px;
+      @include transform(scale(0.7));
     }
     .product__img{
       height: 110px;
@@ -2256,10 +2250,11 @@ textarea{
     }
     .product-buy{
       .product-price{
-        font-size: 21px;
-        margin: 0 5px 0 10px;
-        width: 55px;
-        span{font-size: 14px;}
+        font-size: 18px;
+        margin: 0 0 0 20px;
+        width: 50px;
+        font-weight: bold;
+        span{font-size: 11px;}
       }
       .icon-cart{
         padding: 2px 0;
@@ -2435,40 +2430,42 @@ textarea{
   height: auto !important;
 }
 .modal{
-  @include absLT(0,0);
   @include nosel;
-  display: none;
+  display: block;
+  overflow: auto;
+  position: fixed;
+  top: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   z-index: 1050;
-  .fade{
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  &.fade{
     opacity: 0;
-    -webkit-transition: opacity .15s linear;
-    transition: opacity .15s linear;
-    &.in{opacity: 1;}
-  }
-  &.fade .modal-dialog {
-    @include transform (translate(0,-50%));
-    @include transition (transform .3s ease-out);
-  }
-  &.in .modal-dialog {
-    -webkit-transform: translate(0,90%);
-    -ms-transform: translate(0,90%);
-    transform: translate(0,90%);
+    @include transition(opacity .3s linear);
+    .modal-dialog {
+      visibility: visible;
+    }
+    &.in{
+      opacity: 1;
+      .modal-dialog {
+        visibility: visible;
+      }
+    }
   }
 }
 .modal-backdrop {
   background: url('../css/images/pattern.png');
   height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
   width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
   z-index: 998;
 }
 .modal-content{
   @include absLT(50%,50%);
-  position: relative;
   @include box-shadow(0 3px 9px rgba(0,0,0,.5));
   .change-pass &{
     width: 410px;
@@ -2512,7 +2509,8 @@ textarea{
   }
   .call-phone &{
     width: 435px;
-    margin: -245px 0 0 -216px;
+    height: 490px;
+    margin: -245px auto auto -216px;
   }
   .sent-phone &{
     width: 555px;
@@ -2524,7 +2522,9 @@ textarea{
   }
   .file-add &{
     width: 635px;
-    margin: -231px 0 0 -317px;
+    height: 462px;
+    margin: -231px auto auto -317px;
+    @include transform(translate(-50%, -50%));
   }
 }
 .mt{
@@ -3056,7 +3056,7 @@ textarea{
         }
       }
       &:hover img{
-        @include transform(scale(0.95));
+        @include transform(scale(1.05));
       }
     }
   }
@@ -3726,22 +3726,30 @@ textarea{
   position: absolute;
   z-index: 10;
   display: block;
-  font-size: 14px;
-  line-height: 18px;
   opacity: 0;
-  border: 2px solid #eee;
-  border-top: 1px solid #aeaeab;
-  margin: -40px 0 0 -30px;
-  @include border-radius(7px);
+  overflow: hidden;
+  background-color: #e7dbcb;
+
+  &:before{
+    content: "\e634";
+    color: #fcf7f3;
+    position: absolute;
+    font: 88px $icon;
+    left: 0px;
+    top: -12px;
+    opacity: .6;
+  }
   &.in {opacity: 1}
   .tooltip-inner {
-    max-width: 200px;
+    width: 150px;
     padding: 5px 8px;
-    color: #000000;
+    color: #5d5d5d;
     text-align: center;
     text-decoration: none;
-    background-color: rgba(248,242,242,0.85);
-    border-radius: 4px;
+    position: relative;
+    font-size: 12px;
+    line-height: 15px;
+    z-index: 2;
   }
 }
 .topings{
