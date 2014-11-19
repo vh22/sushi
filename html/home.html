@@ -595,7 +595,7 @@
 
 
 
-<script type="text/ng-template" id="call-phone">
+<script type="text/ng-template" id="call-phone" ng-animate="'animate'">
     <div id="phone-call" class="window">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
         <div class="window-inner octopus clear">
@@ -603,12 +603,12 @@
             <form class="clear" name="myForm">
                 <div class="form-block">
                     <label for="phone">номер телефона</label>
-                    <input type="text" name="phone" ng-model="" id="phone" value="+7 (___) ___ __ __">
+                    <input type="text" name="phone" id="phone" value="+7 (___) ___ __ __">
                     <span>Номер введен неверно</span>
                 </div>
                 <div class="form-block">
                     <label for="name">ваше имя</label>
-                    <input type="text" name="name" ng-model="" id="name" value="Cтепан">
+                    <input type="text" name="name" id="name" value="Cтепан">
                     <span>Введите правильно</span>
                 </div>
                 <div class="clear checkbox-block">
@@ -616,8 +616,8 @@
                         <input type="checkbox" name="time-call" id="time-call">
                         <label for="time-call">Перезвонить сегодня в</label>
                     </div>
-                    <div class="form-block">
-                        <input type="text" name="time" ng-model="" id="time" value="15:00">
+                    <div class="form-block clock">
+                        <input type="text" name="time" id="time" value="15:00">
                         <span>Введите правильно</span>
                     </div>
                 </div>

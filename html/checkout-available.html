@@ -110,7 +110,7 @@
             </div>
         </div>
         <p class="checkot-title">Оформление заказа</p>
-       <div class="clear">
+       <div class="clear" ng-controller="DropdownCtrl">
            <div class="checkout-form">
                <form action="">
                    <div class="form-single">
@@ -141,9 +141,17 @@
                              </div>
                          </div>
                          <div class="col-one form-block">
-                             <label for="adress">Адрес</label>
-                             <input type="text" id="adress" value="м. Калужская, ул. Старокалужское ш-е, д. 65, корп. 0А---А, стр. 5, под. 5, этаж 3, кв. 122">
-                             <span>Введите правильно</span>
+                             <label for="">Адрес</label>
+                             <div class="dropdown">
+                                 <p class="dropdown-toggle">{{selectedCountry.name}}</p>
+                                 <ul class="dropdown-menu" role="menu">
+                                     <li ng-repeat="country in countries" ng-click="set(country)">
+                                         <i>{{country.name}}</i>
+                                     </li>
+                                 </ul>
+                             </div>
+                             <!--<input type="text" id="adress" value="м. Калужская, ул. Старокалужское ш-е, д. 65, корп. 0А---А, стр. 5, под. 5, этаж 3, кв. 122">-->
+                             <!--<span>Введите правильно</span>-->
                          </div>
                          <div class="col-two clear">
                              <div class="form-block">
@@ -207,11 +215,11 @@
                         </div>
                         <div class="time clear">
                             <label>Удобное время доставки</label>
-                            <div>
+                            <div class="clock">
                                 <p>C:</p>
                                 <input type="text">
                             </div>
-                            <div>
+                            <div class="clock">
                                 <p>До:</p>
                                 <input type="text">
                             </div>
@@ -435,6 +443,7 @@
 <script src="../bower_components/angular/angular.js"></script>
 <script src="../bower_components/angular-ui-bootstrap-bower/ui-bootstrap.min.js"></script>
 <script src="../bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.min.js"></script>
+<script src="../js/ui-bootstrap-tpls.min.js"></script>
 <script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
 <script src="../bower_components/perfect-scrollbar/src/jquery.mousewheel.js"></script>
 <script src="../bower_components/perfect-scrollbar/src/perfect-scrollbar.js"></script>
