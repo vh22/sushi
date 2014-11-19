@@ -22,7 +22,7 @@
         <!-- HEADER -->
 
         <div class="bg-header">
-            <header class="opened-menu">
+            <header>
                 <div class="content">
                     <div class="header-top clear">
                         <div class="logo">
@@ -46,7 +46,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="header-bottom js-header-bottom clear active">
+                    <div class="header-bottom js-header-bottom clear">
                         <div class="header-bottom__left">
                             <nav>
                                 <ul class="clear">
@@ -61,7 +61,7 @@
                         <div class="header-bottom__right">
                             <nav>
                                 <ul class="clear">
-                                    <li class="pos-static show-big-menu"><a href="#" class="header-bottom__menu js-menu active">Меню</a>
+                                    <li class="pos-static show-big-menu"><a href="#" class="header-bottom__menu js-menu">Меню</a>
                                         <div class="big-menu js-big-menu">
                                             <nav>
                                                 <ul class="clear">
@@ -125,7 +125,6 @@
                     </div>
                     <div class="item-info right">
                         <h1>Ролл-ассорти Кумимаки</h1>
-                        <span>Состав:</span>
                         <p>Ассорти из классических японских роллов: сякэ маки, тэкка маки, изуми тай маки, ика маки спайс, кай ёси маки спайс, тамаго маки.</p>
                         <i class="icon icon-like">Добавить в избранное</i>
                         <div class="rating">
@@ -284,6 +283,8 @@
 <script src="../bower_components/perfect-scrollbar/src/jquery.mousewheel.js"></script>
 <script src="../bower_components/perfect-scrollbar/src/perfect-scrollbar.js"></script>
 <script src="../bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="../bower_components/angular-keepr/dist/keepr.min.js"></script>
 <!-- endbower -->
 
 <script src="../js/app.js"></script>
@@ -292,10 +293,10 @@
 <script src="../js/controllers/rating.js"></script>
 <script src="../js/controllers/DropdownCtrl.js"></script>
 <script src="../js/controllers/tabs.js"></script>
-<script src="../js/controllers/tooltip.js"></script>
 <script src="../js/controllers/showAdditionalCtrl.js"></script>
 <script src="../js/directives/counter.js"></script>
 <script src="../js/directives/autocomplete.js"></script>
+<script src="../js/directives/phoneMask.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

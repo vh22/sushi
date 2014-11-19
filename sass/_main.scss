@@ -470,6 +470,7 @@ textarea{
         width: auto!important;
         text-align: center;
       }
+      p{padding-top: 0!important;}
     }
   }
   .row-title{
@@ -486,17 +487,6 @@ textarea{
     font-size: 16px;
     .icon-rubl{font-size: 12px;}
   }
-  .counter{
-    input{margin-right: 0}
-    .ui-spinner-up{
-      right: 5px;
-      top: -3px;
-    }
-    .ui-spinner-down{
-      bottom: -3px;
-      right: 5px;
-    }
-  }
   .icon-delete{
     color: #5d5d5d;
     &:hover{color: #e76b6b;}
@@ -505,6 +495,14 @@ textarea{
     float: right;
     width: 260px;
     margin-top: 30px;
+  }
+  .counter{
+    float: none;
+    display: inline-block;
+  }
+  .table{
+    width: 100%;
+    display: table;
   }
 }
 .birthday{
@@ -1423,18 +1421,18 @@ textarea{
 }
 .counter{
   position: relative;
+  width: 60px;
+  height: 29px;
+  float: left;
   input{
     background: #e9e9e9;
     text-align: center;
-    border-top: 1px solid #bfbfbf;
     font: 13px $fontPt;
     color: #5d5d5d;
-    width: 33px;
-    height: 14px;
+    width: 60px;
+    height: 29px;
     padding: 6px 25px 7px 0;
-    margin: 0 11px 0 0;
     @include border-radius(5px);
-    @include box-sizing(inherit);
   }
   .ui-spinner-button{
     position: absolute;
@@ -1449,28 +1447,25 @@ textarea{
     &:hover{
       background: #f5f5f5;
     }
-  }
-  .ui-spinner-up{
-    right: 15px;
-    top: -7px;
     span{
       @include absLT(0,0);
       display: block;
       right: 0;
       bottom: 0;
       margin: auto;
+    }
+  }
+  .ui-spinner-up{
+    right: 5px;
+    top: 4px;
+    span{
       @include s(counter-up);
     }
   }
   .ui-spinner-down{
-    right: 15px;
-    bottom: 1px;
+    right: 5px;
+    bottom: 4px;
     span{
-      @include absLT(0,0);
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin: auto;
       @include s(counter-down);
     }
   }
@@ -1715,31 +1710,19 @@ textarea{
   .txt{
     .title{
       color: #000;
-      font-size: 22px;
       line-height: 22px;
       font-style: italic;
+      text-align: left;
+      font-size: 22px;
       font-weight: 600;
       &.center{text-align: center!important;}
     }
-  }
-  .basket-count{
-    .counter{
-      .ui-spinner-up{top: -3px;}
-      .ui-spinner-down{bottom: -3px;}
-    }
-  }
-  .txt{
     p{
       font-style: italic;
       font-weight: 600;
       color: #000;
       font-size: 18px;
       margin-bottom: 15px;
-    }
-    .title{
-      text-align: left;
-      font-size: 22px;
-      font-weight: 600;
     }
     .toping{
       font-style: italic;
@@ -1758,7 +1741,10 @@ textarea{
         height: 35px;
         line-height: 35px;
       }
-      >span{margin: 0 30px 0 0;}
+      >span{
+        line-height: 1;
+        margin: 3px 30px 0 0;
+      }
       p{
         font-size: 35px;
         font-weight: 800;
@@ -2075,11 +2061,11 @@ textarea{
       font: 34px/35px $fontPt;
       margin-bottom: 15px;
     }
-    >span{
-      display: block;
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
+//    >span{
+//      display: block;
+//      font-size: 16px;
+//      margin-bottom: 5px;
+//    }
     >p{
       font-size: 14px;
       line-height: 18px;
@@ -2267,12 +2253,17 @@ textarea{
       .icon-cart{
         padding: 2px 0;
       }
-      input{width: 32px;}
+
     }
     .counter{
+      width: 40px;
       input{
-        padding: 5px 4px 8px 5px;
+        width: 40px;
         text-align: left;
+        padding: 8px 20px 7px 5px;
+      }
+      .ui-spinner-button{
+        width: 11px;
       }
     }
   }
@@ -3003,14 +2994,12 @@ textarea{
   }
 }
 .product-buy{
-  input{
-    float: left;
-  }
   .icon-cart{
     color: $hover;
     padding: 2px 4px;
-    display: inline-block;
+    float: left;
     cursor: pointer;
+    margin: 3px 0 0 10px;
     &:hover{
       color: #a62702;
     }
@@ -3288,6 +3277,7 @@ textarea{
   }
   .right{
     width: 120px;
+    cursor: pointer;
     .icon-star{
       font: 14px $font;
       color: #737373;
@@ -3821,20 +3811,6 @@ textarea{
       margin-top: 4px;
     }
     span{float: left}
-    .counter{
-      input{
-        width: 40px;
-        margin: 0;
-      }
-      .ui-spinner-up{
-        right: 5px;
-        top: 4px;
-      }
-      .ui-spinner-down{
-        bottom: 4px;
-        right: 5px;
-      }
-    }
   }
   .clear>p{
     color: #5d5d5d;
@@ -3915,13 +3891,13 @@ textarea{
   h3{
     font: 22px $fontPt;
     color: #5d5d5d;
-    span{
-      color: #8a8a8a;
-      font-size: 13px;
-      border-left: 1px dashed #8a8a8a;
-      margin-left: 15px;
-      padding-left: 15px;
-    }
+//    span{
+//      color: #8a8a8a;
+//      font-size: 13px;
+//      border-left: 1px dashed #8a8a8a;
+//      margin-left: 15px;
+//      padding-left: 15px;
+//    }
   }
   p{
     color: #8a8a8a;
@@ -4082,7 +4058,6 @@ textarea{
     margin: 0 0 20px 20px;
   }
 }
-
 #add-to-basket{
   position: relative;
   .octopus:before{

@@ -117,7 +117,6 @@
                     <div><p>Название</p></div>
                     <div><p>Вес</p></div>
                     <div><p>Цена</p></div>
-                    <div><p>Скидка</p></div>
                     <div><p>Количество</p></div>
                     <div><p>Сумма</p></div>
                     <div><p></p></div>
@@ -134,7 +133,6 @@
                     </div>
                     <div><p>300 г.</p></div>
                     <div><p>250 <span class="icon icon-rubl"></span></p></div>
-                    <div><p>25 <span class="icon icon-rubl"></span></p></div>
                     <div><span class="counter" counter value="1" min="1" max="99"></span></div>
                     <div><p>1500 <span class="icon icon-rubl"></span></p></div>
                     <div><a href="#" class="btn-archive"><span class="icon icon-delete icon-fz14"></span></a></div>
@@ -151,7 +149,6 @@
                     </div>
                     <div><p>300 г.</p></div>
                     <div><p>250 <span class="icon icon-rubl"></span></p></div>
-                    <div><p>25 <span class="icon icon-rubl"></span></p></div>
                     <div><span class="counter" counter value="1" min="1" max="99"></span></div>
                     <div><p>1500 <span class="icon icon-rubl"></span></p></div>
                     <div><a href="#" class="btn-archive"><span class="icon icon-delete icon-fz14"></span></a></div>
@@ -168,7 +165,6 @@
                     </div>
                     <div><p>300 г.</p></div>
                     <div><p>250 <span class="icon icon-rubl"></span></p></div>
-                    <div><p>25 <span class="icon icon-rubl"></span></p></div>
                     <div><span class="counter" counter value="1" min="1" max="99"></span></div>
                     <div><p>1500 <span class="icon icon-rubl"></span></p></div>
                     <div><a href="#" class="btn-archive"><span class="icon icon-delete icon-fz14"></span></a></div>
@@ -185,7 +181,6 @@
                     </div>
                     <div><p>300 г.</p></div>
                     <div><p>250 <span class="icon icon-rubl"></span></p></div>
-                    <div><p>25 <span class="icon icon-rubl"></span></p></div>
                     <div><span class="counter" counter value="1" min="1" max="99"></span></div>
                     <div><p>1500 <span class="icon icon-rubl"></span></p></div>
                     <div><a href="#" class="btn-archive"><span class="icon icon-delete icon-fz14"></span></a></div>
@@ -279,7 +274,7 @@
                         </div>
                         <div class="form-block right">
                             <label for="phone">Номер телефона (с кодом города) <i>*</i></label>
-                            <input type="text" name="phone" id="phone" />
+                            <phone></phone>
                             <span>необходимо заполнить</span>
                         </div>
                     </form>
@@ -380,11 +375,13 @@
 <script src="../bower_components/angular/angular.js"></script>
 <script src="../bower_components/angular-ui-bootstrap-bower/ui-bootstrap.min.js"></script>
 <script src="../bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.min.js"></script>
-<script src="../js/ui-bootstrap-tpls.min.js"></script>
 <script src="../bower_components/angular-i18n/angular-locale_ru.js"></script>
 <script src="../bower_components/perfect-scrollbar/src/jquery.mousewheel.js"></script>
 <script src="../bower_components/perfect-scrollbar/src/perfect-scrollbar.js"></script>
 <script src="../bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="../bower_components/angular-keepr/dist/keepr.min.js"></script>
+<script src="../js/ui-bootstrap-tpls.min.js"></script>
 <!-- endbower -->
 
 <script src="../js/app.js"></script>
@@ -393,10 +390,10 @@
 <script src="../js/controllers/rating.js"></script>
 <script src="../js/controllers/DropdownCtrl.js"></script>
 <script src="../js/controllers/tabs.js"></script>
-<script src="../js/controllers/tooltip.js"></script>
 <script src="../js/controllers/showAdditionalCtrl.js"></script>
 <script src="../js/directives/counter.js"></script>
 <script src="../js/directives/autocomplete.js"></script>
+<script src="../js/directives/phoneMask.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
