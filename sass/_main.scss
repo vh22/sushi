@@ -263,10 +263,11 @@ textarea{
         &.icon-edit1{margin-left: 20px;}
       }
     }
-    a{
+    &>span{
       font-size: 13px;
       color: #159bea;
       text-decoration: underline;
+      cursor: pointer;
       &:hover{text-decoration: none;}
     }
   }
@@ -880,7 +881,7 @@ textarea{
   }
   .col-one{
     margin: 12px 0px;
-    input{width: 754px;}
+    .dropdown{width: 754px;}
   }
   .col-four{
     div{
@@ -897,18 +898,7 @@ textarea{
     div{
       float: left;
       margin-right: 20px;
-      position: relative;
-      &:before{
-        content: '\e629';
-        font-family: $icon;
-        @include absRT(10px,9px);
-        font-size: 23px;
-        color: #5d5d5d;
-      }
-      input{
-        width: 144px;
-        padding-right: 35px;
-      }
+      input{width: 144px;}
       p{
         float: left;
         text-transform: uppercase;
@@ -1507,6 +1497,7 @@ textarea{
     padding-left: 20px;
     text-decoration: underline;
     position: relative;
+    display: inline-block;
     &:before{
       content: '\e628';
       font-family: $icon;
@@ -1611,7 +1602,7 @@ textarea{
     color: #5d5d5d;
     margin-right: 35px;
   }
-  a.button{
+  span.button{
     float: left;
     margin-top: 15px;
   }
@@ -2456,6 +2447,16 @@ textarea{
     &.in{opacity: 1;}
   }
 }
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0,-50%);
+-ms-transform: translate(0,-50%);
+transform: translate(0,-50%);
+-webkit-transition: -webkit-transform .3s ease-out;
+-moz-transition: -moz-transform .3s ease-out;
+-o-transition: -o-transform .3s ease-out;
+transition: transform .3s ease-out;
+}
 .modal-backdrop {
   background: url('../css/images/pattern.png');
   height: 100%;
@@ -2467,6 +2468,7 @@ textarea{
 }
 .modal-content{
   @include absLT(50%,50%);
+  position: relative;
   @include box-shadow(0 3px 9px rgba(0,0,0,.5));
   .change-pass &{
     width: 410px;
@@ -2520,6 +2522,12 @@ textarea{
     width: 305px;
     margin: -145px 0 0 -153px;
   }
+}
+
+.modal.in .modal-dialog {
+-webkit-transform: translate(0,90%);
+-ms-transform: translate(0,90%);
+transform: translate(0,90%);
 }
 .mt{
   margin-top: 53px;
@@ -2848,7 +2856,7 @@ textarea{
       float: left;
       margin-right: 20px;
     }
-    input{width: 348px;}
+    input{width: 368px;}
   }
 }
 .personal-discount{
@@ -4177,5 +4185,13 @@ textarea{
     font: 200px 'icomoon';
     top: -24px;
     left: -3px;
+  }
+}
+.clock{
+  position: relative;
+  input{padding-right: 35px;}
+  &:before{
+    @include ico("\e629",23px,#5d5d5d,1);
+    @include absRT(10px, 9px);
   }
 }
