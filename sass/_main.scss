@@ -2620,13 +2620,6 @@ textarea{
 
   .price-lunch{
     position: relative;
-    padding-right: 10px;
-    &:before{
-      content: '\e620';
-      font-family: $icon;
-      @include absRT(0,0);
-      font-size: 11px;
-    }
   }
   .lunch-discount{
     padding: 0 10px;
@@ -2636,13 +2629,6 @@ textarea{
       text-align: right;
       span{
         position: relative;
-        padding-right: 15px;
-        &:before{
-          content: '\e620';
-          font-family: $icon;
-          @include absRT(0,-13px);
-          font-size: 13px;
-        }
       }
     }
   }
@@ -2935,13 +2921,7 @@ textarea{
     color: #5d5d5d;
     position: relative;
     display: inline-block;
-    padding: 0 20px 0 15px;
-    &:before{
-      content: '\e620';
-      font-family: $icon;
-      font-size: 13px;
-      @include absRT(0, 0);
-    }
+    padding: 0 0 0 15px;
   }
 }
 .product{
@@ -3645,15 +3625,6 @@ textarea{
     margin-bottom: 8px;
     span{
       position: relative;
-      padding-right: 20px;
-      &:before{
-        content: '\e620';
-        font-family: $icon;
-        color: #5d5d5d;
-        font-size: 17px;
-        font-weight: normal;
-        @include absRT(0, -5px);
-      }
     }
   }
   .button{
