@@ -1,4 +1,4 @@
-var app = angular.module('sushiApp', ['ui.bootstrap', 'perfect_scrollbar', 'keepr']);
+var app = angular.module('sushiApp', ['ui.bootstrap', 'perfect_scrollbar', 'keepr', 'ui.filters', 'AxelSoft']);
 
 // the service that retrieves some movie title from an url
 app.factory('MovieRetriever', function($http, $q, $timeout){

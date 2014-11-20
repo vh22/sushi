@@ -876,6 +876,9 @@ textarea{
   }
   .col-two{
     input{width: 367px;}
+    .form-block{
+      width: 367px;
+    }
   }
   .col-one{
     margin: 12px 0px;
@@ -2061,11 +2064,11 @@ textarea{
       font: 34px/35px $fontPt;
       margin-bottom: 15px;
     }
-//    >span{
-//      display: block;
-//      font-size: 16px;
-//      margin-bottom: 5px;
-//    }
+    //    >span{
+    //      display: block;
+    //      font-size: 16px;
+    //      margin-bottom: 5px;
+    //    }
     >p{
       font-size: 14px;
       line-height: 18px;
@@ -3891,13 +3894,13 @@ textarea{
   h3{
     font: 22px $fontPt;
     color: #5d5d5d;
-//    span{
-//      color: #8a8a8a;
-//      font-size: 13px;
-//      border-left: 1px dashed #8a8a8a;
-//      margin-left: 15px;
-//      padding-left: 15px;
-//    }
+    //    span{
+    //      color: #8a8a8a;
+    //      font-size: 13px;
+    //      border-left: 1px dashed #8a8a8a;
+    //      margin-left: 15px;
+    //      padding-left: 15px;
+    //    }
   }
   p{
     color: #8a8a8a;
@@ -4260,5 +4263,54 @@ textarea{
     font: 200px 'icomoon';
     top: -24px;
     left: -3px;
+  }
+}
+.auto-drop{
+  width: 100%;
+  margin-right: 0 !important;
+  select{
+    display: none;
+  }
+  .dropdown-toggle{
+    display: block;
+    span{
+      display: block;
+      white-space: nowrap;
+      visibility: visible;
+      opacity: 1;
+      color: #5e5e5e;
+      font: 14px/40px Lato, Arial, sans-serif;
+      text-transform: none;
+      left: auto;
+      bottom: auto;
+    }
+  }
+  .dropdown-menu{
+
+    ul{
+      max-height: 210px;
+      width: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    li:hover a{
+      color: #ffffff;
+    }
+    a{
+      display: block;
+      color: #5e5e5e;
+    }
+    .custom-select-search{
+      width: 98%;
+      position: relative;
+      z-index: 1010;
+      margin: 0;
+      padding: 0 4px;
+      white-space: nowrap;
+    }
+    input{
+      width: 95%;
+      margin: 10px;
+    }
   }
 }

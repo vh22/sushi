@@ -127,13 +127,16 @@
                             </div>
                         </div>
                    </div>
-                    <div class="form-single form-adress">
+                    <div class="form-single form-adress"  data-ng-controller="AutoDrop">
                         <div class="col-two clear">
-                             <div class="form-block">
-                                 <label for="select-phone">Выбрать телефон</label>
-                                 <input id="select-phone" type="text" value="Иванов">
-                                 <span>Введите правильно</span>
-                             </div>
+                            <div class="form-block">
+                                <label for="select-phone">Выбрать телефон</label>
+                                <input type="text" id="select-phone" data-ng-model="item.title" list="comicstitle">
+                                <datalist id="comicstitle">
+                                    <option  data-ng-repeat="ttl in titles" value="{{ttl}}">
+                                </datalist>
+                                <span>Введите правильно</span>
+                            </div>
                              <div class="form-block">
                                  <label for="phone">Добавить телефон</label>
                                  <phone></phone>
@@ -153,10 +156,11 @@
                              <!--<input type="text" id="adress" value="м. Калужская, ул. Старокалужское ш-е, д. 65, корп. 0А---А, стр. 5, под. 5, этаж 3, кв. 122">-->
                              <!--<span>Введите правильно</span>-->
                          </div>
-                         <div class="col-two clear">
+                         <div class="col-two clear" ng-controller="DemoController">
                              <div class="form-block">
                                  <label for="metro">Метро</label>
-                                 <input id="metro" type="text" value="">
+                                 <!--<input id="metro" type="text" value="">-->
+                                 <div class="auto-drop" custom-select ng-model="state" ng-options="s.id as s.name for s in states"></div>
                                  <span>Введите правильно</span>
                              </div>
                              <div class="form-block">
@@ -450,6 +454,7 @@
 <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
 <script src="../bower_components/angular-keepr/dist/keepr.min.js"></script>
 <script src="../js/ui-bootstrap-tpls.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <!-- endbower -->
 
 <script src="../js/app.js"></script>
@@ -459,9 +464,14 @@
 <script src="../js/controllers/DropdownCtrl.js"></script>
 <script src="../js/controllers/tabs.js"></script>
 <script src="../js/controllers/showAdditionalCtrl.js"></script>
+<script src="../js/controllers/autocompleteDrop.js"></script>
+<script src="../js/controllers/customSelect.js"></script>
 <script src="../js/directives/counter.js"></script>
 <script src="../js/directives/autocomplete.js"></script>
 <script src="../js/directives/phoneMask.js"></script>
+<script src="../js/services/filter.js"></script>
+<script src="../js/customSelect.js"></script>
+<script src="../js/format.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
