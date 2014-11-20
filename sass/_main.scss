@@ -2526,6 +2526,10 @@ textarea{
     width: 635px;
     margin: -266px auto auto -317px;
   }
+  .modal-unregister &{
+    width: 410px;
+    margin: -87px auto auto -205px;
+  }
 }
 .mt{
   margin-top: 53px;
@@ -4120,7 +4124,7 @@ textarea{
     }
   }
 }
-#pass-sent{
+#pass-sent, #unregister{
   .window-inner{
     padding: 50px 0 30px 0;
     position: relative;
