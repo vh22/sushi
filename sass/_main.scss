@@ -3730,7 +3730,9 @@ textarea{
   opacity: 0;
   overflow: hidden;
   background-color: #e7dbcb;
-
+  visibility: hidden;
+  top: 178px !important;
+  @include transition(all ease .3s);
   &:before{
     content: "\e634";
     color: #fcf7f3;
@@ -3740,7 +3742,7 @@ textarea{
     top: -12px;
     opacity: .6;
   }
-  &.in {opacity: 1}
+  &.in {opacity: 1; visibility: visible;}
   .tooltip-inner {
     width: 150px;
     padding: 5px 8px;
