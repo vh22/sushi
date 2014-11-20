@@ -3733,7 +3733,9 @@ textarea{
   overflow: hidden;
   background-color: #e7dbcb;
   visibility: hidden;
-  top: 178px !important;
+  top: auto !important;
+  bottom: -50px !important;
+  left: 37px !important;
   @include transition(all ease .3s);
   &:before{
     content: "\e634";
@@ -4124,7 +4126,7 @@ textarea{
     }
   }
 }
-#pass-sent, #unregister{
+#pass-sent{
   .window-inner{
     padding: 50px 0 30px 0;
     position: relative;
@@ -4138,6 +4140,22 @@ textarea{
   }
   .octopus:before{
     font: 335px 'icomoon';
+  }
+}
+#unregister{
+  .window-inner{
+    padding: 50px 0 30px 0;
+    position: relative;
+    overflow: hidden;
+    p{
+      display: block;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    a {position: relative}
+  }
+  .octopus:before{
+    font: 274px 'icomoon';
   }
 }
 #pass-success{
