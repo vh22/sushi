@@ -3827,7 +3827,11 @@ textarea{
       padding-right: 0;
       span{
         display: inline-block;
+      &:before{
+        @include absRB(0,8px);
+        font: 400 15px $icon;
       }
+      span{display: inline-block;}
     }
     span{
       display: block;
@@ -3858,6 +3862,7 @@ textarea{
       b{
         margin: 0 0 0 10px;
         span{
+          // display: inline-block;
           width: 55px;
         }
       }
@@ -3879,6 +3884,8 @@ textarea{
           span{
           width: 55px;
         }
+            width: 55px;
+          }
         }
         span{width: 82px;}
       }

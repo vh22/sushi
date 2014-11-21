@@ -2208,260 +2208,264 @@ textarea:focus { border-color: #00b6f4; -moz-box-shadow: inset 0 0 5px 0 rgba(0,
 .quantity .clear > p b { color: #000; font: 800 34px Lato, Arial, sans-serif; margin: 0 10px; position: relative; padding-right: 0; }
 /* line 3828, ../sass/_main.scss */
 .quantity .clear > p b span { display: inline-block; }
-/* line 3832, ../sass/_main.scss */
-.quantity .clear > p span { display: block; }
+/* line 3830, ../sass/_main.scss */
+.quantity .clear > p b span:before { position: absolute; right: 0; bottom: 8px; font: 400 15px icomoon; }
+/* line 3834, ../sass/_main.scss */
+.quantity .clear > p b span span { display: inline-block; }
 /* line 3836, ../sass/_main.scss */
-.quantity .button { width: 100%; }
-/* line 3837, ../sass/_main.scss */
-.quantity .order-half { text-align: center; line-height: 16px; margin: -15px 0 15px; }
+.quantity .clear > p b span { display: block; }
+/* line 3840, ../sass/_main.scss */
+.quantity .clear > p .button { width: 100%; }
 /* line 3841, ../sass/_main.scss */
-.quantity .order-half p { font-size: 13px; color: #000; }
+.quantity .clear > p .order-half { text-align: center; line-height: 16px; margin: -15px 0 15px; }
 /* line 3845, ../sass/_main.scss */
-.quantity .order-half i { font-size: 14px; text-decoration: underline; color: #e76b6b; font-style: normal; cursor: pointer; }
-/* line 3851, ../sass/_main.scss */
-.quantity .order-half i:hover { text-decoration: none; }
+.quantity .clear > p .order-half p { font-size: 13px; color: #000; }
+/* line 3849, ../sass/_main.scss */
+.quantity .clear > p .order-half i { font-size: 14px; text-decoration: underline; color: #e76b6b; font-style: normal; cursor: pointer; }
 /* line 3855, ../sass/_main.scss */
-.quantity.half .clear > p { float: left; width: 50%; }
-/* line 3858, ../sass/_main.scss */
-.quantity.half .clear > p b { margin: 0 0 0 10px; }
-/* line 3860, ../sass/_main.scss */
-.quantity.half .clear > p b span { width: 55px; }
+.quantity .clear > p .order-half i:hover { text-decoration: none; }
+/* line 3859, ../sass/_main.scss */
+.quantity .clear > p.half .clear > p { float: left; width: 50%; }
+/* line 3862, ../sass/_main.scss */
+.quantity .clear > p.half .clear > p b { margin: 0 0 0 10px; }
 /* line 3864, ../sass/_main.scss */
-.quantity.half .clear > p span { text-align: center; width: 115px; }
-/* line 3868, ../sass/_main.scss */
-.quantity.half .clear > p.lined { position: relative; }
-/* line 3870, ../sass/_main.scss */
-.quantity.half .clear > p.lined:after { position: absolute; right: -5px; top: -2px; content: '/'; color: #000; font-size: 35px; font-weight: 800; }
-/* line 3877, ../sass/_main.scss */
-.quantity.half .clear > p.lined b { margin-left: -4px; }
-/* line 3879, ../sass/_main.scss */
-.quantity.half .clear > p.lined b span { width: 55px; }
-/* line 3883, ../sass/_main.scss */
-.quantity.half .clear > p.lined span { width: 82px; }
-/* line 3886, ../sass/_main.scss */
-.quantity.half .count { margin-bottom: 0px; }
-/* line 3888, ../sass/_main.scss */
-.quantity.half .count .button { float: left; height: 34px; line-height: 34px; width: 113px; }
-/* line 3894, ../sass/_main.scss */
-.quantity.half .count .counter { margin: 3px 26px 0 0; }
-
-/* line 3898, ../sass/_main.scss */
-.questions { border-bottom: solid 1px #e5e5e5; padding: 10px 10px 20px 10px; }
+.quantity .clear > p.half .clear > p b span { width: 55px; }
+/* line 3869, ../sass/_main.scss */
+.quantity .clear > p.half .clear > p span { text-align: center; width: 115px; }
+/* line 3873, ../sass/_main.scss */
+.quantity .clear > p.half .clear > p.lined { position: relative; }
+/* line 3875, ../sass/_main.scss */
+.quantity .clear > p.half .clear > p.lined:after { position: absolute; right: -5px; top: -2px; content: '/'; color: #000; font-size: 35px; font-weight: 800; }
+/* line 3882, ../sass/_main.scss */
+.quantity .clear > p.half .clear > p.lined b { margin-left: -4px; width: 55px; }
+/* line 3884, ../sass/_main.scss */
+.quantity .clear > p.half .clear > p.lined b span { width: 55px; }
+/* line 3890, ../sass/_main.scss */
+.quantity .clear > p.half .clear > p span { width: 82px; }
+/* line 3893, ../sass/_main.scss */
+.quantity .clear > p .count { margin-bottom: 0px; }
+/* line 3895, ../sass/_main.scss */
+.quantity .clear > p .count .button { float: left; height: 34px; line-height: 34px; width: 113px; }
 /* line 3901, ../sass/_main.scss */
+.quantity .clear > p .count .counter { margin: 3px 26px 0 0; }
+
+/* line 3905, ../sass/_main.scss */
+.questions { border-bottom: solid 1px #e5e5e5; padding: 10px 10px 20px 10px; }
+/* line 3908, ../sass/_main.scss */
 .questions h3 { font: 22px "PT Sans", Arial, sans-serif; color: #5d5d5d; }
-/* line 3912, ../sass/_main.scss */
+/* line 3919, ../sass/_main.scss */
 .questions p { color: #8a8a8a; font: 16px "PT Sans", Arial, sans-serif; }
-/* line 3916, ../sass/_main.scss */
+/* line 3923, ../sass/_main.scss */
 .questions i { font-style: normal; color: #e76b6b; text-decoration: underline; margin: 15px 0; display: inline-block; }
-/* line 3922, ../sass/_main.scss */
+/* line 3929, ../sass/_main.scss */
 .questions i:hover { cursor: pointer; text-decoration: none; }
-/* line 3927, ../sass/_main.scss */
+/* line 3934, ../sass/_main.scss */
 .questions .show-results { border-top: solid 1px #e5e5e5; width: 440px; display: none; padding-top: 10px; }
-/* line 3933, ../sass/_main.scss */
+/* line 3940, ../sass/_main.scss */
 .questions:last-child { display: inline-block; width: 98%; }
 
-/* line 3938, ../sass/_main.scss */
+/* line 3945, ../sass/_main.scss */
 .questions-block { padding-bottom: 65px; position: relative; }
 
-/* line 3942, ../sass/_main.scss */
+/* line 3949, ../sass/_main.scss */
 .vk-social { margin-top: 15px; }
-/* line 3944, ../sass/_main.scss */
+/* line 3951, ../sass/_main.scss */
 .vk-social img { display: block; margin: 0 auto; }
 
-/* line 3950, ../sass/_main.scss */
+/* line 3957, ../sass/_main.scss */
 .upload .upload-block { width: 367px; height: 42px; border: 1px solid #c1c1c1; display: inline-block; background: #fff; float: left; }
-/* line 3958, ../sass/_main.scss */
+/* line 3965, ../sass/_main.scss */
 .upload input { display: none; width: 367px; height: 42px; cursor: pointer; }
-/* line 3964, ../sass/_main.scss */
+/* line 3971, ../sass/_main.scss */
 .upload label { width: 42px; height: 42px; background: #e76b6b; border-radius: 8px; position: relative; display: inline-block; margin-left: 15px; }
-/* line 3972, ../sass/_main.scss */
+/* line 3979, ../sass/_main.scss */
 .upload label:before { content: "\e641"; color: #fff; font-size: 30px; font-family: 'icomoon'; position: absolute; top: 3px; left: 6px; }
 
-/* line 3983, ../sass/_main.scss */
+/* line 3990, ../sass/_main.scss */
 .window { background: #fff; position: relative; }
-/* line 3986, ../sass/_main.scss */
+/* line 3993, ../sass/_main.scss */
 .window .close { cursor: pointer; }
-/* line 3987, ../sass/_main.scss */
+/* line 3994, ../sass/_main.scss */
 .window:after { content: "\e633"; color: #fff; font: 100px 'icomoon'; position: absolute; right: -55px; top: -85px; }
-/* line 3995, ../sass/_main.scss */
+/* line 4002, ../sass/_main.scss */
 .window i { color: #e35656; position: absolute; right: -37px; top: -33px; z-index: 1; }
 
-/* line 4003, ../sass/_main.scss */
+/* line 4010, ../sass/_main.scss */
 .when-order { padding: 14px 0px 15px 14px; border-bottom: 1px solid #e5e5e5; margin-bottom: 5px; }
-/* line 4007, ../sass/_main.scss */
+/* line 4014, ../sass/_main.scss */
 .when-order .order-discount { line-height: 25px; }
 
-/* line 4009, ../sass/_main.scss */
+/* line 4016, ../sass/_main.scss */
 .when-order-date { font: 18px "PT Sans", Arial, sans-serif; color: #5d5d5d; float: left; }
 
-/* line 4014, ../sass/_main.scss */
+/* line 4021, ../sass/_main.scss */
 .wrapper { padding-bottom: 365px; }
 
-/* line 4018, ../sass/_main.scss */
+/* line 4025, ../sass/_main.scss */
 .your-review .btn-remove-arch { position: relative; margin-bottom: 10px; }
-/* line 4022, ../sass/_main.scss */
+/* line 4029, ../sass/_main.scss */
 .your-review textarea { height: 170px; margin: 20px 0; position: relative; }
-/* line 4027, ../sass/_main.scss */
+/* line 4034, ../sass/_main.scss */
 .your-review p { font-size: 25px; color: #5d5d5d; position: relative; }
-/* line 4032, ../sass/_main.scss */
+/* line 4039, ../sass/_main.scss */
 .your-review .window-inner { overflow: hidden; padding: 30px 35px; position: relative; }
 
-/* line 4052, ../sass/_main.scss */
+/* line 4059, ../sass/_main.scss */
 #add-file { position: relative; }
-/* line 4054, ../sass/_main.scss */
+/* line 4061, ../sass/_main.scss */
 #add-file .title { font: 25px "PT Sans", Arial, sans-serif; color: #5d5d5d; position: relative; margin-top: 40px; padding: 0 15px 15px 15px; border-bottom: solid 1px #e5e5e5; width: 585px; }
-/* line 4063, ../sass/_main.scss */
+/* line 4070, ../sass/_main.scss */
 #add-file .window-inner { position: relative; overflow: hidden; padding: 10px; }
-/* line 4068, ../sass/_main.scss */
+/* line 4075, ../sass/_main.scss */
 #add-file .octopus:before { font: 400px 'icomoon'; top: -88px; }
-/* line 4072, ../sass/_main.scss */
+/* line 4079, ../sass/_main.scss */
 #add-file textarea { width: 550px; height: 170px; }
-/* line 4076, ../sass/_main.scss */
+/* line 4083, ../sass/_main.scss */
 #add-file form { margin: 15px 20px 10px 20px; position: relative; }
-/* line 4080, ../sass/_main.scss */
+/* line 4087, ../sass/_main.scss */
 #add-file .button { margin: 0 0 20px 20px; }
 
-/* line 4084, ../sass/_main.scss */
-#add-to-basket { position: relative; }
-/* line 4086, ../sass/_main.scss */
-#add-to-basket .octopus:before { font: 280px 'icomoon'; top: -34px; left: -4px; }
 /* line 4091, ../sass/_main.scss */
+#add-to-basket { position: relative; }
+/* line 4093, ../sass/_main.scss */
+#add-to-basket .octopus:before { font: 280px 'icomoon'; top: -34px; left: -4px; }
+/* line 4098, ../sass/_main.scss */
 #add-to-basket .window-inner { padding: 50px 0 55px 0; text-align: center; position: relative; overflow: hidden; }
-/* line 4096, ../sass/_main.scss */
-#add-to-basket .window-inner p { display: block; margin-bottom: 20px; font: 25px "PT Sans", Arial, sans-serif; color: #5d5d5d; position: relative; }
 /* line 4103, ../sass/_main.scss */
+#add-to-basket .window-inner p { display: block; margin-bottom: 20px; font: 25px "PT Sans", Arial, sans-serif; color: #5d5d5d; position: relative; }
+/* line 4110, ../sass/_main.scss */
 #add-to-basket .window-inner a { position: relative; margin: 0 auto; display: block; width: 195px; }
-/* line 4108, ../sass/_main.scss */
+/* line 4115, ../sass/_main.scss */
 #add-to-basket .window-inner a.grey { margin-bottom: 20px; }
-/* line 4109, ../sass/_main.scss */
+/* line 4116, ../sass/_main.scss */
 #add-to-basket .window-inner a span { position: relative; top: 4px; }
 
-/* line 4118, ../sass/_main.scss */
+/* line 4125, ../sass/_main.scss */
 #pass-change { position: relative; }
-/* line 4120, ../sass/_main.scss */
+/* line 4127, ../sass/_main.scss */
 #pass-change .window-inner { position: relative; overflow: hidden; }
-/* line 4123, ../sass/_main.scss */
+/* line 4130, ../sass/_main.scss */
 #pass-change .window-inner p { font: 25px "PT Sans", Arial, sans-serif; color: #5d5d5d; position: relative; margin-top: 35px; padding: 0 15px 15px 15px; border-bottom: solid 1px #e5e5e5; width: 365px; }
-/* line 4132, ../sass/_main.scss */
+/* line 4139, ../sass/_main.scss */
 #pass-change .window-inner .form-block { margin: 0 15px; }
-/* line 4134, ../sass/_main.scss */
+/* line 4141, ../sass/_main.scss */
 #pass-change .window-inner .form-block input { width: 100%; }
-/* line 4136, ../sass/_main.scss */
+/* line 4143, ../sass/_main.scss */
 #pass-change .window-inner .button { margin: 0 0 40px 20px; }
-/* line 4137, ../sass/_main.scss */
+/* line 4144, ../sass/_main.scss */
 #pass-change .window-inner .input-pass input { font-size: 16px; letter-spacing: 5px; }
 
-/* line 4144, ../sass/_main.scss */
+/* line 4151, ../sass/_main.scss */
 #pass-sent .window-inner { padding: 50px 0 30px 0; position: relative; overflow: hidden; }
-/* line 4148, ../sass/_main.scss */
-#pass-sent .window-inner p { display: block; margin-bottom: 30px; position: relative; }
-/* line 4153, ../sass/_main.scss */
-#pass-sent .window-inner a { position: relative; }
 /* line 4155, ../sass/_main.scss */
+#pass-sent .window-inner p { display: block; margin-bottom: 30px; position: relative; }
+/* line 4160, ../sass/_main.scss */
+#pass-sent .window-inner a { position: relative; }
+/* line 4162, ../sass/_main.scss */
 #pass-sent .octopus:before { font: 335px 'icomoon'; }
 
-/* line 4160, ../sass/_main.scss */
+/* line 4167, ../sass/_main.scss */
 #unregister .window-inner { padding: 50px 0 30px 0; position: relative; overflow: hidden; }
-/* line 4164, ../sass/_main.scss */
-#unregister .window-inner p { display: block; margin-bottom: 30px; position: relative; }
-/* line 4169, ../sass/_main.scss */
-#unregister .window-inner a { position: relative; }
 /* line 4171, ../sass/_main.scss */
+#unregister .window-inner p { display: block; margin-bottom: 30px; position: relative; }
+/* line 4176, ../sass/_main.scss */
+#unregister .window-inner a { position: relative; }
+/* line 4178, ../sass/_main.scss */
 #unregister .octopus:before { font: 274px 'icomoon'; }
 
-/* line 4176, ../sass/_main.scss */
+/* line 4183, ../sass/_main.scss */
 #pass-success .window-inner { padding: 30px 35px; position: relative; text-align: left; overflow: hidden; }
-/* line 4181, ../sass/_main.scss */
+/* line 4188, ../sass/_main.scss */
 #pass-success .window-inner p { display: block; padding: 0 0 23px 102px; margin: 23px 0 10px 0; position: relative; }
-/* line 4186, ../sass/_main.scss */
+/* line 4193, ../sass/_main.scss */
 #pass-success .window-inner p:before { content: "\e62c"; color: #4aa20f; font: 80px 'icomoon'; position: absolute; left: 6px; top: -24px; }
-/* line 4195, ../sass/_main.scss */
+/* line 4202, ../sass/_main.scss */
 #pass-success .window-inner a { position: relative; }
-/* line 4197, ../sass/_main.scss */
+/* line 4204, ../sass/_main.scss */
 #pass-success .octopus:before { font: 300px 'icomoon'; }
 
-/* line 4201, ../sass/_main.scss */
-#phone-call { position: relative; }
-/* line 4203, ../sass/_main.scss */
-#phone-call .octopus:before { font: 350px 'icomoon'; }
-/* line 4204, ../sass/_main.scss */
-#phone-call .window-inner { position: relative; overflow: hidden; padding: 10px; }
 /* line 4208, ../sass/_main.scss */
+#phone-call { position: relative; }
+/* line 4210, ../sass/_main.scss */
+#phone-call .octopus:before { font: 350px 'icomoon'; }
+/* line 4211, ../sass/_main.scss */
+#phone-call .window-inner { position: relative; overflow: hidden; padding: 10px; }
+/* line 4215, ../sass/_main.scss */
 #phone-call .window-inner p { font: 25px "PT Sans", Arial, sans-serif; color: #5d5d5d; position: relative; margin-top: 25px; padding: 0 15px 15px 15px; border-bottom: solid 1px #e5e5e5; width: 385px; }
-/* line 4217, ../sass/_main.scss */
-#phone-call .window-inner form { margin-top: 10px; }
-/* line 4220, ../sass/_main.scss */
-#phone-call .window-inner .form-block { margin: 0 15px; }
-/* line 4222, ../sass/_main.scss */
-#phone-call .window-inner .form-block input { width: 100%; }
 /* line 4224, ../sass/_main.scss */
+#phone-call .window-inner form { margin-top: 10px; }
+/* line 4227, ../sass/_main.scss */
+#phone-call .window-inner .form-block { margin: 0 15px; }
+/* line 4229, ../sass/_main.scss */
+#phone-call .window-inner .form-block input { width: 100%; }
+/* line 4231, ../sass/_main.scss */
 #phone-call .window-inner .button { margin: 5px 0 30px 15px; width: 180px; }
-/* line 4228, ../sass/_main.scss */
+/* line 4235, ../sass/_main.scss */
 #phone-call .window-inner .checkbox-block { margin-top: 10px; }
-/* line 4230, ../sass/_main.scss */
-#phone-call .window-inner .checkbox-block .checkbox { float: left; }
-/* line 4232, ../sass/_main.scss */
-#phone-call .window-inner .checkbox-block .checkbox label { margin-left: 15px; line-height: 42px; font-size: 13px; }
 /* line 4237, ../sass/_main.scss */
+#phone-call .window-inner .checkbox-block .checkbox { float: left; }
+/* line 4239, ../sass/_main.scss */
+#phone-call .window-inner .checkbox-block .checkbox label { margin-left: 15px; line-height: 42px; font-size: 13px; }
+/* line 4244, ../sass/_main.scss */
 #phone-call .window-inner .checkbox-block .checkbox label:before { top: 12px; }
-/* line 4238, ../sass/_main.scss */
+/* line 4245, ../sass/_main.scss */
 #phone-call .window-inner .checkbox-block .checkbox label:after { top: 15px; }
-/* line 4240, ../sass/_main.scss */
+/* line 4247, ../sass/_main.scss */
 #phone-call .window-inner .checkbox-block .form-block { float: right; margin-left: 0px; }
-/* line 4243, ../sass/_main.scss */
+/* line 4250, ../sass/_main.scss */
 #phone-call .window-inner .checkbox-block .form-block input { width: 160px; }
 
-/* line 4249, ../sass/_main.scss */
+/* line 4256, ../sass/_main.scss */
 #phone-sent .window-inner { padding: 50px 0 30px 0; text-align: center; position: relative; overflow: hidden; }
-/* line 4254, ../sass/_main.scss */
-#phone-sent .window-inner p { display: block; margin-bottom: 20px; font: 25px "PT Sans", Arial, sans-serif; color: #5d5d5d; position: relative; }
 /* line 4261, ../sass/_main.scss */
+#phone-sent .window-inner p { display: block; margin-bottom: 20px; font: 25px "PT Sans", Arial, sans-serif; color: #5d5d5d; position: relative; }
+/* line 4268, ../sass/_main.scss */
 #phone-sent .window-inner a { margin: 0 auto; display: block; position: relative; }
-/* line 4267, ../sass/_main.scss */
+/* line 4274, ../sass/_main.scss */
 #phone-sent .octopus:before { font: 315px 'icomoon'; }
 
-/* line 4271, ../sass/_main.scss */
+/* line 4278, ../sass/_main.scss */
 #structure { position: relative; }
-/* line 4273, ../sass/_main.scss */
+/* line 4280, ../sass/_main.scss */
 #structure .window-inner { position: relative; overflow: hidden; }
-/* line 4276, ../sass/_main.scss */
+/* line 4283, ../sass/_main.scss */
 #structure .window-inner p { font: 25px "PT Sans", Arial, sans-serif; color: #e76b6b; position: relative; margin-top: 40px; padding: 0 15px 15px 15px; border-bottom: solid 1px #e5e5e5; width: 240px; }
-/* line 4285, ../sass/_main.scss */
+/* line 4292, ../sass/_main.scss */
 #structure .window-inner ul { list-style-type: disc; margin-left: 35px; margin-bottom: 35px; }
-/* line 4289, ../sass/_main.scss */
+/* line 4296, ../sass/_main.scss */
 #structure .window-inner ul li { font-size: 18px; color: #8a8a8a; position: relative; margin-top: 12px; }
-/* line 4294, ../sass/_main.scss */
+/* line 4301, ../sass/_main.scss */
 #structure .window-inner ul li span { font-size: 13px; }
-/* line 4298, ../sass/_main.scss */
+/* line 4305, ../sass/_main.scss */
 #structure .octopus:before { font: 200px 'icomoon'; top: -24px; left: -3px; }
 
-/* line 4304, ../sass/_main.scss */
+/* line 4311, ../sass/_main.scss */
 .auto-drop { width: 100%; margin-right: 0 !important; }
-/* line 4307, ../sass/_main.scss */
+/* line 4314, ../sass/_main.scss */
 .auto-drop select { display: none; }
-/* line 4310, ../sass/_main.scss */
+/* line 4317, ../sass/_main.scss */
 .auto-drop .dropdown-toggle { display: block; }
-/* line 4312, ../sass/_main.scss */
+/* line 4319, ../sass/_main.scss */
 .auto-drop .dropdown-toggle span { display: block; white-space: nowrap; visibility: visible; opacity: 1; color: #5e5e5e; font: 14px/40px Lato, Arial, sans-serif; text-transform: none; left: auto; bottom: auto; }
-/* line 4325, ../sass/_main.scss */
-.auto-drop .dropdown-menu ul { max-height: 210px; width: 100%; overflow-y: auto; }
-/* line 4330, ../sass/_main.scss */
-.auto-drop .dropdown-menu li:hover { margin: 0; }
 /* line 4332, ../sass/_main.scss */
+.auto-drop .dropdown-menu ul { max-height: 210px; width: 100%; overflow-y: auto; }
+/* line 4337, ../sass/_main.scss */
+.auto-drop .dropdown-menu li:hover { margin: 0; }
+/* line 4339, ../sass/_main.scss */
 .auto-drop .dropdown-menu li:hover a { color: #ffffff; }
-/* line 4334, ../sass/_main.scss */
+/* line 4341, ../sass/_main.scss */
 .auto-drop .dropdown-menu a { display: block; color: #5e5e5e; }
-/* line 4338, ../sass/_main.scss */
+/* line 4345, ../sass/_main.scss */
 .auto-drop .dropdown-menu .custom-select-search { width: 98%; position: relative; z-index: 1010; margin: 0; padding: 0 4px; white-space: nowrap; }
-/* line 4346, ../sass/_main.scss */
+/* line 4353, ../sass/_main.scss */
 .auto-drop .dropdown-menu input { width: 95%; margin: 10px; }
 
-/* line 4352, ../sass/_main.scss */
+/* line 4359, ../sass/_main.scss */
 .review .history-title { line-height: 1; color: #e76b6b; }
-/* line 4355, ../sass/_main.scss */
+/* line 4362, ../sass/_main.scss */
 .review .history-title .estimate { display: inline-block; color: #8a8a8a; position: relative; font-size: 14px; border-left: 1px dashed #8a8a8a; margin: 0 10px; padding-left: 10px; }
-/* line 4364, ../sass/_main.scss */
+/* line 4371, ../sass/_main.scss */
 .review .history-title .stars { display: inline-block; margin-left: 5px; }
 
-/* line 4369, ../sass/_main.scss */
+/* line 4376, ../sass/_main.scss */
 .havent-estimate { font: 700 25px/18px "PT Sans", Arial, sans-serif; color: #5e5e5e; border-top: solid 1px #e5e5e5; padding: 20px 0 450px 0; }
