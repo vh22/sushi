@@ -1,4 +1,4 @@
-app.controller('DemoController', ['$scope', '$timeout', function ($scope, $timeout) {
+app.controller('CustomSelectCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
     $scope.state = 'AL';
     $scope.states = [
         { id: 'AL', name: 'Alabama' },
