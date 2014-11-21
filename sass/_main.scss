@@ -3827,15 +3827,15 @@ textarea{
       padding-right: 0;
       span{
         display: inline-block;
-      &:before{
-        @include absRB(0,8px);
-        font: 400 15px $icon;
+        margin-right: -5px;
+        &:before{
+          @include absRB(0,8px);
+          font: 400 15px $icon;
+        }
       }
-      span{display: inline-block;}
     }
     span{
-      display: block;
-    }
+      display: block;}
   }
   .button{width:100%}
   .order-half{
@@ -3862,8 +3862,9 @@ textarea{
       b{
         margin: 0 0 0 10px;
         span{
-          // display: inline-block;
+          display: inline-block;
           width: 55px;
+          margin-right: 0;
         }
       }
       span{
@@ -3889,7 +3890,6 @@ textarea{
         }
         span{width: 82px;}
       }
-    }
     .count{
       margin-bottom: 0px;
       .button{
@@ -3900,7 +3900,7 @@ textarea{
       }
       .counter{margin: 3px 26px 0 0}
     }
-  }
+    }
 }
 .questions{
   border-bottom: solid 1px #e5e5e5;
