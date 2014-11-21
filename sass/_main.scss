@@ -2246,18 +2246,23 @@ textarea{
       height: 110px;
       line-height: 110px;
     }
-    
     .product__title{
       font-size: 15px;
       padding: 0;
       margin-bottom: 5px;
     }
-    .tooltip{left: 0px !important;}
+    .tooltip{
+      left: 5px !important;
+      max-width: 150px;
+      .tooltip-inner{
+        width: 130px;
+      }
+    }
     .product-buy{
      .product-price{
         font-size: 18px;
-        margin: 0 0 0 20px;
-        width: 50px;
+        margin: 0 0 0 10px;
+        width: 60px;
         font-weight: bold;
         span{
           font-size: 18px;
@@ -3819,10 +3824,9 @@ textarea{
       font: 800 34px $font;
       margin: 0 10px;
       position: relative;
-      padding-right: 20px;
-      &:before{
-        @include absRB(0,8px);
-        font: 400 15px $icon;
+      padding-right: 0;
+      span{
+        display: inline-block;
       }
     }
     span{
@@ -3851,7 +3855,12 @@ textarea{
     .clear>p{
       float: left;
       width: 50%;
-      b{margin: 0 0 0 20px}
+      b{
+        margin: 0 0 0 10px;
+        span{
+          width: 55px;
+        }
+      }
       span{
         text-align: center;
         width: 115px;
@@ -3865,7 +3874,12 @@ textarea{
           font-size: 35px;
           font-weight: 800;
         }
-        b{margin-left: 0px}
+        b{
+          margin-left: -4px;
+          span{
+          width: 55px;
+        }
+        }
         span{width: 82px;}
       }
     }
@@ -4021,6 +4035,19 @@ textarea{
     position: relative;
   }
 }
+//.scroller{
+//  overflow: hidden;
+//  position: relative;
+//  width: 100%;
+//  &>div:first-child{
+//    width: 97%;
+//  }
+//  &>div{
+//    float: none !important;
+//    margin-right: 0 !important;
+//  }
+//}
+
 
 #add-file{
   position: relative;
@@ -4295,15 +4322,14 @@ textarea{
     }
   }
   .dropdown-menu{
-
     ul{
       max-height: 210px;
       width: 100%;
-      overflow: hidden;
-      overflow-y: scroll;
+      overflow-y: auto;
     }
-    li:hover a{
-      color: #ffffff;
+    li:hover{
+      margin: 0;
+      a{color: #ffffff;}
     }
     a{
       display: block;

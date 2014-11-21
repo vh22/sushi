@@ -68,6 +68,7 @@
 						'<div stop-propagation="click" class="custom-select-search">' +
 							'<input class="' + attrs.selectClass + '" type="text" autocomplete="off" ng-model="' + searchModel + '" />' +
 						'</div>' +
+//                        '<perfect-scrollbar wheel-propagation="true" wheel-speed="20" class="scroller">' +
 						'<ul role="menu">' +
 							'<li role="presentation" ng-repeat="' + valueName + ' in ' + values + (remoteSearch ? '' : ' | filter: search') + '">' +
 								'<a role="menuitem" tabindex="-1" href ng-click="select(' + valueName + ')">' +
@@ -81,6 +82,7 @@
 								'</em>' +
 							'</li>' +
 						'</ul>' +
+//                        '</perfect-scrollbar>'+
 						'<div class="custom-select-action">' +
 							(typeof options.onAdd === "function" ?
 							'<button type="button" class="btn btn-primary btn-block add-button" ng-click="add()">{{addText}}</button>' : '') +
