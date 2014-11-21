@@ -129,12 +129,9 @@
                    </div>
                     <div class="form-single form-adress"  data-ng-controller="AutoDrop">
                         <div class="col-two clear">
-                            <div class="form-block">
+                            <div class="form-block" ng-controller="CustomSelectCtrl">
                                 <label for="select-phone">Выбрать телефон</label>
-                                <input type="text" id="select-phone" data-ng-model="item.title" list="comicstitle">
-                                <datalist id="comicstitle">
-                                    <option  data-ng-repeat="ttl in titles" value="{{ttl}}">
-                                </datalist>
+                                <div class="auto-drop" custom-select ng-model="state" ng-options="s.id as s.name for s in states"></div>
                                 <span>Введите правильно</span>
                             </div>
                              <div class="form-block">
@@ -156,7 +153,7 @@
                              <!--<input type="text" id="adress" value="м. Калужская, ул. Старокалужское ш-е, д. 65, корп. 0А---А, стр. 5, под. 5, этаж 3, кв. 122">-->
                              <!--<span>Введите правильно</span>-->
                          </div>
-                         <div class="col-two clear" ng-controller="DemoController">
+                         <div class="col-two clear" ng-controller="CustomSelectCtrl">
                              <div class="form-block">
                                  <label for="metro">Метро</label>
                                  <!--<input id="metro" type="text" value="">-->
@@ -453,7 +450,7 @@
 <script src="../bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
 <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
 <script src="../bower_components/angular-keepr/dist/keepr.min.js"></script>
-<script src="../js/ui-bootstrap-tpls.min.js"></script>
+<!--<script src="../js/ui-bootstrap-tpls.min.js"></script>-->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <!-- endbower -->
 

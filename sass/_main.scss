@@ -1406,6 +1406,7 @@ textarea{
       &.full{
         div{
           border: 2px solid;
+          display: block;
           &>i{
             color: #000;
             font-size: 18px;
@@ -2251,9 +2252,7 @@ textarea{
       padding: 0;
       margin-bottom: 5px;
     }
-    .tooltip{
-      left: 0px !important;
-    }
+    .tooltip{left: 0px !important;}
     .product-buy{
      .product-price{
         font-size: 18px;
@@ -2529,8 +2528,8 @@ textarea{
     margin: -245px auto auto -216px;
   }
   .sent-phone &{
-    width: 555px;
-    margin: -106px 0 0 -278px;
+    width: 595px;
+    margin: -106px 0 0 -297px;
   }
   .add-basket &{
     width: 305px;
@@ -4221,7 +4220,7 @@ textarea{
 }
 #phone-sent{
   .window-inner{
-    padding: 50px 20px 30px 20px;
+    padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
