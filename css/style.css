@@ -1783,7 +1783,7 @@ textarea:focus { border-color: #00b6f4; -moz-box-shadow: inset 0 0 5px 0 rgba(0,
 /* line 2962, ../sass/_main.scss */
 .product-buy .icon-cart:hover { background: none; }
 /* line 2966, ../sass/_main.scss */
-.product-buy .product-price { font: 28px/29px "PT Sans", Arial, sans-serif; color: #5d5d5d; float: left; margin: 0 10px 0 15px; }
+.product-buy .product-price { font: 28px/29px "PT Sans", Arial, sans-serif; color: #5d5d5d; float: left; margin: 0 7px 0 18px; }
 /* line 2971, ../sass/_main.scss */
 .product-buy .product-price span { right: -3px; top: 0; position: relative; }
 
