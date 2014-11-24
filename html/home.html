@@ -578,11 +578,11 @@
 
 
 <script type="text/ng-template" id="call-phone" ng-animate="'animate'">
-    <div id="phone-call" class="window">
+    <div class="window phone-call">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
         <div class="window-inner octopus clear">
-            <p>Укажите номер телефона и имя, мы перезвоним вам.</p>
-            <form class="clear" name="myForm">
+            <p class="phone-call border">Укажите номер телефона и имя, мы перезвоним вам.</p>
+            <form class="clear mt" name="myForm">
                 <div class="form-block">
                     <label for="phone">номер телефона</label>
                     <phone></phone>
@@ -609,10 +609,10 @@
     </div>
 </script>
 <script type="text/ng-template" id="sent-phone">
-    <div id="phone-sent" class="window">
+    <div class="window phone-sent">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
-        <div class="window-inner clear octopus">
-            <p>Ваша заявка принята!<br />В ближайшее время оператор свяжется с вами</p>
+        <div class="window-inner big-pad text-center clear octopus">
+            <p class="margin20">Ваша заявка принята!<br />В ближайшее время оператор свяжется с вами</p>
             <a href="" class="button btn-remove-arch close" ng-click="close()">Закрыть</a>
         </div>
     </div>

@@ -272,7 +272,7 @@
     <div id="pass-change" class="window">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
         <div class="window-inner octopus clear">
-            <p>Изменить пароль</p>
+            <p class="border pass-change">Изменить пароль</p>
             <form class="clear" name="myForm">
                 <div class="form-block">
                     <label for="password-old">старый пароль</label>
@@ -295,19 +295,19 @@
     </div>
 </script>
 <script type="text/ng-template" id="editPhoneSucces">
-    <div id="pass-success" class="window">
+    <div class="window success">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
-        <div class="window-inner pass-window clear">
-            <p>Пароль успешно изменен</p>
+        <div class="window-inner text-left small-pad pass-window clear octopus">
+            <p class="pass-success">Пароль успешно изменен</p>
             <a href="" class="button btn-remove-arch close" ng-click="close()">Готово</a>
         </div>
     </div>
 </script>
 <script type="text/ng-template" id="change-phone">
-    <div id="phone-change" class="phone window">
+    <div class="phone window">
     <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
     <div class="window-inner octopus clear">
-        <p>Редактировать номер телефона</p>
+        <p class="border">Редактировать номер телефона</p>
         <form class="clear">
             <div class="form-block">
                 <label for="phone">телефон</label>
@@ -320,10 +320,10 @@
 </div>
 </script>
 <script type="text/ng-template" id="add-phone">
-    <div id="phone-add" class="phone window">
+    <div class="phone window">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
         <div class="window-inner octopus clear">
-            <p>Добавить номер телефона</p>
+            <p class="border">Добавить номер телефона</p>
             <form class="clear">
                 <div class="form-block error">
                     <label for="phone">телефон</label>
@@ -336,10 +336,10 @@
     </div>
 </script>
 <script type="text/ng-template" id="change-addres">
-<div id="adress-change" class="adress window">
+<div class="adress window">
     <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
     <div class="window-inner octopus clear">
-        <p>Редактировать адрес</p>
+        <p class="border">Редактировать адрес</p>
         <form class="clear">
             <div class="form-left">
                 <div class="form-block form-block-big">
@@ -403,10 +403,10 @@
 </div>
 </script>
 <script type="text/ng-template" id="add-addres">
-<div id="adress-add" class="adress window">
+<div class="adress window">
     <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
     <div class="window-inner octopus clear">
-        <p>Добавить адрес</p>
+        <p class="border">Добавить адрес</p>
         <form class="clear">
             <div class="form-left">
                 <div class="form-block form-block-big">

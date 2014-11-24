@@ -446,12 +446,12 @@
 
 
 <script type="text/ng-template" id="add-basket">
-    <div id="add-to-basket" class="window">
+    <div class="window add-to-basket">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
-        <div class="window-inner clear octopus">
-            <p>Товар успешно<br />добавлен в корзину</p>
-            <a href="" class="button small grey btn-remove-arch close" ng-click="close()">Продолжить покупки</a>
-            <a href="" class="button small btn-remove-arch" ng-click="close()"><span class="icon icon-fz25 icon-cart"></span> Оформить заказ</a>
+        <div class="window-inner text-center big-pad clear octopus">
+            <p class="margin20">Товар успешно<br />добавлен в корзину</p>
+            <a href="" class="button small grey btn-remove-arch close add-to-basket" ng-click="close()">Продолжить покупки</a>
+            <a href="" class="button small btn-remove-arch add-to-basket" ng-click="close()"><span class="icon icon-fz25 icon-cart"></span> Оформить заказ</a>
         </div>
     </div>
 </script>

@@ -272,12 +272,12 @@
 
 
 <script type="text/ng-template" id="review-add">
-    <div id="add-review" class="window your-review">
+    <div class="window review-modal">
         <i class="close icon icon-fz22 icon-cancel" ng-click="close()"></i>
-        <div class="window-inner octopus">
+        <div class="window-inner small-pad octopus">
             <form action="#">
                 <p>Ваш отзыв</p>
-                <textarea cols="10" rows="10"></textarea>
+                <textarea cols="10" rows="10" class="small-text"></textarea>
                 <button class="button btn-remove-arch" type="submit" ng-click="close()">Сохранить</button>
             </form>
         </div>

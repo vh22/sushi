@@ -62,7 +62,6 @@ textarea{
     @include box-shadow(inset 0 0 5px 0 rgba(0,182,244,0.4));
   }
 }
-
 .actions{
   position: relative;
   z-index: 1;
@@ -195,48 +194,6 @@ textarea{
   i{
     float: right;
     margin: 20px 0;
-  }
-}
-.adress{
-  .octopus:before{
-    font: 400px 'icomoon';
-    top: -49px;
-  }
-  .window-inner{
-    position: relative;
-    overflow: hidden;
-    padding: 15px;
-    form{
-      margin: 0 20px;
-      .form-left{
-        float: left;
-        margin-right: 22px;
-      }
-      input{
-        width: 174px;
-      }
-      .form-right{float: right;}
-      .form-block-big{
-        input{width: 370px;}
-      }
-    }
-    p{
-      font: 25px $fontPt;
-      color: #5d5d5d;
-      position: relative;
-      margin-top: 30px;
-      padding: 0 15px 15px 15px;
-      border-bottom: solid 1px #e5e5e5;
-      width: 780px;
-    }
-    .col-two div{
-      float: left;
-      margin-right: 20px;
-    }
-    button{
-      margin: 0 0 30px 20px;
-      width: 175px;
-    }
   }
 }
 .address{
@@ -1691,6 +1648,7 @@ textarea{
     text-transform: uppercase;
   }
   &.error{
+    padding-bottom: 20px !important;
     span{
       opacity: 1;
       visibility: visible;
@@ -2752,9 +2710,9 @@ textarea{
 }
 .pass-window{
   text-align: center;
+
   p{
-    font: 25px $fontPt;
-    color: #5d5d5d;
+    padding: 50px 0;
   }
   a{
     margin: 0 auto;
@@ -2781,35 +2739,6 @@ textarea{
     display: inline-block;
     margin-top: 65px;
     margin-bottom: 40px;
-  }
-}
-.phone{
-  position: relative;
-  .octopus:before{
-    font: 300px 'icomoon';
-    top: -37px;
-    left: -3px;
-  }
-  .window-inner{
-    position: relative;
-    overflow: hidden;
-    p{
-      font: 25px $fontPt;
-      color: #5d5d5d;
-      position: relative;
-      margin-top: 35px;
-      padding: 0 15px 15px 15px;
-      border-bottom: solid 1px #e5e5e5;
-      width: 380px;
-    }
-    button{
-      position: relative;
-      margin: 10px 20px 35px 20px;
-    }
-    form{
-      margin: 5px 20px 0 20px;
-      input{width: 100%}
-    }
   }
 }
 .pizza{
@@ -3305,7 +3234,7 @@ textarea{
           font-size: 13px;
           font-style: normal;
           display: block;
-          margin: 3px 0 0 15px;
+          margin: 4px 0 0 15px;
         }
         &.rate-1{background: #a0c15a}
         &.rate-2{background: #add633}
@@ -3822,7 +3751,7 @@ textarea{
     b{
       color: #000;
       font: 800 34px $font;
-      margin: 0 10px;
+      margin: 0 5px;
       position: relative;
       padding-right: 0;
       span{
@@ -3987,6 +3916,20 @@ textarea{
     }
   }
 }
+.when-order{
+  padding: 14px 0px 15px 14px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 5px;
+  .order-discount{line-height: 25px;}
+}
+.when-order-date{
+  font: 18px $fontPt;
+  color: #5d5d5d;
+  float: left;
+}
+.wrapper{
+  padding-bottom: 365px;
+}
 .window{
   background: #fff;
   position: relative;
@@ -4006,231 +3949,125 @@ textarea{
     top: -33px;
     z-index: 1;
   }
-}
-.when-order{
-  padding: 14px 0px 15px 14px;
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 5px;
-  .order-discount{line-height: 25px;}
-}
-.when-order-date{
-  font: 18px $fontPt;
-  color: #5d5d5d;
-  float: left;
-}
-.wrapper{
-  padding-bottom: 365px;
-}
-.your-review{
+  .button{
+    margin: 0 0 20px 20px;
+    &.big{
+      margin: 5px 0 30px 15px;
+      width: 180px;
+    }
+    &.top-marg{margin: 0 0 40px 20px;}
+  }
   .btn-remove-arch{
     position: relative;
     margin-bottom: 10px;
   }
   textarea{
+    width: 550px;
     height: 170px;
-    margin: 20px 0;
-    position: relative;
-  }
-  p{
-    font-size: 25px;
-    color: #5d5d5d;
-    position: relative;
-  }
-  .window-inner{
-    overflow: hidden;
-    padding: 30px 35px;
-    position: relative;
-  }
-}
-//.scroller{
-//  overflow: hidden;
-//  position: relative;
-//  width: 100%;
-//  &>div:first-child{
-//    width: 97%;
-//  }
-//  &>div{
-//    float: none !important;
-//    margin-right: 0 !important;
-//  }
-//}
-
-
-#add-file{
-  position: relative;
-  .title{
-    font: 25px $fontPt;
-    color: #5d5d5d;
-    position: relative;
-    margin-top: 40px;
-    padding: 0 15px 15px 15px;
-    border-bottom: solid 1px #e5e5e5;
-    width: 585px;
+    &.small-text{
+       height: 170px;
+       margin: 20px 0;
+       position: relative;
+       width: 100%;
+    }
   }
   .window-inner{
     position: relative;
     overflow: hidden;
     padding: 10px;
-  }
-  .octopus:before{
-    font: 400px 'icomoon';
-    top: -88px;
-  }
-  textarea{
-    width: 550px;
-    height: 170px;
-  }
-  form{
-    margin: 15px 20px 10px 20px;
-    position: relative;
-  }
-  .button{
-    margin: 0 0 20px 20px;
-  }
-}
-#add-to-basket{
-  position: relative;
-  .octopus:before{
-    font: 280px 'icomoon';
-    top: -34px;
-    left: -4px;
-  }
-  .window-inner{
-    padding: 50px 0 55px 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    p{
-      display: block;
-      margin-bottom: 20px;
+    &.big-pad{padding: 50px 0 30px 0;}
+    &.small-pad{padding: 30px 35px;}
+    .title{
       font: 25px $fontPt;
       color: #5d5d5d;
       position: relative;
-    }
-    a{
-      position: relative;
-      margin: 0 auto;
-      display: block;
-      width: 195px;
-      &.grey{margin-bottom: 20px;}
-      span{
-        position: relative;
-        top: 4px;
-      }
-    }
-  }
-
-
-}
-#pass-change{
-  position: relative;
-  .window-inner{
-    position: relative;
-    overflow: hidden;
-    p{
-      font: 25px $fontPt;
-      color: #5d5d5d;
-      position: relative;
-      margin-top: 35px;
+      margin-top: 40px;
       padding: 0 15px 15px 15px;
       border-bottom: solid 1px #e5e5e5;
-      width: 365px;
+      width: 585px;
+    }
+    p{
+      font: 25px $fontPt;
+      color: #5d5d5d;
+      display: block;
+      position: relative;
+      &.structure{
+        margin-top: 20px;
+        padding: 0 15px 15px 15px;
+        width: 220px;
+        color: #e76b6b;
+      }
+      &.pass-change{
+        margin-top: 35px;
+        padding: 0 10px 15px 15px;
+        width: 365px;
+      }
+      &.margin30{margin-bottom: 30px;}
+      &.margin20{margin-bottom: 20px;}
+      &.border{
+        border-bottom: solid 1px #e5e5e5;
+      }
+      &.phone-call{
+        margin-top: 25px;
+        padding: 0 15px 15px 15px;
+        width: 385px;
+      }
+      &.pass-success{
+        padding: 0 0 23px 102px;
+        margin: 23px 0 10px 0;
+        &:before{
+          content: "\e62c";
+          color: #4aa20f;
+          font: 80px 'icomoon';
+          position: absolute;
+          left: 6px;
+          top: -24px;
+        }
+      }
+    }
+    ul{
+      list-style-type: disc;
+      margin-left: 35px;
+      margin-bottom: 35px;
+      li{
+        font-size: 18px;
+        color: #8a8a8a;
+        position: relative;
+        margin-top: 12px;
+        span{font-size: 13px;}
+      }
+    }
+    a{
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      &.add-to-basket{
+        width: 195px;
+        &.grey{margin-bottom: 20px;}
+        span{
+          position: relative;
+          top: 4px;
+        }
+      }
+    }
+    form{
+      margin: 15px 20px 10px 20px;
+      position: relative;
+      &.mt{
+        margin: 10px 0 0 0;
+      }
     }
     .form-block{
-      margin: 0 15px;
+      margin: 0 0 20px 0;
+      padding-bottom: 0;
+      &.margin{
+       margin: 0 15px;
+      }
       input{width: 100%;}
     }
-    .button{margin: 0 0 40px 20px;}
     .input-pass input{
       font-size: 16px;
       letter-spacing: 5px;
-    }
-  }
-}
-#pass-sent{
-  .window-inner{
-    padding: 50px 0 30px 0;
-    position: relative;
-    overflow: hidden;
-    p{
-      display: block;
-      margin-bottom: 30px;
-      position: relative;
-    }
-    a {position: relative}
-  }
-  .octopus:before{
-    font: 335px 'icomoon';
-  }
-}
-#unregister{
-  .window-inner{
-    padding: 50px 0 30px 0;
-    position: relative;
-    overflow: hidden;
-    p{
-      display: block;
-      margin-bottom: 30px;
-      position: relative;
-    }
-    a {position: relative}
-  }
-  .octopus:before{
-    font: 274px 'icomoon';
-  }
-}
-#pass-success{
-  .window-inner{
-    padding: 30px 35px;
-    position: relative;
-    text-align: left;
-    overflow: hidden;
-    p{
-      display: block;
-      padding: 0 0 23px 102px;
-      margin: 23px 0 10px 0;
-      position: relative;
-      &:before{
-        content: "\e62c";
-        color: #4aa20f;
-        font: 80px 'icomoon';
-        position: absolute;
-        left: 6px;
-        top: -24px;
-      }
-    }
-    a {position: relative}
-  }
-  .octopus:before{
-    font: 300px 'icomoon';
-  }
-}
-#phone-call{
-  position: relative;
-  .octopus:before{font: 350px 'icomoon';}
-  .window-inner{
-    position: relative;
-    overflow: hidden;
-    padding: 10px;
-    p{
-      font: 25px $fontPt;
-      color: #5d5d5d;
-      position: relative;
-      margin-top: 25px;
-      padding: 0 15px 15px 15px;
-      border-bottom: solid 1px #e5e5e5;
-      width: 385px;
-    }
-    form{
-      margin-top: 10px;
-    }
-    .form-block{
-      margin: 0 15px;
-      input{width: 100%;}
-    }
-    .button{
-      margin: 5px 0 30px 15px;
-      width: 180px;
     }
     .checkbox-block{
       margin-top: 10px;
@@ -4251,63 +4088,119 @@ textarea{
       }
     }
   }
-}
-#phone-sent{
-  .window-inner{
-    padding: 50px 0 30px 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    p{
-      display: block;
-      margin-bottom: 20px;
-      font: 25px $fontPt;
-      color: #5d5d5d;
-      position: relative;
-    }
-    a{
-      margin: 0 auto;
-      display: block;
-      position: relative;
-    }
-  }
+  &.adress{
   .octopus:before{
-    font: 315px 'icomoon';
+    font: 400px 'icomoon';
+    top: -49px;
+  }
+  .window-inner{
+    padding: 15px;
+    form{
+      margin: 0 20px;
+      .form-left{
+        float: left;
+        margin-right: 22px;
+      }
+      input{
+        width: 176px;
+      }
+      .form-right{float: right;}
+      .form-block-big{
+        input{width: 375px;}
+      }
+    }
+    p{
+      margin-top: 30px;
+      padding: 0 15px 15px 15px;
+      width: 780px;
+    }
+    .col-two div{
+      float: left;
+      margin-right: 20px;
+    }
+    button{
+      margin: 0 0 30px 20px;
+      width: 175px;
+    }
   }
 }
-#structure{
-  position: relative;
-  .window-inner{
-    position: relative;
-    overflow: hidden;
-    p{
-      font: 25px $fontPt;
-      color: #e76b6b;
-      position: relative;
-      margin-top: 40px;
-      padding: 0 15px 15px 15px;
-      border-bottom: solid 1px #e5e5e5;
-      width: 240px;
+  &.phone{
+    .octopus:before{
+      font: 300px 'icomoon';
+      top: -37px;
+      left: -3px;
     }
-    ul{
-      list-style-type: disc;
-      margin-left: 35px;
-      margin-bottom: 35px;
-      li{
-        font-size: 18px;
-        color: #8a8a8a;
+    .window-inner{
+      p{
+        margin-top: 35px;
+        padding: 0 15px 15px 15px;
+        width: 360px;
+      }
+      button{
         position: relative;
-        margin-top: 12px;
-        span{font-size: 13px;}
+        margin: 10px 20px 35px 20px;
+      }
+      form{
+        margin: 5px 20px 0 20px;
+        input{width: 100%}
       }
     }
   }
-  .octopus:before{
-    font: 200px 'icomoon';
-    top: -24px;
-    left: -3px;
+  &.success{
+    .octopus:before{
+      font: 300px 'icomoon';
+    }
+  }
+  &.structures{
+    .octopus:before{
+      font: 200px 'icomoon';
+      top: -24px;
+      left: -3px;
+    }
+  }
+  &.add-files{
+    .octopus:before{
+      font: 400px 'icomoon';
+      top: -48px;
+    }
+  }
+  &.add-to-basket{
+    .octopus:before{
+      font: 280px 'icomoon';
+      top: -34px;
+      left: -4px;
+    }
+  }
+  &.pass-sent{
+    .octopus:before{
+      font: 335px 'icomoon';
+    }
+  }
+  &.unregister{
+    .octopus:before{
+      font: 274px 'icomoon';
+    }
+  }
+  &.phone-call{
+    .octopus:before{font: 350px 'icomoon';}
+    .form-block{
+      margin: 0 20px 20px 20px;
+
+    }
+  }
+  &.phone-sent{
+    .octopus:before{
+      font: 315px 'icomoon';
+    }
+  }
+  &.review-modal{
+    .button{
+      margin: 0;
+    }
   }
 }
+.text-center{text-align: center;}
+.text-left{text-align: left;}
 .auto-drop{
   width: 100%;
   margin-right: 0 !important;
