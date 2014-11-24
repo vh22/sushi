@@ -2952,10 +2952,10 @@ textarea{
 .product-buy{
   .icon-cart{
     color: $hover;
-    padding: 3px 15px;
+    padding: 3px 15px 2px;
     float: left;
     cursor: pointer;
-    margin: -1px 0 0 10px;
+    margin: 0 0 0 10px;
     background: #e9e9e9;
     border: 1px solid #a4a4a4;
     @include border-radius (2px);
