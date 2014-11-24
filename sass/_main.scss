@@ -1781,6 +1781,32 @@ textarea{
         @include border-radius(2px);
         @include absLT(35px,12px);
       }
+      &.no-register{
+        display: inline-block;
+        padding: 10px 20px 0 50px;
+        &:before{
+          content: '\e61b';
+          color: $hover;
+          font-family: 'icomoon';
+          font-size: 38px;
+          @include transition(all ease .3s);
+          @include absLT(0,13px);
+        }
+        a{
+          display: block;
+          color: #5e5e5e;
+          text-decoration: underline;
+          font-size: 12px;
+          &:hover{
+            text-decoration: none;
+            background: none;
+            color: #5e5e5e;
+          }
+          &:first-child{
+            font-size: 19px;
+          }
+        }
+      }
     }
   }
   .header-bottom__account{
@@ -2638,6 +2664,7 @@ textarea{
     &:hover{text-decoration: none;}
   }
 }
+
 .octopus{
   &:before{
     content: "\e634";
@@ -2711,14 +2738,10 @@ textarea{
 }
 .pass-window{
   text-align: center;
-
   p{
-    padding: 50px 0;
+    padding: 40px 0 30px;
   }
-  a{
-    margin: 0 auto;
-    display: block;
-  }
+  .btn-remove-arch{margin-bottom: 30px!important;}
 }
 .pay{
   text-align: center;
@@ -3988,10 +4011,9 @@ textarea{
       font: 25px $fontPt;
       color: #5d5d5d;
       position: relative;
-      margin-top: 40px;
-      padding: 0 15px 15px 15px;
-      border-bottom: solid 1px #e5e5e5;
-      width: 585px;
+      margin: 40px -10px 0;
+      padding: 0 25px 15px 25px;
+      border-bottom: 1px solid #e5e5e5;
     }
     p{
       font: 25px $fontPt;
@@ -3999,9 +4021,7 @@ textarea{
       display: block;
       position: relative;
       &.structure{
-        margin-top: 20px;
-        padding: 0 15px 15px 15px;
-        width: 220px;
+        margin-bottom: 20px !important;
         color: #e76b6b;
       }
       &.pass-change{
@@ -4013,15 +4033,17 @@ textarea{
       &.margin20{margin-bottom: 20px;}
       &.border{
         border-bottom: solid 1px #e5e5e5;
+        margin: 25px -10px 0;
+        padding: 0 25px 15px 25px;
       }
       &.phone-call{
         margin-top: 25px;
-        padding: 0 15px 15px 15px;
         width: 385px;
       }
       &.pass-success{
         padding: 0 0 23px 102px;
         margin: 23px 0 10px 0;
+        + .btn-remove-arch{margin-bottom: 10px!important;}
         &:before{
           content: "\e62c";
           color: #4aa20f;
@@ -4081,7 +4103,7 @@ textarea{
       .checkbox{
         float: left;
         label{
-          margin-left: 15px;
+          margin-left: 20px;
           line-height: 42px;
           font-size: 13px;
         }
@@ -4101,7 +4123,6 @@ textarea{
     top: -49px;
   }
   .window-inner{
-    padding: 15px;
     form{
       margin: 0 20px;
       .form-left{
@@ -4115,11 +4136,6 @@ textarea{
       .form-block-big{
         input{width: 375px;}
       }
-    }
-    p{
-      margin-top: 30px;
-      padding: 0 15px 15px 15px;
-      width: 780px;
     }
     .col-two div{
       float: left;
@@ -4140,7 +4156,6 @@ textarea{
     .window-inner{
       p{
         margin-top: 35px;
-        padding: 0 15px 15px 15px;
         width: 360px;
       }
       button{
@@ -4206,6 +4221,7 @@ textarea{
     }
   }
 }
+
 .text-center{text-align: center;}
 .text-left{text-align: left;}
 .auto-drop{
