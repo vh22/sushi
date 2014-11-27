@@ -593,12 +593,17 @@
                     <input type="text" name="name" id="name" value="Cтепан">
                     <span>Введите правильно</span>
                 </div>
-                <div class="clear checkbox-block">
+                <div class="form-block when-phone clear">
+                    <label for="name">Перезвонить</label>
                     <div class="checkbox">
-                        <input type="checkbox" name="time-call" id="time-call">
-                        <label for="time-call">Перезвонить сегодня в</label>
+                        <input type="radio" name="time-call" id="time-call">
+                        <label for="time-call">Cейчас</label>
                     </div>
-                    <div class="form-block clock">
+                    <div class="checkbox">
+                        <input type="radio" name="time-call" id="time-call2">
+                        <label for="time-call2">Сегодня в</label>
+                    </div>
+                    <div class="clock">
                         <input type="text" name="time" id="time" value="15:00">
                         <span>Введите правильно</span>
                     </div>

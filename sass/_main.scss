@@ -4295,3 +4295,22 @@ textarea{
   border-top: solid 1px #e5e5e5;
   padding: 20px 0 450px 0;
 }
+.when-phone{
+  div{
+    float: left;
+    margin: 0;
+    width: 110px;
+    &.clock{
+      width: 154px;
+    }
+    label{
+      line-height: 40px;
+      &:before{
+        top: 10px;
+      }
+      &:after{
+        top: 13px;
+      }
+    }
+  }
+}
