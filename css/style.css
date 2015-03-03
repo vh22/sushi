@@ -997,7 +997,7 @@ textarea:focus { border-color: #00b6f4; -moz-box-shadow: inset 0 0 5px 0 rgba(0,
 /* line 1273, ../sass/_main.scss */
 .competitions .competition-text .konkurs-winners > ul { text-align: center; margin: 15px 0; }
 /* line 1276, ../sass/_main.scss */
-.competitions .competition-text .konkurs-winners > ul li { float: left; position: relative; border: 1px solid #8a8a8a; padding: 20px 0; font-size: 18px; width: 33.1%; margin: 0 -1px 0 0; }
+.competitions .competition-text .konkurs-winners > ul li { float: left; position: relative; border: 1px solid #8a8a8a; padding: 20px 0; font-size: 18px; width: 16%; margin: 0 -1px 0 0; }
 /* line 1284, ../sass/_main.scss */
 .competitions .competition-text .konkurs-winners > ul li .winners-name { font-weight: 700; color: #000; }
 /* line 1291, ../sass/_main.scss */
@@ -1012,21 +1012,21 @@ textarea:focus { border-color: #00b6f4; -moz-box-shadow: inset 0 0 5px 0 rgba(0,
 /* line 1313, ../sass/_main.scss */
 .constructor .header { background: #f9f9f9; margin: -25px -25px 20px; padding: 20px 25px 0; height: 140px; }
 /* line 1318, ../sass/_main.scss */
-.constructor .header li { color: #8a8a8a; margin-right: 100px; float: left; position: relative; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.constructor .header li { color: #8a8a8a; margin-right: 52px; float: left; position: relative; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
 /* line 1324, ../sass/_main.scss */
 .constructor .header li:hover { color: #595959; }
 /* line 1325, ../sass/_main.scss */
-.constructor .header li:after { content: ""; font-size: 32px; line-height: 1; font-family: 'icomoon'; color: #8a8a8a; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: absolute; left: -67px; top: 45px; }
+.constructor .header li:after { content: ""; font-size: 32px; line-height: 1; font-family: 'icomoon'; color: #8a8a8a; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: absolute; left: -42px; top: 45px; }
 /* line 1330, ../sass/_main.scss */
 .constructor .header li:first-child:after { display: none; }
 /* line 1332, ../sass/_main.scss */
-.constructor .header li:last-child { margin: 0 0 0 40px; }
+.constructor .header li:last-child { margin: 0 0 0 27px; }
 /* line 1334, ../sass/_main.scss */
-.constructor .header li:last-child:after { content: "\e63c"; left: -80px; }
+.constructor .header li:last-child:after { content: "\e63c"; left: -55px; }
 /* line 1338, ../sass/_main.scss */
 .constructor .header li:last-child img { margin-top: -5px; }
 /* line 1340, ../sass/_main.scss */
-.constructor .header li div { cursor: pointer; text-align: center; display: table-cell; vertical-align: middle; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 2px dashed; width: 213px; height: 115px; }
+.constructor .header li div { cursor: pointer; text-align: center; display: table-cell; vertical-align: middle; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border: 2px dashed; width: 194px; height: 115px; }
 /* line 1351, ../sass/_main.scss */
 .constructor .header li.active div { cursor: default; color: #e76b6b; }
 /* line 1356, ../sass/_main.scss */

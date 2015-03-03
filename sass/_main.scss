@@ -1279,7 +1279,7 @@ textarea{
           border: 1px solid #8a8a8a;
           padding: 20px 0;
           font-size: 18px;
-          width: 33.1%;
+          width: 16%;
           margin: 0 -1px 0 0;
           .winners-name{
             font-weight: 700;
@@ -1317,23 +1317,23 @@ textarea{
     height: 140px;
     li{
       color: #8a8a8a;
-      margin-right: 100px;
+      margin-right: 52px;
       float: left;
       position: relative;
       @include transition(all ease .3s);
       &:hover{color: #595959}
       &:after{
         @include ico("\e63f",32px,#8a8a8a,1);
-        @include absLT(-67px,45px);
+        @include absLT(-42px,45px);
       }
       &:first-child{
         &:after{display: none}
       }
       &:last-child{
-        margin: 0 0 0 40px;
+        margin: 0 0 0 27px;
         &:after{
           content: "\e63c";
-          left: -80px;
+          left: -55px;
         }
         img{margin-top: -5px;}
       }
@@ -1344,7 +1344,7 @@ textarea{
         vertical-align: middle;
         @include border-radius(10px);
         border: 2px dashed;
-        width: 213px;
+        width: 194px;
         height: 115px;
       }
       &.active{
